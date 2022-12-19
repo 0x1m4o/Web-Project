@@ -34,7 +34,7 @@
       </button>
       <div class="container" id="navbarSupportedContent">
         <form class="d-flex m-auto" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control me-2" type="search" placeholder="Cari Vendor atau Lokasi...">
           <button class="btn text-light" style="background: #FDB662;" type="submit"><i class="bi bi-search"></i></button>
         </form>
       </div>
