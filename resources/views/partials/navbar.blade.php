@@ -11,7 +11,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Rab</a>
           </li>
-          <li class="nav-item" style="margin-left: 900px;">
+          <li class="nav-item" style="margin-left: 1050px;">
             <a class="nav-link">Mulai Jualan</a>
           </li>
           <li class="nav-item">
@@ -38,7 +38,7 @@
           <button class="btn text-light" style="background: #FDB662;" type="submit"><i class="bi bi-search"></i></button>
         </form>
       </div>
-      <button class="btn btn-light mx-3" style="color: #FDB662;background: white;">Masuk</button>
-      <button class="btn" style="background: #FDB662;color: white;">Daftar</button>
+      <a class="btn btn-light mx-3" style="color: #FDB662;background: white;" role="button" href="/login">Masuk</a>
+      <a class="btn" style="background: #FDB662;color: white;" role="button" href="/signup">Daftar</a>
     </div>
   </nav>

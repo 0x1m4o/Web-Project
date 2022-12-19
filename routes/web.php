@@ -24,3 +24,15 @@ Route::get('/paket', function () {
         'title' => "Paket"
     ]);
 });
+
+Route::get('/login', function () {
+    return view('auth.login', [
+        'title' => "Login"
+    ]);
+});
+
+Route::get('/signup', function () {
+    return view('auth.signup', [
+        'title' => "Daftar"
+    ]);
+});
