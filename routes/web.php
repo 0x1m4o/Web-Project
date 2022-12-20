@@ -36,3 +36,16 @@ Route::get('/signup', function () {
         'title' => "Daftar"
     ]);
 });
+
+Route::get('/profile/{username}', function ($username) {
+    return view('profile', [
+        'title' => "Profile",
+        'user' => $username
+    ]);
+});
+
+Route::get('/app', function () {
+    return view('app', [
+        'title' => "Maritory App"
+    ]);
+});
