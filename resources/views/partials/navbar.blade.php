@@ -116,7 +116,7 @@ header .current-date{
           <li class="nav-item">
             <a class="nav-link" href="#">Rab</a>
           </li>
-          <li class="nav-item" style="margin-left: 1050px;">
+          <li class="nav-item" style="margin-left: 1200px;">
             <a class="nav-link">Mulai Jualan</a>
           </li>
           <li class="nav-item">
@@ -138,7 +138,7 @@ header .current-date{
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="container bg-white rounded" id="navbarSupportedContent" style="width: 900px;">
-        <form class="d-flex m-auto p-2" role="search">
+        <form class="d-flex m-auto" role="search" style="padding: 5px;">
           <input
             class="search-bar me-2"
             type="search"

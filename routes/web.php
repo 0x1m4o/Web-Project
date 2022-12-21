@@ -37,10 +37,33 @@ Route::get('/signup', function () {
     ]);
 });
 
-Route::get('/profile/{username}', function ($username) {
+Route::get('/profile', function () {
     return view('profile', [
         'title' => "Profile",
-        'user' => $username
+    ]);
+});
+
+Route::get('/biodatadiri', function () {
+    return view('profile.biodatadiri', [
+        'title' => "Biodata Diri",
+    ]);
+});
+
+Route::get('/maripay', function () {
+    return view('profile.maripay', [
+        'title' => "MariPay",
+    ]);
+});
+
+Route::get('/daftarrekening', function () {
+    return view('profile.daftarrekening', [
+        'title' => "Daftar Rekening",
+    ]);
+});
+
+Route::get('/keamanan', function () {
+    return view('profile.keamanan', [
+        "title" => "Keamanan",
     ]);
 });
 

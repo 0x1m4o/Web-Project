@@ -26,7 +26,7 @@
                 opacity: 1;
                 border-bottom: 5px solid;
                 border-image: linear-gradient(90deg, #093028 0%, #237A57 100%) 1;
-            }   
+            }                       
             .profile {
             display: flex;
             justify-content: center;
@@ -198,72 +198,16 @@
                 <div class="container" style="margin-top: 60px;border-radius: 10px;background: white;">
                     <nav class="navbar navbar-expand-lg navbar-light" id="menu">
                         <div class="container-fluid" style="border-bottom: 1px solid #49516F;">
-                          <a class="navbar-brand aktif" href="/profile">Profile</a>
+                          <a class="navbar-brand" href="/profile">Profile</a>
                           <a class="navbar-brand" href="/biodatadiri">Biodata Diri</a>
                           <a class="navbar-brand" href="/maripay">MariPay</a>
                           <a class="navbar-brand" href="/daftarrekening">Daftar Rekening</a>
-                          <a class="navbar-brand" href="/keamanan">Keamanan</a>
+                          <a class="navbar-brand aktif" href="/keamanan">Keamanan</a>
                         </div>
                       </nav>
-                <div class="container">
-                    <div class="row">
-                        <div class="content col-sm-6">
-                            <h3 style="font-weight: 900;color: #49516F;padding-bottom: 20px;">Profile</h3>
-                            <img src="/img/Rectangle 35.png" alt="profile" style="border-radius: 50%;width: 70px;float: left;margin-right: 15px;">
-                            <h3 style="color: #49516F;font-weight: 600;">Vanessa Oey</h3>
-                            <h6 style="color: #49516F;font-weight:600;">087804842080</h6>
-                            <h6 style="color: #49516F;font-weight:600;">vanessa.oey@gmail.com</h6>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <h3  style="font-weight: 900;color: #49516F;padding-bottom: 20px;">Pasangan</h3>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h3  style="font-weight: 900;padding-bottom: 20px;cursor: pointer;"><i class="bi bi-pencil-fill"></i></h3>
-                                </div>
-                            </div>
-                            <img src="/img/laki.png" alt="profile" style="border-radius: 50%;width: 70px;float: left;margin-right: 15px;">
-                            <h3 style="color: #49516F;font-weight: 600;">Gerald Tan</h3>
-                            <h6 style="color: #49516F;font-weight:600;">082150506000</h6>
-                            <h6 style="color: #49516F;font-weight:600;">gerald.tan@gmail.com</h6>
-                        </div>
-                    </div>
-                <div class="content" style="padding-top: 100px;">
-                    <div class="container saldo" style="width: 1200px;">
-                        <h3 style="font-weight: 900;color: #49516F;">Saldo & Points</h3>
-                        <div class="row" style="text-align: center;background: white;box-shadow: 0px 19px 19px -4px rgba(0,0,0,0.1);border-radius: 20px;color: #49516F;">
-                            <div class="col-sm-2" style="line-height: 5px;">
-                                <img src="/img/logo_saldo.png" alt="logo saldo" style="margin-left: 30px; margin-bottom: 10px;">
-                                <p style="margin-left: 30px;text-align: center;font-size: 16px; font-weight: 600;">Rp. 30.000.000</p>
-                                <p style="margin-left: 30px;text-align: center;font-size: 16px; font-weight: 600;">Saldo Maripay</p>
-                            </div>
-                            <div class="col-sm-2">
-                                <img src="/img/line.png" alt="line">
-                            </div>
-                            <div class="col-sm-2" style="line-height: 5px;">
-                                <img src="/img/logo_saldo.png" alt="logo saldo" style="margin-left: 30px; margin-bottom: 10px;">
-                                <p style="margin-left: 30px;text-align: center;font-size: 16px; font-weight: 600;">Rp. 5.000.000</p>
-                                <p style="margin-left: 30px;text-align: center;font-size: 16px; font-weight: 600;">Limit Saldo</p>
-                            </div>
-                            <div class="col-sm-2">
-                                <img src="/img/line.png" alt="line">
-                            </div>
-                            <div class="col-sm-2" style="line-height: 5px;">
-                                <img src="/img/logo_saldo.png" alt="logo saldo" style="margin-left: 30px; margin-bottom: 10px;">
-                                <p style="margin-left: 30px;text-align: center;font-size: 16px; font-weight: 600;">Rp. 70.000.000</p>
-                                <p style="margin-left: 30px;text-align: center;font-size: 16px; font-weight: 600;">Goals</p>
-                            </div>
-                            <div class="col-sm-2" style="cursor: pointer; color: black;">
-                                <i class="bi bi-pencil-fill"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="btn d-block container mt-4 mb-4" role="button" style="background: linear-gradient(90deg, #093028 0%, #237A57 100%);box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 12px;font-weight: 900; color: white; font-size: 18px;width: 500px; text-align: center; border-none;">Simpan</a>
-                </div>
+                      Keamanan
                 </div>
             </div>
           </div>
     </div>
-@endsection 
+@endsection
