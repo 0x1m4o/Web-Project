@@ -116,7 +116,7 @@ header .current-date{
           <li class="nav-item">
             <a class="nav-link" href="#">Rab</a>
           </li>
-          <li class="nav-item" style="margin-left: 1200px;">
+          <li class="nav-item" style="margin-left: 1050px;">
             <a class="nav-link">Mulai Jualan</a>
           </li>
           <li class="nav-item">

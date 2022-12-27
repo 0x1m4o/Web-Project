@@ -208,7 +208,7 @@
                     <div class="row p-5">
                         <div class="col-4">
                             <div class="card" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
-                                <img src="/img/Rectangle 35.png" class="card-img-top px-5 py-4">
+                                <img src="/img/profile.png" class="card-img-top px-5 py-4">
                                 <div class="card-body text-center mb-3">
                                    <button class="btn btn-outline-dark">Pilih Foto</button> 
                                 </div>
