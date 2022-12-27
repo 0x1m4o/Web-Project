@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.keranjang button {
+  border-width: 1px;
+  color: #234231;
+  font-family: "Poppins", sans-serif;
+  height: 50px;
+}
+.card {
+  color: #49516f;
+}
+
+.container-img {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: rgb(209, 202, 202);
+  border-radius: 12px;
+  margin: 0;
+}
+.container-sm-img {
+  height: 43px;
+  width: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: rgb(209, 202, 202);
+  border-radius: 12px;
+  margin: 0;
+}
+.container-xsm-img {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: white;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.288);
+  border-radius: 6px;
+  margin: 0;
+}

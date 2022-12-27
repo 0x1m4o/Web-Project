@@ -1,0 +1,119 @@
+
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+$font-family-sans-serif-2: 'Poppins', sans-serif;
+$font-family-serif: 'Source Serif Pro', serif;
+
+
+
+body {
+	font-family: $font-family-sans-serif;
+	
+}
+p {
+	color: darken(#ccc, 10%);
+	font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: $font-family-sans-serif;
+}
+a {
+	transition: .3s all ease;
+	&, &:hover {
+		text-decoration: none!important;
+	}
+}
+.content {
+	padding: 7rem 0;
+}
+h2 {
+	font-size: 20px;
+}
+
+.custom-dropdown {
+	.btn {
+		&:active, &:focus {
+			box-shadow: none!important;
+			outline: none;
+		}	
+		&.btn-custom {
+			border: 1px solid #efefef;	
+		}
+	}
+
+	.dropdown-link {
+		color: #888;
+		font-size: 15px;
+		display: inline-block;
+		padding: 8px 15px;
+		background: $light;
+		position: relative;
+		&:after {
+			content: "";
+		}
+		
+	}
+	.dropdown-item {
+		font-size: 14px;
+		color: #888;
+		border-bottom: 1px solid #efefef;
+		padding-top: 10px;
+		padding-left: 15px;
+		padding-bottom: 10px;
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			width: 0px;
+			height: 100%;
+			left: 0;
+			bottom: 0;
+			top: 0;
+			opacity: 0;
+			visibility: hidden;
+			z-index: 2;
+			background: $primary;
+			transition: .3s all ease;
+		}
+		&:last-child {
+			border-bottom: none;
+		}
+		&:hover {
+			color: $black;
+			padding-left: 20px;
+			&:before {
+				opacity: 1;
+				visibility: visible;
+				width: 6px;
+			}
+		}
+	}
+
+	.dropdown-menu {
+		border: 1px solid transparent;
+		box-shadow: 0 15px 30px 0 rgba($black, .2);
+		margin-top: 0px!important;
+		padding-top: 0;
+		padding-bottom: 0;
+		opacity: 0;
+		left: 0!important;
+		transition: .3s margin-top ease, .3s opacity ease, .3s visibility ease;
+		visibility: hidden;
+		&.active {
+			opacity: 1;
+			visibility: visible;
+			margin-top: 20px!important;
+		}
+
+	}
+	&.show {
+		.dropdown-link {
+			color: $white;
+			background: $primary;
+		}
+	}
+}
