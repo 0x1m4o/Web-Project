@@ -205,7 +205,26 @@
                           <a class="navbar-brand" href="/keamanan">Keamanan</a>
                         </div>
                       </nav>
-                Daftar Rekening
+                <div class="row border-bottom">
+                    <div class="col-md-10 px-4 py-3">
+                        <p class="fw-bold fs-5 mb-0" style="color: #49516F;">PT. BCA (BANK CENTRAL ASIA) TBK</p>
+                        <p class="mb-0">70555334</p>
+                        <p>A.N Vanessa Oey</p>
+                    </div>
+                    <div class="col-md-2 p-3">
+                        <img src="/img/logo-bca.png" class="img-fluid">
+                        <button class="btn text-white mt-5  fw-bold" style="background: linear-gradient(90deg, #093028 0%, #237A57 100%);
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        border-radius: 12px; border: none; width: 110px;">Hapus</button>
+                    </div>
+                </div>
+                <div class="d-flex my-5">
+                    <a href="" class="btn text-white mt-5 fw-bold m-auto mb-3" style="background: linear-gradient(90deg, #093028 0%, #237A57 100%);
+                            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                            border-radius: 12px; border: none; width: 340px;"
+                            >Tambah Rekening
+                    </a>
+                </div>
                 </div>
             </div>
           </div>
