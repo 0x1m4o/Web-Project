@@ -120,6 +120,10 @@
                 padding: 0 5px;
                 border-radius: 50%;
             }
+
+            input:focus {
+                outline: none;
+            }
         </style>
     <div class="container-fluid">
         <div class="row">
@@ -206,7 +210,34 @@
                           <a class="navbar-brand" href="/keamanan">Keamanan</a>
                         </div>
                       </nav>
-                MariPay
+                      <div class="row mx-3 my-5">
+                        <div class="col-6" style="color: #49516F;">
+                            <div style="width: 300px; margin-bottom: 5em;">
+                                <p class="fs-5 fw-bold">Hai Vanessa selamat datang di Halaman Maripay !</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-5">
+                                <input class="fw-bold fs-5" placeholder="Maripay" style="border: none">
+                                <button class="btn text-white" style="background: linear-gradient(90deg, #093028 0%, #237A57 100%); border: none;">Nabung</button>
+                            </div>
+                            <hr>
+                            <span class="fw-bold fs-5" style="opacity: 0.5">Kartu Kredit / Debit</span>
+                        </div>
+                        <div class="col-6" style="color: #49516F;">
+                            <div class="card" style="border: 1px solid #49516F; color: #49516F;">
+                                <div style="width: 100%">
+                                    <p class="fw-bold fs-5 border-bottom px-3 py-2">Maripay</p>    
+                                </div>
+                                <div class="my-5 d-flex flex-column justify-content-center align-items-center" style="color: #49516F;">
+                                    <img src="/img/maripay-card.png" class="img-fluid">
+                                    <div class="mt-5" style="color: #49516F;">
+                                        <span class="fw-bold text-left me-5">Limit Maripay</span>
+                                        <span class="fw-bold">Rp 5.000.000</span>
+                                        <p style="font-size: 9px; font-weight: 600; text-align: right; color: #49516F; opacity: 0.5">Tambah Limit</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
                 </div>
             </div>
           </div>
