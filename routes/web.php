@@ -72,3 +72,9 @@ Route::get('/app', function () {
         'title' => "Maritory App"
     ]);
 });
+
+Route::get('/marisaving-dashboard', function () {
+    return view('marisaving-dashboard', [
+        'title' => "Marisaing Dashboard"
+    ]);
+});
