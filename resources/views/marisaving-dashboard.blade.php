@@ -16,7 +16,7 @@
         }
     </style>
     <div class="container-fluid my-4">
-        <h3 class="judul">Marisaving</h3>
+        <h3 class="judul">MariSaving</h3>
         <div class="container-fluid my-4 d-flex justify-content-center">
             <div class="jumbotron jumbotron-fluid d-flex flex-column justify-content-evenly">
                 <div class="ms-5">
