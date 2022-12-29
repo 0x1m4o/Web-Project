@@ -79,6 +79,12 @@ Route::get('/marisaving-dashboard', function () {
     ]);
 });
 
+Route::get('/dashboard', function () {
+    return view('dashboard.dashboard', [
+        'title' => "Dashboard"
+    ]);
+});
+
 Route::get('/nabung', function () {
     return view('dashboard.nabung', [
         'title' => "Nabung"
