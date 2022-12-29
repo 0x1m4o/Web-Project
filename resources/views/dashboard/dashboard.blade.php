@@ -49,8 +49,10 @@
                                     </div>
                                 </div>
                                 <div class="chart" style="color: #49516F; text-align:end;">
-                                    <h5 class="fw-bold">IN THE LAST 1 YEAR</h5>
-                                    <p>23 Januari - 23 Januari</p>
+                                    <div class="chart-text" style="margin-bottom: 60px;">
+                                        <h5 class="fw-bold">IN THE LAST 1 YEAR</h5>
+                                        <p>23 Januari - 23 Januari</p>
+                                    </div>
                                     <img src="/img/chart.png" alt="chart" style="pointer-events: none;">
                                 </div>
                             </div>
