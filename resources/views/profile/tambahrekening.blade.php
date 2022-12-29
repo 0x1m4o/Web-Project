@@ -84,7 +84,7 @@
                         <div class="col-10 ms-2 mb-5">
                             <h5 class="fw-semibold">Nomor Rekening</h5>
                             <div class="center d-flex align-items-center">
-                            <div class="periksa-rekening ms-1 me-3">
+                            <div class="input-animation-tambahrekening ms-1 me-3">
                                 <input class="effect-border fw-semibold" type="text" name="periksarekening" id="periksarekening" placeholder="1234567" style="border: none">
                                 <span class="focus-border"></span>
                             </div>

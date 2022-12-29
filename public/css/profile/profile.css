@@ -6,33 +6,6 @@ body {
 :focus {
     outline: none;
 }
-.periksa-rekening {
-    border-bottom: 1px solid rgba(140, 138, 138, 0.256);
-    float: left;
-    width: 55%;
-    position: relative;
-}
-.focus-border {
-    display: block;
-}
-.effect-border {
-    border: 0;
-    padding: 7px 0;
-    border-bottom: 1px solid #ccc;
-    background-color: transparent;
-}
-.effect-border ~ .focus-border {
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: rgba(0, 0, 0, 0.526);
-    transition: 0.4s;
-}
-.effect-border:focus ~ .focus-border {
-    width: 100%;
-    transition: 0.4s;
-}
 
 .profile {
     display: flex;
