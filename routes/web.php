@@ -84,3 +84,9 @@ Route::get('/tambahrekening', function () {
         'title' => "Tambah Rekening"
     ]);
 });
+
+Route::get('/dashboard', function () {
+    return view('dashboard.dashboard', [
+        'title' => "Dashboard"
+    ]);
+});
