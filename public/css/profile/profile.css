@@ -3,6 +3,10 @@ body {
     /* position: absolute; */
 }
 
+:focus {
+    outline: none;
+}
+
 .profile {
     display: flex;
     justify-content: center;

@@ -1,12 +1,7 @@
 @extends('layouts.main')
 
-<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
-/>
-<link rel="stylesheet" href="/css/home/home.css">
-
 @section('content')
+<link rel="stylesheet" href="/css/home/home.css">
 <div class="home">
     @include('partials.carousel')
     <div class="container" style="margin-top: 50px;">
@@ -22,9 +17,6 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.c
             </button>
         </div>
     </div>
-
-
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="http://kenwheeler.github.io/slick/slick/slick.js"></script>
@@ -124,8 +116,6 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.c
     @include('partials.homecontent')
 </div>
 </div>
-
-
 
 @endsection
 

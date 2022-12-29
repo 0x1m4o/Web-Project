@@ -1,5 +1,4 @@
 @extends('layouts.main')
-<link rel="stylesheet" href="/css/settings.css">
 
 @section('content')
 <link rel="stylesheet" href="/css/profile/profile.css">
@@ -94,12 +93,13 @@
                             <div style="width: 300px; margin-bottom: 5em;">
                                 <p class="fs-5 fw-bold">Hai Vanessa selamat datang di Halaman Maripay !</p>
                             </div>
-                            <div class="d-flex justify-content-between align-items-center mt-5">
-                                <input class="fw-bold fs-5" placeholder="Maripay" style="border: none">
+                            <div class="d-flex align-items-center justify-content-between mt-5">
+                                <div class="input-animation-maripay">
+                                    <input class="fw-bold fs-5 effect-border" placeholder="Maripay" style="border: none;">
+                                    <span class="focus-border"></span>
+                                </div>
                                 <button class="btn text-white" style="background: linear-gradient(90deg, #093028 0%, #237A57 100%); border: none;">Nabung</button>
-                            </div>
-                            <hr>
-                            <span class="fw-bold fs-5" style="opacity: 0.5">Kartu Kredit / Debit</span>
+                            </div>                            <span class="fw-bold fs-5" style="opacity: 0.5">Kartu Kredit / Debit</span>
                         </div>
                         <div class="col-6" style="color: #49516F;">
                             <div class="card" style="border: 1px solid #49516F; color: #49516F;">

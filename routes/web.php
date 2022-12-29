@@ -75,13 +75,7 @@ Route::get('/app', function () {
 
 Route::get('/marisaving-dashboard', function () {
     return view('marisaving-dashboard', [
-        'title' => "Marisaing Dashboard"
-    ]);
-});
-
-Route::get('/dashboard', function () {
-    return view('dashboard.dashboard', [
-        'title' => "Dashboard"
+        'title' => "Marisaving Dashboard"
     ]);
 });
 
