@@ -44,8 +44,7 @@
 
     {{-- boxicons --}}
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
-<<<<<<< HEAD
+
     {{-- Blade CSS --}}
     @yield('styles')
 
@@ -53,10 +52,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap" rel="stylesheet">
-=======
-
-    
->>>>>>> ea4cc3a5b3f7ec5414ab838b33f0fca422cdc7f7
 </head>
 <body>
     @include('partials.navbar')
