@@ -19,6 +19,7 @@
         }
         .card {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-sizing: border-box;
         }
     </style>
     <div class="container-fluid my-4" style="max-width: 100%">
@@ -54,26 +55,25 @@
             </div>
         </div>
 
-        <div class="d-flex justify-content-around" style="margin-bottom: 20rem">
-            <div class="card" style="width: 18rem;">
-                <img src="/img/people.png" class="card-img-top" alt="..." width="120px" height="120px">
+        <div class="d-flex justify-content-around" style="margin-bottom: 15rem">
+            <div class="card">
+                <img src="/img/people.png" class="card-img-top img-fluid">
                 <div class="card-body">
-                    <p class="card-text text-center">Ayo menabung bersama pasangan!
+                    <p class="card-text text-center">Ayo menabung bersama pasangan!</p>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="card">
+                <img src="/img/checklist.png" class="card-img-top img-fluid" width="162px" height="115px">
                 <div class="card-body">
-                <p class="card-text">Yuk rencanakan Biaya Pernikahanmu!</p>
+                    <p class="card-text text-center">Yuk rencanakan Biaya Pernikahanmu!</p>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="card">
+                <img src="/img/pencil.png" class="card-img-top img-fluid">
                 <div class="card-body">
-                <p class="card-text">Wujudkan pernikahan impianmu!</p>
+                    <p class="card-text text-center">Wujudkan pernikahan impianmu!</p>
                 </div>
             </div>
-        </div>
 
     </div>
 @endsection
