@@ -78,3 +78,9 @@ Route::get('/marisaving-dashboard', function () {
         'title' => "Marisaing Dashboard"
     ]);
 });
+
+Route::get('/dashboard', function () {
+    return view('dashboard.dashboard', [
+        'title' => "Dashboard"
+    ]);
+});

@@ -4,12 +4,10 @@
 rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
 />
-
 <link rel="stylesheet" href="/css/home/home.css">
 
 @section('content')
 <div class="home">
-
     @include('partials.carousel')
     <div class="container" style="margin-top: 50px;">
         <h4 style="font-weight: 600;">Spesial Paket Hanya di Maritory</h4>
