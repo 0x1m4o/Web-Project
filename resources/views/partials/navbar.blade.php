@@ -1,151 +1,101 @@
-<style>
-  /* Import Google font - Poppins */
-.wrapper{
-  width: 400px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-}
-.wrapper header{
-  display: flex;
-  align-items: center;
-  padding: 25px 30px 10px;
-  justify-content: space-between;
-}
-header .icons{
-  display: flex;
-}
-header .icons span{
-  height: 38px;
-  width: 38px;
-  margin: 0 1px;
-  cursor: pointer;
-  color: #878787;
-  text-align: center;
-  line-height: 38px;
-  font-size: 1.9rem;
-  user-select: none;
-  border-radius: 50%;
-}
-.icons span:last-child{
-  margin-right: -10px;
-}
-header .icons span:hover{
-  background: #f2f2f2;
-}
-header .current-date{
-  font-size: 1.45rem;
-  font-weight: 500;
-}
-.calendar{
-  padding: 20px;
-}
-.calendar ul{
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  text-align: center;
-}
-.calendar .days{
-  margin-bottom: 20px;
-}
-.calendar li{
-  color: #333;
-  width: calc(100% / 7);
-  font-size: 1.07rem;
-}
-.calendar .weeks li{
-  font-weight: 500;
-  cursor: default;
-}
-.calendar .days li{
-  z-index: 1;
-  cursor: pointer;
-  position: relative;
-  margin-top: 30px;
-}
-.days li.inactive{
-  color: #aaa;
-}
-.days li.active{
-  color: #fff;
-}
-.days li::before{
-  position: absolute;
-  content: "";
-  left: 50%;
-  top: 50%;
-  height: 40px;
-  width: 40px;
-  z-index: -1;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
-.days li.active::before{
-  background: #86C8BC;
-}
-.days li:not(.active):hover::before{
-  background: #f2f2f2;
-}
+{{-- Navbar After Login --}}
+<link rel="stylesheet" href="/css/navbar.css">
 
-.search-bar {
-    border: none;
-    width: 85%;
-}
-
-.search-bar:focus {
-    outline: none;
-}
-
-.dropdown button {
-    border: none;
-}
-</style>
-
-
-<nav class="navbar navbar-expand-lg" style="background: #EDEEF7;font-size: 13px;cursor: pointer;">
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>
+<script type="text/javascript">
+$(function () {
+  $("body").click(function (e) {
+    if (
+      e.target.getAttribute("class") === "navbar-collapse" ||
+      $(e.target).parents(".navbar-collapse").length > 0
+    ) {
+    } else {
+      if ($(".navbar-collapse").hasClass("show") == true) {
+        $(".navbar-toggler-search")[0].click();
+      }
+    }
+  });
+});
+$(document).ready(function () {
+  let dropdown_hover = $(".dropdown-hover");
+  dropdown_hover.on("mouseover", function () {
+    let menu = $(this).find(".dropdown-menu"),
+      toggle = $(this).find(".dropdown-toggle");
+    menu.addClass("show");
+    toggle.addClass("show").attr("aria-expanded", true);
+  });
+  dropdown_hover.on("mouseout", function () {
+    let menu = $(this).find(".dropdown-menu"),
+      toggle = $(this).find(".dropdown-toggle");
+    menu.removeClass("show");
+    toggle.removeClass("show").attr("aria-expanded", false);
+  });
+});
+</script>
+<div class="nav-wrapper">
+  <nav
+  class="navbar navbar-main navbar-expand-lg d-flex align-items-center"
+  
+  >
     <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Feed</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Checklist</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Rab</a>
-          </li>
-          <li class="nav-item" style="margin-left: 1050px;">
-            <a class="nav-link">Mulai Jualan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Mitra Maritory</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Tentang Maritory</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-</nav>
-<nav class="navbar navbar-expand-lg" style="background: #1E6F5C">
-    <div class="container-fluid">
+      <!-- Offcanvas -->
+      <div class="d-flex justify-content-start">
+        <button
+          class="nav-btn ham-btn navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions"
+        >
+          <span class="fas fa-solid fa-bars"></span>
+        </button>
+  
+        <!-- Logo -->
         <a class="navbar-brand" href="/">
-            <img src="/img/logos.png" alt="Logo" width="150" height="55" class="d-inline-block align-text-top">
-          </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="container bg-white rounded" id="navbarSupportedContent" style="width: 900px;">
-        <form class="d-flex m-auto" role="search" style="padding: 5px;">
-          <input
-            class="search-bar me-2"
-            type="search"
-            placeholder="Cari Vendor atau Lokasi..."
-            aria-label="Search"
+          <img
+            src="/img/logos.png"
+            alt="Logo"
+            width="150"
+            height="55"
+            class="d-flex align-items-center"
           />
-          <div class="dropdown ms-5">
+        </a>
+      </div>
+  
+      <!-- Navbar Search Content -->
+  
+      <div
+        id="navbarSearchContent"
+        class="rounded me-4 navbar-collapse collapse container-fluid"
+      >
+        <div
+          class="item-content d-flex justify-content-between align-items-center mx-3 bg-white rounded w-100"
+          style="height: 50px"
+        >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-target="#navbarSearchContent"
+            data-bs-toggle="collapse"
+          >
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+          </button>
+          <form class="d-flex nav-item search-form" role="search">
+            <input
+              class="search-bar ms-3 w-100"
+              type="search"
+              placeholder="Cari Vendor atau Lokasi..."
+              aria-label="Search"
+            />
+          </form>
+  
+          <div class="dropdown dropdown-hover">
             <button
               class="btn"
               href="#"
@@ -155,8 +105,8 @@ header .current-date{
             >
               <i class="bi bi-calendar3 fs-4"></i>
             </button>
-
-            <div class="dropdown-menu wrapper">
+  
+            <div class="dropdown-menu dropdown-menu-center wrapper">
               <header>
                 <p class="current-date"></p>
                 <div class="icons">
@@ -182,17 +132,620 @@ header .current-date{
               </div>
             </div>
           </div>
-
+  
           <button
-            class="btn text-light"
+            class="btn text-light m-2 navbar-collapse d-none"
             style="background: #fdb662"
             type="submit"
           >
             <i class="bi bi-search"></i>
           </button>
-        </form>
+        </div>
       </div>
-      <a class="btn btn-light mx-3" style="color: #FDB662;background: white;" role="button" href="/login">Masuk</a>
-      <a class="btn" style="background: #FDB662;color: white;" role="button" href="/signup">Daftar</a>
+  
+      <!-- Navbar Supported Content -->
+      <div
+        id="navbarSupportedContent"
+        class="d-flex justify-content-end navbar-collapse offcanvas-end d-none"
+      >
+        <!-- Keranjang -->
+  
+        <div class="dropdown dropdown-hover">
+          <a
+            href="#"
+            class="me-3 text-white dropdown-toggle"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            style="font-size: 25px"
+            ><iconify-icon icon="carbon:shopping-cart"></iconify-icon
+          ></a>
+          <div class="dropdown-menu dropdown-menu-center">
+            <div class="container" style="border: none; width: 350px">
+              <div
+                class="card-body d-flex justify-content-between align-items-center mx-2"
+              >
+                <h5>Your Item (4)</h5>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div
+                class="container d-flex justify-content-start align-items-center mb-3"
+              >
+                <div class="row w-100">
+                  <div
+                    class="col-3 d-flex justify-content-end align-items-center"
+                  >
+                    <div class="container-img">
+                      <img
+                        class="img-item"
+                        src="/img/keranjang-1.png"
+                        style="width: 25px; height: 25px"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-9 p-0">
+                    <p class="fs-6 my-0 mb-1">Katering - Ibu Barbara</p>
+                    <h5 class="fs-6 fw-bold">Rp10.000.000</h5>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="container d-flex justify-content-start align-items-center mb-3"
+              >
+                <div class="row w-100">
+                  <div
+                    class="col-3 d-flex justify-content-end align-items-center"
+                  >
+                    <div class="container-img">
+                      <img
+                        class="img-item"
+                        src="/img/keranjang-2.png"
+                        style="width: 25px; height: 25px"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-9 p-0">
+                    <p class="fs-6 my-0 mb-1">
+                      Website Design - Diluk Agensi
+                    </p>
+                    <h5 class="fs-6 fw-bold">Rp10.000.000</h5>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="container d-flex justify-content-start align-items-center mb-3"
+              >
+                <div class="row w-100">
+                  <div
+                    class="col-3 d-flex justify-content-end align-items-center"
+                  >
+                    <div class="container-img">
+                      <img
+                        class="img-item"
+                        src="/img/keranjang-3.png"
+                        style="width: 25px; height: 25px"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-9 p-0">
+                    <p class="fs-6 my-0 mb-1">Katering - Ibu Barbara</p>
+                    <h5 class="fs-6 fw-bold">Rp10.000.000</h5>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="container d-flex justify-content-start align-items-center mb-3"
+              >
+                <div class="row w-100">
+                  <div
+                    class="col-3 d-flex justify-content-end align-items-center"
+                  >
+                    <div class="container-img">
+                      <img
+                        class="img-item"
+                        src="/img/keranjang-4.png"
+                        style="width: 25px; height: 25px"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-9 p-0">
+                    <p class="fs-6 my-0 mb-1">Katering - Ibu Barbara</p>
+                    <h5 class="fs-6 fw-bold">Rp10.000.000</h5>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="container d-flex justify-content-between align-items-center mb-3"
+              >
+                <button
+                  type="button"
+                  class="ms-4 col-5 btn btn-outline-dark rounded-4"
+                >
+                  Rp90.000.000
+                </button>
+                <a
+                  href="#"
+                  class="col-4 text-decoration-none text-secondary fw-bold mx-4 fs-6"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Chat -->
+        <div class="dropdown dropdown-hover">
+          <a
+            class="me-3 text-white dropdown-toggle"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            style="font-size: 25px"
+            ><iconify-icon icon="material-symbols:mail-rounded"></iconify-icon
+          ></a>
+          <div class="dropdown-menu dropdown-menu-center">
+            <div class="container" style="width: 250px; border: none">
+              <div
+                class="card-body d-flex justify-content-between align-items-center mx-2"
+              >
+                <h5>Chat Inbox</h5>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div
+                class="container d-flex justify-content-start align-items-center"
+              >
+                <div class="row w-100">
+                  <div
+                    class="col-3 d-flex justify-content-end align-items-center"
+                  >
+                    <img
+                      class="rounded-circle"
+                      src="/img/The-Aesthetic.png"
+                      style="width: 30px; height: 30px"
+                    />
+                  </div>
+                  <div
+                    class="col-9 p-0 d-flex justify-content-between align-items-center"
+                  >
+                    <p class="fs-6 my-0 mb-1">The Aesthetic</p>
+                    <div class="container-xsm-img text-secondary">5</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="container d-flex justify-content-start align-items-center"
+              >
+                <div class="row w-100">
+                  <div
+                    class="col-3 d-flex justify-content-end align-items-center"
+                  >
+                    <img
+                      class="rounded-circle"
+                      src="/img/Gerald.png"
+                      style="width: 30px; height: 30px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-9 p-0 d-flex align-items-center">
+                    <p class="fs-6 my-0 mb-1">Gerald Tan</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="container d-flex justify-content-start align-items-center"
+              >
+                <div class="row w-100">
+                  <div
+                    class="col-3 d-flex justify-content-end align-items-center"
+                  >
+                    <img
+                      class="rounded-circle"
+                      style="width: 30px; height: 30px"
+                      src="/img/Gerald.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-9 p-0 d-flex align-items-center">
+                    <p class="fs-6 my-0 mb-1">Iyan Siagian</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="container d-flex justify-content-start align-items-center mb-3"
+              >
+                <div class="row w-100">
+                  <div
+                    class="col-3 d-flex justify-content-end align-items-center"
+                  >
+                    <img
+                      class="rounded-circle"
+                      src="/img/Gerald.png"
+                      style="
+                        width: 30px;
+                        height: 30px;
+                        background-size: cover;
+                      "
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="col-9 p-0 d-flex justify-content-between align-items-center"
+                  >
+                    <p class="fs-6 my-0 mb-1">Ridwan</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        {{-- Tabungan --}}
+        <div class="dropdown dropdown-hover">
+          <a
+            class="me-3 text-white dropdown-toggle"
+            role="button"
+            style="font-size: 25px"
+            ><iconify-icon icon="mingcute:wallet-4-fill"></iconify-icon
+          ></a>
+          <div class="dropdown-menu dropdown-menu-start">
+            <div
+              class="container d-flex align-items-center justify-content-center"
+            >
+              <div class="container" style="width: 400px">
+                <div
+                  class="card-body d-flex justify-content-between align-items-center mx-2"
+                >
+                  <h5>Tabungan</h5>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div
+                  class="container d-flex justify-content-start align-items-center mb-3"
+                >
+                  <div class="row w-100">
+                    <div
+                      class="col-3 d-flex justify-content-end align-items-center"
+                    >
+                      <div class="container-img">
+                        <i class="fa-regular fa-user"></i>
+                      </div>
+                    </div>
+                    <div class="col-9 p-0">
+                      <p class="fs-6 my-0 mb-1">Gerald baru saja menabung</p>
+                      <h5 class="fs-6 fw-bold">Rp5.000.000</h5>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="container d-flex justify-content-start align-items-center mb-3"
+                >
+                  <div class="row w-100">
+                    <div
+                      class="col-3 d-flex justify-content-end align-items-center"
+                    >
+                      <div class="container-img">
+                        <i class="fa-regular fa-user"></i>
+                      </div>
+                    </div>
+                    <div class="col-9 p-0">
+                      <p class="fs-6 my-0 mb-1">Vanessa baru saja menabung</p>
+                      <h5 class="fs-6 fw-bold">Rp3.000.000</h5>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="container d-flex justify-content-start align-items-center mb-3"
+                >
+                  <div class="row w-100">
+                    <div
+                      class="col-3 d-flex justify-content-end align-items-center"
+                    >
+                      <div class="container-img">
+                        <i class="fa-regular fa-user"></i>
+                      </div>
+                    </div>
+                    <div class="col-9 p-0">
+                      <p class="fs-6 my-0 mb-1">Gerald baru saja menabung</p>
+                      <h5 class="fs-6 fw-bold">Rp2.000.000</h5>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="container d-flex justify-content-start align-items-center mb-3"
+                >
+                  <div class="row w-100">
+                    <div
+                      class="col-3 d-flex justify-content-end align-items-center"
+                    >
+                      <div class="container-img">
+                        <i class="fa-regular fa-user"></i>
+                      </div>
+                    </div>
+                    <div class="col-9 p-0">
+                      <p class="fs-6 my-0 mb-1">Vanessa baru saja menabung</p>
+                      <h5 class="fs-6 fw-bold">Rp5.000.000</h5>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="container d-flex justify-content-end align-items-center mb-3"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="dropdown dropdown-hover">
+          <a href="/profile">
+            <img
+              src="/img/profile.png"
+              style="width: 30px; height: 30px"
+              class="rounded-circle me-3"
+              alt=""
+            />
+          </a>
+          <div class="dropdown-menu dropdown-menu-start">
+            <div class="container container-profile">
+              <section class="profile">
+                <div class="profile-image">
+                  <a href="#">
+                    <img src="/img/profile.png" />
+                  </a>
+                </div>
+                <div class="profile-name">
+                  <a href="#">Vanessa Oey</a>
+                </div>
+              </section>
+              <section class="dashboard">
+                <div class="dashboard-title">
+                  <a href="">
+                    <p><i class="bi bi-wallet"></i> Maripay</p>
+                  </a>
+                  <a href="">
+                    <p><i class="bi bi-star"></i> Goal</p>
+                  </a>
+                  <a href="">
+                    <p><i class="bi bi-file-bar-graph"></i> RAB</p>
+                  </a>
+                  <a href="">
+                    <p><i class="bi bi-check-square"></i> Checklist</p>
+                  </a>
+                  <a href="">
+                    <p><i class="bi bi-images"></i> Feed</p>
+                  </a>
+                  <a href="">
+                    <p><i class="bi bi-people-fill"></i> Following</p>
+                  </a>
+                  <a href="">
+                    <p><i class="bi bi-gear"></i> Setting</p>
+                  </a>
+                </div>
+                <div class="dashboard-data">
+                  <p>Rp 60,000,000</p>
+                  <p>Rp -40,000,000</p>
+                </div>
+              </section>
+              <section class="kotak-masuk">
+                <i class="bi bi-envelope"></i>
+                <span>Kotak Masuk</span>
+              </section>
+              <section class="contact">
+                <div class="contact-title">
+                  <a href="">
+                    <p><i class="bi bi-chat"></i> Chat</p>
+                  </a>
+                  <a href="">
+                    <p><i class="bi bi-journal-text"></i> Ulasan</p>
+                  </a>
+                  <a href="">
+                    <p><i class="bi bi-bell"></i> Notification</p>
+                  </a>
+                  <a href="">
+                    <p><i class="bi bi-heart-pulse"></i> Maritory Care</p>
+                  </a>
+                  <a href="">
+                    <strong
+                      ><i class="bi bi-box-arrow-left"></i> Log Out</strong
+                    >
+                  </a>
+                </div>
+                <div class="contact-data">
+                  <p>5</p>
+                  <p>1</p>
+                  <p>10</p>
+                  <p>2</p>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar Icons -->
+      <div class="nav-icons d-flex align-items-center">
+        <button
+          class="nav-btn navbar-toggler navbar-toggler-search text-white"
+          style="width: 30px; height: 30px"
+          id="btn-search"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSearchContent"
+          type="button"
+          aria-expanded="false"
+          aria-controls="navbarSearchContent"
+          aria-label="Toggle navigation"
+        >
+          <iconify-icon icon="mingcute:search-3-line"></iconify-icon>
+        </button>
+  
+        <button
+          class="nav-btn tabungan-btn navbar-toggler text-white"
+          style="width: 30px; height: 30px"
+        >
+          <iconify-icon icon="mingcute:wallet-4-fill"></iconify-icon>
+        </button>
+        <button
+          class="nav-btn keranjang-btn navbar-toggler text-white"
+          style="width: 30px; height: 30px"
+        >
+          <iconify-icon icon="carbon:shopping-cart"></iconify-icon>
+        </button>
+        <button
+          class="nav-btn chat-btn navbar-toggler text-white"
+          style="width: 30px; height: 30px"
+        >
+          <iconify-icon icon="material-symbols:mail-rounded"></iconify-icon>
+        </button>
+        <div class="dropdown dropdown-hover">
+          <button class="nav-btn navbar-toggler">
+            <img
+              src="/img/profile.png"
+              class="rounded-circle"
+              style="width: 30px; height: 30px"
+            />
+          </button>
+          <div class="dropdown-menu dropdown-menu-start">
+            <div class="container container-profile">
+              <section class="profile">
+                <div class="profile-image">
+                  <a href="#">
+                    <img src="/img/profile.png" />
+                  </a>
+                </div>
+                <div class="profile-name">
+                  <a href="#">Vanessa Oey</a>
+                </div>
+              </section>
+              <section class="dashboard">
+                <div class="dashboard-title">
+                  <a href="">
+                    <p><i class="bi bi-wallet"></i> Maripay</p>
+                  </a>
+                  <a href="">
+                    <p><i class="bi bi-star"></i> Goal</p>
+                  </a>
+                  <a href="">
+                    <p><i class="bi bi-file-bar-graph"></i> RAB</p>
+                  </a>
+                  <a href="">
+                    <p><i class="bi bi-check-square"></i> Checklist</p>
+                  </a>
+                  <a href="">
+                    <p><i class="bi bi-images"></i> Feed</p>
+                  </a>
+                  <a href="">
+                    <p><i class="bi bi-people-fill"></i> Following</p>
+                  </a>
+                  <a href="">
+                    <p><i class="bi bi-gear"></i> Setting</p>
+                  </a>
+                </div>
+                <div class="dashboard-data">
+                  <p>Rp 60,000,000</p>
+                  <p>Rp -40,000,000</p>
+                </div>
+              </section>
+              <section class="kotak-masuk">
+                <i class="bi bi-envelope"></i>
+                <span>Kotak Masuk</span>
+              </section>
+              <section class="contact">
+                <div class="contact-title">
+                  <a href="">
+                    <p><i class="bi bi-chat"></i> Chat</p>
+                  </a>
+                  <a href="">
+                    <p><i class="bi bi-journal-text"></i> Ulasan</p>
+                  </a>
+                  <a href="">
+                    <p><i class="bi bi-bell"></i> Notification</p>
+                  </a>
+                  <a href="">
+                    <p><i class="bi bi-heart-pulse"></i> Maritory Care</p>
+                  </a>
+                  <a href="">
+                    <strong
+                      ><i class="bi bi-box-arrow-left"></i> Log Out</strong
+                    >
+                  </a>
+                </div>
+                <div class="contact-data">
+                  <p>5</p>
+                  <p>1</p>
+                  <p>10</p>
+                  <p>2</p>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </nav>
+</div>
+
+
+    <!-- Offcanvas -->
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel"
+      style="background-color: rgb(103, 100, 100); width: 70%"
+    >
+      <div class="container d-flex mt-3 align-items-center ms-1">
+        <button
+          class="nav-btn navbar-toggler d-inline-block ms-2 mb-1"
+          type="button"
+          data-bs-dismiss="offcanvas"
+        >
+          <span class="fas fa-solid fa-bars"></span>
+        </button>
+        <img
+          src="./img/logos.png"
+          alt="Logo"
+          width="150"
+          height="55"
+          class="d-inline-block ms-2"
+        />
+      </div>
+      <div class="offcanvas-body">
+        <a
+          class="btn btn-light btn-offcanvas w-100 mb-2"
+          style="color: #ffffffc2; background: rgb(42, 42, 42)"
+          role="button"
+          href="/login"
+          >Masuk</a
+        >
+
+        <a
+          class="btn btn-light btn-offcanvas w-100 mb-2"
+          style="color: #ffffffb5; background: rgb(42, 42, 42)"
+          role="button"
+          href="/signup"
+          >Daftar</a
+        >
+      </div>
+    </div>
+
+    <!-- Auto close  -->
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script type="text/javascript">
+    $(function () {
+      $("body").click(function (e) {
+        if (
+          e.target.getAttribute("class") === "navbar-collapse" ||
+          $(e.target).parents(".navbar-collapse").length > 0
+        ) {
+        } else {
+          if ($(".navbar-collapse").hasClass("show") == true) {
+            $(".navbar-toggler-search")[0].click();
+          }
+        }
+      });
+    });
+  </script>
