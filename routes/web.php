@@ -84,3 +84,27 @@ Route::get('/dashboard', function () {
         'title' => "Dashboard"
     ]);
 });
+
+Route::get('/nabung', function () {
+    return view('dashboard.nabung', [
+        'title' => "Nabung"
+    ]);
+});
+
+Route::get('/pasangan', function () {
+    return view('dashboard.pasangan', [
+        'title' => "Pasangan"
+    ]);
+});
+
+Route::get('/transaksi', function () {
+    return view('dashboard.transaksi', [
+        'title' => "Transaksi"
+    ]);
+});
+
+Route::get('/tariksaldo', function () {
+    return view('dashboard.tariksaldo', [
+        'title' => "Tarik Saldo"
+    ]);
+});
