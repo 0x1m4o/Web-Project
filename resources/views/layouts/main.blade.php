@@ -20,7 +20,9 @@
 
     {{-- CSS --}}
     <link rel="stylesheet" href="/css/index.css">
-    
+
+    {{-- Settings and Footer --}}
+    <link rel="stylesheet" href="/css/settings.css">
 
     {{-- Font Awesome --}}
     <link rel="stylesheet" href="/fontawesome/fontawesome-free-6.2.1-web/css/all.css" />
@@ -39,8 +41,10 @@
         type="text/css"
         href="http://kenwheeler.github.io/slick/slick/slick-theme.css"
     />
+
+    
 </head>
-  <body>
+<body>
     @include('partials.navbar')
     @yield('content')
     {{-- Footer --}}

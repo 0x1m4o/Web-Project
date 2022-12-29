@@ -8,7 +8,7 @@
                     <section class="profile">
                         <div class="profile-image">
                             <a href="#">
-                                <img src="/img/Rectangle 35.png" />
+                                <img src="/img/Rectangle 35.png"  />
                             </a>
                         </div>
                         <div class="profile-name">
@@ -76,36 +76,29 @@
                 </div>
             </div>
             <div class="col-9">
-                <div class="container" style="margin-top: 60px;border-radius: 10px;background: white;">
-                    <nav class="navbar navbar-expand-lg navbar-light" id="menu">
-                        <div class="container-fluid" style="border-bottom: 1px solid #49516F;">
-                          <a class="navbar-brand" href="/profile">Profile</a>
-                          <a class="navbar-brand" href="/biodatadiri">Biodata Diri</a>
-                          <a class="navbar-brand" href="/maripay">MariPay</a>
-                          <a class="navbar-brand aktif" href="/daftarrekening">Daftar Rekening</a>
-                          <a class="navbar-brand" href="/keamanan">Keamanan</a>
-                        </div>
-                      </nav>
-                <div class="row border-bottom">
-                    <div class="col-md-10 px-4 py-3">
-                        <p class="fw-bold fs-5 mb-0" style="color: #49516F;">PT. BCA (BANK CENTRAL ASIA) TBK</p>
-                        <p class="mb-0">70555334</p>
-                        <p>A.N Vanessa Oey</p>
-                    </div>
-                    <div class="col-md-2 p-3">
-                        <img src="/img/logo-bca.png" class="img-fluid">
-                        <button class="btn text-white mt-5  fw-bold" style="background: linear-gradient(90deg, #093028 0%, #237A57 100%);
-                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                        border-radius: 12px; border: none; width: 110px;">Hapus</button>
-                    </div>
-                </div>
-                <div class="d-flex my-5">
-                    <a href="/tambahrekening" class="btn text-white mt-5 fw-bold m-auto mb-3" style="background: linear-gradient(90deg, #093028 0%, #237A57 100%);
+                <div class="container p-5" style="margin-top: 60px;border-radius: 10px;background: white;">
+                    <h3 class="mb-3 fw-semibold">Tambah Rekening</h3>
+                    <h5 class="fw-semibold ms-2">Nama Bank</h5>
+
+                    <div class="row ">
+                        <div class="col-10 ms-2 mb-5">
+                            <h5 class="fw-semibold">Nomor Rekening</h5>
+                            <div class="center d-flex align-items-center">
+                            <div class="periksa-rekening ms-1 me-3">
+                                <input class="effect-border fw-semibold" type="text" name="periksarekening" id="periksarekening" placeholder="1234567" style="border: none">
+                                <span class="focus-border"></span>
+                            </div>
+                            <button class="btn text-white fw-bold" style="background: linear-gradient(90deg, #093028 0%, #237A57 100%);
                             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                            border-radius: 12px; border: none; width: 340px;"
-                            >Tambah Rekening
-                    </a>
-                </div>
+                            border-radius: 12px; border: none; width: 110px;">Periksa</button>
+                            </div>
+                        </div>
+                        <a href="#" class="btn text-white fw-bold mt-5 m-auto mb-3" style="background: linear-gradient(90deg, #093028 0%, #237A57 100%);
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        border-radius: 12px; border: none; width: 340px;"
+                        >Submit
+                         </a>
+                    </div>
                 </div>
             </div>
           </div>

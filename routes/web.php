@@ -75,6 +75,12 @@ Route::get('/app', function () {
 
 Route::get('/marisaving-dashboard', function () {
     return view('marisaving-dashboard', [
-        'title' => "Marisaing Dashboard"
+        'title' => "Marisaving Dashboard"
+    ]);
+});
+
+Route::get('/tambahrekening', function () {
+    return view('profile.tambahrekening', [
+        'title' => "Tambah Rekening"
     ]);
 });
