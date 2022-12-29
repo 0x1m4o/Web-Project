@@ -1,0 +1,446 @@
+.navbar-main {
+    background-color: #1e6f5c;
+}
+
+.wrapper {
+    width: 500px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+.wrapper header {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+header .icons {
+    display: flex;
+}
+header .icons span {
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: #878787;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+    border-radius: 50%;
+}
+.icons span:last-child {
+    margin-right: -10px;
+}
+header .icons span:hover {
+    background: #f2f2f2;
+}
+header .current-date {
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+.calendar {
+    padding: 20px;
+}
+.calendar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+.calendar .days {
+    margin-bottom: 20px;
+}
+.calendar li {
+    color: #333;
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+}
+.calendar .weeks li {
+    font-weight: 500;
+    cursor: default;
+}
+.calendar .days li {
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+}
+.days li.inactive {
+    color: #aaa;
+}
+.days li.active {
+    color: #fff;
+}
+.days li::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.days li.active::before {
+    background: #86c8bc;
+}
+.days li:not(.active):hover::before {
+    background: #f2f2f2;
+}
+
+.search-bar {
+    border: none;
+    margin-top: 15px;
+}
+.search-form {
+    width: 100%;
+}
+
+.search-bar:focus {
+    outline: none;
+}
+
+.dropdown button {
+    border: none;
+}
+.nav-btn {
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+}
+.navbar {
+    z-index: 2;
+}
+.close-navbar-toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+.close-navbar-toggler.collapsed {
+    z-index: -1;
+}
+.close-navbar-toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+.close-navbar-toggler.collapsed {
+    z-index: -1;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.btn-offcanvas {
+    transition: 0.5s;
+}
+.btn-offcanvas:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+#navbarSearchContent {
+    width: 100%;
+}
+
+/* Responsive Navbar */
+@media (max-width: 991px) {
+    #navbarSearchContent.collapse,
+    #navbarSearchContent {
+        position: absolute;
+        width: 70%;
+        transition: width 400ms ease-in-out;
+    }
+
+    #navbarSearchContent {
+        width: 0;
+        left: 0;
+    }
+    #navbarSearchContent.collapsing {
+        visibility: hidden;
+        transition: 100ms;
+    }
+    .navbar-brand,
+    .ham-btn,
+    .chat-btn,
+    .keranjang-btn,
+    .chat-btn,
+    .tabungan-btn {
+        display: none;
+    }
+    .navbar {
+        padding: 20px;
+    }
+}
+
+.dropstart {
+    display: none;
+}
+.dropdown-menu-center {
+    right: auto;
+    left: 50%;
+    -webkit-transform: translate(-55%, 0);
+    -o-transform: translate(-55%, 0);
+    transform: translate(-55%, 0);
+}
+.dropdown-menu-start {
+    right: auto;
+    left: 50%;
+    -webkit-transform: translate(-90%, 0);
+    -o-transform: translate(-90%, 0);
+    transform: translate(-90%, 0);
+}
+
+/* Dropdown */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.keranjang button {
+    border-width: 1px;
+    color: #3b5547;
+    font-family: "Poppins", sans-serif;
+    height: 50px;
+}
+.card {
+    color: #49516f;
+}
+
+.container-img {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: rgb(209, 202, 202);
+    border-radius: 12px;
+    margin: 0;
+}
+.container-sm-img {
+    height: 43px;
+    width: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: rgb(209, 202, 202);
+    border-radius: 12px;
+    margin: 0;
+}
+.container-xsm-img {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: white;
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.288);
+    border-radius: 6px;
+    margin: 0;
+}
+
+/* Homepage Content */
+.container-img img {
+    width: 25px;
+}
+#menu a {
+    /* color: #FFF; */
+    opacity: 0.5;
+    text-decoration: none;
+    border-bottom: transparent solid 1px;
+    padding-bottom: 5px;
+    color: #49516f;
+    font-weight: 900;
+}
+#menu .aktif {
+    text-decoration: none;
+    border-bottom: transparent solid 1px;
+    padding-bottom: 5px;
+    color: #237a57;
+    font-weight: 900;
+    opacity: 1;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(90deg, #093028 0%, #237a57 100%) 1;
+}
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    margin: 5px 0;
+}
+.container > * {
+    padding: 10px;
+}
+
+.profile-name a {
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: gray;
+    letter-spacing: 0.5px;
+}
+.profile-name a:hover {
+    text-decoration: none;
+    color: black;
+}
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+.dashboard a {
+    text-decoration: none;
+    color: black;
+}
+.dashboard i {
+    color: gray;
+    margin-right: 5px;
+}
+.kotak-masuk {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    border-bottom: 1px solid gray;
+}
+.kotak-masuk i {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1.8rem;
+    color: gray;
+}
+.kotak-masuk span {
+    font-weight: 600;
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.contact-title a {
+    text-decoration: none;
+    color: #000;
+}
+.contact i {
+    color: gray;
+    margin-right: 5px;
+}
+.contact-data p {
+    text-align: center;
+    background-color: rgba(35, 66, 49, 1);
+    color: white;
+    padding: 0 5px;
+    border-radius: 50%;
+}
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    margin: 5px 0;
+}
+
+.container > * {
+    padding: 10px;
+}
+
+.profile-image img {
+    border-radius: 50%;
+}
+
+.profile-name a {
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: gray;
+    letter-spacing: 0.5px;
+}
+
+.profile-name a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+.dashboard a {
+    text-decoration: none;
+    color: black;
+}
+
+.dashboard i {
+    color: gray;
+    margin-right: 5px;
+}
+
+.kotak-masuk {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    border-bottom: 1px solid gray;
+}
+
+.kotak-masuk i {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1.8rem;
+    color: gray;
+}
+
+.kotak-masuk span {
+    font-weight: 600;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.contact-title a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contact i {
+    color: gray;
+    margin-right: 5px;
+}
+
+.contact-data p {
+    text-align: center;
+    background-color: rgba(35, 66, 49, 1);
+    color: white;
+    padding: 0 5px;
+    border-radius: 50%;
+}
+
+.container-profile {
+    margin: auto;
+    width: 300px;
+    border-radius: 10px;
+}
+.nav-wrapper {
+    height: 75px;
+    position: relative;
+    overflow-y: visible;
+    z-index: 999;
+}
