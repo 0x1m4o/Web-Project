@@ -1,7 +1,5 @@
 @extends('layouts.main')
-<link rel="stylesheet" href="/css/settings.css">
 @section('content')
-<link rel="stylesheet" href="/css/profile/profile.css">
     <div class="container-fluid">
             <div class="container">
                 <div class="container" style="margin-top: 60px;border-radius: 10px;background: white;">

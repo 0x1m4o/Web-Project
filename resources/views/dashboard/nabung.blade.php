@@ -1,5 +1,4 @@
 @extends('layouts.main')
-<link rel="stylesheet" href="/css/settings.css">
 @section('styles')
     <style>
         .input-nabung input[type=text] {
