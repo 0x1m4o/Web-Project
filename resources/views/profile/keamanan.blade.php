@@ -1,5 +1,4 @@
 @extends('layouts.main')
-<link rel="stylesheet" href="/css/settings.css">
 
 @section('content')
 <link rel="stylesheet" href="/css/profile/profile.css">

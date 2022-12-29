@@ -15,15 +15,17 @@
     {{-- CDN Boostrap Icon --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
 
-    {{-- CND Jquery --}}
+    {{-- CDN Jquery --}}
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
     {{-- CSS --}}
     <link rel="stylesheet" href="/css/index.css">
-    
+
+    {{-- Settings and Footer --}}
+    <link rel="stylesheet" href="/css/settings.css">
 
     {{-- Font Awesome --}}
-    <link rel="stylesheet" href="/fontawesome/fontawesome-free-6.2.1-web/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
     {{-- Slick --}}
     <link
@@ -39,9 +41,14 @@
         type="text/css"
         href="http://kenwheeler.github.io/slick/slick/slick-theme.css"
     />
+
+    {{-- boxicons --}}
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+
     
 </head>
-  <body>
+<body>
     @include('partials.navbar')
     @yield('content')
     {{-- Footer --}}

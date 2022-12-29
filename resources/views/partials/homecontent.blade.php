@@ -1,5 +1,5 @@
 <!-- Homepage Content -->
-        <div class=" mt-3">
+        <div class="mt-3">
           <div class="blog-info">
             <h2 class="fw-bold text-dark">Populer di Maritory</h2>
             <h5 class="text-end text-secondary">Lihat Selengkapnya</h5>
