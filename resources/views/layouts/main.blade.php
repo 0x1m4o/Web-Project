@@ -39,7 +39,6 @@
         type="text/css"
         href="http://kenwheeler.github.io/slick/slick/slick-theme.css"
     />
-    
 </head>
   <body>
     @include('partials.navbar')

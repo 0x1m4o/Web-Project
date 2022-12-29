@@ -40,7 +40,6 @@ $(document).ready(function () {
 <div class="nav-wrapper">
   <nav
   class="navbar navbar-main navbar-expand-lg d-flex align-items-center"
-  
   >
     <div class="container-fluid">
       <!-- Offcanvas -->
@@ -161,7 +160,7 @@ $(document).ready(function () {
             ><iconify-icon icon="carbon:shopping-cart"></iconify-icon
           ></a>
           <div class="dropdown-menu dropdown-menu-center">
-            <div class="container" style="border: none; width: 350px">
+            <div class="container m-3" style="border: none; width: 350px">
               <div
                 class="card-body d-flex justify-content-between align-items-center mx-2"
               >
@@ -284,7 +283,7 @@ $(document).ready(function () {
             ><iconify-icon icon="material-symbols:mail-rounded"></iconify-icon
           ></a>
           <div class="dropdown-menu dropdown-menu-center">
-            <div class="container" style="width: 250px; border: none">
+            <div class="container m-3" style="width: 250px; border: none">
               <div
                 class="card-body d-flex justify-content-between align-items-center mx-2"
               >
@@ -391,7 +390,7 @@ $(document).ready(function () {
             <div
               class="container d-flex align-items-center justify-content-center"
             >
-              <div class="container" style="width: 400px">
+              <div class="container m-1" style="width: 400px">
                 <div
                   class="card-body d-flex justify-content-between align-items-center mx-2"
                 >
