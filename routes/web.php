@@ -61,9 +61,15 @@ Route::get('/daftarrekening', function () {
     ]);
 });
 
-Route::get('/keamanan', function () {
-    return view('profile.keamanan', [
+Route::get('/keamanan-aktifitas', function () {
+    return view('profile.keamanan-aktifitas', [
         "title" => "Keamanan",
+    ]);
+});
+
+Route::get('/keamanan-ubahsandi', function () {
+    return view('profile.keamanan-ubahsandi', [
+        "title" => "Ubah Sandi",
     ]);
 });
 

@@ -92,11 +92,15 @@
                             <div style="width: 400px; margin-bottom: 5em;">
                                 <p class="fs-5 fw-bold">Hai Vanessa, tinjau aktivitasmu disini</p>
                             </div>
-                            <div class="d-flex justify-content-between align-items-center mt-5">
-                                <span class="fw-bold fs-5">Review Aktivitas</span>
-                            </div>
+                            <a href="/keamanan-aktifitas" class="text-decoration-none text-decoration-none text-secondary" >     
+                                <div class="d-flex justify-content-between align-items-center mt-5">
+                                    <span class="fw-bold fs-5">Review Aktivitas</span>
+                                </div>
+                            </a>
                             <hr>
-                            <a href="" class="fw-bold fs-5 text-decoration-none text-secondary" style="opacity: 0.5">Ubah Sandi</a>
+                            <a href="/keamanan-ubahsandi" class="fw-bold fs-5 text-decoration-none text-secondary" style="opacity: 0.5" >
+                                Ubah Sandi
+                            </a>
                         </div>
                         <div class="col-6" style="color: #49516F;">
                             <div class="card" style="border: 1px solid #49516F; color: #49516F;">

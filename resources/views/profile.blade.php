@@ -83,7 +83,7 @@
                           <a class="navbar-brand" href="/biodatadiri">Biodata Diri</a>
                           <a class="navbar-brand" href="/maripay">MariPay</a>
                           <a class="navbar-brand" href="/daftarrekening">Daftar Rekening</a>
-                          <a class="navbar-brand" href="/keamanan">Keamanan</a>
+                          <a class="navbar-brand" href="/keamanan-aktifitas">Keamanan</a>
                         </div>
                       </nav>
                 <div class="container">
