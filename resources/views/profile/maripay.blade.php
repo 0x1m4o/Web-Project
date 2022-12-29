@@ -124,6 +124,10 @@
             input:focus {
                 outline: none;
             }
+
+            .card {
+                border-radius: 10px;
+            }
         </style>
     <div class="container-fluid">
         <div class="row">

@@ -119,6 +119,10 @@
                 padding: 0 5px;
                 border-radius: 50%;
             }
+
+            .card {
+                border-radius: 10px;
+            }
         </style>
     <div class="container-fluid">
         <div class="row">
