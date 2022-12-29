@@ -32,6 +32,29 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="container" style="margin-top: 50px;">
+                            <div class="d-flex justify-content-between">
+                                <div class="grafik-dashboard">
+                                    <div style="background: #EEEEEE; padding: 20px;border-radius: 20px;border: 4px solid #FFFFFF; width: 400px; margin: 0 0 20px 0;">
+                                        <h6 style="font-weight: 700; color: #49516F;">Goals</h6>
+                                        <h1 style="font-weight: 900">Rp 3.000.000</h1>
+                                    </div>
+                                    <div style="background: #EEEEEE; padding: 20px;border-radius: 20px;border: 4px solid #FFFFFF; width: 400px; margin: 0 0 20px 0;">
+                                        <h6 style="font-weight: 700; color: #49516F;">Year to Date</h6>
+                                        <h1 style="font-weight: 900">Rp 20.000.000</h1>
+                                    </div>
+                                    <div style="background: #EEEEEE; padding: 20px;border-radius: 20px;border: 4px solid #FFFFFF; width: 400px; margin: 0 0 20px 0;">
+                                        <h6 style="font-weight: 700; color: #49516F;">Years to Date Goals</h6>
+                                        <h1 style="font-weight: 900">-Rp 5.000.000</h1>
+                                    </div>
+                                </div>
+                                <div class="chart" style="color: #49516F; text-align:end;">
+                                    <h5 class="fw-bold">IN THE LAST 1 YEAR</h5>
+                                    <p>23 Januari - 23 Januari</p>
+                                    <img src="/img/chart.png" alt="chart" style="pointer-events: none;">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

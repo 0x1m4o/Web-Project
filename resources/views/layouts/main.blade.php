@@ -39,13 +39,10 @@
         type="text/css"
         href="http://kenwheeler.github.io/slick/slick/slick-theme.css"
     />
-<<<<<<< HEAD
 
     {{-- boxicons --}}
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
-=======
->>>>>>> f8d5ae89414f60d483aea5b3b234702b03526f30
 </head>
   <body>
     @include('partials.navbar')
