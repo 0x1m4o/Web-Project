@@ -109,7 +109,7 @@ body {
 /* Footer */
 
 .footer-03 {
-    background-color: #1e6f5c;
+    background-color: white;
 }
 .footer-03 a {
     text-decoration: none;
@@ -117,20 +117,19 @@ body {
     color: white;
 }
 .ftco-footer-social {
-    margin: 5px;
     padding-left: 0;
 }
 .ftco-footer-social li {
     list-style: none;
-    margin: 5px;
     display: inline-block;
 }
 
 .ftco-footer-social li a {
     display: block;
-    padding: 8px;
     background: #1e6f5c;
-    border-radius: 25px;
+    border-radius: 50%;
+    height: 37px;
+    padding: 0 6px;
 }
 
 .ftco-footer-social li a:hover {

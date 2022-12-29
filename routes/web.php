@@ -61,9 +61,15 @@ Route::get('/daftarrekening', function () {
     ]);
 });
 
-Route::get('/keamanan', function () {
-    return view('profile.keamanan', [
+Route::get('/keamanan-aktifitas', function () {
+    return view('profile.keamanan-aktifitas', [
         "title" => "Keamanan",
+    ]);
+});
+
+Route::get('/keamanan-ubahsandi', function () {
+    return view('profile.keamanan-ubahsandi', [
+        "title" => "Ubah Sandi",
     ]);
 });
 
@@ -75,12 +81,36 @@ Route::get('/app', function () {
 
 Route::get('/marisaving-dashboard', function () {
     return view('marisaving-dashboard', [
-        'title' => "Marisaing Dashboard"
+        'title' => "Marisaving Dashboard"
     ]);
 });
 
 Route::get('/dashboard', function () {
     return view('dashboard.dashboard', [
         'title' => "Dashboard"
+    ]);
+});
+
+Route::get('/nabung', function () {
+    return view('dashboard.nabung', [
+        'title' => "Nabung"
+    ]);
+});
+
+Route::get('/pasangan', function () {
+    return view('dashboard.pasangan', [
+        'title' => "Pasangan"
+    ]);
+});
+
+Route::get('/transaksi', function () {
+    return view('dashboard.transaksi', [
+        'title' => "Transaksi"
+    ]);
+});
+
+Route::get('/tariksaldo', function () {
+    return view('dashboard.tariksaldo', [
+        'title' => "Tarik Saldo"
     ]);
 });

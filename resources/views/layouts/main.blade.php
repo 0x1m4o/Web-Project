@@ -20,7 +20,9 @@
 
     {{-- CSS --}}
     <link rel="stylesheet" href="/css/index.css">
-    
+
+    {{-- Settings and Footer --}}
+    <link rel="stylesheet" href="/css/settings.css">
 
     {{-- Font Awesome --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -42,9 +44,16 @@
 
     {{-- boxicons --}}
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+
+    {{-- Blade CSS --}}
+    @yield('styles')
+
+    {{-- Font Google Frank Ruhl Libre --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap" rel="stylesheet">
 </head>
-  <body>
+<body>
     @include('partials.navbar')
     @yield('content')
     {{-- Footer --}}
