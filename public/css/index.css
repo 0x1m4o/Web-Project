@@ -110,3 +110,142 @@ a:hover i {
 .kategori-content img {
     margin-left: 8px;
 }
+
+body {
+    background-color: #f4f4f4;
+}
+#menu a {
+    opacity: 0.5;
+    text-decoration: none;
+    border-bottom: transparent solid 1px;
+    padding-bottom: 5px;
+    color: #49516f;
+    font-weight: 900;
+}
+#menu .aktif {
+    text-decoration: none;
+    border-bottom: transparent solid 1px;
+    padding-bottom: 5px;
+    color: #237a57;
+    font-weight: 900;
+    opacity: 1;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(90deg, #093028 0%, #237a57 100%) 1;
+}
+#filter .aktif {
+    text-decoration: none;
+    border-bottom: transparent solid 1px;
+    padding-bottom: 5px;
+    color: #237a57;
+    font-weight: 900;
+    opacity: 1;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(90deg, #093028 0%, #237a57 100%) 1;
+}
+#kategori .aktif {
+    border: 1px solid rgba(128, 128, 128, 0.157);
+    box-shadow: 2px 2px 2px #88888845;
+    background-color: white;
+}
+.card {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    margin: 5px 0;
+}
+
+.container > * {
+    padding: 10px;
+}
+
+.profile-image img {
+    border-radius: 70%;
+}
+
+.profile-name a {
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: gray;
+    letter-spacing: 0.5px;
+}
+
+.profile-name a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+.dashboard a {
+    text-decoration: none;
+    color: black;
+}
+
+.dashboard i {
+    color: gray;
+    margin-right: 5px;
+}
+
+.kotak-masuk {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    border-bottom: 1px solid gray;
+}
+
+.kotak-masuk i {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1.8rem;
+    color: gray;
+}
+
+.kotak-masuk span {
+    font-weight: 600;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.contact-title a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contact i {
+    color: gray;
+    margin-right: 5px;
+}
+
+.contact-data p {
+    text-align: center;
+    background-color: rgba(35, 66, 49, 1);
+    color: white;
+    padding: 0 5px;
+    border-radius: 50%;
+}
+
+/* Kategori */
+
+.bts-harga {
+    padding: 7px;
+    border-radius: 12px;
+}

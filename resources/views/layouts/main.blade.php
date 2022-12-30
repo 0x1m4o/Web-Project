@@ -21,9 +21,6 @@
     {{-- CSS --}}
     <link rel="stylesheet" href="/css/index.css">
 
-    {{-- Settings and Footer --}}
-    <link rel="stylesheet" href="/css/settings.css">
-
     {{-- Font Awesome --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
@@ -59,6 +56,7 @@
             crossorigin="anonymous">
         </script>
     @include('partials.navbar')
+    
     @yield('content')
     {{-- Footer --}}
     @include('partials.footer')
@@ -123,6 +121,7 @@
         });
     </script>
 
+ 
     {{-- Iconify JS --}}
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
   </body>

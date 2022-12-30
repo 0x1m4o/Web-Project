@@ -38,17 +38,7 @@
     padding: 0;
     margin: 0;
     }
-    /* .card {
-        margin: 0;
-        margin-top: 30px; 
-        padding: 25px;
-    } */
 
-
-    .card:hover {
-    transform: scale(1.05);
-    transition: 0.5s;
-    }
     .card img {
     margin: auto;
     margin-top: 20px;
@@ -147,7 +137,7 @@
                     </a>
                 </div>
                 <div class="card">
-                    <a href="/venue-bg">
+                    <a href="/kategori-venue">
                         <img src="/img/venue-bg.png" class="card-img-top" alt="..." />
                         <div class="card-body">
                             <h6 class="card-title  text-center mt-2">venue</h6>

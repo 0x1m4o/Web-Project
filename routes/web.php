@@ -119,3 +119,10 @@ Route::get('/tariksaldo', function () {
         'title' => "Tarik Saldo"
     ]);
 });
+
+
+Route::get('/kategori-venue', function () {
+    return view('kategori.venue', [
+        'title' => "Kategori"
+    ]);
+});
