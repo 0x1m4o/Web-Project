@@ -97,16 +97,16 @@
                             <input type="text" placeholder="Rp" class="nabung container-fluid">
                         </div>
                         <div class="row d-flex justify-content-between mt-4">
-                            <div class="col-sm-3 nabung">Rp. 10.000</div>
-                            <div class="col-sm-3 nabung">Rp. 50.000</div>
-                            <div class="col-sm-3 nabung">Rp. 100.000</div>
-                            <div class="col-sm-3 nabung">Rp. 100.000</div>
+                            <button class="btn btn btn-outline-secondary col-sm-3 nabung">Rp. 10.000</button>
+                            <button class="btn btn btn-outline-secondary col-sm-3 nabung">Rp. 50.000</button>
+                            <button class="btn btn btn-outline-secondary col-sm-3 nabung">Rp. 100.000</button>
+                            <button class="btn btn btn-outline-secondary col-sm-3 nabung">Rp. 100.000</button>
                         </div>
                         <div class="row d-flex justify-content-between">
-                            <div class="col-sm-3 nabung">Rp. 500.000</div>
-                            <div class="col-sm-3 nabung nabung-aktif">Rp. 1.000.000</div>
-                            <div class="col-sm-3 nabung">Rp. 2.000.000</div>
-                            <div class="col-sm-3 nabung">Rp. 5.000.000</div>
+                            <button class="btn btn btn btn-outline-secondary col-sm-3 nabung">Rp. 500.000</button>
+                            <button class="btn btn btn btn-outline-secondary col-sm-3 nabung nabung-aktif">Rp. 1.000.000</button>
+                            <button class="btn btn btn btn-outline-secondary col-sm-3 nabung">Rp. 2.000.000</button>
+                            <button class="btn btn btn btn-outline-secondary col-sm-3 nabung">Rp. 5.000.000</button>
                         </div>
                         <hr class="mt-4 mb-4">
                         <div class="pembayaran-nabung d-flex justify-content-between">
