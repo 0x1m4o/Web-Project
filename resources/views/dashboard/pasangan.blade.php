@@ -1,4 +1,17 @@
 @extends('layouts.main')
+
+@section('styles')
+    <style>
+        .download a {
+            color: #237A57;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            font-weight: bold;
+        }
+    </style>
+@endsection
+
 @section('content')
     <div class="container-fluid">
             <div class="container">
@@ -12,8 +25,13 @@
                           <a class="navbar-brand" href="/tariksaldo">Tarik Saldo</a>
                         </div>
                     </nav>
-                    <div class="container">
-                        <h1>Pasangan</h1>
+                    <div class="container d-flex justify-content-between" style="margin-top: 50px;">
+                        <div class="download">
+                            <a class="btn" role="button">Download</a>
+                        </div>
+                        <div class="maripay-chart-img">
+                            <img src="/img/maripay_chart.png" alt="Maripay Chart" style="pointer-events: none;">
+                        </div>
                         </div>
                     </div>
                 </div>
