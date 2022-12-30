@@ -1,5 +1,4 @@
 @extends('layouts.main')
-<link rel="stylesheet" href="/css/settings.css">
 @section('styles')
     <style>
         .input-nabung input[type=text] {
@@ -40,12 +39,41 @@
             color: white;
         }
 
-        .pembayaran-nabung-debit input[type=radio] {
+        /* .pembayaran-nabung-debit input[type=radio] {
             width: 35px;
             height: 35px;
         }   
         .pembayaran-nabung-debit input:checked ~ .checkmark {
             background: linear-gradient(90deg, #093028 0%, #237A57 100%);
+        } */
+
+        .pembayaran-nabung-debit .custom-radio-btn {
+            width: 33px;
+            height: 33px;
+            border: 1px solid #49516F;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .pembayaran-nabung-debit .custom-radio-btn .checkmark {
+            width: calc(90% - 6px);
+            height: calc(90% - 6px);
+            border-radius: 50%;
+            background: linear-gradient(90deg, #093028 0%, #237A57 100%);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            display: inline-block;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .pembayaran-nabung-debit .custom-radio-btn input {
+            display: none;
+        }
+
+        .pembayaran-nabung-debit .custom-radio-btn input:checked + .checkmark {
+            opacity: 1;
         }
     </style>
 @endsection
@@ -84,8 +112,10 @@
                         <div class="pembayaran-nabung d-flex justify-content-between">
                             <div class="pembayaran-nabung-debit">
                                 <h5 style="font-weight: 900; margin-bottom: 40px;">Nabung Dengan</h5>
-                                <input type="radio" style="float: left; margin-right: 10px;" checked="checked" name="radio">     
-                                <span class="checkmark"></span>
+                                <label class="custom-radio-btn" style="float: left; margin-right: 10px;">
+                                    <input type="radio" name="radio" />     
+                                    <span class="checkmark"></span>
+                                </label>
                                 <h5 style="font-size: 20px;font-weight: bold; color: #49516F;">Debit Instan</h5>
                                 <h6 style="font-size: 13px; width: 685px; color: #49516F; font-weight: bold;opacity: 0.5;">Tambah kartu debit biar bisa top-up instan</h6>
                             </div>
@@ -97,8 +127,10 @@
                         </div>
                         <div class="pembayaran-nabung d-flex justify-content-between">
                             <div class="pembayaran-nabung-debit">
-                                <input type="radio" style="float: left; margin-right: 10px;" checked="checked" name="radio">     
-                                <span class="checkmark"></span>
+                                <label class="custom-radio-btn" style="float: left; margin-right: 10px;">
+                                    <input type="radio" name="radio" checked />     
+                                    <span class="checkmark"></span>
+                                </label>
                                 <h5 style="font-size: 20px;font-weight: bold; color: #49516F;">Metode Pembayaran Lain</h5>
                                 <h6 style="font-size: 13px; width: 685px; color: #49516F; font-weight: bold;opacity: 0.5;">Internet banking, transfer, e-wallet</h6>
                             </div>

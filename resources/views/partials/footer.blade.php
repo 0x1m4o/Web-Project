@@ -47,7 +47,7 @@
           <div class="col-md-12 col-lg-11 mb-md-0 mb-0">
             <h2 class="footer-heading fw-bold text-center" style="color: #343846;font-family: 'Frank Ruhl Libre', serif;">Follow Us</h2>
             <ul class="ftco-footer-social text-center mb-0">
-              <li class="insta"><a  href="#" class="bi bi-instagram "> </a></li>
+              <li class="insta"><a  href="#" class="bi bi-instagram"> </a></li>
               <li class="facebook"><a href="#" class="bi bi-facebook"> </a></li>
               <li class="twitter"><a href="#"  class="bi bi-twitter"></a></li>
               <li class="youtube"><a href="#" class="bi bi-youtube"></a></li>
