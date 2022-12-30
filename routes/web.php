@@ -60,10 +60,21 @@ Route::get('/daftarrekening', function () {
         'title' => "Daftar Rekening",
     ]);
 });
+Route::get('/tambahrekening', function () {
+    return view('profile.tambahrekening', [
+        'title' => "Tambah Rekening",
+    ]);
+});
 
-Route::get('/keamanan', function () {
-    return view('profile.keamanan', [
+Route::get('/keamanan-aktifitas', function () {
+    return view('profile.keamanan-aktifitas', [
         "title" => "Keamanan",
+    ]);
+});
+
+Route::get('/keamanan-ubahsandi', function () {
+    return view('profile.keamanan-ubahsandi', [
+        "title" => "Ubah Sandi",
     ]);
 });
 

@@ -54,6 +54,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src=
+    "https://kit.fontawesome.com/457a315592.js" 
+            crossorigin="anonymous">
+        </script>
     @include('partials.navbar')
     @yield('content')
     {{-- Footer --}}

@@ -1,5 +1,6 @@
 @extends('layouts.main')
 @section('content')
+
     <div class="container-fluid">
             <div class="container">
                 <div class="container" style="margin-top: 60px;border-radius: 10px;background: white;">
