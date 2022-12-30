@@ -1,65 +1,6 @@
 @extends('layouts.main')
-
 @section('content')
-<style>
-    .home {
-      padding: 10px;
-  }
-  .card {
-      padding: 5px;
-      background-color: transparent;
-      border: none;
-      margin: 10px;
-      border-radius: 40px;
-      transition: 0.5s;
-  }
-  .kategori-card {
-      padding: 15px;
-      margin: 0 19px 5px 19px;
-      border-bottom: 1px solid #fafafa;
-      height: 90px;
-      width: 90px;
-      max-width: 100%;
-      border-radius: 40px;
-      background: linear-gradient(90deg, #093028 0%, #237a57 100%);
-      border-radius: 8px;
-  }
-
-  .kategori-content {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
-  .kategori-list h5 {
-      text-align: center;
-      font-size: 18px;
-  }
-
-  .stars {
-      color: rgba(255, 208, 0, 0.664);
-      margin-bottom: 5px;
-  }
-  .card-body {
-      padding: 0;
-      margin: 0;
-  }
-
-  .card img {
-      border-radius: 10%;
-      width: 85%;
-      filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.158));
-  }
-
-  .slick-slide {
-      width: 100%;
-      object-fit: cover;
-  }
-  .slick-prev:before,
-  .slick-next:before {
-      color: #879baf !important;
-  }
-
-</style>
+<link rel="stylesheet" href="/css/home/home.css">
 <div class="home">
     @include('partials.carousel')
     <div class="container" style="margin-top: 50px;">
