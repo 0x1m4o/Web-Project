@@ -128,7 +128,7 @@ Route::get('/kategori-venue', function () {
 });
 
 Route::get('/daftar-vendor', function () {
-    return view('vendor.daftar', [
+    return view('auth.vendor.login', [
         'title' => "Daftar Vendor"
     ]);
 });
