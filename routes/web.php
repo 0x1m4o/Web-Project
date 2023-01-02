@@ -29,13 +29,13 @@ Route::get('/login', function () {
     return view('auth.login', [
         'title' => "Login"
     ]);
-});
+})->name('login');
 
 Route::get('/signup', function () {
     return view('auth.signup', [
         'title' => "Daftar"
     ]);
-});
+})->name('signup');
 
 Route::get('/profile', function () {
     return view('profile', [
