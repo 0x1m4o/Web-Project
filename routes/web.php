@@ -29,13 +29,13 @@ Route::get('/login', function () {
     return view('auth.login', [
         'title' => "Login"
     ]);
-});
+})->name('login');
 
 Route::get('/signup', function () {
     return view('auth.signup', [
         'title' => "Daftar"
     ]);
-});
+})->name('signup');
 
 Route::get('/profile', function () {
     return view('profile', [
@@ -127,6 +127,7 @@ Route::get('/kategori-venue', function () {
     ]);
 });
 
+<<<<<<< HEAD
 Route::get('/berhasilnabung', function () {
     return view('dashboard.berhasilnabung', [
         'title' => "Berhasil Nabung"
@@ -136,5 +137,10 @@ Route::get('/berhasilnabung', function () {
 Route::get('/gagalnabung', function () {
     return view('dashboard.gagalnabung', [
         'title' => "Gagal Nabung"
+=======
+Route::get('/vendor', function () {
+    return view('auth.business.login', [
+        'title' => "Login Vendor"
+>>>>>>> ed758328e668d7f906a5f2819fc0e787a4643775
     ]);
 });

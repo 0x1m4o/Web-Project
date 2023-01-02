@@ -1,6 +1,6 @@
-@extends('layouts.no_navbar')
+@extends('layouts.vendor')
 
-@section('styles')
+@section('styles_vendor')
   <style>
     * {
         font-family: "Poppins", sans-serif;
@@ -67,10 +67,10 @@
   </style>
 @endsection
 
-@section('content')
+@section('vendor')
 @include('partials.messages')
 
-<div class="container mt-5 text-secondary">
+<div class="container mt-5 text-secondary" style="margin-bottom: 10px;">
     <div class="row justify-content-center align-items-center">
       <div class="col-md-4 card p-4">
         <div class="row mb-5 fw-bold ">
@@ -120,7 +120,7 @@
         <span class="text-center mt-5" style="border-bottom:1px solid grey; font-size: 14px">atau masuk dengan</span>
 
         <a href="" class="btn mt-4 social" style="border: 1px solid black">
-          <i class="fab fa-google"></i> 
+          <i class="fa fa-google"></i> 
           <span>Google</span>              
         </a>
 

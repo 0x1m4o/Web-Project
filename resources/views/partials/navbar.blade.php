@@ -24,8 +24,8 @@
           <img
             src="/img/logos.png"
             alt="Logo"
-            width="150"
-            height="55"
+            width="200"
+            height="75"
             class="d-flex align-items-center"
           />
         </a>
