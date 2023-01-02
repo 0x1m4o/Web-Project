@@ -1,3 +1,12 @@
+@section('styles')
+<style>
+    .keunggulan_mitra {
+        font-weight: bold;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+</style>
+@endsection
 <nav
 			class="navbar navbar-expand-lg navbar-light bg-light"
 			style="background: #ffffff; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)"
