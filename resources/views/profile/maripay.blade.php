@@ -1,7 +1,6 @@
 @extends('layouts.main')
 
 @section('content')
-<link rel="stylesheet" href="/css/profile/profile.css">
 
     <div class="container-fluid">
         <div class="row">

@@ -1,5 +1,8 @@
-.home {
+body {
     background-color: white;
+}
+.home {
+    padding: 10px;
 }
 .card {
     padding: 12px;
@@ -12,6 +15,14 @@
     border: 3px solid rgba(0, 0, 0, 0);
     border-radius: 40px;
     transition: 0.5s;
+}
+.card a {
+    text-decoration: none;
+    color: black;
+}
+.card-title {
+    font-size: 14px;
+    font-weight: 600;
 }
 .kategori-card {
     padding: 15px;
@@ -60,68 +71,4 @@
 .slick-prev:before,
 .slick-next:before {
     color: #879baf !important;
-}
-
-/* Footer */
-
-.footer-03 {
-    background-color: #1e6f5c;
-}
-.footer-03 a {
-    text-decoration: none;
-    padding: 0;
-    color: white;
-}
-.ftco-footer-social {
-    margin: 5px;
-    padding-left: 0;
-}
-.ftco-footer-social li {
-    list-style: none;
-    margin: 5px;
-    display: inline-block;
-}
-
-.ftco-footer-social li a {
-    display: block;
-    padding: 8px;
-    background: #1e6f5c;
-    border-radius: 25px;
-}
-
-.ftco-footer-social li a:hover {
-    background-color: #ffffff;
-}
-.footer-03 .ftco-footer-social li a {
-    color: #ffffff;
-    font-size: 25px;
-}
-
-.footer-03 .ftco-footer-social .twitter a:hover {
-    color: lightblue;
-}
-.footer-03 .ftco-footer-social .youtube a:hover {
-    color: red;
-}
-.footer-03 .ftco-footer-social .facebook a:hover {
-    color: blue;
-}
-.footer-03 .ftco-footer-social .insta a:hover {
-    color: rgba(255, 192, 203, 0.635);
-}
-.logo1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 250px;
-}
-.logo1 img {
-    width: 50px;
-}
-.logo1 p {
-    margin: 0;
-    font-size: 12px;
-}
-.kategori-content img {
-    margin-left: 8px;
 }

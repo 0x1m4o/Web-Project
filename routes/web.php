@@ -60,6 +60,11 @@ Route::get('/daftarrekening', function () {
         'title' => "Daftar Rekening",
     ]);
 });
+Route::get('/tambahrekening', function () {
+    return view('profile.tambahrekening', [
+        'title' => "Tambah Rekening",
+    ]);
+});
 
 Route::get('/keamanan-aktifitas', function () {
     return view('profile.keamanan-aktifitas', [
@@ -112,5 +117,12 @@ Route::get('/transaksi', function () {
 Route::get('/tariksaldo', function () {
     return view('dashboard.tariksaldo', [
         'title' => "Tarik Saldo"
+    ]);
+});
+
+
+Route::get('/kategori-venue', function () {
+    return view('kategori.venue', [
+        'title' => "Kategori"
     ]);
 });

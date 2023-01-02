@@ -1,42 +1,7 @@
 {{-- Navbar After Login --}}
 <link rel="stylesheet" href="/css/navbar.css">
 
-<script
-src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-crossorigin="anonymous"
-referrerpolicy="no-referrer"
-></script>
-<script type="text/javascript">
-$(function () {
-  $("body").click(function (e) {
-    if (
-      e.target.getAttribute("class") === "navbar-collapse" ||
-      $(e.target).parents(".navbar-collapse").length > 0
-    ) {
-    } else {
-      if ($(".navbar-collapse").hasClass("show") == true) {
-        $(".navbar-toggler-search")[0].click();
-      }
-    }
-  });
-});
-$(document).ready(function () {
-  let dropdown_hover = $(".dropdown-hover");
-  dropdown_hover.on("mouseover", function () {
-    let menu = $(this).find(".dropdown-menu"),
-      toggle = $(this).find(".dropdown-toggle");
-    menu.addClass("show");
-    toggle.addClass("show").attr("aria-expanded", true);
-  });
-  dropdown_hover.on("mouseout", function () {
-    let menu = $(this).find(".dropdown-menu"),
-      toggle = $(this).find(".dropdown-toggle");
-    menu.removeClass("show");
-    toggle.removeClass("show").attr("aria-expanded", false);
-  });
-});
-</script>
+
 <div class="nav-wrapper">
   <nav
   class="navbar navbar-main navbar-expand-lg d-flex align-items-center"
@@ -384,6 +349,8 @@ $(document).ready(function () {
             class="me-3 text-white dropdown-toggle"
             role="button"
             style="font-size: 25px"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
             ><iconify-icon icon="mingcute:wallet-4-fill"></iconify-icon
           ></a>
           <div class="dropdown-menu dropdown-menu-start">

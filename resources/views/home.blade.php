@@ -1,5 +1,4 @@
 @extends('layouts.main')
-
 @section('content')
 <link rel="stylesheet" href="/css/home/home.css">
 <div class="home">
