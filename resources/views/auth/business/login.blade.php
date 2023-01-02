@@ -63,6 +63,9 @@
       .card {
         border: none;
       }
+      .container {
+        width: 80%;
+      }
     }
   </style>
 @endsection
@@ -70,69 +73,48 @@
 @section('vendor')
 @include('partials.messages')
 
-<div class="container mt-5 text-secondary" style="margin-bottom: 10px;">
+<div class="container mt-5 text-secondary" style="margin-bottom: 10px; width: 35%">
     <div class="row justify-content-center align-items-center">
-      <div class="col-md-4 card p-4">
-        <div class="row mb-5 fw-bold ">
-          <div class="col">
-            <a class="text-decoration-none text-dark fs-5" href="/login">Masuk</a>  
-          </div>
-          <div class="col-3">
-            <a class="text-decoration-none text-secondary fs-5" href=/signup>Daftar</a>
+      <div class="row mb-5 fw-bold">
+        <div class="col text-center">
+          <span class="text-dark fs-3">Login Vendor <sup class="fw-light" style="color: rgba(10, 50, 12, 0.4);">for business</sup></span>  
+        </div>
+      </div>
+
+      <form method="POST">
+        @csrf
+        <div class="mb-3 text-center">
+          <label for="hpEmail" class="form-label">Nomor HP atau Email</label>
+          <input type="text" class="input form-control @error('hpEmail') is-invalid @enderror" id="hpEmail" placeholder="vanessa.oey@gmail.com" name="hpEmail" value="{{old('hpEmail')}}" required>
+          @error('hpEmail')
+          <div class="invalid-feedback">{{ $message }}</div>
+          @enderror
+        </div>
+        <div class="mb-3 text-center">
+          <label for="password" class="form-label">Kata Sandi</label>
+          <input type="password" class="input form-control @error('password') is-invalid @enderror" id="password" placeholder="************" name="password" required>
+          @error('password')
+          <div class="invalid-feedback">{{ $message }}</div>
+          @enderror
+        </div>
+        <div class="row mb-3">
+          <div class="text-end">
+            <div class="mb-3">
+              <a href="" class="text-decoration-none text-secondary" style="font-size: 14px">
+                  Lupa Kata Sandi?
+              </a>
+            </div>
           </div>
         </div>
+        <button type="submit" class="btn submit text-white mb-5 d-block mx-auto" style="background: linear-gradient(to right, rgba(9, 48, 40, 1)
+        , rgba(35, 122, 87, 1)); width: 60%">Masuk</button>
+      </form>
+      
+      <hr>
 
-        <form method="POST">
-          @csrf
-          <div class="mb-3">
-            <label for="hpEmail" class="form-label">Nomor HP atau Email</label>
-            <input type="text" class="input form-control @error('hpEmail') is-invalid @enderror" id="hpEmail" placeholder="vanessa.oey@gmail.com" name="hpEmail" value="{{old('hpEmail')}}" required>
-            @error('hpEmail')
-            <div class="invalid-feedback">{{ $message }}</div>
-            @enderror
-          </div>
-          <div class="mb-3">
-            <label for="password" class="form-label">Kata Sandi</label>
-            <input type="password" class="input form-control @error('password') is-invalid @enderror" id="password" placeholder="************" name="password" required>
-            @error('password')
-            <div class="invalid-feedback">{{ $message }}</div>
-            @enderror
-          </div>
-          <div class="row mb-3">
-            <div class="col">
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="remember" name="remember">
-                <label class="form-check-label" for="remember" style="font-size: 14px">Ingat Saya</label>
-              </div>
-            </div>
-            <div class="col-5">
-              <div class="mb-3">
-                <a href="" class="text-decoration-none text-secondary" style="font-size: 14px">
-                    Lupa Kata Sandi?
-                </a>
-              </div>
-            </div>
-          </div>
-          <button type="submit" class="btn submit text-white" style="background: linear-gradient(to right, rgba(9, 48, 40, 1)
-          , rgba(35, 122, 87, 1));">Masuk</button>
-        </form>
-
-        <span class="text-center mt-5" style="border-bottom:1px solid grey; font-size: 14px">atau masuk dengan</span>
-
-        <a href="" class="btn mt-4 social" style="border: 1px solid black">
-          <i class="fa fa-google"></i> 
-          <span>Google</span>              
-        </a>
-
-        <a href="" class="btn mt-4 social" style="border: 1px solid black">
-          <i class="bi bi-facebook"></i> 
-          <span>Facebook</span>
-        </a>
-        
-        <span class="text-center mt-3" style="font-size: 18px">Butuh Bantuan ? Hubungi 
-          <a href="" class="text-decoration-none" style="color:rgba(35, 122, 87, 1)">Maritory Care</a> 
-        </span>
-      </div>
+      <span class="text-center mt-3" style="font-size: 12px">Tidak memiliki akun? 
+        <a href="" class="text-decoration-none" style="color:rgba(35, 122, 87, 1)">Daftar Sekarang</a> 
+      </span>
     </div>
   </div>
 @endsection
