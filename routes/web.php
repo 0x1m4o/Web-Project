@@ -126,3 +126,15 @@ Route::get('/kategori-venue', function () {
         'title' => "Kategori"
     ]);
 });
+
+Route::get('/berhasilnabung', function () {
+    return view('dashboard.berhasilnabung', [
+        'title' => "Berhasil Nabung"
+    ]);
+});
+
+Route::get('/gagalnabung', function () {
+    return view('dashboard.gagalnabung', [
+        'title' => "Gagal Nabung"
+    ]);
+});
