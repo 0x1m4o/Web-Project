@@ -127,17 +127,8 @@ Route::get('/kategori-venue', function () {
     ]);
 });
 
-<<<<<<< HEAD
 Route::get('/vendor', function () {
     return view('auth.business.login', [
         'title' => "Login Vendor"
     ]);
 });
-
-=======
-Route::get('/daftar-vendor', function () {
-    return view('auth.vendor.login', [
-        'title' => "Daftar Vendor"
-    ]);
-});
->>>>>>> be4201bdd1354d6a29266b5d48b8b7876abe7d64
