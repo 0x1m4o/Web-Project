@@ -126,3 +126,10 @@ Route::get('/kategori-venue', function () {
         'title' => "Kategori"
     ]);
 });
+
+Route::get('/vendor', function () {
+    return view('auth.business.login', [
+        'title' => "Login Vendor"
+    ]);
+});
+

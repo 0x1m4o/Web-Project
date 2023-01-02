@@ -1,12 +1,3 @@
-@section('styles')
-<style>
-    .keunggulan_mitra {
-        font-weight: bold;
-        border: 1px solid rgba(0, 0, 0, 0.2);
-        border-radius: 5px;
-    }
-</style>
-@endsection
 <nav
 			class="navbar navbar-expand-lg navbar-light bg-light"
 			style="background: #ffffff; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)"
@@ -14,7 +5,7 @@
 			<div class="container-fluid">
 				<a class="navbar-brand col-sm-2" href="#">
 					<img
-						src="/assets/logo_vendor.png"
+						src="/img/logo_vendor.png"
 						alt="logo_vendor"
 						width="220"
 						height="75"
@@ -43,7 +34,7 @@
 								class="nav-link keunggulan_mitra"
 								href="#"
 								role="button"
-								style="color: #234231; padding: 10px"
+								style="color: #234231; padding: 10px; font-weight: bold; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 5px;"
 								>Dapatkan keunggulan mitra</a
 							>
 						</li>
