@@ -70,7 +70,7 @@
 @section('vendor')
 @include('partials.messages')
 
-<div class="container mt-5 text-secondary">
+<div class="container mt-5 text-secondary" style="margin-bottom: 10px;">
     <div class="row justify-content-center align-items-center">
       <div class="col-md-4 card p-4">
         <div class="row mb-5 fw-bold ">
