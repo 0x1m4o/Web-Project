@@ -126,3 +126,9 @@ Route::get('/kategori-venue', function () {
         'title' => "Kategori"
     ]);
 });
+
+Route::get('/daftar-vendor', function () {
+    return view('vendor.daftar', [
+        'title' => "Daftar Vendor"
+    ]);
+});
