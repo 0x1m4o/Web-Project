@@ -155,3 +155,9 @@ Route::get('/profilevendor', function () {
         'title' => "Profile Vendor"
     ]);
 });
+
+Route::get('/feed', function () {
+    return view('profile.feed', [
+        'title' => "Feed"
+    ]);
+});

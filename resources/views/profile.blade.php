@@ -29,7 +29,7 @@
                         <a href="">
                             <p><i class="bi bi-check-square"></i> Checklist</p>
                         </a>
-                        <a href="">
+                        <a href="/feed">
                             <p><i class="bi bi-images"></i> Feed</p>
                         </a>
                         <a href="">
