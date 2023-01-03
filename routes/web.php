@@ -156,11 +156,13 @@ Route::get('/profilevendor', function () {
     ]);
 });
 
-<<<<<<< HEAD
+
 Route::get('/feed', function () {
     return view('profile.feed', [
         'title' => "Feed"
-=======
+    ]);
+});
+
 Route::get('/venue', function () {
     return view('profile.iyan.view-venue', [
         'title' => "Venue"
@@ -170,6 +172,6 @@ Route::get('/venue', function () {
 Route::get('/mua', function () {
     return view('profile.iyan.view-mua', [
         'title' => "Mua"
->>>>>>> 76c862656bf3feafe6ef5fc0beb6855f072ae118
+
     ]);
 });
