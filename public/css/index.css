@@ -249,3 +249,95 @@ body {
     padding: 7px;
     border-radius: 12px;
 }
+
+/* Shortcut */
+
+.jcc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jcs {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+/* Keranjang */
+
+.form-check-input:checked {
+    background-color: #237a57 !important;
+    border: 0;
+}
+.keranjang-kategori {
+    background-color: #237a57;
+    color: white;
+    border-radius: 12px;
+    font-size: 12px;
+}
+.form-check-input:focus,
+.label::after,
+label.form-check-label:focus,
+.form-check-input::after,
+.form-check-input:not(:disabled):not(.disabled):active:focus {
+    color: black;
+    outline: 0;
+    border: 0;
+}
+.form-check-input {
+    box-shadow: 2px 2px 2px #88888845;
+    border: 1px solid rgba(0, 0, 0, 0.064);
+    width: 25px;
+    height: 25px;
+}
+.form-check-label {
+    font-size: 24px;
+}
+
+.konten-detail img {
+    width: 100px;
+    height: 125.14px;
+    border-radius: 14px;
+}
+
+.listnumber button {
+    font-size: 24px;
+}
+.preorder {
+    text-align: center;
+    font-size: 12px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px #88888845;
+}
+.title-label {
+    color: #49516f;
+}
+
+@media (max-width: 767.98px) {
+    .konten-detail img {
+        width: 65px;
+        height: 65.14px;
+        border-radius: 14px;
+    }
+    .konten-title {
+        font-size: 12px;
+    }
+    .konten-detail .row h6,
+    .count h5 {
+        font-size: 11px;
+    }
+    .konten-time {
+        width: 60%;
+        text-align: center;
+        font-size: 12px;
+    }
+    .konten-catatan,
+    .count h5 {
+        display: none;
+    }
+
+    .count {
+        width: 30%;
+    }
+}

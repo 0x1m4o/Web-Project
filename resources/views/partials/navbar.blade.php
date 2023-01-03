@@ -113,10 +113,10 @@
         class="d-flex justify-content-end navbar-collapse offcanvas-end d-none"
       >
         <!-- Keranjang -->
-  
+      
         <div class="dropdown dropdown-hover">
           <a
-            href="#"
+            href="/keranjang"
             class="me-3 text-white dropdown-toggle"
             role="button"
             data-bs-toggle="dropdown"
@@ -126,12 +126,14 @@
           ></a>
           <div class="dropdown-menu dropdown-menu-center">
             <div class="container m-3" style="border: none; width: 350px">
+             <a href="/keranjang" class="text-decoration-none text-black">
               <div
-                class="card-body d-flex justify-content-between align-items-center mx-2"
-              >
+                class="card-body d-flex justify-content-between align-items-center mx-2">
                 <h5>Your Item (4)</h5>
                 <i class="fa-solid fa-chevron-down"></i>
               </div>
+            
+            </a>
               <div
                 class="container d-flex justify-content-start align-items-center mb-3"
               >

@@ -126,3 +126,9 @@ Route::get('/kategori-venue', function () {
         'title' => "Kategori"
     ]);
 });
+
+Route::get('/keranjang', function () {
+    return view('keranjang', [
+        'title' => "Keranjang"
+    ]);
+});
