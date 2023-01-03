@@ -127,8 +127,31 @@ Route::get('/kategori-venue', function () {
     ]);
 });
 
+Route::get('/keranjang', function () {
+    return view('keranjang', [
+        'title' => "Keranjang"
+    ]);
+});
+Route::get('/berhasilnabung', function () {
+    return view('dashboard.berhasilnabung', [
+        'title' => "Berhasil Nabung"
+    ]);
+});
+
+Route::get('/gagalnabung', function () {
+    return view('dashboard.gagalnabung', [
+        'title' => "Gagal Nabung"
+    ]);
+});    
+
 Route::get('/vendor', function () {
     return view('auth.business.login', [
         'title' => "Login Vendor"
+    ]);
+});
+
+Route::get('/profilevendor', function () {
+    return view('profile.iyan.profilevendor', [
+        'title' => "Profile Vendor"
     ]);
 });
