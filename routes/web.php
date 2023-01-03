@@ -29,13 +29,13 @@ Route::get('/login', function () {
     return view('auth.login', [
         'title' => "Login"
     ]);
-});
+})->name('login');
 
 Route::get('/signup', function () {
     return view('auth.signup', [
         'title' => "Daftar"
     ]);
-});
+})->name('signup');
 
 Route::get('/profile', function () {
     return view('profile', [
@@ -132,3 +132,20 @@ Route::get('/keranjang', function () {
         'title' => "Keranjang"
     ]);
 });
+Route::get('/berhasilnabung', function () {
+    return view('dashboard.berhasilnabung', [
+        'title' => "Berhasil Nabung"
+    ]);
+});
+
+Route::get('/gagalnabung', function () {
+    return view('dashboard.gagalnabung', [
+        'title' => "Gagal Nabung"
+    ]);
+});    
+
+Route::get('/vendor', function () {
+    return view('auth.business.login', [
+        'title' => "Login Vendor"
+    ]);
+});    

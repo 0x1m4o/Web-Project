@@ -80,11 +80,11 @@
                 <div class="container" style="margin-top: 60px;border-radius: 10px;background: white;">
                     <nav class="navbar navbar-expand-lg navbar-light" id="menu">
                         <div class="container-fluid" style="border-bottom: 1px solid #49516F;">
-                          <a class="navbar-brand" href="/profile">Profile</a>
-                          <a class="navbar-brand" href="/biodatadiri">Biodata Diri</a>
-                          <a class="navbar-brand" href="/maripay">MariPay</a>
-                          <a class="navbar-brand" href="/daftarrekening">Daftar Rekening</a>
-                          <a class="navbar-brand aktif" href="/keamanan">Keamanan</a>
+                            <a class="navbar-brand" href="/profile">Profile</a>
+                            <a class="navbar-brand" href="/biodatadiri">Biodata Diri</a>
+                            <a class="navbar-brand" href="/maripay">MariPay</a>
+                            <a class="navbar-brand" href="/daftarrekening">Daftar Rekening</a>
+                            <a class="navbar-brand aktif" href="/keamanan">Keamanan</a>
                         </div>
                     </nav>
                     <div class="row mx-3 my-5">
@@ -107,7 +107,7 @@
                                 <div style="width: 100%">
                                     <p class="fw-bold fs-5 px-3 py-2" style="border-bottom: 1px solid rgba(73, 81, 111, 0.3); ">Aktivitas Login</p>    
                                 </div>
-                                <p class="text-center text-dark">Bila terdapat aktivitas tidak dikenal, segera klik "Keluar" dan ubah kata sandi.
+                                <p class="text-center text-dark px-2 ">Bila terdapat aktivitas tidak dikenal, segera klik "Keluar" dan ubah kata sandi.
                                 </p>
                                 <div class="row mx-4 mb-3 align-items-center border-bottom">
                                     <p class="fw-bold">Aktivitas Login</p>
@@ -135,9 +135,9 @@
                                 <button class="btn mb-3">Keluar dari semua perangkat</button>
                             </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
-          </div>
+        </div>
     </div>
 @endsection
