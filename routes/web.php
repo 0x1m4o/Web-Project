@@ -155,3 +155,15 @@ Route::get('/profilevendor', function () {
         'title' => "Profile Vendor"
     ]);
 });
+
+Route::get('/venue', function () {
+    return view('profile.iyan.view-venue', [
+        'title' => "Venue"
+    ]);
+});
+
+Route::get('/mua', function () {
+    return view('profile.iyan.view-mua', [
+        'title' => "Mua"
+    ]);
+});
