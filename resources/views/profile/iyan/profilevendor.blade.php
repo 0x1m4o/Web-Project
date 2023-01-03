@@ -110,12 +110,14 @@
             <div class="card">
 
                 <a href="" class="img-wrap mx-auto mt-5">
-                    <img src="avatar.png" alt="Card image cap">
+                    <img src="/img/avatar.png" alt="Card image cap">
                 </a>
                 <div class="card-body">
-                    <h3 class="text-capitalize text-center">the aesthetic</h3>
+                    <h3 class="text-capitalize text-center">the aesthetic
+                        <img src="/img/ceklis.png" class="mb-3">
+                    </h3>
                     <div class="d-flex justify-content-center">
-                        <img class="lokasi mt-1" src="lokasi.png" alt="">
+                        <img class="lokasi mt-1" src="/img/lokasi.png" alt="">
                         <p class="text-capitalize" style="font-size: 15px;"> ancol, jakarta utara</p>
                     </div>
 
@@ -142,35 +144,35 @@
 
                     <div class="d-flex justify-content-center mb-4">
                         <p class="follow text-capitalize text-center text-secondary border border-dark rounded"> + follow </p>
-                        <img class="share mx-3 mt-1" src="share.png" alt="">
+                        <img class="share mx-3 mt-1" src="/img/share.png" alt="">
                     </div>
 
                     <div class="d-flex justify-content-center  my-3">
                         <div class="chat">
-                            <img class="mb-2" src="comment.png" alt="">
+                            <img class="mb-2" src="/img/comment.png" alt="">
                             <h4 class="text-capitalize text-center d-inline-block text-white mx-2 mt-2">chat vendor</h4>
                         </div>
                     </div>
 
                     <div class="d-flex justify-content-center my-3">
                         <div class="camera">
-                            <img class="mb-2" src="camera.png" alt="">
+                            <img class="mb-2" src="/img/camera.png" alt="">
                             <h4 class="text-capitalize text-center d-inline-block text-white mx-2 mt-2">portofolio</h4>
                         </div>
                     </div>
 
                     <div class="d-flex justify-content-center my-3">
                         <div class="media">
-                            <img class="mx-2" src="facebook.png" alt="">
-                            <img class="mx-2" src="instagram.png" alt="">
-                            <img class="mx-2" src="twitter.png" alt="">
-                            <img class="mx-2" src="youtube.png" alt="">
+                            <img class="mx-2" src="/img/facebook.png" alt="">
+                            <img class="mx-2" src="/img/instagram.png" alt="">
+                            <img class="mx-2" src="/img/twitter.png" alt="">
+                            <img class="mx-2" src="/img/youtube.png" alt="">
                         </div>
                     </div>
 
                     <div class="d-flex justify-content-center my-3">
                         <div class="location">
-                            <img class="mb-2" src="loc.png" alt="">
+                            <img class="mb-2" src="/img/loc.png" alt="">
                             <h4 class="text-capitalize text-center d-inline-block text-white mx-2 mt-2">alamat</h4>
                         </div>
                     </div>
@@ -187,13 +189,13 @@
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="carousel1.png" class="d-block w-100" alt="...">
+                        <img src="/img/carousel1.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="carousel1.png" class="d-block w-100" alt="...">
+                        <img src="/img/carousel1.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="carousel1.png" class="d-block w-100" alt="...">
+                        <img src="/img/carousel1.png" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -211,7 +213,7 @@
 
                 <div class="row">
                     <div class="col-4">
-                        <img src="carousel2.png" alt="">
+                        <img src="/img/carousel2.png" alt="">
                         <div class="my-2">
                             <a href="" class="text-warning text-decoration-none">
                                 <i class="bi bi-star-fill"></i>
@@ -222,14 +224,14 @@
                             </a>
 
                             <p class="text-capitalize mt-1 mb-0">the aesthetic</p>
-                            <img class="lokasi" src="lokasi.png" alt="">
+                            <img class="lokasi" src="/img/lokasi.png" alt="">
                             <p class="text-capitalize d-inline-block mt-0" style="font-size: 12px;"> ancol, jakarta utara</p>
 
                         </div>
                     </div>
 
                     <div class="col-4">
-                        <img src="carousel3.png" alt="">
+                        <img src="/img/carousel3.png" alt="">
                         <div class="my-2">
                             <a href="" class="text-warning text-decoration-none">
                                 <i class="bi bi-star-fill"></i>
@@ -240,14 +242,14 @@
                             </a>
 
                             <p class="text-capitalize mt-1 mb-0">the aesthetic ballroom</p>
-                            <img class="lokasi" src="lokasi.png" alt="">
+                            <img class="lokasi" src="/img/lokasi.png" alt="">
                             <p class="text-capitalize d-inline-block mt-0" style="font-size: 12px;"> ancol, jakarta utara</p>
 
                         </div>
                     </div>
 
                     <div class="col-4">
-                        <img src="carousel4.png" alt="">
+                        <img src="/img/carousel4.png" alt="">
                         <div class="my-2">
                             <a href="" class="text-warning text-decoration-none">
                                 <i class="bi bi-star-fill"></i>
@@ -258,7 +260,7 @@
                             </a>
 
                             <p class="text-capitalize mt-1 mb-0">the aesthetic event hall</p>
-                            <img class="lokasi" src="lokasi.png" alt="">
+                            <img class="lokasi" src="/img/lokasi.png" alt="">
                             <p class="text-capitalize d-inline-block mt-0" style="font-size: 12px;"> ancol, jakarta utara</p>
 
                         </div>
@@ -269,8 +271,8 @@
             <div class="review">
                 <div class="container">
                     <h2 class="text-capitalize">ulasan</h2>
-                    <a href="" class="rev-wrap mx-auto">
-                        <img src="rev.png" alt="Card image cap">
+                    <a href="" class="rev-wrap text-decoration-none mx-auto">
+                        <img src="/img/rev.png" alt="Card image cap">
                     </a>
 
                     <div class="d-inline-block text-capitalize">
@@ -291,8 +293,8 @@
                 </div>
 
                 <div class="mt-5 container">
-                    <a href="" class="rev-wrap mx-auto">
-                        <img src="rev.png" alt="Card image cap">
+                    <a href="" class="rev-wrap text-decoration-none mx-auto">
+                        <img src="/img/rev.png" alt="Card image cap">
                     </a>
 
                     <div class="d-inline-block text-capitalize">
@@ -313,8 +315,8 @@
                 </div>
 
                 <div class="mt-5 container">
-                    <a href="" class="rev-wrap mx-auto">
-                        <img src="rev.png" alt="Card image cap">
+                    <a href="" class="rev-wrap text-decoration-none mx-auto">
+                        <img src="/img/rev.png" alt="Card image cap">
                     </a>
 
                     <div class="d-inline-block text-capitalize">

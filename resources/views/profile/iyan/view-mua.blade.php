@@ -220,7 +220,7 @@
             <div class="col-8">
 
                 <button class="back mt-4 mb-2">
-                    <img src="back.png" alt="">
+                    <img src="/img/back.png" alt="">
                 </button>
                 <!-- Carousel -->
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -231,13 +231,13 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="carousel1.png" class="d-block w-100" alt="...">
+                            <img src="/img/carouselmua.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="carousel1.png" class="d-block w-100" alt="...">
+                            <img src="/img/carouselmua.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="carousel1.png" class="d-block w-100" alt="...">
+                            <img src="/img/carouselmua.png" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -253,8 +253,8 @@
                 <div class="container mt-5 text-capitalize mr-5">
                     <div class="row">
                         <div class="col-4">
-                            <h2 class="d-inline-block">the aesthetic</h2>
-                            <img class="mx-1 pb-5" src="view-img/verified.png" alt="">
+                            <h2 class="d-inline-block">wedding look</h2>
+                            <img class="mx-1 pb-5" src="/img/ceklis.png" alt="">
 
                         </div>
 
@@ -272,11 +272,11 @@
                             <div class="d-inline-block">
 
                                 <a class="text-decoration-none text-white" href="">
-                                    <img src="view-img/like.png" alt="">
+                                    <img src="/img/like.png" alt="">
                                 </a>
 
                                 <a class="text-decoration-none text-white mx-3" href="">
-                                    <img src="view-img/share.png" alt="">
+                                    <img src="/img/share.png" alt="">
                                 </a>
 
                             </div>
@@ -290,13 +290,13 @@
                             <div class="row">
                                 <div class="col-2">
                                     <a href="" class="rev-wrap mx-auto d-inline-block">
-                                        <img src="rev.png" alt="Card image cap">
+                                        <img src="/img/rev.png" alt="Card image cap">
                                     </a>
                                 </div>
 
                                 <div class="col-6">
                                     <div class=" profile">
-                                        <h6 class=""> The Aesthetic</h6>
+                                        <h6 class=""> Shanti MUA</h6>
                                         <p class="">online</p>
                                     </div>
                                 </div>
@@ -338,7 +338,7 @@
                     <div class="container bg-white">
                         <div class="row">
                             <div class="col-6">
-                                <img class="maps my-3" src="view-img/maps.jpg" alt="">
+                                <img class="maps my-3" src="/img/maps.png" alt="">
 
                             </div>
 
@@ -368,38 +368,38 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-2">
-                            <img class="ulasan my-3" src="view-img/ulasan1.png" alt="">
+                            <img class="ulasan my-3" src="/img/ulasan1.png" alt="">
                             <button class="play-btn border-0">
                             </button>
 
                         </div>
 
                         <div class="col-2">
-                            <img class="ulasan my-3" src="view-img/ulasan2.png" alt="">
+                            <img class="ulasan my-3" src="/img/ulasan2.png" alt="">
                             <button class="play-btn border-0">
                             </button>
 
                         </div>
 
                         <div class="col-2 position-relative">
-                            <img class="ulasan my-3" src="view-img/ulasan3.png" alt="">
+                            <img class="ulasan my-3" src="/img/ulasan3.png" alt="">
                             <button class="play-btn border-0">
-                                <img class="play-png" src="view-img/play.png" alt="">
+                                <img class="play-png" src="/img/play.png" alt="">
                             </button>
 
                         </div>
 
                         <div class="col-2 position-relative">
-                            <img class="ulasan my-3" src="view-img/ulasan4.png" alt="">
+                            <img class="ulasan my-3" src="/img/ulasan4.png" alt="">
                             <button class="play-btn border-0">
-                                <img class="play-png" src="view-img/play.png" alt="">
+                                <img class="play-png" src="/img/play.png" alt="">
                             </button>
                         </div>
 
                         <div class="col-2 position-relative">
-                            <img class="ulasan my-3" src="view-img/ulasan5.png" alt="">
+                            <img class="ulasan my-3" src="/img/ulasan5.png" alt="">
                             <button class="play-btn border-0">
-                                <img class="play-png" src="view-img/play.png" alt="">
+                                <img class="play-png" src="/img/play.png" alt="">
                             </button>
                         </div>
                     </div>
@@ -411,7 +411,7 @@
                             <div class="row">
                                 <div class="col-2">
                                     <a href="" class="rev-wrap mx-auto d-inline-block">
-                                        <img src="rev.png" alt="Card image cap">
+                                        <img src="/img/rev.png" alt="Card image cap">
                                     </a>
                                 </div>
 
@@ -446,34 +446,34 @@
                     <h5 class="text-capitalize fw-bolder my-4" style="color: #49516F">rekomendasi lainnya</h5>
                     <div class="row text-capitalize">
                         <div class="col-4 position-relative">
-                            <img class="rekom-png" src="view-img/rekomendasi1.png" alt="">
+                            <img class="rekom-png" src="/img/rekomendasi1.png" alt="">
                             <a class="kategori text-decoration-none text-white" href="">
                                 <p class="text-center">outdoor</p>
                             </a>
                             <h6 class="fw-semibold my-2" style="color: #49516F; font-size:20px">resonances</h6>
-                            <img src="lokasi.png" alt="" style="width: 10px; height:17px">
+                            <img src="/img/lokasi.png" alt="" style="width: 10px; height:17px">
                             <p class="d-inline-block mx-1">bekasi, jawa barat</p>
 
                         </div>
 
                         <div class="col-4 position-relative">
-                            <img class="rekom-png" src="view-img/rekomendasi2.png" alt="">
+                            <img class="rekom-png" src="/img/rekomendasi2.png" alt="">
                             <a class="kategori text-decoration-none text-white" href="">
                                 <p class="text-center">outdoor</p>
                             </a>
                             <h6 class="fw-semibold my-2" style="color: #49516F; font-size:20px">nomade</h6>
-                            <img src="lokasi.png" alt="" style="width: 10px; height:17px">
+                            <img src="/img/lokasi.png" alt="" style="width: 10px; height:17px">
                             <p class="d-inline-block mx-1">bekasi, jawa barat</p>
 
                         </div>
 
                         <div class="col-4 position-relative">
-                            <img class="rekom-png" src="view-img/rekomendasi3.png" alt="">
+                            <img class="rekom-png" src="/img/rekomendasi3.png" alt="">
                             <a class="kategori text-decoration-none text-white" href="">
                                 <p class="text-center">outdoor</p>
                             </a>
                             <h6 class="fw-semibold my-2" style="color: #49516F; font-size:20px">tropical</h6>
-                            <img src="lokasi.png" alt="" style="width: 10px; height:17px">
+                            <img src="/img/lokasi.png" alt="" style="width: 10px; height:17px">
                             <p class="d-inline-block mx-1">bekasi, jawa barat</p>
                         </div>
 
@@ -486,7 +486,7 @@
             <div class="container col-4 mt-5 list-btn">
 
                 <button class="button2 mt-4 mx-4">
-                    <img class="mx-0 pb-2" src="view-img/jadwal.png" alt="" style="width: 30px; height:35px">
+                    <img class="mx-0 pb-2" src="/img/jadwal.png" alt="" style="width: 30px; height:35px">
                     <p class="tw-button text-capitalize text-center d-inline-block mt-2 mx-3">availability</p>
                 </button>
 
@@ -526,17 +526,17 @@
                 </button>
 
                 <button class="button2 mt-4 mx-4">
-                    <img class="mx-0 pb-2" src="view-img/cicilan.png" alt="" style="width: 28px; height:35px">
+                    <img class="mx-0 pb-2" src="/img/cicilan.png" alt="" style="width: 28px; height:35px">
                     <p class="tw-button2 text-capitalize d-inline-block mt-2 mx-3">cicilan 0% dengan mariPay</p>
                 </button>
 
                 <button class="button2 mt-4 mx-4">
-                    <img class="mx-0 pb-2" src="view-img/chat.png" alt="" style="width: 30px; height:35px">
+                    <img class="mx-0 pb-2" src="/img/pesan.png" alt="" style="width: 30px; height:35px">
                     <p class="tw-button2 text-capitalize d-inline-block mt-2 mx-3">chat vendor</p>
                 </button>
 
                 <button class="button2 mt-4 mx-4">
-                    <img class="mx-0 pb-2" src="view-img/keranjang.png" alt="" style="width: 30px; height:35px">
+                    <img class="mx-0 pb-2" src="/img/troli.png" alt="" style="width: 30px; height:35px">
                     <p class="tw-button2 text-capitalize d-inline-block mt-2 mx-3">tambah keranjang</p>
                 </button>
 

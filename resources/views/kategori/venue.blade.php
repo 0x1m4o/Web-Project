@@ -69,7 +69,7 @@
 
 </style>
 
-<div class="content" style="background-color: background: #E5E5E5; ">
+<div class="content" style="background-color: background: #E5E5E5;">
     <div class="container navbar navbar-expand-lg text-capitalizes category-section" id="kategori" >
         <button onclick="window.location.href='/kategori-venue'" class="btn text-secondary text-capitalize category aktif">
             <img src="/img/venue.png" alt="" class='ms-1' />
