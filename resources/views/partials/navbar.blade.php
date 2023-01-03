@@ -59,7 +59,7 @@
             />
           </form>
   
-          <div class="dropdown dropdown-hover">
+          <div class="dropdown ">
             <button
               class="btn pt-2"
               href="#"
@@ -114,7 +114,7 @@
       >
         <!-- Keranjang -->
       
-        <div class="dropdown dropdown-hover">
+        <div class="dropdown ">
           <a
             href="/keranjang"
             class="me-3 text-white dropdown-toggle"
@@ -240,7 +240,7 @@
         </div>
   
         <!-- Chat -->
-        <div class="dropdown dropdown-hover">
+        <div class="dropdown ">
           <a
             class="me-3 text-white dropdown-toggle"
             role="button"
@@ -346,7 +346,7 @@
         </div>
   
         {{-- Tabungan --}}
-        <div class="dropdown dropdown-hover">
+        <div class="dropdown ">
           <a
             class="me-3 text-white dropdown-toggle"
             role="button"
@@ -442,7 +442,7 @@
           </div>
         </div>
   
-        <div class="dropdown dropdown-hover">
+        <div class="dropdown ">
           <a href="/profile">
             <img
               src="/img/profile.png"
@@ -561,7 +561,7 @@
         >
           <iconify-icon icon="material-symbols:mail-rounded"></iconify-icon>
         </button>
-        <div class="dropdown dropdown-hover">
+        <div class="dropdown ">
           <button class="nav-btn navbar-toggler">
             <img
               src="/img/profile.png"
