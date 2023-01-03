@@ -148,4 +148,10 @@ Route::get('/vendor', function () {
     return view('auth.business.login', [
         'title' => "Login Vendor"
     ]);
-});    
+});
+
+Route::get('/profilevendor', function () {
+    return view('profile.iyan.profilevendor', [
+        'title' => "Profile Vendor"
+    ]);
+});
