@@ -111,7 +111,7 @@
                         </div>
                     </div>
                 <div class="content" style="padding-top: 100px;">
-                    <div class="container saldo" style="width: 1200px;">
+                    <div class="container saldo" style="width: 1100px;">
                         <h3 style="font-weight: 900;color: #49516F;">Saldo & Points</h3>
                         <div class="row" style="text-align: center;background: white;box-shadow: 0px 19px 19px -4px rgba(0,0,0,0.1);border-radius: 20px;color: #49516F;">
                             <div class="col-sm-2" style="line-height: 5px;">
