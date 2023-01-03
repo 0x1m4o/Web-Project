@@ -265,7 +265,9 @@ body {
 }
 
 /* Keranjang */
-
+.keranjang-container {
+    border-radius: 50px;
+}
 .form-check-input:checked {
     background-color: #237a57 !important;
     border: 0;
@@ -296,9 +298,9 @@ label.form-check-label:focus,
 }
 
 .konten-detail img {
-    width: 100px;
-    height: 125.14px;
-    border-radius: 14px;
+    width: 60px;
+    height: 85.14px;
+    border-radius: 12px;
 }
 
 .listnumber button {

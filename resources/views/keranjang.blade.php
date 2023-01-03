@@ -1,24 +1,24 @@
 @extends('layouts.main')
 
 @section('content')
-    <div class="container bg-white" style="width: 100%">
+    <div class="container keranjang-container mt-5 bg-white" style="width: 100%;border-radius:12px;">
         <div class="keranjang-title jcs">
             <a href="/" class="text-secondary p-2 fs-5 jcs"><iconify-icon icon="material-symbols:arrow-back-ios-new-rounded"></iconify-icon></a>
             <h3 class="fw-semibold title-label p-0 m-0">Keranjang</h3>
         </div>
         <div class="keranjang-body">
             <div class="form-check jcs" >
-                <input class="form-check-input mb-1 me-3" type="checkbox" value="" id="flexCheckDefault-PilihSemua"/>
+                <input class="form-check-input mb-1 me-3" type="checkbox"  value="" id="checkAll" name="selectall" autocomplete="off" onclick="eventCheckBoxAll()" />
                 <label class="form-check-label title-label fw-semibold" for="flexCheckDefault">Pilih Semua</label>
             </div>
             <hr>
 
             {{-- Items --}}
             <div class="form-check jcs" >
-                <input class="form-check-input mb-1 me-3" type="checkbox" value="" id="flexCheckDefault-TheAesthetic"/>
+                <input class="form-check-input mb-1 me-3 checkallthis" type="checkbox" value="" id="check-TheAesthetic"/>
                 <div class="row">
                     <div class="d-flex">
-                        <label class="form-check-label title-label fw-semibold d-flex align-items-end" for="flexCheckDefault-TheAesthetic">The Aesthetic</label>
+                        <label class="form-check-label title-label fw-semibold d-flex align-items-end" for="check-TheAesthetic">The Aesthetic</label>
                         <h6 class="text-center keranjang-kategori p-1 px-2 mb-2 d-flex align-items-center mb-3">Venue</h6>
                     </div>
                         <h6 class="title-label fw-semibold d-inline-block">Kota Jakarta</h6>
@@ -29,9 +29,9 @@
                     <div class="col-6">
                         <div class="konten-detail d-flex align-items-center">
                             <div class="form-check jcs" >
-                            <input class="form-check-input mb-1 me-3" type="checkbox" value="" id="flexCheckDefault-TheAesthetic"/>
+                            <input class="form-check-input mb-1 me-3 checkallthis TheAesthetic" type="checkbox" value=""/>
                             </div>
-                            <img class="me-2" src="/img/The-Aesthetic.png" alt="">
+                            <img class="me-3" src="/img/The-Aesthetic.png" alt="">
                             <div class="row">
                                 <h5 class="konten-title fw-semibold title-label">The Aesthetic</h5>
                                 <h6 class="konten-price fw-semibold title-label">Rp. 100.000.000</h6>
@@ -64,13 +64,13 @@
             <hr>
             {{-- Items --}}
             <div class="form-check jcs" >
-                <input class="form-check-input mb-1 me-3" type="checkbox" value="" id="flexCheckDefault-TheAesthetic"/>
+                <input class="form-check-input mb-1 me-3 checkallthis" type="checkbox" value="" id="check-LanghamSCBD"/>
                 <div class="row">
                     <div class="d-flex">
-                        <label class="form-check-label title-label fw-semibold d-flex align-items-end" for="flexCheckDefault-TheAesthetic">The Aesthetic</label>
+                        <label class="form-check-label title-label fw-semibold d-flex align-items-end" for="check-LanghamSCBD">Langham SCBD</label>
                         <h6 class="text-center keranjang-kategori p-1 px-2 mb-2 d-flex align-items-center mb-3">Venue</h6>
                     </div>
-                        <h6 class="title-label fw-semibold d-inline-block">Kota Jakarta</h6>
+                        <h6 class="title-label fw-semibold d-inline-block">Kota Jakarta Selatan</h6>
                 </div>
             </div>
             <div class="keranjang-konten d-flex justify-content-between mt-2">
@@ -78,12 +78,12 @@
                     <div class="col-6">
                         <div class="konten-detail d-flex align-items-center">
                             <div class="form-check jcs" >
-                            <input class="form-check-input mb-1 me-3" type="checkbox" value="" id="flexCheckDefault-TheAesthetic"/>
+                            <input class="form-check-input mb-1 me-3 checkallthis LanghamSCBD" type="checkbox" value=""/>
                             </div>
-                            <img class="me-2" src="/img/The-Aesthetic.png" alt="">
+                            <img class="me-3" src="/img/ballroommelbourne.png" alt="">
                             <div class="row">
-                                <h5 class="konten-title fw-semibold title-label">The Aesthetic</h5>
-                                <h6 class="konten-price fw-semibold title-label">Rp. 100.000.000</h6>
+                                <h5 class="konten-title fw-semibold title-label">Ballroom Melbourne</h5>
+                                <h6 class="konten-price fw-semibold title-label">Rp. 300.000.000</h6>
                                 <h6 class="konten-catatan text-success">Tulis Catatan</h6>
                             </div>
                         </div>
@@ -104,9 +104,7 @@
                                     </div>
                                 </div>
                             </div>
-        
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -114,4 +112,15 @@
 
         </div>
     </div>
+    <script>
+        $("#checkAll").click(function () {
+            $(".checkallthis").prop('checked', $(this).prop('checked'));
+        });
+        $("#check-LanghamSCBD").click(function () {
+            $(".LanghamSCBD").prop('checked', $(this).prop('checked'));
+        });
+        $("#check-TheAesthetic").click(function () {
+            $(".TheAesthetic").prop('checked', $(this).prop('checked'));
+        });
+    </script>
 @endsection
