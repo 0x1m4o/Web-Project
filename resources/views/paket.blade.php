@@ -31,7 +31,7 @@
             </div>
             <div class="col-sm-4" style="padding-top: 20px;background: white; width: 400px; height: 210px;border-radius: 20px;margin-right: 15px;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);display: flex;justify-content: center;align-content:space-between;">
                 <span>
-                    <h3 style="color: #237A57;font-weight: 600">Esmerald 150Jt<</h3>
+                    <h3 style="color: #237A57;font-weight: 600">Emerald 150Jt<</h3>
                     <p style="color: #237A57;">Paket pernikahan dan bulan madu terbaik yang kamu <br> impikan</p>
                     <button class="btn" style="background: #237A57;color: white;">Pilih Sekarang</button>
                 </span>
