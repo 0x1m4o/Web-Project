@@ -17,7 +17,7 @@
                     </section>
                     <section class="dashboard">
                         <div class="dashboard-title">
-                            <a href="">
+                            <a href="/maripay">
                                 <p><i class="bi bi-wallet"></i> Maripay</p>
                             </a>
                             <a href="">
@@ -29,7 +29,7 @@
                             <a href="">
                                 <p><i class="bi bi-check-square"></i> Checklist</p>
                             </a>
-                            <a href="">
+                            <a href="/feed">
                                 <p><i class="bi bi-images"></i> Feed</p>
                             </a>
                             <a href="">

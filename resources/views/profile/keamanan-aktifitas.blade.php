@@ -18,7 +18,7 @@
                     </section>
                     <section class="dashboard">
                         <div class="dashboard-title">
-                            <a href="">
+                            <a href="/maripay">
                                 <p><i class="bi bi-wallet"></i> Maripay</p>
                             </a>
                             <a href="">
@@ -30,7 +30,7 @@
                             <a href="">
                                 <p><i class="bi bi-check-square"></i> Checklist</p>
                             </a>
-                            <a href="">
+                            <a href="/feed">
                                 <p><i class="bi bi-images"></i> Feed</p>
                             </a>
                             <a href="">
@@ -84,7 +84,7 @@
                             <a class="navbar-brand" href="/biodatadiri">Biodata Diri</a>
                             <a class="navbar-brand" href="/maripay">MariPay</a>
                             <a class="navbar-brand" href="/daftarrekening">Daftar Rekening</a>
-                            <a class="navbar-brand aktif" href="/keamanan">Keamanan</a>
+                            <a class="navbar-brand aktif" href="/keamanan-aktifitas">Keamanan</a>
                         </div>
                     </nav>
                     <div class="row mx-3 my-5">

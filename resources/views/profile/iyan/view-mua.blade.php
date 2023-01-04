@@ -219,9 +219,11 @@
         <div class="row">
             <div class="col-8">
 
-                <button class="back mt-4 mb-2">
+                <a href="/">
+                    <button class="back mt-4 mb-2">
                     <img src="/img/back.png" alt="">
-                </button>
+                    </button>
+                </a>
                 <!-- Carousel -->
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">

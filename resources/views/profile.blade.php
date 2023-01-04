@@ -17,7 +17,7 @@
                 </section>
                 <section class="dashboard">
                     <div class="dashboard-title">
-                        <a href="">
+                        <a href="/maripay">
                             <p><i class="bi bi-wallet"></i> Maripay</p>
                         </a>
                         <a href="">
