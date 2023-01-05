@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.no_footer')
 @section('content')
 <link rel="stylesheet" href="/css/profile/profile.css">
     <div class="container-fluid">
