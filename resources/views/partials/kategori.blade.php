@@ -13,7 +13,7 @@
         </div>
 
         <div class="card">
-            <a href="/dekorasi">
+            <a href="/kategori-dekorasi">
                 <img src="/img/kategori-img/dekorasi.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h6 class="card-title  text-center mt-2">dekorasi</h6>
@@ -22,7 +22,7 @@
         </div>
 
         <div class="card">
-            <a href="/mua">
+            <a href="/kategori-mua">
                 <img src="/img/kategori-img/mua.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h6 class="card-title  text-center mt-2 ">MUA</h6>
@@ -31,7 +31,7 @@
         </div>
 
         <div class="card">
-            <a href="/katering">
+            <a href="/kategori-catering">
                 <img src="/img/kategori-img/katering.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h6 class="card-title  text-center mt-2">katering</h6>
@@ -40,7 +40,7 @@
         </div>
 
         <div class="card">
-            <a href="/band">
+            <a href="/kategori-band">
                 <img src="/img/kategori-img/band.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h6 class="card-title  text-center mt-2">band</h6>
@@ -49,7 +49,7 @@
         </div>
 
         <div class="card">
-            <a href="/fotografi">
+            <a href="/kategori-fotografi">
                 <img src="/img/kategori-img/fotografi.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h6 class="card-title  text-center mt-2">fotografi</h6>
@@ -58,7 +58,7 @@
         </div>
 
         <div class="card">
-            <a href="/busana">
+            <a href="/kategori-busana">
                 <img src="/img/kategori-img/busana.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h6 class="card-title  text-center mt-2">busana</h6>
@@ -67,7 +67,7 @@
         </div>
 
         <div class="card">
-            <a href="/w.o">
+            <a href="/kategori-wo">
                 <img src="/img/kategori-img/w.o..png" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h6 class="card-title  text-center mt-2">W.O.</h6>
@@ -76,7 +76,7 @@
         </div>
 
         <div class="card">
-            <a href="/souvenir">
+            <a href="/kategori-souvenir">
                 <img src="/img/kategori-img/souvenir.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h6 class="card-title  text-center mt-2 text-capitalize">Souvenir</h6>

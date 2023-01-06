@@ -3,10 +3,6 @@
         background-color: #f4f4f4;
     }
 
-    .font-color {
-        color: #49516F;
-    }
-
     .back {
         width: 45px;
         height: 45px;
@@ -109,14 +105,14 @@
         font-size: 12px;
     }
 
-    .button1 {
+    .button {
         width: 400px;
         height: 80px;
         border-radius: 15px;
         background-color: #237A57;
     }
 
-    .button1:hover {
+    .button:hover {
         width: 400px;
         height: 80px;
         border-radius: 15px;
@@ -158,48 +154,6 @@
         font-weight: 400;
         color: #49516F;
     }
-
-    .hj-button {
-        width: 400px;
-        height: 60px;
-        border-radius: 15px;
-        background-color: #237A57;
-    }
-
-    .plus-minus-input {
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-
-    .plus-minus-input .input-group-field {
-        width: 55px;
-        height: 30px;
-        text-align: center;
-    }
-
-    .plus-minus-input .input-group-field::-webkit-inner-spin-button,
-    .plus-minus-input .input-group-field ::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-        appearance: none;
-    }
-
-    .wrap {
-        width: 400px;
-        height: 60px;
-        border-radius: 15px;
-        background-color: #f4f4f4;
-    }
-
-    .tombol {
-        padding: 7px 17px;
-        text-decoration: none;
-        color: #237A57;
-    }
-
-    .etc:hover {
-        box-shadow: 3px #49516F;
-    }
 </style>
 
 
@@ -210,7 +164,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>view MUA</title>
+    <title>view busana</title>
 </head>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -225,11 +179,9 @@
         <div class="row">
             <div class="col-8">
 
-                <a href="/">
-                    <button class="back mt-4 mb-2">
-                        <img src="/img/back.png" alt="">
-                    </button>
-                </a>
+                <button class="back mt-4 mb-2">
+                    <img src="/img/back.png" alt="">
+                </button>
                 <!-- Carousel -->
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -239,13 +191,13 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="/img/carouselmua.png" class="d-block w-100" alt="...">
+                            <img src="/img/carouselbusana.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="/img/carouselmua.png" class="d-block w-100" alt="...">
+                            <img src="/img/carouselbusana.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="/img/carouselmua.png" class="d-block w-100" alt="...">
+                            <img src="/img/carouselbusana.png" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -260,8 +212,8 @@
 
                 <div class="container mt-5 text-capitalize mr-5">
                     <div class="row">
-                        <div class="col-5">
-                            <h1 class="d-inline-block">wedding look</h1>
+                        <div class="col-6">
+                            <h2 class="d-inline-block fw-700">baju pengantin sepasang</h2>
                             <img class="mx-1 pb-5" src="/img/ceklis.png" alt="">
 
                         </div>
@@ -276,15 +228,11 @@
 
                         </div>
 
-                        <div class="col-3 mt-3 text-end">
+                        <div class="col-1 mt-3 text-end">
                             <div class="d-inline-block">
 
-                                <a class="text-decoration-none text-white" href="">
-                                    <img src="/img/like.png" alt="">
-                                </a>
-
                                 <a class="text-decoration-none text-white mx-3" href="">
-                                    <img src="/img/share.png" alt="">
+                                    <img src="/img/share1.png" alt="">
                                 </a>
 
                             </div>
@@ -304,7 +252,7 @@
 
                                 <div class="col-6">
                                     <div class=" profile">
-                                        <h6 class=""> Shanti MUA</h6>
+                                        <h6 class="text-capitalize"> Busana Pernikahan</h6>
                                         <p class="">online</p>
                                     </div>
                                 </div>
@@ -318,30 +266,31 @@
                 </div>
 
                 <div class="container mt-3">
-                    <p>Romantic and soft, Natural, Glamour and bold. Menggunakan high end brand (Shu Uemura, Shiseido, Estee Lauder, MAC, Urban Decay, Benefit, Make Up For Ever, Anastasia Beverly Hills, etc) and high quality drugstore product (The Balm, L'oreal Paris, Maybelline, NYX, Make Over, etc)
-                    </p>
+                    <p class="m-0">Berat : 1 gram</p>
+                    <p class="m-0"> Asal Barang : Lokal</p>
+                    <p>Ukuran : S, XS, M, L, XL, All Size, Other Size</p>
+
+
+                    <p class="m-0"> Kebaya akad nikah perempuan</p>
+                    <p class="m-0"> Kebaya + longtorso + selendang + rok + selop</p>
+                    <p class="m-0"> Tersedia ukuran</p>
+                    <p class="m-0"> Payet Jepang</p>
+                    <p> Kebaya akad nikah perempuan</p>
+
+
+                    <p class="m-0">Beskap akad pria</p>
+                    <p class="m-0"> Satu set beskap sudah termasuk songkok + selop</p>
+                    <p class="m-0"> Motif Payet tidak selalu sama, kualitas sama</p>
+                    <p class="m-0"> tersedia ukuran</p>
+
+
                 </div>
 
 
-                <div class="container mt-5">
-                    <h4 class="text-capitalize fw-bolder" style="color: #49516F">detail</h4>
-                    <p class="m-0">Wedding makeup (no retouch)</p>
-                    <ul>
-                        <li>No retouch. makeup for akad or reception only</li>
-                        <li>Free trial wedding makeup</li>
-                        <li>Waktu penyelesaian 3 jam</li>
-                        <li>We only do natural makeup</li>
-                    </ul>
-
-                </div>
-
-                <a class="text-capitalize text-center text-success text-decoration-none" href="">
-                    <h6>lihat selengkapnya</h6>
-                </a>
 
                 <hr>
 
-                <div class="my-3">
+                <div class="my-3 container">
                     <h5 class="text-capitalize fw-bolder" style="color: #49516F">lokasi</h5>
                     <div class="container bg-white">
                         <div class="row">
@@ -361,7 +310,9 @@
                     </div>
                 </div>
 
-                <div class="my-3">
+                <hr>
+
+                <div class="my-3 container">
                     <h5 class="text-capitalize fw-bolder" style="color: #49516F">ulasan</h5>
                     <h1 style=" color: #49516F;">4.5</h1>
                     <a href="" class="text-warning text-decoration-none fs-5">
@@ -491,7 +442,7 @@
 
 
 
-            <div class="container col-4 mt-5 list-btn">
+            <div class="container col-4 mt-5">
 
                 <button class="button2 mt-4 mx-4">
                     <img class="mx-0 pb-2" src="/img/jadwal.png" alt="" style="width: 30px; height:35px">
@@ -499,38 +450,13 @@
                 </button>
 
                 <button class="button2 mt-4 mx-4">
-                    <div class="container">
-                        <div class="row text-white align-items-center">
-                            <div class="col-6 container text-capitalize ">
-                                <p class="m-0 font-color" style="font-weight:400; font-size:20px">harga</p>
-                            </div>
+                    <div class="container text-capitalize mt-2">
+                        <p class="m-0" style="float: left; width: 50%; text-align: left; color:#49516F; font-weight:400">harga </p>
+                        <p class="m-0" style="float: left; width: 50%; text-align: right; color:#49516F; font-weight:600">Rp 10.000.000,00</p>
+                        <p class="mt-2" style="float: left; width: 50%; text-align: left; color:#49516F; font-weight:400">jumlah </p>
+                        <p class="mt-2" style="float: left; width: 50%; text-align: right; color:#49516F; font-weight:600">2</p>
 
-                            <div class="col-6 container text-capitalize">
-                                <p class="m-0 font-color" style="font-weight:600; font-size:20px">rp 1.000.000,00</p>
-                            </div>
-                        </div>
                     </div>
-                </button>
-
-                <button class="button2 mt-4 mx-4">
-                    <div class="container">
-                        <div class="row text-white align-items-center">
-                            <div class="col-6 container text-capitalize ">
-                                <p class="m-0 font-color" style="font-weight:400; font-size:20px">jumlah</p>
-                            </div>
-
-                            <div class="col-6">
-                                <div class="d-flex z-0 border-bottom rounded-pill justify-content-between align-items-center">
-                                    <a href="" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-size:25px" class="tombol bg-white rounded-circle">-</a>
-                                    <div>
-                                        <span class="text-dark">1</span>
-                                    </div>
-                                    <a href="" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-size:25px" class="tombol bg-white rounded-circle">+</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </button>
 
                 <button class="button2 mt-4 mx-4">
@@ -543,12 +469,14 @@
                     <p class="tw-button2 text-capitalize d-inline-block mt-2 mx-3">chat vendor</p>
                 </button>
 
-                <button class="button2 mt-4 mx-4">
-                    <img class="mx-0 pb-2" src="/img/troli.png" alt="" style="width: 30px; height:35px">
-                    <p class="tw-button2 text-capitalize d-inline-block mt-2 mx-3">tambah keranjang</p>
-                </button>
+                <a href="/keranjang">
+                    <button class="button2 mt-4 mx-4">
+                        <img class="mx-0 pb-2" src="/img/troli.png" alt="" style="width: 30px; height:35px">
+                        <p class="tw-button2 text-capitalize d-inline-block mt-2 mx-3">tambah keranjang</p>
+                    </button>
+                </a>
 
-                <button class="button1 mt-4 mx-4">
+                <button class="button mt-4 mx-4 border-0">
                     <p class="tg-button text-capitalize text-center d-inline-block mt-2">order</p>
                 </button>
             </div>

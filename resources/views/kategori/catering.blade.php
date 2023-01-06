@@ -57,6 +57,9 @@
     .card img {
         border-radius: 10%;
         filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.158));
+        width: 270px;
+        height: 270px;
+        object-fit: cover;
     }
 
     .stars {
@@ -76,11 +79,11 @@
 
 <div class="content" style="background-color:#E5E5E5;">
     <div class="container navbar navbar-expand-lg text-capitalizes category-section mt-4" id="kategori">
-        <button onclick="window.location.href='/kategori-venue'" class="btn text-secondary text-capitalize category aktif">
+        <button onclick="window.location.href='/kategori-venue'" class="btn text-secondary text-capitalize category">
             <img src="/img/venue.png" alt="" class='ms-1' />
             <p class="d-inline-block p-1 mb-0 text-dark">venue</p>
         </button>
-        <button onclick="window.location.href='/kategori-dekorasi'" class="btn text-secondary text-capitalize category">
+        <button onclick="window.location.href='/view-dekorasi'" class="btn text-secondary text-capitalize category">
             <img src="/img/dekorasi.png" alt="" class='ms-1' />
             <p class="d-inline-block p-1 mb-0 text-dark">dekorasi</p>
         </button>
@@ -88,7 +91,7 @@
             <img src="/img/mua.png" alt="" class='ms-1' />
             <p class="d-inline-block p-1 mb-0 text-dark">MUA</p>
         </button>
-        <button onclick="window.location.href='/kategori-catering'" class="btn text-secondary text-capitalize category">
+        <button onclick="window.location.href='/kategori-catering'" class="btn text-secondary text-capitalize category aktif">
             <img src="/img/catering.png" alt="" class='ms-1' />
             <p class="d-inline-block p-1 mb-0 text-dark">catering</p>
         </button>
@@ -120,7 +123,7 @@
             <div class="container dropdown-menu drop mt-3 rounded">
                 <div class="navbar-navbar navbar-expand-xl">
                     <div class="container mt-3">
-                        <div class="row">
+                    <div class="row">
                             <div class="col-4">
                                 {{-- Venue --}}
                                 <div class="m-3 all ">
@@ -336,14 +339,14 @@
     <!-- Content -->
     <div class="container row m-auto">
         <div class="col-sm-6 col-md-4 col-lg-3 ">
-            <a class="text-decoration-none" href="/view-venue">
+            <a class="text-decoration-none" href="/view-catering">
                 <div class="card card-kategori">
-                    <img src="/img/carousel2.png" class="card-img-top" alt="..." />
+                    <img src="/img/carouselcatering.png" class="card-img-top" alt="..." />
                     <div class="card-body ms-2 mt-2">
                         <p class="stars">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </p>
-                        <h5 class="card-title fw-bold">The Aesthetic</h5>
+                        <h5 class="card-title fw-bold">Garuda Katering</h5>
                         <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
                         <p class="card-text">
                             <i class="fas fa-regular fa-location-dot"></i>
