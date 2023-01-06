@@ -2,7 +2,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-.dropdown:hover>.dropdown-menu {
+.dropdown:hover > .dropdown-menu {
     display: block;
 }
 
@@ -40,7 +40,7 @@
     background-color: transparent;
 }
 
-.effect-border~.focus-border {
+.effect-border ~ .focus-border {
     position: absolute;
     left: 0;
     width: 0;
@@ -49,7 +49,7 @@
     transition: 0.4s;
 }
 
-.effect-border:focus~.focus-border {
+.effect-border:focus ~ .focus-border {
     width: 100%;
     transition: 0.4s;
 }
@@ -186,7 +186,7 @@ body {
     margin: 5px 0;
 }
 
-.container>* {
+.container > * {
     padding: 10px;
 }
 
@@ -285,6 +285,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: start;
+}
+.jce {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.box-shadow {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 }
 
 /* Keranjang */
@@ -388,4 +398,56 @@ label.form-check-label:focus,
     .count {
         width: 30%;
     }
+}
+
+/* Package */
+.package-label {
+    background: linear-gradient(90deg, #093028 0%, #237a57 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.package-kategori {
+    background-color: #b6b6b6;
+    height: 4px;
+    padding: 0;
+    margin: 0;
+}
+.package-kategori span {
+    border: 4px solid #b6b6b6;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.budget {
+    border-radius: 10px;
+}
+.budget h5 {
+    color: #000000;
+}
+
+.venue-title img {
+    width: 12px;
+    height: 12px;
+}
+.location {
+    background: #5465ff;
+    border-radius: 16px;
+    color: #ffffff;
+    font-size: 10px;
+}
+.fasilitas-detail img {
+    width: 20.51px;
+    height: 26.19px;
+}
+.img-fasil {
+    width: 190px;
+    height: 217px;
+    border-radius: 10px;
+}
+.budget {
+    display: none;
+}
+.question:hover + .budget {
+    display: block;
 }

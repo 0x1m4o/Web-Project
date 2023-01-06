@@ -363,3 +363,22 @@ Route::get('/chat', function () {
         'title' => "Chat"
     ]);
 });
+
+
+Route::get('/package-emerald', function () {
+    return view('package.emerald', [
+        'title' => "Emerald Package"
+    ]);
+});
+
+Route::get('/package-gold', function () {
+    return view('package.gold', [
+        'title' => "Gold Package"
+    ]);
+});
+
+Route::get('/package-silver', function () {
+    return view('package.silver', [
+        'title' => "Silver Package"
+    ]);
+});
