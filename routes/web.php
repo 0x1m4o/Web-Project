@@ -178,6 +178,32 @@ Route::get('/venue', function () {
 Route::get('/mua', function () {
     return view('profile.iyan.view-mua', [
         'title' => "Mua"
+    ]);
+});
+
+Route::get('/order', function () {
+    return view('order', [
+        'title' => "Order"
+    ]);
+});
+
+Route::get('/chat', function () {
+    return view('chat.chat', [
+        'title' => "Chat"
+
+    ]);
+});
+
+Route::get('/dashboard-admin', function () {
+    return view('dashboard_cms.dashboard', [
+        'title' => "Dashboard"
+
+    ]);
+});
+
+Route::get('/checklist', function () {
+    return view('profile.checklist', [
+        'title' => "Checklist"
 
     ]);
 });

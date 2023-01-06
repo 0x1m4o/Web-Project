@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.no_footer')
 @section('styles')
     <style>
         .input-nabung input[type=text] {
