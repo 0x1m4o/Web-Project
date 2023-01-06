@@ -194,3 +194,9 @@ Route::get('/dashboard-admin', function () {
 
     ]);
 });
+
+Route::get('/dashboard-admin-users', function () {
+    return view('dashboard_cms.users', [
+        'title' => "Dashboard"
+    ]);
+});
