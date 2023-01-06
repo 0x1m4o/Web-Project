@@ -181,3 +181,10 @@ Route::get('/mua', function () {
 
     ]);
 });
+
+Route::get('/chat', function () {
+    return view('chat', [
+        'title' => "Chat"
+
+    ]);
+});
