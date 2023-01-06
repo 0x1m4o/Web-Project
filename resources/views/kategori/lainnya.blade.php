@@ -57,6 +57,9 @@
     .card img {
         border-radius: 10%;
         filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.158));
+        width: 270px;
+        height: 270px;
+        object-fit: cover;
     }
 
     .stars {
@@ -76,7 +79,7 @@
 
 <div class="content" style="background-color:#E5E5E5;">
     <div class="container navbar navbar-expand-lg text-capitalizes category-section mt-4" id="kategori">
-        <button onclick="window.location.href='/kategori-venue'" class="btn text-secondary text-capitalize category aktif">
+        <button onclick="window.location.href='/kategori-venue'" class="btn text-secondary text-capitalize category">
             <img src="/img/venue.png" alt="" class='ms-1' />
             <p class="d-inline-block p-1 mb-0 text-dark">venue</p>
         </button>
@@ -108,9 +111,9 @@
             <img src="/img/wo.png" alt="" class='ms-1' />
             <p class="d-inline-block p-1 mb-0 text-dark">W.O</p>
         </button>
-        <button onclick="window.location.href='/kategori-souvenir'" class="btn text-secondary text-capitalize category mx-2">
+        <button onclick="window.location.href='/kategori-lainnya'" class="btn text-secondary text-capitalize category aktif mx-2">
             <img src="/img/souvenir.png" alt="" class='ms-1' />
-            <p class="d-inline-block p-1 mb-0 text-dark">souvenir</p>
+            <p class="d-inline-block p-1 mb-0 text-dark">lainnya</p>
         </button>
 
         <div class="dropdown dropdown-hover">
@@ -120,7 +123,7 @@
             <div class="container dropdown-menu drop mt-3 rounded">
                 <div class="navbar-navbar navbar-expand-xl">
                     <div class="container mt-3">
-                        <div class="row">
+                    <div class="row">
                             <div class="col-4">
                                 {{-- Venue --}}
                                 <div class="m-3 all ">
@@ -336,9 +339,9 @@
     <!-- Content -->
     <div class="container row m-auto">
         <div class="col-sm-6 col-md-4 col-lg-3 ">
-            <a class="text-decoration-none" href="/view-venue">
+            <a class="text-decoration-none" href="/venue">
                 <div class="card card-kategori">
-                    <img src="/img/carousel2.png" class="card-img-top" alt="..." />
+                    <img src="/img/Tropical.png" class="card-img-top" alt="..." />
                     <div class="card-body ms-2 mt-2">
                         <p class="stars">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>

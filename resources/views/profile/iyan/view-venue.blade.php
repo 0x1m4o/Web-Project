@@ -40,11 +40,17 @@
     .rev-wrap {
         padding: 15px;
         border-radius: 50%;
+        background-color: #237A57;
+    }
+
+    .rev-wrap2 {
+        padding: 15px;
+        border-radius: 50%;
         background-color: #979797;
     }
 
     .follow {
-        padding: 5px 15px;
+        padding: 3px 10px;
         border-radius: 20px;
     }
 
@@ -206,8 +212,8 @@
 
                 <div class="container mt-5 text-capitalize mr-5">
                     <div class="row">
-                        <div class="col-4">
-                            <h2 class="d-inline-block">the aesthetic</h2>
+                        <div class="col-5">
+                            <h1 class="d-inline-block fw-700">the aesthetic</h1>
                             <img class="mx-1 pb-5" src="/img/ceklis.png" alt="">
 
                         </div>
@@ -222,7 +228,7 @@
 
                         </div>
 
-                        <div class="col-4 mt-3 text-end">
+                        <div class="col-3 mt-3 text-end">
                             <div class="d-inline-block">
 
                                 <a class="text-decoration-none text-white" href="">
@@ -230,7 +236,7 @@
                                 </a>
 
                                 <a class="text-decoration-none text-white mx-3" href="">
-                                    <img src="/img/share1.png" alt="" >
+                                    <img src="/img/share1.png" alt="">
                                 </a>
 
                             </div>
@@ -249,7 +255,7 @@
                                 </div>
 
                                 <div class="col-6">
-                                    <div class=" profile">
+                                    <div class=" profile p-0">
                                         <h6 class=""> The Aesthetic</h6>
                                         <p class="">online</p>
                                     </div>
@@ -416,12 +422,12 @@
                     </div>
                 </div>
 
-                <div class="container mt-5 text-capitalize mr-5">
+                <div class="mt-5 text-capitalize mr-5">
                     <div class="row">
                         <div class="col-5">
                             <div class="row">
                                 <div class="col-2">
-                                    <a href="" class="rev-wrap mx-auto d-inline-block">
+                                    <a href="" class="rev-wrap2 mx-auto d-inline-block">
                                         <img src="/img/rev.png" alt="Card image cap">
                                     </a>
                                 </div>
@@ -495,7 +501,7 @@
 
 
             <div class="container col-4 mt-5">
-                <button class="button mt-4 mx-4">
+                <button class="button mt-4 mx-4 border-0">
                     <img class="mx-3 pb-2" src="/img/tour.png" alt="" style="width: 20px; height:35px">
                     <p class="tg-button text-capitalize text-center d-inline-block mt-2">tour virtual 360</p>
                 </button>
@@ -525,12 +531,14 @@
                     <p class="tw-button2 text-capitalize d-inline-block mt-2 mx-3">chat vendor</p>
                 </button>
 
-                <button class="button2 mt-4 mx-4">
-                    <img class="mx-0 pb-2" src="/img/troli.png" alt="" style="width: 30px; height:35px">
-                    <p class="tw-button2 text-capitalize d-inline-block mt-2 mx-3">tambah keranjang</p>
-                </button>
+                <a href="/keranjang">
+                    <button class="button2 mt-4 mx-4">
+                        <img class="mx-0 pb-2" src="/img/troli.png" alt="" style="width: 30px; height:35px">
+                        <p class="tw-button2 text-capitalize d-inline-block mt-2 mx-3">tambah keranjang</p>
+                    </button>
+                </a>
 
-                <button class="button mt-4 mx-4">
+                <button class="button mt-4 mx-4 border-0">
                     <p class="tg-button text-capitalize text-center d-inline-block mt-2">order</p>
                 </button>
             </div>

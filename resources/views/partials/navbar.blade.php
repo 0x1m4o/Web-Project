@@ -240,7 +240,7 @@
         </div>
   
         <!-- Chat -->
-        <div class="dropdown ">
+        <div class="dropdown">
           <a
             class="me-3 text-white dropdown-toggle"
             role="button"
@@ -254,7 +254,7 @@
               <div
                 class="card-body d-flex justify-content-between align-items-center mx-2"
               >
-                <h5>Chat Inbox</h5>
+                <h5><a href="/chat" class="text-decoration-none text-black">Chat Inbox</a></h5>
                 <i class="fa-solid fa-chevron-down"></i>
               </div>
               <div

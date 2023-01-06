@@ -26,7 +26,7 @@
                         <a href="">
                             <p><i class="bi bi-file-bar-graph"></i> RAB</p>
                         </a>
-                        <a href="">
+                        <a href="/checklist">
                             <p><i class="bi bi-check-square"></i> Checklist</p>
                         </a>
                         <a href="/feed">
@@ -111,39 +111,35 @@
                         </div>
                     </div>
                 <div class="content" style="padding-top: 100px;">
-                    <div class="container saldo" style="width: 900px;">
+                    <div class="container saldo" style="width: 1100px;">
                         <h3 style="font-weight: 900;color: #49516F;">Saldo & Points</h3>
                         <div class="row" style="text-align: center;background: white;box-shadow: 0px 19px 19px -4px rgba(0,0,0,0.1);border-radius: 20px;color: #49516F;">
-                            <div class="col-sm-3" style="line-height: 5px;">
+                            <div class="col-sm-2" style="line-height: 5px;">
                                 <img src="/img/logo_saldo.png" alt="logo saldo" style="margin-left: 30px; margin-bottom: 10px;">
-                                {{-- <p style="margin-left: 30px;text-align: center;font-size: 16px; font-weight: 600;">Rp. 30.000.000</p>
-                                <p style="margin-left: 30px;text-align: center;font-size: 16px; font-weight: 600;">Saldo Maripay</p> --}}
-                                <p style="margin-left: 30px;font-size: 12px; font-weight: bold; color: #49516F;">Rp. 30.000.000</p>
-                                <p style="margin-left: 30px;font-size: 12px; font-weight: bold; color: #49516F;">Saldo Maripay</p>
+                                <p style="margin-left: 30px;text-align: center;font-size: 16px; font-weight: 600;">Rp. 30.000.000</p>
+                                <p style="margin-left: 30px;text-align: center;font-size: 16px; font-weight: 600;">Saldo Maripay</p>
                             </div>
                             <div class="col-sm-2">
                                 <img src="/img/line.png" alt="line">
                             </div>
                             <div class="col-sm-2" style="line-height: 5px;">
                                 <img src="/img/logo_saldo.png" alt="logo saldo" style="margin-left: 30px; margin-bottom: 10px;">
-                                <p style="margin-left: 30px;font-size: 12px; font-weight: bold; color: #49516F;">Rp. 5.000.000</p>
-                                <p style="margin-left: 30px;font-size: 12px; font-weight: bold; color: #49516F;">Limit Saldo</p>
+                                <p style="margin-left: 30px;text-align: center;font-size: 16px; font-weight: 600;">Rp. 5.000.000</p>
+                                <p style="margin-left: 30px;text-align: center;font-size: 16px; font-weight: 600;">Limit Saldo</p>
                             </div>
                             <div class="col-sm-2">
                                 <img src="/img/line.png" alt="line">
                             </div>
                             <div class="col-sm-2" style="line-height: 5px;">
                                 <img src="/img/logo_saldo.png" alt="logo saldo" style="margin-left: 30px; margin-bottom: 10px;">
-                                <p style="margin-left: 30px;font-size: 12px; font-weight: bold; color: #49516F;">Rp. 70.000.000</p>
-                                <p style="margin-left: 30px;font-size: 12px; font-weight: bold; color: #49516F;">Goals</p>
+                                <p style="margin-left: 30px;text-align: center;font-size: 16px; font-weight: 600;">Rp. 70.000.000</p>
+                                <p style="margin-left: 30px;text-align: center;font-size: 16px; font-weight: 600;">Goals</p>
                             </div>
-                            <div class="col-sm-1" style="cursor: pointer; color: black; position: relative;">
-                                <i class="bi bi-pencil-fill" style="position: absolute; right: 0; top: 0; left: 30px; padding-top: 20px;"></i>
+                            <div class="col-sm-2" style="cursor: pointer; color: black;">
+                                <i class="bi bi-pencil-fill"></i>
                             </div>
-
                         </div>
                         <a href="#" class="btn d-block container mt-4 mb-4" role="button" style="background: linear-gradient(90deg, #093028 0%, #237A57 100%);box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 12px;font-weight: 900; color: white; font-size: 18px;width: 500px; text-align: center; border: none;">Simpan</a>
-            </div>
         </div>
     </div>
 </div>

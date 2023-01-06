@@ -26,7 +26,7 @@
                             <a href="">
                                 <p><i class="bi bi-file-bar-graph"></i> RAB</p>
                             </a>
-                            <a href="">
+                            <a href="/checklist">
                                 <p><i class="bi bi-check-square"></i> Checklist</p>
                             </a>
                             <a href="/feed">

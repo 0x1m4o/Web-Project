@@ -210,7 +210,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>view MUA</title>
+    <title>view fotografi</title>
 </head>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -239,13 +239,13 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="/img/carouselmua.png" class="d-block w-100" alt="...">
+                            <img src="/img/carouselsouvenir.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="/img/carouselmua.png" class="d-block w-100" alt="...">
+                            <img src="/img/carouselsouvenir.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="/img/carouselmua.png" class="d-block w-100" alt="...">
+                            <img src="/img/carouselsouvenir.png" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -261,17 +261,14 @@
                 <div class="container mt-5 text-capitalize mr-5">
                     <div class="row">
                         <div class="col-5">
-                            <h1 class="d-inline-block">wedding look</h1>
+                            <h1 class="d-inline-block fw-700"> Mini Cactus Bag </h1>
                             <img class="mx-1 pb-5" src="/img/ceklis.png" alt="">
 
                         </div>
 
                         <div class="col-4 mt-3">
                             <a class="d-inline-block mx-3 kategori1 text-decoration-none text-white" href="">
-                                <p>MUA</p>
-                            </a>
-                            <a class="d-inline-block kategori2 text-decoration-none text-white" href="">
-                                <p>outdoor</p>
+                                <p>Souvenir</p>
                             </a>
 
                         </div>
@@ -294,8 +291,8 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-5">
-                            <div class="row">
+                        <div class="col-6">
+                            <div class="row m-">
                                 <div class="col-2">
                                     <a href="" class="rev-wrap mx-auto d-inline-block">
                                         <img src="/img/rev.png" alt="Card image cap">
@@ -304,7 +301,7 @@
 
                                 <div class="col-6">
                                     <div class=" profile">
-                                        <h6 class=""> Shanti MUA</h6>
+                                        <h6 class=""> Garuda Katering</h6>
                                         <p class="">online</p>
                                     </div>
                                 </div>
@@ -318,21 +315,77 @@
                 </div>
 
                 <div class="container mt-3">
-                    <p>Romantic and soft, Natural, Glamour and bold. Menggunakan high end brand (Shu Uemura, Shiseido, Estee Lauder, MAC, Urban Decay, Benefit, Make Up For Ever, Anastasia Beverly Hills, etc) and high quality drugstore product (The Balm, L'oreal Paris, Maybelline, NYX, Make Over, etc)
-                    </p>
+                    <p>Memperkenalkan Prasmanan khas Indonesia kami.
+                        Kaya akan rasa dan menunya, pasti kamu ketagihan</p>
                 </div>
 
-
                 <div class="container mt-5">
-                    <h4 class="text-capitalize fw-bolder" style="color: #49516F">detail</h4>
-                    <p class="m-0">Wedding makeup (no retouch)</p>
-                    <ul>
-                        <li>No retouch. makeup for akad or reception only</li>
-                        <li>Free trial wedding makeup</li>
-                        <li>Waktu penyelesaian 3 jam</li>
-                        <li>We only do natural makeup</li>
-                    </ul>
+                    <h4 class="text-capitalize fw-bolder" style="color: #49516F">fasilitas</h4>
+                    <div class="row text-capitalize">
+                        <div class="col-3">
+                            <div class="my-2">
+                                <img src="/img/listrik.png" alt="">
+                                <p class="d-inline-block mx-1">Listrik: 2500 kilowatt</p>
 
+                            </div>
+
+                            <div class="my-2">
+                                <img src="/img/panggung.png" alt="">
+                                <p class="d-inline-block mx-1">panggung</p>
+                            </div>
+
+                            <div>
+                                <img src="/img/sound.png" alt="">
+                                <p class="d-inline-block mx-1">sound system</p>
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div class="my-2">
+                                <img src="/img/projektor.png" alt="">
+                                <p class="d-inline-block mx-1">projektor</p>
+                            </div>
+
+                            <div class="my-2">
+                                <img src="/img/table.png" alt="">
+                                <p class="d-inline-block mx-1">round table</p>
+                            </div>
+
+                            <div>
+                                <img src="/img/vip.png" alt="">
+                                <p class="d-inline-block mx-1">VIP seats</p>
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div class="my-2">
+                                <img src="/img/wifi.png" alt="">
+                                <p class="d-inline-block"> WIFI</p>
+                            </div>
+                        </div>
+
+                        <div class="text-capitalize mt-5">
+
+                            <h5 class="fw-bolder" style="color: #49516F">luas</h5>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-3">
+
+                                        <p>total : 2500m2</p>
+                                        <p>ruang ganti : 2500 m2</p>
+
+                                    </div>
+
+                                    <div class="col-6">
+
+                                        <img src="/img/denah.png" alt="">
+                                        <p class="d-inline-block">download denah</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
 
                 <a class="text-capitalize text-center text-success text-decoration-none" href="">
@@ -489,8 +542,6 @@
                 </div>
             </div>
 
-
-
             <div class="container col-4 mt-5 list-btn">
 
                 <button class="button2 mt-4 mx-4">
@@ -502,11 +553,11 @@
                     <div class="container">
                         <div class="row text-white align-items-center">
                             <div class="col-6 container text-capitalize ">
-                                <p class="m-0 font-color" style="font-weight:400; font-size:20px">harga</p>
+                                <p class="m-0 font-color" style="font-weight:400; font-size:20px">harga per pax</p>
                             </div>
 
                             <div class="col-6 container text-capitalize">
-                                <p class="m-0 font-color" style="font-weight:600; font-size:20px">rp 1.000.000,00</p>
+                                <p class="m-0 font-color" style="font-weight:600; font-size:20px">rp 100.000,00</p>
                             </div>
                         </div>
                     </div>
@@ -533,7 +584,9 @@
 
                 </button>
 
-                <button class="button2 mt-4 mx-4">
+                <p class="text-danger text-center fs-5 mx"> minimum pemesanan 100 </p>
+
+                <button class="button2 mx-4">
                     <img class="mx-0 pb-2" src="/img/cicilan.png" alt="" style="width: 28px; height:35px">
                     <p class="tw-button2 text-capitalize d-inline-block mt-2 mx-3">cicilan 0% dengan mariPay</p>
                 </button>

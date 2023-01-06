@@ -1,4 +1,4 @@
-<footer class="footer-03 p-3 mt-3" style="box-shadow: 2px 2px 2px 4px #88888812;">
+<footer class="footer-03 p-3" style="box-shadow: 2px 2px 2px 4px #88888812;">
   <div class="container">
     <div class="row footer">
       <div class="col-md-8 ">
@@ -47,31 +47,31 @@
           <div class="col-md-12 col-lg-11 mb-md-0 mb-0">
             <h2 class="footer-heading fw-bold text-center" style="color: #343846;font-family: 'Frank Ruhl Libre', serif;">Follow Us</h2>
             <div class="ftco-footer-social text-center mb-0">
-              <a  href="#" class="bi bi-instagram"> </a>
+              <a href="#" class="bi bi-instagram"> </a>
               <a href="#" class="bi bi-facebook"> </a>
-              <a href="#"  class="bi bi-twitter"></a>
+              <a href="#" class="bi bi-twitter"></a>
               <a href="#" class="bi bi-youtube"></a>
             </div>
             <div class="animate">
-          
+
               <a class="link twitter">
-                  <i class="fab fa-2x fa-twitter"></i>
+                <i class="fab fa-2x fa-twitter"></i>
               </a>
-             
+
               <a class="link instagram">
-                  <i class="fab fa-2x fa-instagram"></i>
+                <i class="fab fa-2x fa-instagram"></i>
               </a>
               <a class="link youtube">
-                  <i class="fab fa-2x fa-youtube"></i>
+                <i class="fab fa-2x fa-youtube"></i>
               </a>
               <a class="link facebook">
-                  <i class="fab fa-2x fa-facebook-f"></i>
+                <i class="fab fa-2x fa-facebook-f"></i>
               </a>
-          </div>
+            </div>
 
             <div class="logo1">
-              <img src="/img/logo.png" alt="">
-              <p class="d-flex align-items-center fw-bold" style="color: #343846;font-family: 'Frank Ruhl Libre', serif;">@2022. PT. Mari Sejahtera</p>
+              <img src="/img/logo.png" alt="" style="width: 100px; height:75px;">
+              <p class="d-flex align-items-center fw-bold" style="color: #343846;font-family: 'Frank Ruhl Libre', serif; font-size:15px">@2022. PT. Mari Sejahtera</p>
             </div>
             </form>
           </div>
