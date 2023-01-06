@@ -143,7 +143,7 @@
                 <h6 class="fw-semibold">Rp. 400.000.000</h6>
             </div>
             <div class="btn-konfirmasi pt-0 jcc">
-                <a class="btn btn-md text-white" href="#" role="button"
+                <a class="btn btn-md text-white" href="/order" role="button"
                     style="background: linear-gradient(to right,rgba(9, 48, 40, 1),rgba(35, 122, 87, 1));">Konfirmasi</a>
             </div>
         </div>
