@@ -301,7 +301,19 @@ body {
     background-color: #237a57;
     color: white;
     border-radius: 12px;
-    font-size: 12px;
+}
+
+.keranjang-button {
+    width: 70px;
+    height: 28px;
+    background: #237a57;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 14px;
+}
+
+.konten-row {
+    width: 500px;
 }
 
 .form-check-input:focus,
@@ -326,7 +338,7 @@ label.form-check-label:focus,
 }
 
 .konten-detail img {
-    width: 60px;
+    width: 75px;
     height: 85.14px;
     border-radius: 12px;
 }

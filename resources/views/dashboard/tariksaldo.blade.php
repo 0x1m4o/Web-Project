@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.no_footer')
 @section('styles')
     <style>
         .input-nabung input[type=text] {
@@ -80,7 +80,7 @@
 @section('content')
     <div class="container-fluid">
             <div class="container">
-                <div class="container" style="margin-top: 60px;border-radius: 10px;background: white;">
+                <div class="container" style="margin-top: 60px;border-radius: 10px;background: white; margin-bottom: 30px;">
                     <nav class="navbar navbar-expand-lg navbar-light" id="menu">
                         <div class="container-fluid" style="border-bottom: 1px solid #49516F;">
                           <a class="navbar-brand" href="/dashboard">Dashboard</a>

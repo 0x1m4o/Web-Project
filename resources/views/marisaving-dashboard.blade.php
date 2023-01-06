@@ -6,9 +6,11 @@
             background-color: #F4F4F4;
         }
         .judul {
+            margin-top: 60px;
             font-weight: 600;
             color: #49516F;
-            margin-left: 4em;
+            font-size: 42px;
+            margin-bottom: 45px;
         }
         .jumbotron {
             background-image: url('/img/marisaving-banner.png');
@@ -23,7 +25,7 @@
         }
     </style>
     <div class="container-fluid my-4" style="max-width: 100%">
-        <h3 class="judul">MariSaving</h3>
+        <h3 class="judul container">MariSaving</h3>
         <div class="container-fluid my-4 d-flex justify-content-center">
             <div class="jumbotron jumbotron-fluid d-flex flex-column justify-content-evenly">
                 <div class="ms-5">
@@ -57,21 +59,27 @@
 
         <div class="d-flex justify-content-around" style="margin-bottom: 15rem">
             <div class="card">
-                <img src="/img/people.png" class="card-img-top img-fluid">
+                <div class="img-content d-flex justify-content-center" style="padding: 70px 82px 70px 82px;">
+                    <img src="/img/people.png" alt="card-img-top" alt="people" width="162" height="115">
+                </div>
                 <div class="card-body">
-                    <p class="card-text text-center">Ayo menabung bersama pasangan!</p>
+                    <p class="card-text text-center">Ayo menabung bersama <br> pasangan!</p>
                 </div>
             </div>
             <div class="card">
-                <img src="/img/checklist.png" class="card-img-top img-fluid" width="162px" height="115px">
+                <div class="img-content d-flex justify-content-center" style="padding: 70px 82px 70px 82px;">
+                    <img src="/img/checklist.png" class="card-img-top" alt="checklist" width="162" height="115">
+                </div>
                 <div class="card-body">
-                    <p class="card-text text-center">Yuk rencanakan Biaya Pernikahanmu!</p>
+                    <p class="card-text text-center">Yuk rencanakan Biaya <br> Pernikahanmu!</p>
                 </div>
             </div>
             <div class="card">
-                <img src="/img/pencil.png" class="card-img-top img-fluid">
+                <div class="img-content d-flex justify-content-center" style="padding: 70px 82px 70px 82px;">
+                    <img src="/img/pencil.png" class="card-img-top" alt="pencil" width="162" height="115">
+                </div>
                 <div class="card-body">
-                    <p class="card-text text-center">Wujudkan pernikahan impianmu!</p>
+                    <p class="card-text text-center">Wujudkan pernikahan <br> impianmu!</p>
                 </div>
             </div>
 
