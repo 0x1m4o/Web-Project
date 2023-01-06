@@ -175,3 +175,17 @@ Route::get('/mua', function () {
 
     ]);
 });
+
+Route::get('/chat', function () {
+    return view('chat.chat', [
+        'title' => "Chat"
+
+    ]);
+});
+
+Route::get('/dashboard-admin', function () {
+    return view('dashboard_cms.dashboard', [
+        'title' => "Dashboard"
+
+    ]);
+});
