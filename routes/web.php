@@ -172,7 +172,12 @@ Route::get('/venue', function () {
 Route::get('/mua', function () {
     return view('profile.iyan.view-mua', [
         'title' => "Mua"
+    ]);
+});
 
+Route::get('/order', function () {
+    return view('order', [
+        'title' => "Order"
     ]);
 });
 
