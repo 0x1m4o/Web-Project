@@ -194,3 +194,10 @@ Route::get('/dashboard-admin', function () {
 
     ]);
 });
+
+Route::get('/checklist', function () {
+    return view('profile.checklist', [
+        'title' => "Checklist"
+
+    ]);
+});

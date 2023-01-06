@@ -112,10 +112,10 @@
                         <div class="pembayaran-nabung d-flex justify-content-between">
                             <div class="pembayaran-nabung-debit">
                                 <h5 style="font-weight: 900; margin-bottom: 40px;">Nabung Dengan</h5>
-                                <label class="custom-radio-btn" style="float: left; margin-right: 10px;">
-                                    <input type="radio" name="radio" />     
-                                    <span class="checkmark"></span>
-                                </label>
+                                    <label class="custom-radio-btn" style="float: left; margin-right: 10px;">
+                                        <input type="radio" name="radio" />     
+                                        <span class="checkmark"></span>
+                                    </label>
                                 <h5 style="font-size: 20px;font-weight: bold; color: #49516F;">Debit Instan</h5>
                                 <h6 style="font-size: 13px; width: 685px; color: #49516F; font-weight: bold;opacity: 0.5;">Tambah kartu debit biar bisa top-up instan</h6>
                             </div>
