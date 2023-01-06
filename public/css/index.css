@@ -2,7 +2,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-.dropdown:hover > .dropdown-menu {
+.dropdown:hover>.dropdown-menu {
     display: block;
 }
 
@@ -10,31 +10,37 @@
     color: white;
     transform: scale(1.01);
 }
+
 .footer-heading:hover {
     transform: scale(1.01);
 }
+
 .input-animation-tambahrekening {
     border-bottom: 1px solid rgba(140, 138, 138, 0.256);
     float: left;
     width: 45%;
     position: relative;
 }
+
 .input-animation-maripay {
     border-bottom: 1px solid rgba(140, 138, 138, 0.256);
     float: left;
     width: 75%;
     position: relative;
 }
+
 .focus-border {
     display: block;
 }
+
 .effect-border {
     border: 0;
     padding: 7px 0;
     border-bottom: 1px solid #ccc;
     background-color: transparent;
 }
-.effect-border ~ .focus-border {
+
+.effect-border~.focus-border {
     position: absolute;
     left: 0;
     width: 0;
@@ -42,20 +48,24 @@
     background-color: rgba(0, 0, 0, 0.526);
     transition: 0.4s;
 }
-.effect-border:focus ~ .focus-border {
+
+.effect-border:focus~.focus-border {
     width: 100%;
     transition: 0.4s;
 }
+
 /* Footer */
 
 .footer-03 {
     background-color: white;
 }
+
 .footer-03 a {
     text-decoration: none;
     padding: 0;
     color: white;
 }
+
 .animate {
     height: 50px;
     display: flex;
@@ -102,15 +112,18 @@ a:hover i {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 250px;
+    margin-top: 150px;
 }
+
 .logo1 img {
     width: 50px;
 }
+
 .logo1 p {
     margin: 0;
     font-size: 12px;
 }
+
 .kategori-content img {
     margin-left: 8px;
 }
@@ -118,6 +131,7 @@ a:hover i {
 body {
     background-color: #f4f4f4;
 }
+
 #menu a {
     opacity: 0.5;
     text-decoration: none;
@@ -126,6 +140,7 @@ body {
     color: #49516f;
     font-weight: 900;
 }
+
 #menu .aktif {
     text-decoration: none;
     border-bottom: transparent solid 1px;
@@ -136,6 +151,7 @@ body {
     border-bottom: 5px solid;
     border-image: linear-gradient(90deg, #093028 0%, #237a57 100%) 1;
 }
+
 #filter .aktif {
     text-decoration: none;
     border-bottom: transparent solid 1px;
@@ -146,11 +162,13 @@ body {
     border-bottom: 4px solid;
     border-image: linear-gradient(90deg, #093028 0%, #237a57 100%) 1;
 }
+
 #kategori .aktif {
     border: 1px solid rgba(128, 128, 128, 0.157);
     box-shadow: 2px 2px 2px #88888845;
     background-color: white;
 }
+
 .card {
     padding: 5px;
     background-color: transparent;
@@ -159,6 +177,7 @@ body {
     border-radius: 40px;
     transition: 0.5s;
 }
+
 .profile {
     display: flex;
     justify-content: center;
@@ -167,7 +186,7 @@ body {
     margin: 5px 0;
 }
 
-.container > * {
+.container>* {
     padding: 10px;
 }
 
@@ -272,16 +291,19 @@ body {
 .keranjang-container {
     border-radius: 50px;
 }
+
 .form-check-input:checked {
     background-color: #237a57 !important;
     border: 0;
 }
+
 .keranjang-kategori {
     background-color: #237a57;
     color: white;
     border-radius: 12px;
     font-size: 12px;
 }
+
 .form-check-input:focus,
 .label::after,
 label.form-check-label:focus,
@@ -291,12 +313,14 @@ label.form-check-label:focus,
     outline: 0;
     border: 0;
 }
+
 .form-check-input {
     box-shadow: 2px 2px 2px #88888845;
     border: 1px solid rgba(0, 0, 0, 0.064);
     width: 25px;
     height: 25px;
 }
+
 .form-check-label {
     font-size: 24px;
 }
@@ -310,12 +334,14 @@ label.form-check-label:focus,
 .listnumber button {
     font-size: 24px;
 }
+
 .preorder {
     text-align: center;
     font-size: 12px;
     border-radius: 12px;
     box-shadow: 2px 2px 2px #88888845;
 }
+
 .title-label {
     color: #49516f;
 }
@@ -326,18 +352,22 @@ label.form-check-label:focus,
         height: 65.14px;
         border-radius: 14px;
     }
+
     .konten-title {
         font-size: 12px;
     }
+
     .konten-detail .row h6,
     .count h5 {
         font-size: 11px;
     }
+
     .konten-time {
         width: 60%;
         text-align: center;
         font-size: 12px;
     }
+
     .konten-catatan,
     .count h5 {
         display: none;

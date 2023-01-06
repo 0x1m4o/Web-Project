@@ -230,7 +230,7 @@
                                 </a>
 
                                 <a class="text-decoration-none text-white mx-3" href="">
-                                    <img src="/img/share1.png" alt="" >
+                                    <img src="/img/share1.png" alt="">
                                 </a>
 
                             </div>
@@ -495,7 +495,7 @@
 
 
             <div class="container col-4 mt-5">
-                <button class="button mt-4 mx-4">
+                <button class="button mt-4 mx-4 border-0">
                     <img class="mx-3 pb-2" src="/img/tour.png" alt="" style="width: 20px; height:35px">
                     <p class="tg-button text-capitalize text-center d-inline-block mt-2">tour virtual 360</p>
                 </button>
@@ -525,12 +525,14 @@
                     <p class="tw-button2 text-capitalize d-inline-block mt-2 mx-3">chat vendor</p>
                 </button>
 
-                <button class="button2 mt-4 mx-4">
-                    <img class="mx-0 pb-2" src="/img/troli.png" alt="" style="width: 30px; height:35px">
-                    <p class="tw-button2 text-capitalize d-inline-block mt-2 mx-3">tambah keranjang</p>
-                </button>
+                <a href="/keranjang">
+                    <button class="button2 mt-4 mx-4">
+                        <img class="mx-0 pb-2" src="/img/troli.png" alt="" style="width: 30px; height:35px">
+                        <p class="tw-button2 text-capitalize d-inline-block mt-2 mx-3">tambah keranjang</p>
+                    </button>
+                </a>
 
-                <button class="button mt-4 mx-4">
+                <button class="button mt-4 mx-4 border-0">
                     <p class="tg-button text-capitalize text-center d-inline-block mt-2">order</p>
                 </button>
             </div>
