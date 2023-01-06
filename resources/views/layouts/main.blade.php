@@ -55,6 +55,7 @@
     "https://kit.fontawesome.com/457a315592.js" 
             crossorigin="anonymous">
         </script>
+        
     @include('partials.navbar')
     
     @yield('content')

@@ -84,7 +84,7 @@ Route::get('/app', function () {
     ]);
 });
 
-Route::get('/marisaving-dashboard', function () {
+Route::get('/marisaving', function () {
     return view('marisaving-dashboard', [
         'title' => "Marisaving Dashboard"
     ]);
@@ -144,9 +144,15 @@ Route::get('/gagalnabung', function () {
     ]);
 });    
 
-Route::get('/vendor', function () {
+Route::get('/loginvendor', function () {
     return view('auth.business.login', [
         'title' => "Login Vendor"
+    ]);
+});
+
+Route::get('/registervendor', function () {
+    return view('auth.business.register', [
+        'title' => "Register Vendor"
     ]);
 });
 
