@@ -7,7 +7,7 @@
       margin: auto;
       margin-top: 75px;
     }
-    img {
+    .img {
       max-width: 100%;
     }
     .inbox_people {
@@ -31,9 +31,9 @@
       width: 40%;
     }
     .srch_bar {
-      /* display: inline-block; */
-      /* text-align: right; */
-      width: 90%;
+      /* display: inline-block;
+      text-align: right; */
+      width: 65%;
     }
     .headind_srch {
       padding: 10px 29px 10px 20px;
@@ -42,7 +42,7 @@
     }
 
     .recent_heading h4 {
-      color: #05728f;
+      color: #49516F;
       font-size: 21px;
       margin: auto;
     }
@@ -137,11 +137,13 @@
     }
     .received_withd_msg {
       width: 57%;
+      text-shadow: #49516F;
     }
     .mesgs {
       float: left;
       padding: 30px 15px 0 25px;
       width: 60%;
+      overflow-y: scroll;
     }
 
     .sent_msg p {
@@ -205,7 +207,7 @@
           <div class="inbox_people">
             <div class="headind_srch">
               <div class="recent_heading">
-                <h4 class="fw-bold fs-4">Chat</h4>
+                <h4 class="fw-bold fs-1">Chat</h4>
               </div>
               <div class="srch_bar">
                 <div class="stylish-input-group">
@@ -219,7 +221,7 @@
             <div class="inbox_chat">
               <div class="chat_list active_chat">
                 <div class="chat_people">
-                  <div class="chat_img"><img src="/img/pp.png" alt="sunil" /></div>
+                  <div class="chat_img"><img class="img" src="/img/pp.png" alt="sunil" /></div>
                   <div class="chat_ib">
                     <h5>The Aesthetic <i class="bi bi-patch-check-fill"></i><span class="chat_date">12:00</span></h5>
                     <p>Halo Vanessa terima kasih...</p>
@@ -228,7 +230,7 @@
               </div>
               <div class="chat_list">
                 <div class="chat_people">
-                  <div class="chat_img"><img src="/img/pp.png" alt="sunil" /></div>
+                  <div class="chat_img"><img class="img" src="/img/pp.png" alt="sunil" /></div>
                   <div class="chat_ib">
                     <h5>Shreaton <i class="bi bi-patch-check-fill"></i><span class="chat_date">12:00</span></h5>
                     <p>Halo Vanessa terima kasih...</p>
@@ -237,7 +239,7 @@
               </div>
               <div class="chat_list">
                 <div class="chat_people">
-                  <div class="chat_img"><img src="/img/pp.png" alt="sunil" /></div>
+                  <div class="chat_img"><img class="img" src="/img/pp.png" alt="sunil" /></div>
                   <div class="chat_ib">
                     <h5>Yunita Sely <i class="bi bi-patch-check-fill"></i><span class="chat_date">12:00</span></h5>
                     <p>Halo Vanessa terima kasih...</p>
@@ -246,7 +248,7 @@
               </div>
               <div class="chat_list">
                 <div class="chat_people">
-                  <div class="chat_img"><img src="/img/pp.png" alt="sunil" /></div>
+                  <div class="chat_img"><img class="img" src="/img/pp.png" alt="sunil" /></div>
                   <div class="chat_ib">
                     <h5>Badzlan <i class="bi bi-patch-check-fill"></i><span class="chat_date">12:00</span></h5>
                     <p>Halo Vanessa terima kasih...</p>
@@ -255,7 +257,7 @@
               </div>
               <div class="chat_list">
                 <div class="chat_people">
-                  <div class="chat_img"><img src="/img/pp.png" alt="sunil" /></div>
+                  <div class="chat_img"><img class="img" src="/img/pp.png" alt="sunil" /></div>
                   <div class="chat_ib">
                     <h5>Iyan <i class="bi bi-patch-check-fill"></i><span class="chat_date">12:00</span></h5>
                     <p>Halo Vanessa terima kasih...</p>
@@ -264,7 +266,7 @@
               </div>
               <div class="chat_list">
                 <div class="chat_people">
-                  <div class="chat_img"><img src="/img/pp.png" alt="sunil" /></div>
+                  <div class="chat_img"><img class="img" src="/img/pp.png" alt="sunil" /></div>
                   <div class="chat_ib">
                     <h5>Muhajir <i class="bi bi-patch-check-fill"></i><span class="chat_date">12:00</span></h5>
                     <p>Halo Vanessa terima kasih...</p>
@@ -276,7 +278,7 @@
           <div class="mesgs">
             <div class="msg_history">
               <div class="incoming_msg">
-                <div class="incoming_msg_img"><img src="/img/pp.png" alt="sunil" /></div>
+                <div class="incoming_msg_img"><img class="img" src="/img/pp.png" alt="sunil" /></div>
                 <div class="received_msg">
                   <div class="received_withd_msg">
                     <p>Test which is a new approach to have all solutions</p>
@@ -291,7 +293,7 @@
                 </div>
               </div>
               <div class="incoming_msg">
-                <div class="incoming_msg_img"><img src="/img/pp.png" alt="sunil" /></div>
+                <div class="incoming_msg_img"><img class="img" src="/img/pp.png" alt="sunil" /></div>
                 <div class="received_msg">
                   <div class="received_withd_msg">
                     <p>Test, which is a new approach to have</p>
@@ -306,7 +308,7 @@
                 </div>
               </div>
               <div class="incoming_msg">
-                <div class="incoming_msg_img"><img src="/img/pp.png" alt="sunil" /></div>
+                <div class="incoming_msg_img"><img class="img" src="/img/pp.png" alt="sunil" /></div>
                 <div class="received_msg">
                   <div class="received_withd_msg">
                     <p>We work directly with our designers and suppliers, and sell direct to you, which means quality, exclusive products, at a price anyone can afford.</p>
@@ -317,7 +319,8 @@
             </div>
             <div class="type_msg mt-3">
               <div class="input_msg_write">
-                <input type="text" class="write_msg rounded-pill shadow-sm p-3" placeholder="Type a message" />
+                <input type="text" class="write_msg rounded-pill shadow-sm p-3" placeholder="Tulis pesan..." />
+                <button class="msg_send_btn" type="button"><i class="fa fa-voice" aria-hidden="true"></i></button>
                 <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
               </div>
             </div>
