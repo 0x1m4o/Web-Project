@@ -363,7 +363,9 @@
                 <div
                   class="card-body d-flex justify-content-between align-items-center mx-2"
                 >
+                <a href="/dashboard" class="text-decoration-none text-dark">
                   <h5>Tabungan</h5>
+                </a>
                   <i class="fa-solid fa-chevron-down"></i>
                 </div>
                 <div
@@ -474,10 +476,10 @@
                   <a href="">
                     <p><i class="bi bi-file-bar-graph"></i> RAB</p>
                   </a>
-                  <a href="">
+                  <a href="/checklist">
                     <p><i class="bi bi-check-square"></i> Checklist</p>
                   </a>
-                  <a href="">
+                  <a href="/feed">
                     <p><i class="bi bi-images"></i> Feed</p>
                   </a>
                   <a href="">
