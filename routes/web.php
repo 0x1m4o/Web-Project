@@ -84,7 +84,7 @@ Route::get('/app', function () {
     ]);
 });
 
-Route::get('/marisaving-dashboard', function () {
+Route::get('/marisaving', function () {
     return view('marisaving-dashboard', [
         'title' => "Marisaving Dashboard"
     ]);
@@ -247,9 +247,15 @@ Route::get('/gagalnabung', function () {
     ]);
 });
 
-Route::get('/vendor', function () {
+Route::get('/loginvendor', function () {
     return view('auth.business.login', [
         'title' => "Login Vendor"
+    ]);
+});
+
+Route::get('/registervendor', function () {
+    return view('auth.business.register', [
+        'title' => "Register Vendor"
     ]);
 });
 
@@ -324,5 +330,36 @@ Route::get('/view-souvenir', function () {
 Route::get('/order', function () {
     return view('order', [
         'title' => "Order"
+    ]);
+});
+
+Route::get('/chat', function () {
+    return view('chat.chat', [
+        'title' => "Chat"
+
+    ]);
+});
+
+Route::get('/dashboard-admin', function () {
+    return view('dashboard_cms.dashboard', [
+        'title' => "Dashboard"
+    ]);
+});
+
+Route::get('/dashboard-admin-users', function () {
+    return view('dashboard_cms.users', [
+        'title' => "Dashboard"
+    ]);
+});
+
+Route::get('/checklist', function () {
+    return view('profile.checklist', [
+        'title' => "Checklist"
+    ]);
+});
+
+Route::get('/chat', function () {
+    return view('chat', [
+        'title' => "Chat"
     ]);
 });
