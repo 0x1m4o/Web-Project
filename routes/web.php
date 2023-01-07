@@ -383,6 +383,12 @@ Route::get('/package-silver', function () {
     ]);
 });
 
+Route::get('/wishlist', function () {
+    return view('wishlist', [
+        'title' => "Wishlist"
+    ]);
+});
+
 
 Route::get('/following', function () {
     return view('profile.following', [

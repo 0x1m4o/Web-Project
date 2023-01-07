@@ -704,7 +704,9 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
-  <script type="text/javascript">
+  <script type="text/java
+  
+  script">
     $(function () {
       $("body").click(function (e) {
         if (
