@@ -201,3 +201,11 @@ Route::get('/checklist', function () {
 
     ]);
 });
+
+
+Route::get('/following', function () {
+    return view('profile.following', [
+        'title' => "Following"
+
+    ]);
+});
