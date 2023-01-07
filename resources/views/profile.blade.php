@@ -32,7 +32,7 @@
                         <a href="/feed">
                             <p><i class="bi bi-images"></i> Feed</p>
                         </a>
-                        <a href="">
+                        <a href="/following">
                             <p><i class="bi bi-people-fill"></i> Following</p>
                         </a>
                         <a href="">
@@ -56,7 +56,7 @@
                         <a href="">
                             <p><i class="bi bi-journal-text"></i> Ulasan</p>
                         </a>
-                        <a href="">
+                        <a href="/notifikasi-transaksi">
                             <p><i class="bi bi-bell"></i> Notification</p>
                         </a>
                         <a href="">
@@ -142,5 +142,9 @@
                         <a href="#" class="btn d-block container mt-4 mb-4" role="button" style="background: linear-gradient(90deg, #093028 0%, #237A57 100%);box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 12px;font-weight: 900; color: white; font-size: 18px;width: 500px; text-align: center; border: none;">Simpan</a>
         </div>
     </div>
+</div>
+</div>
+</div>
+</div>
 </div>
 @endsection
