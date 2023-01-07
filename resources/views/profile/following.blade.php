@@ -36,7 +36,9 @@
 @section('content')
     <div class="container mt-5 mb-5" style="background-color: white; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 20px;">
         <div class="content d-flex">
-            <i class='bx bx-chevron-left' style="padding-top: 25px;font-size: 30px;"></i>
+            <a href="/profile" style="color: black;">
+                <i class='bx bx-chevron-left' style="padding-top: 25px;font-size: 30px;"></i>
+            </a>
             <div style="border-bottom: 1px solid #C4C4C4; width: 1200px;">
                 <h5 style="padding-top: 20px;font-weight: bold;font-size: 32px; color: #49516F; margin-bottom: 40px;">Following</h5>
             </div>
