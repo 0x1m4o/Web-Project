@@ -51,7 +51,7 @@
                     </section>
                     <section class="contact">
                         <div class="contact-title">
-                            <a href="">
+                            <a href="/chat">
                                 <p><i class="bi bi-chat"></i> Chat</p>
                             </a>
                             <a href="">

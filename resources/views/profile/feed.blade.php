@@ -48,7 +48,7 @@
     </style>
 @endsection
 @section('content')
-    <div class="feed" style="margin-top: 141px;">
+    <div class="feed" style="margin-top: 141px; margin-bottom: 30px;">
         <h2 style="font-weight: bold;color: #49516F;">Feeds</h2>
         <hr>
         <div class="custom-select" style="margin-bottom: 75px;">
@@ -59,7 +59,9 @@
                 <option value="direct" style="color: #49516F;"><b>Trending</b></option>
             </select>   
         </div>
-        <img src="/img/toko.png" alt="logo toko" style="margin-bottom: 35.5px;">
+        <a href="/profilevendor">
+            <img src="/img/toko.png" alt="logo toko" style="margin-bottom: 35.5px;">
+        </a>
         <hr>
         <div class="produk-feed">
             <img src="/img/produk1.png" alt="Produk 1" style="margin-right: 10px;">
