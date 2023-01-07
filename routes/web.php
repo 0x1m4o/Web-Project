@@ -418,3 +418,9 @@ Route::get('/pesan-bantuan', function () {
 
     ]);
 });
+
+Route::get('/rab', function () {
+    return view('rab', [
+        'title' => "RAB"
+    ]);
+});
