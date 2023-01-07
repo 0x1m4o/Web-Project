@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-    <div class="container p-3 mt-5 bg-white b-shdw" style="width: 100%;border-radius:12px;">
+    <div class="container p-3 mt-5 bg-white b-shdw mb-5" style="width: 100%;border-radius:12px;">
         <div class="jcs">
             <a href="/paket" class="text-secondary mt-2 p-2 fs-5 jcs">
                 <iconify-icon icon="material-symbols:arrow-back-ios-new-rounded"></iconify-icon>
