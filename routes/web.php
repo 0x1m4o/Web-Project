@@ -390,3 +390,18 @@ Route::get('/following', function () {
 
     ]);
 });
+
+
+Route::get('/notifikasi-transaksi', function () {
+    return view('profile.notifikasi_tranksaksi', [
+        'title' => "Notifikasi Transaksi"
+
+    ]);
+});
+
+Route::get('/update-transaksi', function () {
+    return view('profile.update_transaksi', [
+        'title' => "Update Transaksi"
+
+    ]);
+});
