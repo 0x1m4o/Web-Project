@@ -382,3 +382,9 @@ Route::get('/package-silver', function () {
         'title' => "Silver Package"
     ]);
 });
+
+Route::get('/wishlist', function () {
+    return view('wishlist', [
+        'title' => "Wishlist"
+    ]);
+});

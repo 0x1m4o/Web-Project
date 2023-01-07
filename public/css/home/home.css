@@ -46,24 +46,6 @@ body {
     font-size: 18px;
 }
 
-.stars {
-    color: rgba(255, 208, 0, 0.664);
-    margin-bottom: 5px;
-}
-.card-body {
-    padding: 0;
-    margin: 0;
-}
-.card:hover {
-    transform: scale(1.05);
-    transition: 0.5s;
-}
-.card img {
-    border-radius: 10%;
-    width: 85%;
-    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.158));
-}
-
 .slick-slide {
     width: 100%;
     object-fit: cover;
