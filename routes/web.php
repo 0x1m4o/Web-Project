@@ -390,3 +390,10 @@ Route::get('/following', function () {
 
     ]);
 });
+
+Route::get('/pesan-bantuan', function () {
+    return view('pesanbantuan', [
+        'title' => "Pesan Bantuan"
+
+    ]);
+});
