@@ -382,3 +382,39 @@ Route::get('/package-silver', function () {
         'title' => "Silver Package"
     ]);
 });
+
+Route::get('/wishlist', function () {
+    return view('wishlist', [
+        'title' => "Wishlist"
+    ]);
+});
+
+
+Route::get('/following', function () {
+    return view('profile.following', [
+        'title' => "Following"
+
+    ]);
+});
+
+
+
+Route::get('/notifikasi-transaksi', function () {
+    return view('profile.notifikasi_tranksaksi', [
+        'title' => "Notifikasi Transaksi"
+
+    ]);
+});
+
+Route::get('/update-transaksi', function () {
+    return view('profile.update_transaksi', [
+        'title' => "Update Transaksi"
+    ]);
+});
+
+Route::get('/pesan-bantuan', function () {
+    return view('pesanbantuan', [
+        'title' => "Pesan Bantuan"
+
+    ]);
+});

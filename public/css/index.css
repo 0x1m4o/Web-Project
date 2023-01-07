@@ -6,6 +6,9 @@
     display: block;
     transition: 0.5s;
 }
+.dropdown.toggle.show + .dropdown-menu {
+    display: none;
+}
 
 .footer-heading {
     font-weight: 700;
@@ -131,6 +134,11 @@ a:hover i {
     width: 50px;
 }
 
+.stars {
+    color: #ffc200;
+    margin-bottom: 5px;
+}
+
 .logo1 p {
     margin: 0;
     font-size: 12px;
@@ -187,6 +195,21 @@ body {
     border: none;
     margin: 10px;
     border-radius: 40px;
+    transition: 0.5s;
+}
+
+.card img {
+    border-radius: 10%;
+    width: 90%;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.158));
+}
+
+.card-body {
+    padding: 0;
+    margin: 0;
+}
+.card:hover {
+    transform: scale(1.05);
     transition: 0.5s;
 }
 
@@ -471,4 +494,59 @@ label.form-check-label:focus,
 
 .question:hover+.budget {
     display: block;
+}
+
+/* Wishlist */
+.img-wrapper {
+    position: relative;
+}
+
+.love {
+    position: absolute;
+    right: 14%;
+    top: 10px;
+    width: 25px;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.tema-outdoor {
+    position: absolute;
+    left: 6%;
+    bottom: 12px;
+    width: 50px;
+    height: 20px;
+    padding: 2px;
+    background: #5465ff;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 14px;
+}
+.tema-indoor {
+    position: absolute;
+    left: 6%;
+    bottom: 12px;
+    width: 50px;
+    height: 20px;
+    padding: 2px;
+    background: #ffc200;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 14px;
+}
+
+.btn-maritory {
+    background-color: #237a57;
+    color: white;
+    border-radius: 12px;
+    height: 35px;
+}
+.btn-wrap {
+    padding-right: 28px;
 }

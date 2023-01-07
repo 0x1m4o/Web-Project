@@ -33,7 +33,7 @@
                             <a href="/feed">
                                 <p><i class="bi bi-images"></i> Feed</p>
                             </a>
-                            <a href="">
+                            <a href="/following">
                                 <p><i class="bi bi-people-fill"></i> Following</p>
                             </a>
                             <a href="">
@@ -51,13 +51,13 @@
                     </section>
                     <section class="contact">
                         <div class="contact-title">
-                            <a href="">
+                            <a href="/chat">
                                 <p><i class="bi bi-chat"></i> Chat</p>
                             </a>
                             <a href="">
                                 <p><i class="bi bi-journal-text"></i> Ulasan</p>
                             </a>
-                            <a href="">
+                            <a href="/notifikasi-transaksi">
                                 <p><i class="bi bi-bell"></i> Notification</p>
                             </a>
                             <a href="">
