@@ -84,7 +84,7 @@ Route::get('/app', function () {
     ]);
 });
 
-Route::get('/marisaving-dashboard', function () {
+Route::get('/marisaving', function () {
     return view('marisaving-dashboard', [
         'title' => "Marisaving Dashboard"
     ]);
@@ -127,6 +127,109 @@ Route::get('/kategori-venue', function () {
     ]);
 });
 
+Route::get('/kategori-dekorasi', function () {
+    return view('kategori.dekorasi', [
+        'title' => "Kategori"
+    ]);
+});
+
+Route::get('/kategori-mua', function () {
+    return view('kategori.mua', [
+        'title' => "Kategori"
+    ]);
+});
+
+Route::get('/kategori-catering', function () {
+    return view('kategori.catering', [
+        'title' => "Kategori"
+    ]);
+});
+
+Route::get('/kategori-band', function () {
+    return view('kategori.band', [
+        'title' => "Kategori"
+    ]);
+});
+
+Route::get('/kategori-fotografi', function () {
+    return view('kategori.fotografi', [
+        'title' => "Kategori"
+    ]);
+});
+
+Route::get('/kategori-busana', function () {
+    return view('kategori.busana', [
+        'title' => "Kategori"
+    ]);
+});
+
+Route::get('/kategori-wo', function () {
+    return view('kategori.wo', [
+        'title' => "Kategori"
+    ]);
+});
+
+Route::get('/kategori-souvenir', function () {
+    return view('kategori.souvenir', [
+        'title' => "Kategori"
+    ]);
+});
+
+Route::get('/kategori-perhiasan', function () {
+    return view('kategori.perhiasan', [
+        'title' => "Kategori"
+    ]);
+});
+
+Route::get('/kategori-mc', function () {
+    return view('kategori.mc', [
+        'title' => "Kategori"
+    ]);
+});
+
+Route::get('/kategori-undangan', function () {
+    return view('kategori.undangan', [
+        'title' => "Kategori"
+    ]);
+});
+
+Route::get('/kategori-weddingp', function () {
+    return view('kategori.weddingp', [
+        'title' => "Kategori"
+    ]);
+});
+
+Route::get('/kategori-honeymoon', function () {
+    return view('kategori.honeymoon', [
+        'title' => "Kategori"
+    ]);
+});
+
+Route::get('/kategori-photobooth', function () {
+    return view('kategori.photobooth', [
+        'title' => "Kategori"
+    ]);
+});
+
+Route::get('/kategori-koreografi', function () {
+    return view('kategori.koreografi', [
+        'title' => "Kategori"
+    ]);
+});
+
+Route::get('/kategori-seserahan', function () {
+    return view('kategori.seserahan', [
+        'title' => "Kategori"
+    ]);
+});
+
+Route::get('/kategori-lainnya', function () {
+    return view('kategori.lainnya', [
+        'title' => "Kategori"
+    ]);
+});
+
+
 Route::get('/keranjang', function () {
     return view('keranjang', [
         'title' => "Keranjang"
@@ -142,11 +245,17 @@ Route::get('/gagalnabung', function () {
     return view('dashboard.gagalnabung', [
         'title' => "Gagal Nabung"
     ]);
-});    
+});
 
-Route::get('/vendor', function () {
+Route::get('/loginvendor', function () {
     return view('auth.business.login', [
         'title' => "Login Vendor"
+    ]);
+});
+
+Route::get('/registervendor', function () {
+    return view('auth.business.register', [
+        'title' => "Register Vendor"
     ]);
 });
 
@@ -163,15 +272,58 @@ Route::get('/feed', function () {
     ]);
 });
 
-Route::get('/venue', function () {
+Route::get('/view-venue', function () {
     return view('profile.iyan.view-venue', [
         'title' => "Venue"
     ]);
 });
 
-Route::get('/mua', function () {
+Route::get('/view-dekorasi', function () {
+    return view('profile.iyan.view-dekor', [
+        'title' => "Dekor"
+    ]);
+});
+
+
+Route::get('/view-mua', function () {
     return view('profile.iyan.view-mua', [
         'title' => "Mua"
+    ]);
+});
+
+Route::get('/view-catering', function () {
+    return view('profile.iyan.view-catering', [
+        'title' => "Catering"
+    ]);
+});
+
+Route::get('/view-band', function () {
+    return view('profile.iyan.view-band', [
+        'title' => "band"
+    ]);
+});
+
+Route::get('/view-fotografi', function () {
+    return view('profile.iyan.view-fotografi', [
+        'title' => "fotografi"
+    ]);
+});
+
+Route::get('/view-busana', function () {
+    return view('profile.iyan.view-busana', [
+        'title' => "busana"
+    ]);
+});
+
+Route::get('/view-wo', function () {
+    return view('profile.iyan.view-wo', [
+        'title' => "wo"
+    ]);
+});
+
+Route::get('/view-souvenir', function () {
+    return view('profile.iyan.view-souvenir', [
+        'title' => "souvenir"
     ]);
 });
 
@@ -191,14 +343,43 @@ Route::get('/chat', function () {
 Route::get('/dashboard-admin', function () {
     return view('dashboard_cms.dashboard', [
         'title' => "Dashboard"
+    ]);
+});
 
+Route::get('/dashboard-admin-users', function () {
+    return view('dashboard_cms.users', [
+        'title' => "Dashboard"
     ]);
 });
 
 Route::get('/checklist', function () {
     return view('profile.checklist', [
         'title' => "Checklist"
+    ]);
+});
 
+Route::get('/chat', function () {
+    return view('chat', [
+        'title' => "Chat"
+    ]);
+});
+
+
+Route::get('/package-emerald', function () {
+    return view('package.emerald', [
+        'title' => "Emerald Package"
+    ]);
+});
+
+Route::get('/package-gold', function () {
+    return view('package.gold', [
+        'title' => "Gold Package"
+    ]);
+});
+
+Route::get('/package-silver', function () {
+    return view('package.silver', [
+        'title' => "Silver Package"
     ]);
 });
 

@@ -210,7 +210,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>view MUA</title>
+    <title>view fotografi</title>
 </head>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -239,13 +239,13 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="/img/carouselmua.png" class="d-block w-100" alt="...">
+                            <img src="/img/carouselfotografi.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="/img/carouselmua.png" class="d-block w-100" alt="...">
+                            <img src="/img/carouselfotografi.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="/img/carouselmua.png" class="d-block w-100" alt="...">
+                            <img src="/img/carouselfotografi.png" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -260,23 +260,20 @@
 
                 <div class="container mt-5 text-capitalize mr-5">
                     <div class="row">
-                        <div class="col-5">
-                            <h1 class="d-inline-block">wedding look</h1>
+                        <div class="col-6">
+                            <h1 class="d-inline-block fw-700">Khayra Photography </h1>
                             <img class="mx-1 pb-5" src="/img/ceklis.png" alt="">
 
                         </div>
 
                         <div class="col-4 mt-3">
                             <a class="d-inline-block mx-3 kategori1 text-decoration-none text-white" href="">
-                                <p>MUA</p>
-                            </a>
-                            <a class="d-inline-block kategori2 text-decoration-none text-white" href="">
-                                <p>outdoor</p>
+                                <p>foto</p>
                             </a>
 
                         </div>
 
-                        <div class="col-3 mt-3 text-end">
+                        <div class="col-2 mt-3 text-end">
                             <div class="d-inline-block">
 
                                 <a class="text-decoration-none text-white" href="">
@@ -294,7 +291,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-5">
+                        <div class="col-7">
                             <div class="row">
                                 <div class="col-2">
                                     <a href="" class="rev-wrap mx-auto d-inline-block">
@@ -302,9 +299,9 @@
                                     </a>
                                 </div>
 
-                                <div class="col-6">
+                                <div class="col-5">
                                     <div class=" profile">
-                                        <h6 class=""> Shanti MUA</h6>
+                                        <h6 class=""> Khayra Photography</h6>
                                         <p class="">online</p>
                                     </div>
                                 </div>
@@ -318,19 +315,23 @@
                 </div>
 
                 <div class="container mt-3">
-                    <p>Romantic and soft, Natural, Glamour and bold. Menggunakan high end brand (Shu Uemura, Shiseido, Estee Lauder, MAC, Urban Decay, Benefit, Make Up For Ever, Anastasia Beverly Hills, etc) and high quality drugstore product (The Balm, L'oreal Paris, Maybelline, NYX, Make Over, etc)
-                    </p>
+                    <p> Khayra Photography merupakan suatu usaha yang bergerak di bidang dokumentasi dan dekorasi. Sudah lebih dari 5 thn kami berkarya di bidang dokumentasi. Dengan mewujudkan impian para klien kami menciptakan sebuah website untuk menyuguhkan hasil karya kami.</p>
                 </div>
-
-
                 <div class="container mt-5">
                     <h4 class="text-capitalize fw-bolder" style="color: #49516F">detail</h4>
-                    <p class="m-0">Wedding makeup (no retouch)</p>
-                    <ul>
-                        <li>No retouch. makeup for akad or reception only</li>
-                        <li>Free trial wedding makeup</li>
-                        <li>Waktu penyelesaian 3 jam</li>
-                        <li>We only do natural makeup</li>
+                    <h6 class="fw-normal">1 fotographer & 1 Videographer</h6>
+
+
+                    <p class="text-capitalize">durasi:</p>
+                    <p class="text-capitalize">4 Jam Di Gedung / Hotel / Resto / Rumah</p>
+
+                    <p>Hasil yang didapat</p>
+                    <ul class="list-unstyled">
+                        <li>1 Pcs Album Koper & 1 Pcs Foto Uk. 40×60 + Frame</li>
+                        <li>Video Shooting Full Edit</li>
+                        <li>Flashdisc 16 Gb – All File Foto & Video</li>
+                        <li>foto Uk. 30×40 Plus Frame</li>
+                        <li>Bonus : All Foto Edit With Color Balance</li>
                     </ul>
 
                 </div>
@@ -489,8 +490,6 @@
                 </div>
             </div>
 
-
-
             <div class="container col-4 mt-5 list-btn">
 
                 <button class="button2 mt-4 mx-4">
@@ -506,7 +505,7 @@
                             </div>
 
                             <div class="col-6 container text-capitalize">
-                                <p class="m-0 font-color" style="font-weight:600; font-size:20px">rp 1.000.000,00</p>
+                                <p class="m-0 font-color" style="font-weight:600; font-size:20px">rp 2.500.000,00</p>
                             </div>
                         </div>
                     </div>

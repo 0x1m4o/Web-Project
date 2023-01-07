@@ -3,10 +3,6 @@
         background-color: #f4f4f4;
     }
 
-    .font-color {
-        color: #49516F;
-    }
-
     .back {
         width: 45px;
         height: 45px;
@@ -109,14 +105,14 @@
         font-size: 12px;
     }
 
-    .button1 {
+    .button {
         width: 400px;
         height: 80px;
         border-radius: 15px;
         background-color: #237A57;
     }
 
-    .button1:hover {
+    .button:hover {
         width: 400px;
         height: 80px;
         border-radius: 15px;
@@ -158,48 +154,6 @@
         font-weight: 400;
         color: #49516F;
     }
-
-    .hj-button {
-        width: 400px;
-        height: 60px;
-        border-radius: 15px;
-        background-color: #237A57;
-    }
-
-    .plus-minus-input {
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-
-    .plus-minus-input .input-group-field {
-        width: 55px;
-        height: 30px;
-        text-align: center;
-    }
-
-    .plus-minus-input .input-group-field::-webkit-inner-spin-button,
-    .plus-minus-input .input-group-field ::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-        appearance: none;
-    }
-
-    .wrap {
-        width: 400px;
-        height: 60px;
-        border-radius: 15px;
-        background-color: #f4f4f4;
-    }
-
-    .tombol {
-        padding: 7px 17px;
-        text-decoration: none;
-        color: #237A57;
-    }
-
-    .etc:hover {
-        box-shadow: 3px #49516F;
-    }
 </style>
 
 
@@ -210,7 +164,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>view MUA</title>
+    <title>view band</title>
 </head>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -225,11 +179,9 @@
         <div class="row">
             <div class="col-8">
 
-                <a href="/">
-                    <button class="back mt-4 mb-2">
-                        <img src="/img/back.png" alt="">
-                    </button>
-                </a>
+                <button class="back mt-4 mb-2">
+                    <img src="/img/back.png" alt="">
+                </button>
                 <!-- Carousel -->
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -239,13 +191,13 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="/img/carouselmua.png" class="d-block w-100" alt="...">
+                            <img src="/img/carouselband.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="/img/carouselmua.png" class="d-block w-100" alt="...">
+                            <img src="/img/carouselband.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="/img/carouselmua.png" class="d-block w-100" alt="...">
+                            <img src="/img/carouselband.png" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -261,17 +213,14 @@
                 <div class="container mt-5 text-capitalize mr-5">
                     <div class="row">
                         <div class="col-5">
-                            <h1 class="d-inline-block">wedding look</h1>
+                            <h1 class="d-inline-block fw-700">rolling hearts</h1>
                             <img class="mx-1 pb-5" src="/img/ceklis.png" alt="">
 
                         </div>
 
                         <div class="col-4 mt-3">
                             <a class="d-inline-block mx-3 kategori1 text-decoration-none text-white" href="">
-                                <p>MUA</p>
-                            </a>
-                            <a class="d-inline-block kategori2 text-decoration-none text-white" href="">
-                                <p>outdoor</p>
+                                <p class="text-capitalize">band</p>
                             </a>
 
                         </div>
@@ -284,7 +233,7 @@
                                 </a>
 
                                 <a class="text-decoration-none text-white mx-3" href="">
-                                    <img src="/img/share.png" alt="">
+                                    <img src="/img/share1.png" alt="">
                                 </a>
 
                             </div>
@@ -304,7 +253,7 @@
 
                                 <div class="col-6">
                                     <div class=" profile">
-                                        <h6 class=""> Shanti MUA</h6>
+                                        <h6 class="text-capitalize"> rolling hearts</h6>
                                         <p class="">online</p>
                                     </div>
                                 </div>
@@ -318,48 +267,31 @@
                 </div>
 
                 <div class="container mt-3">
-                    <p>Romantic and soft, Natural, Glamour and bold. Menggunakan high end brand (Shu Uemura, Shiseido, Estee Lauder, MAC, Urban Decay, Benefit, Make Up For Ever, Anastasia Beverly Hills, etc) and high quality drugstore product (The Balm, L'oreal Paris, Maybelline, NYX, Make Over, etc)
+                    <p class="m-0">Biaya overtime Rp. 100.000/player/jam</p>
+                    <p class="m-0">Harga diatas sudah termasuk player dan alat musik</p>
+                    <p class="m-0">Harga diatas tidak termasuk sound system (cek price list sound system disini)
                     </p>
-                </div>
+                    <p>Untuk luar kota JADETABEK, ada biaya tambahan untuk akomodasi (disesuaikan dengan kota)
+                    </p>
 
+                    <p>Package: Mini Chamber</p>
+                    <p class="m-0">7 personils</p>
 
-                <div class="container mt-5">
-                    <h4 class="text-capitalize fw-bolder" style="color: #49516F">detail</h4>
-                    <p class="m-0">Wedding makeup (no retouch)</p>
                     <ul>
-                        <li>No retouch. makeup for akad or reception only</li>
-                        <li>Free trial wedding makeup</li>
-                        <li>Waktu penyelesaian 3 jam</li>
-                        <li>We only do natural makeup</li>
+                        <li>2 singers</li>
+                        <li>keyboard</li>
+                        <li>guitar</li>
+                        <li>bass</li>
+                        <li>saxophone</li>
+                        <li>electric drum</li>
                     </ul>
 
+
                 </div>
 
-                <a class="text-capitalize text-center text-success text-decoration-none" href="">
-                    <h6>lihat selengkapnya</h6>
-                </a>
+
 
                 <hr>
-
-                <div class="my-3">
-                    <h5 class="text-capitalize fw-bolder" style="color: #49516F">lokasi</h5>
-                    <div class="container bg-white">
-                        <div class="row">
-                            <div class="col-6">
-                                <img class="maps my-3" src="/img/maps.png" alt="">
-
-                            </div>
-
-                            <div class="col-6">
-                                <p class="alamat fw-bolder" style="color: #49516F; font-size:15px">Jl. Gatot Subroto No.10 Rt 06/01, RT.6/RW.1
-                                    Kuningan Bar, Kec. Mampang Prpt, Kota
-                                    Jakarta Utara Daerah Khusus Ibukota Jakarta 12710</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
 
                 <div class="my-3">
                     <h5 class="text-capitalize fw-bolder" style="color: #49516F">ulasan</h5>
@@ -491,7 +423,7 @@
 
 
 
-            <div class="container col-4 mt-5 list-btn">
+            <div class="container col-4 mt-5">
 
                 <button class="button2 mt-4 mx-4">
                     <img class="mx-0 pb-2" src="/img/jadwal.png" alt="" style="width: 30px; height:35px">
@@ -499,38 +431,13 @@
                 </button>
 
                 <button class="button2 mt-4 mx-4">
-                    <div class="container">
-                        <div class="row text-white align-items-center">
-                            <div class="col-6 container text-capitalize ">
-                                <p class="m-0 font-color" style="font-weight:400; font-size:20px">harga</p>
-                            </div>
+                    <div class="container text-capitalize mt-2">
+                        <p class="m-0" style="float: left; width: 50%; text-align: left; color:#49516F; font-weight:400">harga per pax </p>
+                        <p class="m-0" style="float: left; width: 50%; text-align: right; color:#49516F; font-weight:600">Rp 10.000.000,00</p>
+                        <p class="mt-2" style="float: left; width: 50%; text-align: left; color:#49516F; font-weight:400">jumlah pemesanan </p>
+                        <p class="mt-2" style="float: left; width: 50%; text-align: right; color:#49516F; font-weight:600">3 jam</p>
 
-                            <div class="col-6 container text-capitalize">
-                                <p class="m-0 font-color" style="font-weight:600; font-size:20px">rp 1.000.000,00</p>
-                            </div>
-                        </div>
                     </div>
-                </button>
-
-                <button class="button2 mt-4 mx-4">
-                    <div class="container">
-                        <div class="row text-white align-items-center">
-                            <div class="col-6 container text-capitalize ">
-                                <p class="m-0 font-color" style="font-weight:400; font-size:20px">jumlah</p>
-                            </div>
-
-                            <div class="col-6">
-                                <div class="d-flex z-0 border-bottom rounded-pill justify-content-between align-items-center">
-                                    <a href="" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-size:25px" class="tombol bg-white rounded-circle">-</a>
-                                    <div>
-                                        <span class="text-dark">1</span>
-                                    </div>
-                                    <a href="" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-size:25px" class="tombol bg-white rounded-circle">+</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </button>
 
                 <button class="button2 mt-4 mx-4">
@@ -543,12 +450,14 @@
                     <p class="tw-button2 text-capitalize d-inline-block mt-2 mx-3">chat vendor</p>
                 </button>
 
-                <button class="button2 mt-4 mx-4">
-                    <img class="mx-0 pb-2" src="/img/troli.png" alt="" style="width: 30px; height:35px">
-                    <p class="tw-button2 text-capitalize d-inline-block mt-2 mx-3">tambah keranjang</p>
-                </button>
+                <a href="/keranjang">
+                    <button class="button2 mt-4 mx-4">
+                        <img class="mx-0 pb-2" src="/img/troli.png" alt="" style="width: 30px; height:35px">
+                        <p class="tw-button2 text-capitalize d-inline-block mt-2 mx-3">tambah keranjang</p>
+                    </button>
+                </a>
 
-                <button class="button1 mt-4 mx-4">
+                <button class="button mt-4 mx-4 border-0">
                     <p class="tg-button text-capitalize text-center d-inline-block mt-2">order</p>
                 </button>
             </div>
