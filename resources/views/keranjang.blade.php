@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-    <div class="container keranjang-container p-3 mt-5 bg-white" style="width: 100%;border-radius:12px;">
+    <div class="container keranjang-container p-3 mt-5 mb-5 bg-white" style="width: 100%;border-radius:12px;">
         <div class="keranjang-title jcs">
             <a href="/" class="text-secondary mt-2 p-2 fs-5 jcs"><iconify-icon icon="material-symbols:arrow-back-ios-new-rounded"></iconify-icon></a>
             <h3 class="fw-semibold title-label p-0 m-0 mt-2 ">Keranjang</h3>
@@ -112,7 +112,7 @@
             <hr>
             
         </div>
-        <div class="ringkasan mb-2" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius: 10px;">
+        <div class="ringkasan mb-1" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius: 10px;">
             <div class="row text-center title-label">
                 <h5 class="fw-semibold">Ringkasan Belanja</h5>
                 <h6 class="fw-semibold"><span class="border-bottom px-5" >Total 3 Vendor </span></h6>
