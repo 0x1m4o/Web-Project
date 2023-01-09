@@ -211,7 +211,7 @@
                         <div class="srch_bar">
                             <div class="stylish-input-group">
                                 <div
-                                    class="item-content d-flex justify-content-between align-items-center bg-white rounded w-100 border"
+                                    class="item-content d-flex justify-content-between align-items-center bg-white rounded w-100 border"-m 
                                     style="height: 50px"
                                 >
                                     <form
