@@ -336,7 +336,7 @@
     <!-- Content -->
     <div class="container row m-auto">
         <div class="col-sm-6 col-md-4 col-lg-3 ">
-            <a class="text-decoration-none" href="/view-fotografi">
+            <a class="text-decoration-none" href="/viewmaritory/fotografi">
                 <div class="card card-kategori">
                     <img src="/img/carouselfotografi.png" class="card-img-top" alt="..." />
                     <div class="card-body ms-2 mt-2">

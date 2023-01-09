@@ -85,7 +85,7 @@
         </div>
 
         <div class="card">
-            <a href="/perhiasan">
+            <a href="/kategori-perhiasan">
                 <img src="/img/kategori-img/perhiasan.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h6 class="card-title  text-center mt-2">Perhiasan</h6>
@@ -93,7 +93,7 @@
             </a>
         </div>
         <div class="card">
-            <a href="/mc">
+            <a href="/kategori-mc">
                 <img src="/img/kategori-img/mc.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h6 class="card-title  text-center mt-2 ">MC</h6>
@@ -101,7 +101,7 @@
             </a>
         </div>
         <div class="card">
-            <a href="/undangan">
+            <a href="/kategori-undangan">
                 <img src="/img/kategori-img/undangan.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h6 class="card-title  text-center mt-2 ">undangan</h6>
@@ -109,7 +109,7 @@
             </a>
         </div>
         <div class="card">
-            <a href="/wedding_planner">
+            <a href="/kategori-wedding_planner">
             </a>
             <img src="/img/kategori-img/wedding_planner.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -117,7 +117,7 @@
             </div>
         </div>
         <div class="card">
-            <a href="/honeymoon">
+            <a href="/kategori-honeymoon">
                 <img src="/img/kategori-img/honeymoon.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h6 class="card-title  text-center mt-2">honey moon</h6>
@@ -125,7 +125,7 @@
             </a>
         </div>
         <div class="card">
-            <a href="/photo_booth">
+            <a href="/kategori-photobooth">
                 <img src="/img/kategori-img/photo_booth.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h6 class="card-title  text-center mt-2">photo booth</h6>
@@ -133,7 +133,7 @@
             </a>
         </div>
         <div class="card">
-            <a href="/seserahan">
+            <a href="/kategori-seserahan">
                 <img src="/img/kategori-img/seserahan.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h6 class="card-title  text-center mt-2">seserahan</h6>

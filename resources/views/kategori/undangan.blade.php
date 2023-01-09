@@ -338,7 +338,7 @@
     <!-- Content -->
     <div class="container row m-auto">
         <div class="col-sm-6 col-md-4 col-lg-3 ">
-            <a class="text-decoration-none" href="/">
+            <a class="text-decoration-none" href="/viewmaritory/undangan">
                 <div class="card card-kategori">
                     <img src="/img/Tropical.png" class="card-img-top" alt="..." />
                     <div class="card-body ms-2 mt-2">

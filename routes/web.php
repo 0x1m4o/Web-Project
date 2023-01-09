@@ -272,57 +272,57 @@ Route::get('/feed', function () {
     ]);
 });
 
-Route::get('/view-venue', function () {
-    return view('profile.iyan.view-venue', [
+Route::get('/viewmaritory/venue', function () {
+    return view('viewmaritory.venue', [
         'title' => "Venue"
     ]);
 });
 
-Route::get('/view-dekorasi', function () {
-    return view('profile.iyan.view-dekor', [
+Route::get('/viewmaritory/dekor', function () {
+    return view('viewmaritory.venue', [
         'title' => "Dekor"
     ]);
 });
 
 
-Route::get('/view-mua', function () {
-    return view('profile.iyan.view-mua', [
+Route::get('viewmaritory/mua', function () {
+    return view('viewmaritory.mua', [
         'title' => "Mua"
     ]);
 });
 
-Route::get('/view-catering', function () {
-    return view('profile.iyan.view-catering', [
+Route::get('/viewmaritory/catering', function () {
+    return view('viewmaritory.catering', [
         'title' => "Catering"
     ]);
 });
 
-Route::get('/view-band', function () {
-    return view('profile.iyan.view-band', [
+Route::get('/viewmaritory/band', function () {
+    return view('viewmaritory.band', [
         'title' => "band"
     ]);
 });
 
-Route::get('/view-fotografi', function () {
-    return view('profile.iyan.view-fotografi', [
+Route::get('/viewmaritory/fotografi', function () {
+    return view('viewmaritory.fotografi', [
         'title' => "fotografi"
     ]);
 });
 
-Route::get('/view-busana', function () {
-    return view('profile.iyan.view-busana', [
+Route::get('/viewmaritory/busana', function () {
+    return view('viewmaritory.busana', [
         'title' => "busana"
     ]);
 });
 
-Route::get('/view-wo', function () {
-    return view('profile.iyan.view-wo', [
+Route::get('/viewmaritory/wo', function () {
+    return view('viewmaritory.wo', [
         'title' => "wo"
     ]);
 });
 
-Route::get('/view-souvenir', function () {
-    return view('profile.iyan.view-souvenir', [
+Route::get('/viewmaritory/souvenir', function () {
+    return view('viewmaritory.souvenir', [
         'title' => "souvenir"
     ]);
 });

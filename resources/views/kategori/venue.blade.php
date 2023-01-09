@@ -333,7 +333,7 @@
     <!-- Content -->
     <div class="container row m-auto">
         <div class="col-sm-6 col-md-4 col-lg-3 ">
-            <a class="text-decoration-none" href="/view-venue">
+            <a class="text-decoration-none" href="/viewmaritory/venue">
                 <div class="card card-kategori">
                     <img src="/img/carousel2.png" class="card-img-top" alt="..." />
                     <div class="card-body ms-2 mt-2">
