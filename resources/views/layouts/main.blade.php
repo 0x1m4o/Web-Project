@@ -122,6 +122,27 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
 
+    <script>
+        $(document).ready(function() {
+
+            // Add hover action for dropdowns
+            let dropdown_hover = $(".dropdown-hover");
+            dropdown_hover.on('mouseover', function() {
+                let menu = $(this).find('.dropdown-menu'),
+                    toggle = $(this).find('.dropdown-toggle');
+                menu.addClass('show');
+                toggle.addClass('show').attr('aria-expanded', true);
+            });
+            dropdown_hover.on('mouseout', function() {
+                let menu = $(this).find('.dropdown-menu'),
+                    toggle = $(this).find('.dropdown-toggle');
+                menu.removeClass('show');
+                toggle.removeClass('show').attr('aria-expanded', false);
+            });
+
+        });
+    </script>
+
 </body>
 
 </html>

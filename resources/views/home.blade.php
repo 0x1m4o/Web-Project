@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('content')
     <link rel="stylesheet" href="/css/home/home.css">
-    <div class="home">
+    <div class="home" style="background-color: white">
         @include('partials.carousel')
         <div class="container" style="margin-top: 50px;">
             <h4 style="font-weight: 600;">Spesial Paket Hanya di Maritory</h4>
