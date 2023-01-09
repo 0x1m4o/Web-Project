@@ -21,7 +21,7 @@
 
             <!-- Navbar Search Content -->
 
-            <div id="navbarSearchContent" class="rounded box-shadow me-4 navbar-collapse collapse container-fluid">
+            <div id="navbarSearchContent" class="rounded box-shadow me-2 navbar-collapse collapse container-fluid">
                 <div class="item-content d-flex justify-content-between align-items-center mx-3 bg-white rounded w-100"
                     style="height: 50px">
                     <button class="navbar-toggler" type="button" data-bs-target="#navbarSearchContent"
@@ -218,7 +218,7 @@
                 <div class="dropdown ">
                     <a href="/profile" class="rounded-circle p-2 px-3"
                         style="background-color: #237A57;font-size: 20px">
-                        <img src="/img/avatar.png" style="width: 15px; height: 15px" alt="" />
+                        <img src="/img/avatar.png" style="width: 17px; height: 17px" alt="" />
                     </a>
                     <div class="dropdown-menu dropdown-menu-start">
                         <div class="container container-profile">
