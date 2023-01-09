@@ -219,21 +219,16 @@
                         </div>
                         <div class="srch_bar">
                             <div class="stylish-input-group">
-                                <div
-                                    class="item-content d-flex justify-content-between align-items-center bg-white rounded w-100 border border-dark border-1"
-                                    style="height: 50px"
-                                >
-                                    <form
-                                        class="d-flex nav-item search-form"
-                                        role="search"
-                                    >
-                                        <input
-                                            class="search-bar ms-3 w-100"
-                                            type="search"
-                                            placeholder="Cari pengguna"
-                                            aria-label="Search"
-                                        />
-                                    </form>
+                                <div class="d-flex justify-content-around align-items-center w-100">
+                                    <div class="item-content d-flex justify-content-between align-items-center bg-white rounded-4 border border-dark border-1" style="height: 60px">
+                                        <form class="d-flex nav-item search-form px-2" role="search">
+                                            <input
+                                                class="search-bar me-4 w-100"
+                                                type="search"
+                                                placeholder="Cari pengguna"
+                                                aria-label="Search"
+                                            />
+                                        </form>
 
                                         <div class="dropdown">
                                             <button
