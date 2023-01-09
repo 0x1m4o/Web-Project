@@ -260,7 +260,7 @@ Route::get('/registervendor', function () {
 });
 
 Route::get('/profilevendor', function () {
-    return view('profile.iyan.profilevendor', [
+    return view('profilevendor', [
         'title' => "Profile Vendor"
     ]);
 });
