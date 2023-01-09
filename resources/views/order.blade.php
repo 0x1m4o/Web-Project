@@ -2,22 +2,29 @@
 
 @section('content')
     <div class="container keranjang-container p-3 mt-5 bg-white"
-        style="width: 100%;border-radius:12px;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
+        style="width: 100%;border-radius: 20px;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
         <div class="keranjang-title jcs">
-            <a href="#" class="text-secondary mt-2 p-2 fs-5 jcs">
-                <iconify-icon icon="material-symbols:arrow-back-ios-new-rounded"></iconify-icon>
+            <a href="#" class="text-secondary p-2 fs-5 jcs">
+                <iconify-icon icon="material-symbols:arrow-back-ios new-rounded"></iconify-icon>
             </a>
-            <h3 class="fw-semibold title-label p-0 m-0 mt-2 ">Konfirmasi Pesanan</h3>
+            <div class="content d-flex">
+                <a href="/keranjang" style="color: black;">
+                    <i class='bx bx-chevron-left' style="padding-top: 25px;font-size: 30px;"></i>
+                </a>
+                <div style="width: 1200px;">
+                    <h5 style="padding-top: 20px;font-weight: bold;font-size: 32px; color: #49516F;">Konfirmasi Pesanan</h5>
+                </div>
+            </div>
         </div>
         <hr class="my-0">
         <div class="keranjang-body px-5">
             {{-- Judul Pesanan --}}
             <div class="row">
                 <div class="d-flex">
-                    <h5 class="fw-semibold d-flex align-items-end title-label">The Aesthetic</h5>
-                    <button class="btn btn-success jcc keranjang-button me-3 mb-3">Venue</button>
+                    <h5 class="fw-semibold d-flex align-items-end title-label" style="font-size: 24px;">The Aesthetic</h5>
+                    <button class="jcc keranjang-button me-2 mb-3" style="background-color: white; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border: none; margin-left: 2px;font-size: 14px;">Venue</button>
                 </div>
-                <h6 class="title-label fw-semibold d-inline-block">Kota Jakarta</h6>
+                <h6 class="title-label fw-semibold d-inline-block" style="margin-bottom: 60px;font-size: 20px;">Kota Jakarta</h6>
             </div>
             {{-- Konten Pesanan --}}
             <div class="keranjang-konten d-flex justify-content-between mt-2">
@@ -28,14 +35,14 @@
                             <div class="row">
                                 <h5 class="konten-title fw-semibold title-label">The Aesthetic</h5>
                                 <h6 class="konten-price fw-semibold title-label">Rp. 100.000.000</h6>
-                                <h6 class="konten-catatan text-success">Tulis Catatan</h6>
+                                <h6 class="konten-catatan text-success" style="margin-top: 20px;">Tulis Catatan</h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="konten-crud d-flex align-items-center">
                             <div class="row">
-                                <h6 class="text-center konten-time title-label"><span class="preorder p-1">Pre-Order 30
+                                <h6 class="text-center konten-time title-label" style=""><span class="preorder p-1">Pre-Order 30
                                         hari</span></h6>
                                 <div class="crud">
                                     <div class="count jcs text-secondary">
@@ -61,39 +68,39 @@
             </div>
 
             {{-- Pengiriman --}}
-            <h5 class="fw-semibold title-label mt-3">Pengiriman</h5>
+            <h5 class="fw-semibold title-label" style="margin-top: 100px;font-size: 24px;">Pengiriman</h5>
             {{-- Waktu --}}
-            <div class="waktu">
+            <div class="waktu" style="margin-top: 50px;">
                 <div class="d-flex justify-content-start align-items-center">
-                    <button class="btn btn-success jcc keranjang-button me-3">Waktu</button>
-                    <h6 class="title-label fw-semibold m-0">30 September 2021, 9:00 WIB </h6>
+                    <button class="btn btn-success jcc keranjang-button me-3 fw-bold">Waktu</button>
+                    <h6 class="title-label fw-bold m-0">30 September 2021, 9:00 WIB </h6>
                 </div>
             </div>
             {{-- Alamat --}}
-            <div class="d-flex justify-content-start align-items-start mt-3">
-                <button class="btn btn-success jcc keranjang-button me-3">Alamat</button>
-                <h6 class="title-label fw-semibold m-0">
+            <div class="d-flex justify-content-start align-items-start">
+                <button class="btn btn-success jcc keranjang-button me-3 fw-bold" style="margin-top: 30px;">Alamat</button>
+                <h6 class="title-label fw-semibold m-0" style="padding-top: 30px;">
                     The Aesthetic
-                    <br>
+                    <br><br>
                     Jl. Gatot Subroto No.10 Rt 06/01, RT.6/RW.1 Kuningan Bar, Kec. Mampang Prpt,
-                    <br>
+                    <br><br>
                     Kota Jakarta Utara Daerah Khusus Ibukota Jakarta 12710
                 </h6>
             </div>
 
             {{-- Pembayaran --}}
             <div class="row">
-                <h5 class="fw-semibold title-label mt-3">Pengiriman</h5>
+                <h5 class="fw-semibold title-label" style="margin: 70px 0px 47px 0px;font-size: 24px;">Pembayaran</h5>
                 {{-- Bank --}}
-                <div class="bank d-flex justify-content-start align-items-center">
-                    <img src="/img/bca.png" alt="" style="width: 107px; height: 45px;">
+                <div class="bank d-flex justify-content-start align-items-center" style="margin-bottom: 40px;">
+                    <img src="/img/bca.png" alt="" style="width: 107px; height: 45px; pointer-events: none; margin: 0px 30px 0px 10px;">
                     <h6 class="fw-semibold title-label m-0 ms-3">BCA Virtual Account</h6>
                 </div>
 
 
             </div>
             <select class="form-select" style="border: none; width: 300px;">
-                <option selected>Pilih metode pembayaran</option>
+                <option selected>Ubah metode pembayaran</option>
                 <option>BCA</option>
                 <option>Mandiri</option>
                 <option>Gopay</option>
@@ -104,18 +111,18 @@
     </div>
     <div class="container p-4 w-50 bg-white ringkasan mt-3 mb-5 m-auto"
         style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius: 10px;
-        height: 333px;">
+        height: 300px;">
         <div class="d-flex justify-content-between align-items-center mt-5">
-            <h5 class="fw-semibold title-label">Harga</h5>
-            <h6 class="fw-light" style="color: #237A57;">100.000.000</h6>
+            <h5 class="fw-semibold title-label" style="font-size: 24px;">Harga</h5>
+            <h6 class="fw-light" style="color: #237A57;font-size: 18px;">100.000.000</h6>
         </div>
         <div class="d-flex justify-content-between align-items-center pt-0">
-            <h5 class="fw-semibold title-label">Total Tagihan</h5>
-            <h6 class="fw-semibold" style="color: #237A57;">100.000.000</h6>
+            <h5 class="fw-semibold title-label" style="font-size: 24px;">Total Tagihan</h5>
+            <h6 class="fw-semibold" style="color: #237A57;font-size: 20px;">100.000.000</h6>
         </div>
         <div class="btn-konfirmasi mt-4 jcc">
             <a class="btn btn-md text-white" href="#" role="button"
-                style="background: linear-gradient(to right,rgba(9, 48, 40, 1),rgba(35, 122, 87, 1));">Bayar Sekarang</a>
+                style="background: linear-gradient(to right,rgba(9, 48, 40, 1),rgba(35, 122, 87, 1)); border: none; font-weight: bold;">Bayar Sekarang</a>
         </div>
     </div>
 @endsection
