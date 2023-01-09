@@ -260,7 +260,7 @@ Route::get('/registervendor', function () {
 });
 
 Route::get('/profilevendor', function () {
-    return view('profile.iyan.profilevendor', [
+    return view('profilevendor', [
         'title' => "Profile Vendor"
     ]);
 });
@@ -279,7 +279,7 @@ Route::get('/viewmaritory/venue', function () {
 });
 
 Route::get('/viewmaritory/dekor', function () {
-    return view('viewmaritory.venue', [
+    return view('viewmaritory.dekor', [
         'title' => "Dekor"
     ]);
 });

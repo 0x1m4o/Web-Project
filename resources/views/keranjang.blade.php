@@ -21,12 +21,11 @@
             <div class="form-check jcs">
                 <input class="form-check-input mb-1 me-3 checkallthis" type="checkbox" value=""
                     id="check-TheAesthetic" />
-                <div class="row mb-3">
+                <div class="row">
                     <div class="d-flex">
                         <label class="form-check-label title-label fw-semibold d-flex align-items-end"
                             for="check-TheAesthetic">The Aesthetic</label>
-                        <h6 class="text-center keranjang-kategori p-1 px-3 mb-2 d-flex align-items-center mb-3"
-                            style="border-radius: 14px">Venue</h6>
+                        <h6 class="text-center keranjang-kategori p-1 px-2 mb-2 d-flex align-items-center mb-3">Venue</h6>
                     </div>
                     <h6 class="title-label fw-semibold d-inline-block">Kota Jakarta</h6>
                 </div>
@@ -40,12 +39,10 @@
                                     value="" />
                             </div>
                             <img class="me-3" src="/img/The-Aesthetic.png" alt="">
-                            <div class="row konten-row">
+                            <div class="row">
                                 <h5 class="konten-title fw-semibold title-label">The Aesthetic</h5>
                                 <h6 class="konten-price fw-semibold title-label">Rp. 100.000.000</h6>
-                                <a href="/catatan" class="text-decoration-none">
-                                    <h6 class="konten-catatan text-success hover-underline fw-semibold">Tulis Catatan</h6>
-                                </a>
+                                <h6 class="konten-catatan text-success">Tulis Catatan</h6>
                             </div>
                         </div>
                     </div>
@@ -56,7 +53,7 @@
                                         hari</span></h6>
                                 <div class="crud">
                                     <div class="count jcs text-secondary">
-                                        <h6 class="fw-semibold m-0 p-2 pe-3 border-end">Pindahkan Ke Wishlist</h6>
+                                        <h5 class="fw-semibold m-0 p-2 pe-3 border-end">Pindahkan Ke Wishlist</h5>
                                         <a href="#" class="text-secondary mx-2 me-5 jcc" style="font-size: 22px">
                                             <iconify-icon icon="mdi:rubbish"></iconify-icon>
                                         </a>
@@ -83,12 +80,11 @@
             <div class="form-check jcs">
                 <input class="form-check-input mb-1 me-3 checkallthis" type="checkbox" value=""
                     id="check-LanghamSCBD" />
-                <div class="row mb-3">
+                <div class="row">
                     <div class="d-flex">
                         <label class="form-check-label title-label fw-semibold d-flex align-items-end"
                             for="check-LanghamSCBD">Langham SCBD</label>
-                        <h6 class="text-center keranjang-kategori p-1 px-3 mb-2 d-flex align-items-center mb-3"
-                            style="border-radius: 14px">Venue</h6>
+                        <h6 class="text-center keranjang-kategori p-1 px-2 mb-2 d-flex align-items-center mb-3">Venue</h6>
                     </div>
                     <h6 class="title-label fw-semibold d-inline-block">Kota Jakarta Selatan</h6>
                 </div>
@@ -102,12 +98,10 @@
                                     value="" />
                             </div>
                             <img class="me-3" src="/img/ballroommelbourne.png" alt="">
-                            <div class="row konten-row">
+                            <div class="row">
                                 <h5 class="konten-title fw-semibold title-label">Ballroom Melbourne</h5>
                                 <h6 class="konten-price fw-semibold title-label">Rp. 300.000.000</h6>
-                                <a href="/catatan" class="text-decoration-none">
-                                    <h6 class="konten-catatan text-success hover-underline fw-semibold">Tulis Catatan</h6>
-                                </a>
+                                <h6 class="konten-catatan text-success">Tulis Catatan</h6>
                             </div>
                         </div>
                     </div>
@@ -118,7 +112,7 @@
                                         hari</span></h6>
                                 <div class="crud">
                                     <div class="count jcs text-secondary">
-                                        <h6 class="fw-semibold m-0 p-2 pe-3 border-end">Pindahkan Ke Wishlist</h6>
+                                        <h5 class="fw-semibold m-0 p-2 pe-3 border-end">Pindahkan Ke Wishlist</h5>
                                         <a href="#" class="text-secondary mx-2 me-5 jcc" style="font-size: 22px">
                                             <iconify-icon icon="mdi:rubbish"></iconify-icon>
                                         </a>

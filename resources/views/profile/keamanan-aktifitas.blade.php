@@ -24,7 +24,7 @@
                             <a href="">
                                 <p><i class="bi bi-star"></i> Goal</p>
                             </a>
-                            <a href="">
+                            <a href="/rab">
                                 <p><i class="bi bi-file-bar-graph"></i> RAB</p>
                             </a>
                             <a href="/checklist">

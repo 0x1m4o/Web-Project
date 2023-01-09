@@ -179,9 +179,13 @@
         <div class="row">
             <div class="col-8">
 
-                <button class="back mt-4 mb-2">
-                    <img src="/img/back.png" alt="">
-                </button>
+                <a href="/kategori-venue">
+                    <button class="back mt-4 mb-2">
+
+                        <img src="/img/back.png" alt="">
+
+                    </button>
+                </a>
                 <!-- Carousel -->
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -256,7 +260,21 @@
 
                                 <div class="col-6">
                                     <div class=" profile p-0">
-                                        <h6 class=""> The Aesthetic</h6>
+                                        <style>
+                                            .pv {
+                                                color: #49516F;
+                                                text-decoration: none #9FA6B2;
+                                            }
+
+                                            .pv:hover {
+                                                text-decoration: underline #9FA6B2;
+                                                transition: 0.4s ease-in-out;
+
+                                            }
+                                        </style>
+                                        <a href="/profilevendor" class="pv">
+                                            <h6 class="pv"> The Aesthetic</h6>
+                                        </a>
                                         <p class="">online</p>
                                     </div>
                                 </div>
@@ -527,8 +545,10 @@
                 </button>
 
                 <button class="button2 mt-4 mx-4">
-                    <img class="mx-0 pb-2" src="/img/pesan.png" alt="" style="width: 30px; height:35px">
-                    <p class="tw-button2 text-capitalize d-inline-block mt-2 mx-3">chat vendor</p>
+                    <a href="/chat">
+                        <img class="mx-0 pb-2" src="/img/pesan.png" alt="" style="width: 30px; height:35px">
+                        <p class="tw-button2 text-capitalize d-inline-block mt-2 mx-3">chat vendor</p>
+                    </a>
                 </button>
 
                 <a href="/keranjang">
