@@ -367,12 +367,12 @@
                 </a>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 ">
+            <a class="text-decoration-none" href="/">
                 <div class="card card-kategori">
                     <img src="/img/Tropical.png" class="card-img-top" alt="..." />
                     <div class="card-body ms-2 mt-2">
                         <p class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </p>
                         <h5 class="card-title fw-bold">Tropical</h5>
                         <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -382,14 +382,15 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 ">
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 ">
+            <a class="text-decoration-none" href="/">
                 <div class="card card-kategori">
                     <img src="/img/Tropical.png" class="card-img-top" alt="..." />
                     <div class="card-body ms-2 mt-2">
                         <p class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </p>
                         <h5 class="card-title fw-bold">Tropical</h5>
                         <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -399,14 +400,15 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 ">
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 ">
+            <a class="text-decoration-none" href="/">
                 <div class="card card-kategori">
                     <img src="/img/Tropical.png" class="card-img-top" alt="..." />
                     <div class="card-body ms-2 mt-2">
                         <p class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </p>
                         <h5 class="card-title fw-bold">Tropical</h5>
                         <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -416,14 +418,15 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 ">
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 ">
+            <a class="text-decoration-none" href="/">
                 <div class="card card-kategori">
                     <img src="/img/Tropical.png" class="card-img-top" alt="..." />
                     <div class="card-body ms-2 mt-2">
                         <p class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </p>
                         <h5 class="card-title fw-bold">Tropical</h5>
                         <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -433,14 +436,15 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 ">
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 ">
+            <a class="text-decoration-none" href="/">
                 <div class="card card-kategori">
                     <img src="/img/Tropical.png" class="card-img-top" alt="..." />
                     <div class="card-body ms-2 mt-2">
                         <p class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </p>
                         <h5 class="card-title fw-bold">Tropical</h5>
                         <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -450,14 +454,15 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 ">
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 ">
+            <a class="text-decoration-none" href="/">
                 <div class="card card-kategori">
                     <img src="/img/Tropical.png" class="card-img-top" alt="..." />
                     <div class="card-body ms-2 mt-2">
                         <p class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </p>
                         <h5 class="card-title fw-bold">Tropical</h5>
                         <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -467,14 +472,15 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 ">
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 ">
+            <a class="text-decoration-none" href="/">
                 <div class="card card-kategori">
                     <img src="/img/Tropical.png" class="card-img-top" alt="..." />
                     <div class="card-body ms-2 mt-2">
                         <p class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </p>
                         <h5 class="card-title fw-bold">Tropical</h5>
                         <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -484,7 +490,8 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </a>
+        </div>
             <div class="text-center my-3">
                 <button class="btn btn-light rounded  border border-1">
                     <p class="text-success m-0 fw-bold">Muat Lebih Banyak</p>

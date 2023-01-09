@@ -46,7 +46,7 @@
         <div class="row justify-content-end">
           <div class="col-md-12 col-lg-11 mb-md-0 mb-0">
             <h2 class="footer-heading fw-bold text-center mb-3" style="color: #343846;font-family: 'Frank Ruhl Libre', serif;">Follow Us</h2>
-            <div class="animate">
+            <div class="animate" style="cursor:pointer;">
 
               <a class="link twitter">
                 <i class="fab fa-2x fa-twitter"></i>

@@ -34,7 +34,7 @@
             <a href="/kategori-catering">
                 <img src="/img/kategori-img/katering.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                    <h6 class="card-title  text-center mt-2">katering</h6>
+                    <h6 class="card-title  text-center mt-2">catering</h6>
                 </div>
             </a>
         </div>
