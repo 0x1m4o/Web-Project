@@ -2,10 +2,6 @@
     font-family: "Poppins", sans-serif;
 }
 
-.dropdown:hover>.dropdown-menu {
-    display: block;
-    transition: 0.5s;
-}
 .dropdown.toggle.show + .dropdown-menu {
     display: none;
 }
@@ -55,7 +51,7 @@
     background-color: transparent;
 }
 
-.effect-border~.focus-border {
+.effect-border ~ .focus-border {
     position: absolute;
     left: 0;
     width: 0;
@@ -64,7 +60,7 @@
     transition: 0.4s;
 }
 
-.effect-border:focus~.focus-border {
+.effect-border:focus ~ .focus-border {
     width: 100%;
     transition: 0.4s;
 }
@@ -221,7 +217,7 @@ body {
     margin: 5px 0;
 }
 
-.container>* {
+.container > * {
     padding: 10px;
 }
 
@@ -492,7 +488,7 @@ label.form-check-label:focus,
     display: none;
 }
 
-.question:hover+.budget {
+.question:hover + .budget {
     display: block;
 }
 
@@ -549,4 +545,32 @@ label.form-check-label:focus,
 }
 .btn-wrap {
     padding-right: 28px;
+}
+
+/* RAB */
+.percentage-wrapper {
+    color: white;
+    border-radius: 18px;
+}
+
+.percentage-rab {
+    height: 35px;
+    border-radius: 18px 0 0 18px;
+    background: linear-gradient(180deg, #093028 0%, #237a57 100%);
+}
+.percentage-rab-100 {
+    height: 35px;
+    border-radius: 18px;
+    background: linear-gradient(180deg, #093028 0%, #237a57 100%);
+}
+.percentage-rab-0 {
+    height: 35px;
+    margin-left: 10px;
+    color: black;
+}
+
+input[type="radio"] {
+    accent-color: green;
+    width: 15px;
+    height: 15px;
 }

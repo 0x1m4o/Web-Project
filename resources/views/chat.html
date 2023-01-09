@@ -31,7 +31,7 @@
     .srch_bar {
         /* display: inline-block;
               text-align: right; */
-        width: 85%;
+        width: 65%;
     }
     .headind_srch {
         padding: 10px 29px 10px 20px;
@@ -60,7 +60,6 @@
     }
     .srch_bar .input-group-addon {
         margin: 0 0 0 -27px;
-        display: inline-block;
     }
 
     .chat_ib h5 {
@@ -97,7 +96,7 @@
         padding: 18px 16px 10px;
     }
     .inbox_chat {
-        /* height: 550px; */
+        height: 550px;
         overflow-y: scroll;
     }
 
@@ -205,15 +204,18 @@
             <div class="inbox_msg rounded-4">
                 <div class="inbox_people">
                     <div class="headind_srch">
-                        <div class="recent_heading my-3">
-                            <h4 class="fw-bolder fs-2">Chat</h4>
+                        <div class="recent_heading">
+                            <h4 class="fw-bold fs-1">Chat</h4>
                         </div>
                         <div class="srch_bar">
                             <div class="stylish-input-group">
                                 <div
-                                    class="item-content d-flex justify-content-between align-items-center bg-white rounded w-100 border"-m 
+                                    class="item-content d-flex justify-content-between align-items-center mx-3 bg-white rounded w-100"
                                     style="height: 50px"
                                 >
+                                        <span aria-hidden="true">&times;</span>
+                                        <span class="sr-only">Close</span>
+                                    </button>
                                     <form
                                         class="d-flex nav-item search-form"
                                         role="search"
@@ -221,7 +223,7 @@
                                         <input
                                             class="search-bar ms-3 w-100"
                                             type="search"
-                                            placeholder="Cari pengguna"
+                                            placeholder="Cari Vendor atau Lokasi..."
                                             aria-label="Search"
                                         />
                                     </form>
@@ -273,17 +275,26 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button 
-                                      type="submit"
-                                      class="btn m-1"
-                                      style="background: #979797"
+
+                                    <button
+                                        class="btn text-light m-2 navbar-collapse d-none"
+                                        style="background: #fdb662"
+                                        type="submit"
                                     >
-                                      <i
-                                          class="fa fa-search text-white"
-                                          aria-hidden="true"
-                                      ></i>
+                                        <i class="bi bi-search"></i>
                                     </button>
                                 </div>
+                                <span class="input-group-addon">
+                                    <button type="button">
+                                        <i
+                                            class="fa fa-search"
+                                            aria-hidden="true"
+                                        ></i>
+                                    </button>
+                                    <button type="button">
+                                        <i class="bi bi-sliders"></i>
+                                    </button>
+                                </span>
                             </div>
                         </div>
                     </div>
