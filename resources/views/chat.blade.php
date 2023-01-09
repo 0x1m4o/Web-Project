@@ -140,11 +140,13 @@
     }
     .mesgs {
         float: left;
-        padding: 30px 15px 0 25px;
+        padding: 30px 0 0 0 ;
         width: 60%;
         overflow-y: scroll;
     }
-
+    .mesgs::-webkit-scrollbar {
+        display: none
+    }
     .sent_msg p {
         background: #1e6f5c;
         border-radius: 3px;
@@ -174,6 +176,7 @@
     .type_msg {
         border-top: 1px solid #c4c4c4;
         position: relative;
+        padding: 0 15px;
     }
     .msg_send_btn {
         background: #05728f none repeat scroll 0 0;
@@ -194,6 +197,10 @@
     .msg_history {
         height: 516px;
         overflow-y: auto;
+        padding: 15px 25px
+    }
+    .msg_history::-webkit-scrollbar {
+        display: none;
     }
     .write_msg:focus {
         outline: none;
@@ -205,6 +212,10 @@
     }
     .menu-chat:focus {
         outline: none !important;
+        border: none !important;
+    }
+
+    .search-bar {
         border: none !important;
     }
 </style>
@@ -219,21 +230,16 @@
                         </div>
                         <div class="srch_bar">
                             <div class="stylish-input-group">
-                                <div
-                                    class="item-content d-flex justify-content-between align-items-center bg-white rounded w-100 border border-dark border-1"
-                                    style="height: 50px"
-                                >
-                                    <form
-                                        class="d-flex nav-item search-form"
-                                        role="search"
-                                    >
-                                        <input
-                                            class="search-bar ms-3 w-100"
-                                            type="search"
-                                            placeholder="Cari pengguna"
-                                            aria-label="Search"
-                                        />
-                                    </form>
+                                <div class="d-flex justify-content-around align-items-center w-100">
+                                    <div class="item-content d-flex justify-content-between align-items-center bg-white rounded-4 border border-dark border-1" style="height: 60px">
+                                        <form class="d-flex nav-item search-form px-2" role="search">
+                                            <input
+                                                class="search-bar me-4 w-100"
+                                                type="search"
+                                                placeholder="Cari pengguna"
+                                                aria-label="Search"
+                                            />
+                                        </form>
 
                                         <div class="dropdown">
                                             <button
@@ -568,7 +574,7 @@
                     </div>
                 </div>
                 <div class="mesgs">
-                    <div class="d-flex align-items-center mb-5 gap-3">
+                    <div class="d-flex align-items-center px-3 pb-3 border-bottom gap-3"> 
                         <div>
                             <img
                                 

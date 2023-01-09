@@ -102,7 +102,7 @@
 
         </div>
     </div>
-    <div class="container p-4 w-50 bg-white ringkasan mt-5 m-auto"
+    <div class="container p-4 w-50 bg-white ringkasan mt-3 mb-5 m-auto"
         style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius: 10px;
         height: 333px;">
         <div class="d-flex justify-content-between align-items-center mt-5">
