@@ -424,3 +424,9 @@ Route::get('/rab', function () {
         'title' => "RAB"
     ]);
 });
+
+Route::get('/dashboard-vendor', function () {
+    return view('vendor.dashboard-vendor', [
+        'title' => "Dashboard Vendor"
+    ]);
+});
