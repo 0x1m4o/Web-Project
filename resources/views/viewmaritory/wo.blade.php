@@ -179,9 +179,12 @@
         <div class="row">
             <div class="col-8">
 
+                <a href="/kategori-wo">
                 <button class="back mt-4 mb-2">
+
                     <img src="/img/back.png" alt="">
                 </button>
+                </a>
                 <!-- Carousel -->
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">

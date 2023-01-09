@@ -114,7 +114,7 @@
             <h6 class="fw-semibold" style="color: #237A57;">100.000.000</h6>
         </div>
         <div class="btn-konfirmasi mt-4 jcc">
-            <a class="btn btn-md text-white" href="#" role="button"
+            <a class="btn btn-md text-white" href="/checkout" role="button"
                 style="background: linear-gradient(to right,rgba(9, 48, 40, 1),rgba(35, 122, 87, 1));">Bayar Sekarang</a>
         </div>
     </div>

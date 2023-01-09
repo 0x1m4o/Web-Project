@@ -225,9 +225,11 @@
         <div class="row">
             <div class="col-8">
 
-                <a href="/">
+                <a href="/kategori-fotografi">
                     <button class="back mt-4 mb-2">
+
                         <img src="/img/back.png" alt="">
+
                     </button>
                 </a>
                 <!-- Carousel -->

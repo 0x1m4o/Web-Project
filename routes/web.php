@@ -279,7 +279,7 @@ Route::get('/viewmaritory/venue', function () {
 });
 
 Route::get('/viewmaritory/dekor', function () {
-    return view('viewmaritory.venue', [
+    return view('viewmaritory.dekor', [
         'title' => "Dekor"
     ]);
 });
