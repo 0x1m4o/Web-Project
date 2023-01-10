@@ -79,7 +79,7 @@
 @endsection
 @section('content')
 <link rel="stylesheet" href="/css/profile/profile.css">
-    <div class="container mt-5 bg-white rounded-4">
+    <div class="container mt-5 bg-white rounded-4 mb-2">
         <div class="container mx-5">
             <div class="row justify-content-around mt-3">
                 <div class="col-10 d-flex">
