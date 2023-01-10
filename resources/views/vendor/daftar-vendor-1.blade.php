@@ -113,23 +113,23 @@
                         </div>
 
                         <div class="list-number"
-                            style="background: #26A626;margin-top:80px;border-radius: 100%;width:35px; height:35px; ">
+                            style="background: #26A626;margin-top:95px;border-radius: 100%;width:35px; height:35px; ">
                             <p class="text-white " style="padding: 6px">2</p>
                         </div>
                         <div class="list-number"
-                            style="background: #6E816E;margin-top:80px;border-radius: 100%;width:35px; height:35px; ">
+                            style="background: #6E816E;margin-top:95px;border-radius: 100%;width:35px; height:35px; ">
                             <p class="text-white " style="padding: 6px">3</p>
                         </div>
                         <div class="list-number"
-                            style="background: #6E816E;margin-top:80px;border-radius: 100%;width:35px; height:35px; ">
+                            style="background: #6E816E;margin-top:95px;border-radius: 100%;width:35px; height:35px; ">
                             <p class="text-white " style="padding: 6px">4</p>
                         </div>
                         <div class="list-number"
-                            style="background: #6E816E;margin-top:110px;border-radius: 100%;width:35px; height:35px; ">
+                            style="background: #6E816E;margin-top:125px;border-radius: 100%;width:35px; height:35px; ">
                             <p class="text-white " style="padding: 6px">5</p>
                         </div>
                         <div class="list-number"
-                            style="background: #6E816E;margin-top:100px;border-radius: 100%;width:35px; height:35px; ">
+                            style="background: #6E816E;margin-top:110px;border-radius: 100%;width:35px; height:35px; ">
                             <p class="text-white " style="padding: 6px">6</p>
                         </div>
                     </div>
@@ -147,7 +147,7 @@
                     </div>
 
                     {{-- Nama Bisnis --}}
-                    <div class="pb-0 pt-1" style="width: 700px;">
+                    <div class="pb-0 mt-3" style="width: 700px;">
                         <h5>Nama Bisnis*</h5>
                         <p class="mb-0">Pastikan nama bisnis sudah ditulis dengan benar</p>
                         <div class="mb-3 input-form" style="width: 100%">
@@ -156,7 +156,7 @@
                         </div>
                     </div>
                     {{-- Nomor HP --}}
-                    <div class="pb-0 pt-1" style="width: 700px;">
+                    <div class="pb-0 mt-3" style="width: 700px;">
                         <h5>Nomor Handphone*</h5>
                         <p class="mb-0">Mohon tulis nomor handphone anda</p>
                         <div class="mb-3 input-form d-flex" style="width: 100%">
@@ -169,7 +169,7 @@
                         </div>
                     </div>
                     {{-- Nomor Telepon --}}
-                    <div class="pb-0"pt-1 style="width: 700px;">
+                    <div class="pb-0 mt-3" style="width: 700px;">
                         <h5>Nomor Telepon Bisnis*</h5>
                         <p class="mb-0">Pastikan nama bisnis sudah ditulis dengan benar</p>
                         <div class="mb-1 input-form d-flex" style="width: 100%">
@@ -186,11 +186,12 @@
                         </div>
                         <div class="mb-3 ms-2 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Gunakan Nomor Telepon Saya</label>
+                            <label class="form-check-label fs-6" style="padding-top: 1px" for="exampleCheck1">Gunakan Nomor
+                                Telepon Saya</label>
                         </div>
                     </div>
                     {{-- Email --}}
-                    <div class="pb-0 pt-1" style="width: 700px;">
+                    <div class="pb-0 mt-3" style="width: 700px;">
                         <h5>Alamat Email*</h5>
                         <p class="mb-0">Pastikan alamat email sudah ditulis dengan benar</p>
                         <div class="mb-3 input-form" style="width: 100%">
@@ -199,14 +200,14 @@
                         </div>
                     </div>
                     {{-- Password --}}
-                    <div class="pb-0 pt-1" style="width: 700px;">
+                    <div class="pb-0 mt-3" style="width: 700px;">
                         <h5>Kata Sandi*</h5>
                         <div class="mb-3 input-form" style="width: 100%">
                             <input type="text" class="form-control  py-2" id="exampleInputEmail1"
                                 aria-describedby="emailHelp">
                         </div>
                     </div>
-                    <div class="pb-0 pt-1" style="width: 700px;">
+                    <div class="pb-0 mt-3" style="width: 700px;">
                         <h5>Konfirmasi Kata Sandi*</h5>
                         <div class="mb-3 input-form" style="width: 100%">
                             <input type="text" class="form-control  py-2" id="exampleInputEmail1"
@@ -220,7 +221,7 @@
                             <p class="m-0">Sebelumnya</p>
                         </a>
                         <p class="m-0 d-flex align-items-center">Step 1-2</p>
-                        <a class="btn btn-success px-4 mb-2"
+                        <a href="/daftar-vendor/2" class="btn btn-success px-4 mb-2"
                             style="
                         background: linear-gradient(90deg, #093028 0%, #237A57 100%);
                         border-radius: 10px;">Lanjut</a>
