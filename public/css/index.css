@@ -617,7 +617,3 @@ input[type="radio"] {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-
-.input-form {
-    border-radius: 16px !important;
-}
