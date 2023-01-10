@@ -39,10 +39,10 @@
                     </section>
                     <section class="contact">
                         <div class="contact-title">
-                            <a href="">
+                            <a href="/vendor-admin/chat">
                                 <p><i class="bi bi-chat"></i> Chat</p>
                             </a>
-                            <a href="">
+                            <a href="/vendor-admin/produk">
                                 <p>
                                     <i class="bi bi-box">
 
@@ -50,10 +50,10 @@
                                     Produk
                                 </p>
                             </a>
-                            <a href="">
+                            <a href="/vendor-admin/pesanan">
                                 <p><i class="bi bi-bag"></i> Pesanan</p>
                             </a>
-                            <a href="">
+                            <a href="/vendor-admin/ulasan">
                                 <p><i class="bi bi-reply"></i> Ulasan</p>
                             </a>
                             <a href="">
