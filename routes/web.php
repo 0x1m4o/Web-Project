@@ -431,20 +431,65 @@ Route::get('/rab', function () {
     ]);
 });
 
-Route::get('/dashboard-vendor', function () {
+Route::get('/vendor-admin/dashboard-vendor', function () {
     return view('vendor.dashboard-vendor', [
         'title' => "Dashboard Vendor"
     ]);
 });
 
-Route::get('/daftar-vendor/1', function () {
+Route::get('/vendor-admin/daftar-vendor/1', function () {
     return view('vendor.daftar-vendor-1', [
         'title' => "Daftar Vendor Step 1"
     ]);
 });
 
-Route::get('/daftar-vendor/2', function () {
+Route::get('/vendor-admin/daftar-vendor/2', function () {
     return view('vendor.daftar-vendor-2', [
         'title' => "Daftar Vendor Step 2"
     ]);
 });
+
+
+Route::get('/vendor-admin/daftar-vendor/2', function () {
+    return view('vendor.daftar-vendor-2', [
+        'title' => "Daftar Vendor Step 2"
+    ]);
+});
+
+Route::get('/vendor-admin/produk', function () {
+    return view('vendor.produk', [
+        'title' => "Manajemen Produk"
+    ]);
+});
+
+// contoh produk 
+Route::get('/vendor-admin/produk/tropical', function () {
+    return view('vendor.show', [
+        'title' => "Tropical"
+    ]);
+});
+
+Route::get('/vendor-admin/produk/create', function () {
+    return view('vendor.create', [
+        'title' => "Buat Produk Saya"
+    ]);
+});
+
+Route::get('/vendor-admin/ulasan', function () {
+    return view('vendor.ulasan', [
+        'title' => "Manajemen Ulasan"
+    ]);
+});
+
+Route::get('/vendor-admin/pesanan', function () {
+    return view('vendor.pesanan', [
+        'title' => "Manajemen Pesanan"
+    ]);
+});
+
+Route::get('/vendor-admin/chat', function () {
+    return view('vendor.chat', [
+        'title' => "Chat"
+    ]);
+});
+
