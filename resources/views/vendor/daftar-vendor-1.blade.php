@@ -135,8 +135,8 @@
                         <h5>Nama Anda*</h5>
                         <p>Mohon tulis nama lengkap anda</p>
                         <div class="mb-3" style="width: 100%">
-                            <input type="text" placeholder="Vanessa" class="form-control " id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
+                            <input type="text" placeholder="Vanessa" class="form-control input-form"
+                                id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                     </div>
                 </div>

@@ -601,7 +601,6 @@ input[type="radio"] {
     transform-origin: bottom left;
 }
 
-.input-form input {
-    border-radius: 16px;
-    height: 100px;
+.input-form {
+    border-radius: 16px !important;
 }
