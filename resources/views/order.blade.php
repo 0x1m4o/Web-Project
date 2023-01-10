@@ -1,33 +1,28 @@
 @extends('layouts.main')
 
 @section('content')
-<div class="container keranjang-container p-3 mt-5 bg-white " style="width: 100%;border-radius: 20px;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); overflow: hidden;">
-    <div class="keranjang-title jcs">
-        <a href="#" class="text-secondary p-2 fs-5 jcs">
-            <iconify-icon icon="material-symbols:arrow-back-ios new-rounded"></iconify-icon>
-        </a>
-        <div class="content d-flex">
-            <a href="/keranjang" style="color: black;" class="text-decoration-none">
-                <i class='bx bx-chevron-left' style="padding-top: 25px;font-size: 30px;"></i>
+    <div class="container keranjang-container p-3 mt-5 bg-white"
+        style="width: 100%;border-radius: 20px;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); overflow: hidden;">
+        <div class="keranjang-title jcs">
+            <a href="#" class="text-secondary p-2 fs-5 jcs">
+                <iconify-icon icon="material-symbols:arrow-back-ios new-rounded"></iconify-icon>
             </a>
-            <div style="width: 1200px;">
-                <a href="" class="text-decoration-none">
-                    <h5 style="padding-top: 20px;font-weight: bold;font-size: 32px; color: #49516F;">Konfirmasi Pesanan</h5>
+            <div class="content d-flex">
+                <a href="/keranjang" style="color: black;">
+                    <i class='bx bx-chevron-left' style="padding-top: 25px;font-size: 30px;"></i>
+                </a>
+                <div style="width: 1200px;">
+                    <a href="" class="text-decoration-none">
+                        <h5 style="padding-top: 20px;font-weight: bold;font-size: 32px; color: #49516F;">Konfirmasi Pesanan
+                        </h5>
+                    </a>
+                </div>
+
             </div>
         </div>
-    </div>
-    <hr class="my-0">
-    <div class="keranjang-body px-5">
-        {{-- Judul Pesanan --}}
-        <div class="d-flex">
-            <label class="form-check-label title-label fw-semibold d-flex align-items-end mt-2" for="check-TheAesthetic">The Aesthetic</label>
-            <p class="text-center keranjang-kategori p-1 px-2 mb-2 d-flex align-items-center mb-3">Venue</p>
-        </div>
-        <h6 class="title-label fw-semibold d-inline-block mb-5">Kota Jakarta</h6>
-
-
-        {{-- Konten Pesanan --}}
-        <div class="keranjang-konten d-flex justify-content-between mt-2">
+        <hr class="my-0">
+        <div class="keranjang-body px-5">
+            {{-- Judul Pesanan --}}
             <div class="row">
                 <div class="col-6">
                     <div class="konten-detail d-flex align-items-center">
