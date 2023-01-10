@@ -130,4 +130,5 @@
                 Sekarang</a>
         </div>
     </div>
+    {{-- . --}}
 @endsection
