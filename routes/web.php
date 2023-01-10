@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\auth\LoginController;
+use App\Http\Controllers\auth\SignUpController;
+use App\Http\Controllers\auth\ForgotController;
+use App\Http\Livewire\Categorycontent;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,6 +17,41 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+// Login User Required
+Route::middleware(['auth:web'])->group(function () {
+    // Logout
+    Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+});
+
+// Guest User Required
+Route::middleware(['guest:web'])->group(function () {
+    // Sign Up
+    Route::get('/signup', [SignUpController::class, 'index'])->name('signup');
+    Route::post('/signup', [SignUpController::class, 'store']);
+    
+    // Login
+    Route::get('/login', [LoginController::class, 'index'])->name('login');
+    Route::post('/login', [LoginController::class, 'authenticate']);
+    
+    // Google Login
+    Route::get('/login/google', [LoginController::class, 'redirectToGoogle'])->name('login.google');
+    Route::get('/login/google/callback', [LoginController::class, 'handleGoogleCallback']);
+    
+    // Facebook Login
+    Route::get('/login/facebook', [LoginController::class, 'redirectToFacebook'])->name('login.facebook');
+    Route::get('/login/facebook/callback', [LoginController::class, 'handleFacebookCallback']);
+    
+    // Forgot Password
+    Route::get('/forgot-password', [ForgotController::class, 'index'])->name('password.request');
+    Route::post('/forgot-password', [ForgotController::class, 'authenticate'])->name('password.email');
+    
+    // Reset Password
+    Route::get('/reset-password/{token}', [ForgotController::class, 'reset_password'])->name('password.reset');
+    Route::post('/reset-password', [ForgotController::class, 'update_password'])->name('password.update');
+});
+
+Route::get('/category/{category:slug}', Categorycontent::class)->name('category');
 
 Route::get('/', function () {
     return view('home', [
@@ -24,18 +64,6 @@ Route::get('/paket', function () {
         'title' => "Paket"
     ]);
 });
-
-Route::get('/login', function () {
-    return view('auth.login', [
-        'title' => "Login"
-    ]);
-})->name('login');
-
-Route::get('/signup', function () {
-    return view('auth.signup', [
-        'title' => "Daftar"
-    ]);
-})->name('signup');
 
 Route::get('/profile', function () {
     return view('profile', [
@@ -476,14 +504,14 @@ Route::get('/vendor-admin/daftar-vendor/1', function () {
 });
 
 Route::get('/vendor-admin/daftar-vendor/2', function () {
-    return view('vendor.daftar-vendor-2', [
+    return view('vendor.auth.daftar-vendor-2', [
         'title' => "Daftar Vendor Step 2"
     ]);
 });
 
 
 Route::get('/vendor-admin/daftar-vendor/2', function () {
-    return view('vendor.daftar-vendor-2', [
+    return view('vendor.auth.daftar-vendor-2', [
         'title' => "Daftar Vendor Step 2"
     ]);
 });
@@ -524,4 +552,3 @@ Route::get('/vendor-admin/chat', function () {
         'title' => "Chat"
     ]);
 });
-

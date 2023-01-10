@@ -1,3 +1,7 @@
+.navbar-main {
+    background-color: #1e6f5c;
+}
+
 .wrapper {
     width: 500px;
     background: #fff;
@@ -80,7 +84,7 @@ header .current-date {
     transform: translate(-50%, -50%);
 }
 .days li.active::before {
-    background: #9b59b6;
+    background: #86c8bc;
 }
 .days li:not(.active):hover::before {
     background: #f2f2f2;
@@ -88,6 +92,9 @@ header .current-date {
 
 .search-bar {
     border: none;
+}
+.search-form {
+    width: 100%;
 }
 
 .search-bar:focus {
@@ -104,9 +111,7 @@ header .current-date {
     font-size: 20px;
 }
 .navbar {
-    /*   z-index should be above .close-navbar-toggler */
     z-index: 2;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 .close-navbar-toggler {
     position: absolute;
@@ -149,28 +154,85 @@ header .current-date {
     width: 100%;
 }
 
-@media (min-width: 300px) and (max-width: 991px) {
+/* Responsive Navbar */
+@media (max-width: 991px) {
     #navbarSearchContent.collapse,
     #navbarSearchContent {
         position: absolute;
-        background-repeat: no-repeat;
-        transform: translate(-50%, -50%);
-        margin: 0 0 0 auto;
-        top: 45%;
-        width: 71%;
-        -webkit-transform: translate(-40%, -40%);
+        width: 70%;
         transition: width 400ms ease-in-out;
-        transition-delay: 1ms;
     }
 
     #navbarSearchContent {
-        padding-right: 5%;
         width: 0;
-        right: 0;
+        left: 0;
     }
-
     #navbarSearchContent.collapsing {
         visibility: hidden;
         transition: 100ms;
     }
+    .navbar-brand,
+    .ham-btn,
+    .chat-btn,
+    .keranjang-btn,
+    .chat-btn,
+    .tabungan-btn {
+        display: none;
+    }
+    .navbar {
+        padding: 20px;
+    }
+}
+
+.dropstart {
+    display: none;
+}
+.dropdown-menu-center {
+    right: auto !important;
+    left: 50% !important;
+    top: 120% !important;
+    -webkit-transform: translate(-50%, 0) !important;
+    -o-transform: translate(-50%, 0) !important;
+    transform: translate(-50%, 0) !important;
+}
+.dropdown-menu-start {
+    right: auto;
+    left: 50%;
+    -webkit-transform: translate(-90%, 0);
+    -o-transform: translate(-90%, 0);
+    transform: translate(-90%, 0);
+}
+
+/* Dropdown */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.keranjang button {
+    border-width: 1px;
+    color: #3b5547;
+    font-family: "Poppins", sans-serif;
+    height: 50px;
+}
+.card {
+    color: #49516f;
+}
+
+/* Homepage Content */
+.container-img img {
+    width: 25px;
+}
+
+.container-profile {
+    margin: auto;
+    width: 300px;
+    border-radius: 10px;
+}
+.nav-wrapper {
+    height: 75px;
+    position: relative;
+    overflow-y: visible;
+    z-index: 999;
+}
+
+.dropdown a {
+    text-decoration: none;
 }
