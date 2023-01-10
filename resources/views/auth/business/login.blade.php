@@ -115,7 +115,9 @@
             <hr>
 
             <span class="text-center mt-3" style="font-size: 12px">Tidak memiliki akun?
-                <a href="" class="text-decoration-none" style="color:rgba(35, 122, 87, 1)">Daftar Sekarang</a>
+                <a href="/vendor-admin/daftar-vendor/1" class="text-decoration-none"
+                    style="color:rgba(35, 122, 87, 1)">Daftar
+                    Sekarang</a>
             </span>
         </div>
     </div>

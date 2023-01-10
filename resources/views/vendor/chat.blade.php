@@ -99,6 +99,7 @@
     .inbox_chat {
         height: 100%;
         overflow-y: scroll;
+        border-right: 1px solid #c4c4c4;
     }
 
     .inbox_chat::-webkit-scrollbar {
@@ -226,7 +227,14 @@
                 <div class="inbox_people">
                     <div class="headind_srch">
                         <div class="recent_heading my-3 ms-3 d-block">
-                            <h4 class="fw-bolder fs-2">Chat</h4>
+                            <div class="content d-flex">
+                                <a href="/vendor-admin/dashboard-vendor" style="color: black;">
+                                    <i class='bx bx-chevron-left' style="padding-top: 25px;font-size: 30px;"></i>
+                                </a>
+                                <div style="width: 1200px;">
+                                    <h5 style="padding-top: 20px;font-weight: bold;font-size: 32px; color: #49516F;">Chat</h5>
+                                </div>
+                            </div>
                         </div>
                         <div class="srch_bar">
                             <div class="stylish-input-group">
@@ -293,146 +301,9 @@
                                             ></i>
                                         </button>
                                     </div>                                    
-                                    <img src="/img/filter.png" style="padding-left: 10px;">
+                                    <img src="/img/filter.png" style="margin-left: 20px;">
                                 </div>  
                             </div>
-                        </div>
-                    </div>
-                    <button type="button" class=" btn d-flex align-items-center gap-3 m-3 ms-3 menu-chat" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                        <img src="img/group-chat.png">
-                        <span class="fs-5" style="color: #49516F;">New Group Chat</span>
-                    </button>
-                    <!-- Modal -->
-                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                        <div class="modal-content px-4 py-4">
-                            <div class="mb-3">
-                            <h1 class="fs-5 fw-bold" id="staticBackdropLabel" style="color: #49516F; opacity: 0.7;">Masukan Nama Group</h1>
-                            </div>
-                            <div class="">
-                                <form class="d-flex nav-item search-form border border-dark rounded-4 mb-3 py-3" style="width: 92%" role="search">
-                                    <input
-                                        class="search-bar px-4 me-4 w-100"
-                                        type="search"
-                                        placeholder="Wedding Vanessa"
-                                        aria-label="Search"
-                                    />
-                                </form>
-                                <div class="d-flex justify-content-evenly align-items-center gap-2">
-                                    <div class="item-content d-flex justify-content-between align-items-center bg-white rounded-4 border border-dark border-1 w-100" style="height: 60px">
-                                        <form class="d-flex nav-item search-form" role="search">
-                                            <input
-                                                class="search-bar px-4 me-4 w-100"
-                                                type="search"
-                                                placeholder="Cari pengguna"
-                                                aria-label="Search"
-                                            />
-                                        </form>
-
-                                        <div class="dropdown">
-                                            <button
-                                                class="btn pt-2"
-                                                href="#"
-                                                role="button dropdown-toggle"
-                                                data-bs-toggle="dropdown"
-                                                aria-expanded="false"
-                                            >
-                                                <i class="bi bi-calendar3 fs-4"></i>
-                                            </button>
-
-                                            <div
-                                                class="dropdown-menu dropdown-menu-center wrapper"
-                                            >
-                                                <header>
-                                                    <p class="current-date"></p>
-                                                    <div class="icons">
-                                                        <span
-                                                            id="prev"
-                                                            class="material-symbols-rounded"
-                                                            ><i
-                                                                class="bi bi-arrow-left-circle"
-                                                            ></i
-                                                        ></span>
-                                                        <span
-                                                            id="next"
-                                                            class="material-symbols-rounded"
-                                                            ><i
-                                                                class="bi bi-arrow-right-circle"
-                                                            ></i
-                                                        ></span>
-                                                    </div>
-                                                </header>
-                                                <div class="calendar">
-                                                    <ul class="weeks">
-                                                        <li>Sun</li>
-                                                        <li>Mon</li>
-                                                        <li>Tue</li>
-                                                        <li>Wed</li>
-                                                        <li>Thu</li>
-                                                        <li>Fri</li>
-                                                        <li>Sat</li>
-                                                    </ul>
-                                                    <ul class="days"></ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <button type="submit" class="btn m-1" style="background: #979797">
-                                            <i class="fa fa-search text-white" aria-hidden="true"
-                                            ></i>
-                                        </button>
-                                    </div>                                    
-                                    <img src="img/filter.png">
-                                </div>
-                                <h5 class="fw-bold my-3" style="color: #49516F;">Add to Group Chat</h5>  
-                                <div class="d-flex align-items-center justify-content-between mb-4 gap-3">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <img
-                                            
-                                            src="/img/pp.png"
-                                            alt="sunil"
-                                        />
-                                        
-                                        <h5 class="mb-0">
-                                            The Aesthetic
-                                        </h5>
-                                    </div>
-                                    <span class="fs-6 rounded-pill px-2 text-white" style="background: #49516F">Following</span>
-                                    <input class="form-check-input mb-1 checkallthis" type="checkbox" value="" id="check-TheAesthetic"/>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between mb-4 gap-3">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <img
-                                            class="rounded-circle"
-                                            src="/img/laki.png"
-                                            alt="sunil"
-                                        />
-                                        
-                                        <h5 class="mb-0">
-                                            Gerald Tan
-                                        </h5>
-                                    </div>
-                                    <input class="form-check-input mb-1 checkallthis" type="checkbox" value="" id="check-TheAesthetic"/>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between mb-4 gap-3">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <img
-                                            
-                                            src="/img/pp.png"
-                                            alt="sunil"
-                                        />
-                                        
-                                        <h5 class="mb-0">
-                                            Garuda Katering
-                                        </h5>
-                                    </div>
-                                    <span class="fs-6 rounded-pill px-2 text-white" style="background: #49516F">Following</span>
-                                    <input class="form-check-input mb-1 checkallthis" type="checkbox" value="" id="check-TheAesthetic"/>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <button type="button" class="btn menu-chat text-white" style="background: linear-gradient(90deg, #093028 0%, #237A57 100%);">Buat Group</button>
-                            </div>
-                        </div>
                         </div>
                     </div>
 
@@ -443,15 +314,15 @@
                                     <div class="chat_img">
                                         <img
                                             class="img"
-                                            src="/img/pp.png"
-                                            alt="sunil"
+                                            src="/img/profile.png"
+                                            alt="vanessa profile"
+                                            style="border-radius: 50%;"
                                         />
                                     </div>
                                     <div class="chat_ib">
                                         <h5>
-                                            The Aesthetic
-                                            <i class="bi bi-patch-check-fill"></i
-                                            ><span class="chat_date">12:00</span>
+                                            Vanessa Oey
+                                            <span class="chat_date">12:00</span>
                                         </h5>
                                         <p>Halo Vanessa terima kasih...</p>
                                     </div>
@@ -468,9 +339,8 @@
                                     </div>
                                     <div class="chat_ib">
                                         <h5>
-                                            Elsa's Studio
-                                            <i class="bi bi-patch-check-fill"></i
-                                            ><span class="chat_date">12:00</span>
+                                            Shreaton
+                                            <span class="chat_date">12:00</span>
                                         </h5>
                                         <p>Halo Vanessa terima kasih...</p>
                                     </div>
@@ -487,85 +357,8 @@
                                     </div>
                                     <div class="chat_ib">
                                         <h5>
-                                            Shanty MUA
-                                            <i class="bi bi-patch-check-fill"></i
-                                            ><span class="chat_date">12:00</span>
-                                        </h5>
-                                        <p>Halo Vanessa terima kasih...</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="chat_list">
-                                <div class="chat_people">
-                                    <div class="chat_img">
-                                        <img
-                                            class="img"
-                                            src="/img/pp.png"
-                                            alt="sunil"
-                                        />
-                                    </div>
-                                    <div class="chat_ib">
-                                        <h5>
-                                            Garuda Katering
-                                            <i class="bi bi-patch-check-fill"></i
-                                            ><span class="chat_date">12:00</span>
-                                        </h5>
-                                        <p>Halo Vanessa terima kasih...</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="chat_list">
-                                <div class="chat_people">
-                                    <div class="chat_img">
-                                        <img
-                                            class="img"
-                                            src="/img/pp.png"
-                                            alt="sunil"
-                                        />
-                                    </div>
-                                    <div class="chat_ib">
-                                        <h5>
-                                            Busana Pernikahan
-                                            <i class="bi bi-patch-check-fill"></i
-                                            ><span class="chat_date">12:00</span>
-                                        </h5>
-                                        <p>Halo Vanessa terima kasih...</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="chat_list">
-                                <div class="chat_people">
-                                    <div class="chat_img">
-                                        <img
-                                            class="img"
-                                            src="/img/pp.png"
-                                            alt="sunil"
-                                        />
-                                    </div>
-                                    <div class="chat_ib">
-                                        <h5>
-                                            Rolling Hearts
-                                            <i class="bi bi-patch-check-fill"></i
-                                            ><span class="chat_date">12:00</span>
-                                        </h5>
-                                        <p>Halo Vanessa terima kasih...</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="chat_list">
-                                <div class="chat_people">
-                                    <div class="chat_img">
-                                        <img
-                                            class="img"
-                                            src="/img/pp.png"
-                                            alt="sunil"
-                                        />
-                                    </div>
-                                    <div class="chat_ib">
-                                        <h5>
-                                            Khayra Photography
-                                            <i class="bi bi-patch-check-fill"></i
-                                            ><span class="chat_date">12:00</span>
+                                            Yunita Sely
+                                           <span class="chat_date">12:00</span>
                                         </h5>
                                         <p>Halo Vanessa terima kasih...</p>
                                     </div>
@@ -579,15 +372,14 @@
                         <div>
                             <img
                                 
-                                src="/img/pp.png"
+                                src="/img/profile.png"
                                 alt="sunil"
+                                style="border-radius: 50%;"
                             />
                         </div>
                         <div>
-                            <h5 class="mb-0">
-                                The Aesthetic
-                                <i class="bi bi-patch-check-fill" style="color: #237A57"></i>
-                                <span class="fs-6 rounded-pill px-2 text-white" style="background: #237A57">Venue</span>
+                            <h5 class="mb-0 fw-bold">
+                                Vanessa Oey
                             </h5>
                             <span class="text-success">Online</span>
                         </div>
@@ -680,7 +472,7 @@
                                 />
                                 <div class="dropup-center dropup">
                                     <button class="btn menu-chat" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="img/menu-chat.png">
+                                        <img src="/img/menu-chat.png">
                                     </button>
                                     <ul class="dropdown-menu">
                                         <div class="d-flex justify-content-around align-items-center mt-2 me-1" style="width: 270px">
