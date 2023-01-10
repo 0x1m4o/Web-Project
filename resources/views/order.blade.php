@@ -22,9 +22,11 @@
             <div class="row">
                 <div class="d-flex">
                     <h5 class="fw-semibold d-flex align-items-end title-label" style="font-size: 24px;">The Aesthetic</h5>
-                    <button class="jcc keranjang-button me-2 mb-3" style="background-color: white; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border: none; margin-left: 2px;font-size: 14px;">Venue</button>
+                    <button class="jcc keranjang-button me-2 mb-3"
+                        style="background-color: white; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border: none; margin-left: 2px;font-size: 14px;">Venue</button>
                 </div>
-                <h6 class="title-label fw-semibold d-inline-block" style="margin-bottom: 60px;font-size: 20px;">Kota Jakarta</h6>
+                <h6 class="title-label fw-semibold d-inline-block" style="margin-bottom: 60px;font-size: 20px;">Kota Jakarta
+                </h6>
             </div>
             {{-- Konten Pesanan --}}
             <div class="keranjang-konten d-flex justify-content-between mt-2">
@@ -42,7 +44,8 @@
                     <div class="col-6">
                         <div class="konten-crud d-flex align-items-center">
                             <div class="row">
-                                <h6 class="text-center konten-time title-label" style=""><span class="preorder p-1">Pre-Order 30
+                                <h6 class="text-center konten-time title-label" style=""><span
+                                        class="preorder p-1">Pre-Order 30
                                         hari</span></h6>
                                 <div class="crud">
                                     <div class="count jcs text-secondary">
@@ -68,7 +71,7 @@
             </div>
 
             {{-- Pengiriman --}}
-            <h5 class="fw-semibold title-label" style="margin-top: 100px;font-size: 24px;">Pengiriman</h5>
+            <h5 class="fw-semibold title-label" style="margin-top: 80px;font-size: 24px;">Pengiriman</h5>
             {{-- Waktu --}}
             <div class="waktu" style="margin-top: 50px;">
                 <div class="d-flex justify-content-start align-items-center">
@@ -93,7 +96,8 @@
                 <h5 class="fw-semibold title-label" style="margin: 70px 0px 47px 0px;font-size: 24px;">Pembayaran</h5>
                 {{-- Bank --}}
                 <div class="bank d-flex justify-content-start align-items-center" style="margin-bottom: 40px;">
-                    <img src="/img/bca.png" alt="" style="width: 107px; height: 45px; pointer-events: none; margin: 0px 30px 0px 10px;">
+                    <img src="/img/bca.png" alt=""
+                        style="width: 107px; height: 45px; pointer-events: none; margin: 0px 30px 0px 10px;">
                     <h6 class="fw-semibold title-label m-0 ms-3">BCA Virtual Account</h6>
                 </div>
 
@@ -122,7 +126,8 @@
         </div>
         <div class="btn-konfirmasi mt-4 jcc">
             <a class="btn btn-md text-white" href="/checkout" role="button"
-                style="background: linear-gradient(to right,rgba(9, 48, 40, 1),rgba(35, 122, 87, 1)); border: none; font-weight: bold;">Bayar Sekarang</a>
+                style="background: linear-gradient(to right,rgba(9, 48, 40, 1),rgba(35, 122, 87, 1)); border: none; font-weight: bold;">Bayar
+                Sekarang</a>
         </div>
     </div>
 @endsection
