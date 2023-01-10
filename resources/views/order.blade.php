@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container keranjang-container p-3 mt-5 bg-white"
-        style="width: 100%;border-radius: 20px;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
+        style="width: 100%;border-radius: 20px;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); overflow: hidden;">
         <div class="keranjang-title jcs">
             <a href="#" class="text-secondary p-2 fs-5 jcs">
                 <iconify-icon icon="material-symbols:arrow-back-ios new-rounded"></iconify-icon>
