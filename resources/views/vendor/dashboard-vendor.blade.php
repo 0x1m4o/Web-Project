@@ -29,8 +29,8 @@
                             </a>
                         </div>
                         <div class="dashboard-data">
-                            <p>Rp 30,000,000</p>
-                            <p>10</p>
+                            <p class="text-end">Rp 30,000,000</p>
+                            <p class="text-end">10</p>
                         </div>
                     </section>
                     <section class="kotak-masuk">
@@ -43,7 +43,6 @@
                                 <p><i class="bi bi-chat"></i> Chat</p>
                             </a>
                             <a href="">
-
                                 <p>
                                     <i class="bi bi-box">
 
