@@ -221,7 +221,7 @@
                             <p class="m-0">Sebelumnya</p>
                         </a>
                         <p class="m-0 d-flex align-items-center">Step 1-2</p>
-                        <a href="/daftar-vendor/2" class="btn btn-success px-4 mb-2"
+                        <a href="/vendor-admin/daftar-vendor/2" class="btn btn-success px-4 mb-2"
                             style="
                         background: linear-gradient(90deg, #093028 0%, #237A57 100%);
                         border-radius: 10px;">Lanjut</a>
