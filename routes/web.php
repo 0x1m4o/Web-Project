@@ -333,6 +333,12 @@ Route::get('/order', function () {
     ]);
 });
 
+Route::get('/checkout', function () {
+    return view('checkout', [
+        'title' => "Checkout"
+    ]);
+});
+
 Route::get('/chat', function () {
     return view('chat.chat', [
         'title' => "Chat"

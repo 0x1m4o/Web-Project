@@ -7,6 +7,8 @@
         .selengkapnya {
             color: #49516F;
             text-decoration: none #9FA6B2;
+
+
         }
 
         .selengkapnya:hover {
