@@ -1,11 +1,8 @@
 @extends('layouts.vendor')
 
 @section('styles_vendor')
-
 @endsection
 
-@section('vendor')
-@include('partials.messages')
-
-
+@section('content')
+    @include('partials.messages')
 @endsection

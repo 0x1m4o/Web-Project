@@ -430,3 +430,15 @@ Route::get('/dashboard-vendor', function () {
         'title' => "Dashboard Vendor"
     ]);
 });
+
+Route::get('/daftar-vendor/1', function () {
+    return view('vendor.daftar-vendor-1', [
+        'title' => "Daftar Vendor Step 1"
+    ]);
+});
+
+Route::get('/daftar-vendor/2', function () {
+    return view('vendor.daftar-vendor-2', [
+        'title' => "Daftar Vendor Step 2"
+    ]);
+});
