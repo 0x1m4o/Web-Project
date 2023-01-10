@@ -12,6 +12,7 @@
                     <i class='bx bx-chevron-left' style="padding-top: 25px;font-size: 30px;"></i>
                 </a>
                 <div style="width: 1200px;">
+                <a href="">
                     <h5 style="padding-top: 20px;font-weight: bold;font-size: 32px; color: #49516F;">Konfirmasi Pesanan</h5>
                 </div>
             </div>
