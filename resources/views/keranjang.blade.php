@@ -38,7 +38,9 @@
                         <div class="row konten-row">
                             <h5 class="konten-title fw-semibold title-label">The Aesthetic</h5>
                             <h6 class="konten-price fw-semibold title-label">Rp. 100.000.000</h6>
-                            <a href="/" class="text-decoration-none"><h6 class="konten-catatan mt-3">Tulis Catatan</h6></a>
+                            <a href="/" class="text-decoration-none">
+                                <h6 class="konten-catatan mt-3">Tulis Catatan</h6>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -94,7 +96,9 @@
                         <div class="row konten-row">
                             <h5 class="konten-title fw-semibold title-label">Ballroom Melbourne</h5>
                             <h6 class="konten-price fw-semibold title-label">Rp. 300.000.000</h6>
-                            <a href="" class="text-decoration-none"><h6 class="konten-catatan mt-3">Tulis Catatan</h6></a>
+                            <a href="" class="text-decoration-none">
+                                <h6 class="konten-catatan mt-3">Tulis Catatan</h6>
+                            </a>
                         </div>
                     </div>
                 </div>

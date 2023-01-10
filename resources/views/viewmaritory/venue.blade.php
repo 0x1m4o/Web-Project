@@ -557,10 +557,11 @@
                         <p class="tw-button2 text-capitalize d-inline-block mt-2 mx-3">tambah keranjang</p>
                     </button>
                 </a>
-
-                <button class="button mt-4 mx-4 border-0">
-                    <p class="tg-button text-capitalize text-center d-inline-block mt-2">order</p>
-                </button>
+                <a href="/order">
+                    <button class="button mt-4 mx-4 border-0">
+                        <p class="tg-button text-capitalize text-center d-inline-block mt-2">order</p>
+                    </button>
+                </a>
             </div>
         </div>
 
