@@ -156,7 +156,7 @@ Route::middleware(['auth:vendor'])->group(function () {
 // Guest Vendor Required
 Route::middleware(['guest:vendor'])->group(function () {
     Route::get('/vendor/signup/1', function () {
-        return view('vendor.daftar-vendor-1', [
+        return view('vendor.auth.daftar-vendor-1', [
             'title' => "Daftar Vendor Step 1"
         ]);
     });

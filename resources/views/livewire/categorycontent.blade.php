@@ -79,7 +79,7 @@
         
         @foreach ($categories as $c)
         @if ($c->id < 10)
-        <button onclick="window.location.href='{{ route('category', ['category'=> $c->slug, 'search'=>request('search')]) }}'" class="btn text-secondary text-capitalize category {{ ($category->name == $c->name) ? 'aktif' : '' }}">
+        <button onclick="window.location.href='{{ route('category', ['category'=> $c->slug, 'search'=>request('search'), 'pages'=>$pages]) }}'" class="btn text-secondary text-capitalize category {{ ($category->name == $c->name) ? 'aktif' : '' }}">
             <img src="/img/{{ $c->slug }}.png" alt="" class='ms-1' />
             <p class="d-inline-block p-1 mb-0 text-dark">{{ $c->name }}</p>
         </button>
@@ -96,157 +96,157 @@
                         <div class="row">
                             <div class="col-4">
 
-                                <div class="m-3 all ">
-                                    <a href="{{ route('category', ['category'=>'venue']) }}">
+                                <a href="{{ route('category', ['category'=>'venue', 'search'=>request('search'), 'pages'=>$pages]) }}">
+                                    <div class="m-3 all ">
                                         <img src="/img/venue.png" alt="" />
                                         <p class="d-inline-block p-1 mb-1 text-dark">venue</p>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
 
+                                <a href="{{ route('category', ['category'=>'catering', 'search'=>request('search'), 'pages'=>$pages]) }}">
                                 <div class="m-3 all">
-                                    <a href="{{ route('category', ['category'=>'catering', 'search'=>request('search')]) }}">
                                         <img src="/img/catering.png" alt="" />
                                         <p class="d-inline-block p-1 mb-1 text-dark">
                                             catering
                                         </p>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
 
+                                <a href="{{ route('category', ['category'=>'busana', 'search'=>request('search'), 'pages'=>$pages]) }}">
                                 <div class="m-3 all">
-                                    <a href="{{ route('category', ['category'=>'busana', 'search'=>request('search')]) }}">
                                         <img src="/img/busana.png" alt="" />
                                         <p class="d-inline-block p-1 mb-1 text-dark">busana</p>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
 
+                                <a href="{{ route('category', ['category'=>'perhiasan', 'search'=>request('search'), 'pages'=>$pages]) }}">
                                 <div class="m-3 all">
-                                    <a href="{{ route('category', ['category'=>'perhiasan', 'search'=>request('search')]) }}">
                                         <img src="/img/perhiasan.png" alt="" />
                                         <p class="d-inline-block p-1 mb-1 text-dark">
                                             perhiasan
                                         </p>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
 
+                                <a href="{{ route('category', ['category'=>'wedding', 'search'=>request('search'), 'pages'=>$pages]) }}">
                                 <div class="m-3 all">
-                                    <a href="{{ route('category', ['category'=>'wedding', 'search'=>request('search')]) }}">
                                         <img src="/img/wedding-planner.png" alt="" />
                                         <p class="d-inline-block p-1 mb-1 text-dark">
                                             wedding planner
                                         </p>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
 
+                                <a href="{{ route('category', ['category'=>'koreografi', 'search'=>request('search'), 'pages'=>$pages]) }}">
                                 <div class="m-3 all">
-                                    <a href="{{ route('category', ['category'=>'koreografi', 'search'=>request('search')]) }}">
                                         <img src="/img/koreografi.png" alt="" />
                                         <p class="d-inline-block p-1 mb-1 text-dark">
                                             koreografi
                                         </p>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
                             </div>
 
                             <div class="col-4">
+                                <a href="{{ route('category', ['category'=>'dekorasi', 'search'=>request('search'), 'pages'=>$pages]) }}">
                                 <div class="m-3 all">
-                                    <a href="{{ route('category', ['category'=>'dekorasi', 'search'=>request('search')]) }}">
                                         <img src="/img/dekorasi.png" alt="" />
                                         <p class="d-inline-block p-1 mb-1 text-dark">
                                             dekorasi
                                         </p>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
 
+                                <a href="{{ route('category', ['category'=>'band', 'search'=>request('search'), 'pages'=>$pages]) }}">
                                 <div class="m-3 all">
-                                    <a href="{{ route('category', ['category'=>'band', 'search'=>request('search')]) }}">
                                         <img src="/img/band.png" alt="" />
                                         <p class="d-inline-block p-1 mb-1 text-dark">band</p>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
 
+                                <a href="{{ route('category', ['category'=>'w-o', 'search'=>request('search'), 'pages'=>$pages]) }}">
                                 <div class="m-3 all">
-                                    <a href="{{ route('category', ['category'=>'w-o', 'search'=>request('search')]) }}">
                                         <img src="/img/w-o.png" alt="" />
                                         <p class="d-inline-block p-1 mb-1 text-dark">W.O</p>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
 
+                                <a href="{{ route('category', ['category'=>'mc', 'search'=>request('search'), 'pages'=>$pages]) }}">
                                 <div class="m-3 all">
-                                    <a href="{{ route('category', ['category'=>'mc', 'search'=>request('search')]) }}">
                                         <img src="/img/mc.png" alt="" />
                                         <p class="d-inline-block p-1 mb-1 text-dark">MC</p>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
 
+                                <a href="{{ route('category', ['category'=>'honey-moon', 'search'=>request('search'), 'pages'=>$pages]) }}">
                                 <div class="m-3 all">
-                                    <a href="{{ route('category', ['category'=>'honey-moon', 'search'=>request('search')]) }}">
                                         <img src="/img/honey-moon.png" alt="" />
                                         <p class="d-inline-block p-1 mb-1 text-dark">
                                             honey moon
                                         </p>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
 
+                                <a href="{{ route('category', ['category'=>'seserahan', 'search'=>request('search'), 'pages'=>$pages]) }}">
                                 <div class="m-3 all">
-                                    <a href="{{ route('category', ['category'=>'seserahan', 'search'=>request('search')]) }}">
                                         <img src="/img/seserahan.png" alt="" />
                                         <p class="d-inline-block p-1 mb-1 text-dark">
                                             seserahan
                                         </p>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
                             </div>
 
                             <div class="col-4">
+                                <a href="{{ route('category', ['category'=>'mua', 'search'=>request('search'), 'pages'=>$pages]) }}">
                                 <div class="m-3 all">
-                                    <a href="{{ route('category', ['category'=>'mua', 'search'=>request('search')]) }}">
                                         <img src="/img/mua.png" alt="" />
                                         <p class="d-inline-block p-1 mb-1 text-dark">MUA</p>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
 
+                                <a href="{{ route('category', ['category'=>'fotografi', 'search'=>request('search'), 'pages'=>$pages]) }}">
                                 <div class="m-3 all">
-                                    <a href="{{ route('category', ['category'=>'fotografi', 'search'=>request('search')]) }}">
                                         <img src="/img/fotografi.png" alt="" />
                                         <p class="d-inline-block p-1 mb-1 text-dark">
                                             fotografi
                                         </p>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
 
+                                <a href="{{ route('category', ['category'=>'souvenir', 'search'=>request('search'), 'pages'=>$pages]) }}">
                                 <div class="m-3 all">
-                                    <a href="{{ route('category', ['category'=>'souvenir', 'search'=>request('search')]) }}">
                                         <img src="/img/souvenir.png" alt="" />
                                         <p class="d-inline-block p-1 mb-1 text-dark">
                                             souvenir
                                         </p>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
 
+                                <a href="{{ route('category', ['category'=>'undangan', 'search'=>request('search'), 'pages'=>$pages]) }}">
                                 <div class="m-3 all">
-                                    <a href="{{ route('category', ['category'=>'undangan', 'search'=>request('search')]) }}">
                                         <img src="/img/undangan.png" alt="" />
                                         <p class="d-inline-block p-1 mb-1 text-dark">
                                             undangan
                                         </p>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
 
+                                <a href="{{ route('category', ['category'=>'photo-booth', 'search'=>request('search'), 'pages'=>$pages]) }}">
                                 <div class="m-3 all">
-                                    <a href="{{ route('category', ['category'=>'photo-booth', 'search'=>request('search')]) }}">
                                         <img src="/img/photo-booth.png" alt="" />
                                         <p class="d-inline-block p-1 mb-1 text-dark">
                                             photo booth
                                         </p>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
 
+                                <a href="{{ route('category', ['category'=>'lainnya', 'search'=>request('search'), 'pages'=>$pages]) }}">
                                 <div class="m-3 all">
-                                    <a href="{{ route('category', ['category'=>'lainnya', 'search'=>request('search')]) }}">
                                         <img src="/img/lainnya.png" alt="" />
                                         <p class="d-inline-block p-1 mb-1 text-dark">lainnya</p>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -257,7 +257,7 @@
     <!-- Filter -->
     <div class="container px-5 nav-filter d-flex justify-content-between" id="filter">
         <div>
-            <a wire:click="pages('sekitarsaya')" class="text-decoration-none p-2 me-2 {{ ($pages==='sekitarsaya') ? 'aktif' : '' }}" style="cursor: pointer">Di sekitar saya</a>
+            <a wire:click="pages('sekitar-saya')" class="text-decoration-none p-2 me-2 {{ ($pages==='sekitar-saya') ? 'aktif' : '' }}" style="cursor: pointer">Di sekitar saya</a>
             <a wire:click="pages('terbaru')" class="text-decoration-none p-2 {{ ($pages==='terbaru') ? 'aktif' : '' }}" style="cursor: pointer">Terbaru</a>
             <a wire:click="pages('populer')" class="text-decoration-none p-2 {{ ($pages==='populer') ? 'aktif' : '' }}" style="cursor: pointer">Populer</a>
             <a wire:click="pages('spesialoffer')" class="text-decoration-none p-2 {{ ($pages==='spesialoffer') ? 'aktif' : '' }}" style="cursor: pointer">Spesial Offer!</a>
