@@ -29,7 +29,7 @@
 
 
 <div class="nav-wrapper">
-    <nav class="navbar navbar-main navbar-expand-lg d-flex align-items-center">
+    <nav class="navbar navbar-main navbar-expand-lg d-flex align-items-center p-1">
         <div class="container-fluid">
             <!-- Offcanvas -->
             <div class="d-flex justify-content-start">
@@ -60,15 +60,34 @@
                             aria-label="Search" />
                     </form>
 
-                    <div class="dropdown dropdown-hover " id="Dropdown">
+                    <div class="dropdown dropdown-hover ">
                         <button class="btn pt-2" href="#" role="button dropdown-toggle" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <i class="bi bi-calendar3 fs-4"></i>
                         </button>
 
                         <div class="dropdown-menu dropdown-menu-center wrapper">
-                            <div id="calendar-js" class="calendar-container" onclick="event.stopPropagation()"></div>
-
+                            <header>
+                                <p class="current-date"></p>
+                                <div class="icons">
+                                    <span id="prev" class="material-symbols-rounded"><i
+                                            class="bi bi-arrow-left-circle"></i></span>
+                                    <span id="next" class="material-symbols-rounded"><i
+                                            class="bi bi-arrow-right-circle"></i></span>
+                                </div>
+                            </header>
+                            <div class="calendar">
+                                <ul class="weeks">
+                                    <li>Sun</li>
+                                    <li>Mon</li>
+                                    <li>Tue</li>
+                                    <li>Wed</li>
+                                    <li>Thu</li>
+                                    <li>Fri</li>
+                                    <li>Sat</li>
+                                </ul>
+                                <ul class="days"></ul>
+                            </div>
                         </div>
                     </div>
 
@@ -160,10 +179,25 @@
                                     style="background-color: white">
                                     Rp90.000.000
                                 </button>
-                                <a href="#" class="col-5 text-decoration-none text-secondary fw-bold">
-                                    <p class="m-0">
-                                        Lihat Detail
-                                    </p>
+                                <style>
+                                    .detail {
+                                        color: #49516F;
+                                        text-decoration: none #9FA6B2;
+
+
+                                    }
+
+                                    .detail:hover {
+                                        text-decoration: underline #9FA6B2;
+                                        transition: 0.2s ease-out;
+                                        cursor: pointer;
+                                        font-size: 16.5px;
+
+                                    }
+                                </style>
+                                <p class="m-0 detail">
+                                    Lihat Detail
+                                </p>
                                 </a>
                             </div>
                         </div>
@@ -514,12 +548,9 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/java
   
-  script">
+  <script>
     $(function () {
-      $("body").click(function (e) {
-        if (
-          e.target.getAttribute("class") === "navbar-collapse" ||
-          $(e.target).parents(".navbar-collapse").length > 0
+      $(" body").click(function (e) { if ( e.target.getAttribute("class")==="navbar-collapse" || $(e.target).parents(".navbar-collapse").length> 0
         ) {
         } else {
           if ($(".navbar-collapse").hasClass("show") == true) {

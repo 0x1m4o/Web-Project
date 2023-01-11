@@ -151,10 +151,10 @@
                         </div>
                         <div class="d-flex flex-column">
                             <a href="" class="text-center text-decoration-none fw-bold" style="color: #237A57;">Lihat Cara Pembayaran</a>
-                            <a href="/home" class="text-center text-decoration-none fw-bold text-white py-2 mt-5 mb-4 mx-auto" style="background: linear-gradient(90deg, #093028 0%, #237A57 100%);
+                            <a href="/" class="text-center text-decoration-none fw-bold text-white py-2 mt-5 mb-4 mx-auto" style="background: linear-gradient(90deg, #093028 0%, #237A57 100%);
                             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                             border-radius: 10px;width: 250px">Kembali ke Home</a>
-                            <a href="" class="text-center text-decoration-none fw-bold bg-white py-2 mb-3 mx-auto" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                            <a href="/dashboard" class="text-center text-decoration-none fw-bold bg-white py-2 mb-3 mx-auto" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                             border-radius: 10px;width: 250px;color: #237A57;background: #CDD4B2;">Ke halaman Nabung</a>
                         </div>
                     </div>

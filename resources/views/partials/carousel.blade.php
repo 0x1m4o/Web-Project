@@ -1,5 +1,5 @@
-<div id="carouselExampleControls" class="carousel slide container mt-2" data-bs-ride="carousel">
-    <div class="carousel-inner">
+<div id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel">
+    <div class="carousel-inner pt-3">
       <div class="carousel-item active">
         <img src="/img/Banner1.png" class="d-block w-100" alt="Banner 1">
       </div>

@@ -79,7 +79,7 @@
                 <img src="/img/venue.png" alt="" class='ms-1' />
                 <p class="d-inline-block p-1 mb-0 text-dark">venue</p>
             </button>
-            <button onclick="window.location.href='/view-dekorasi'" class="btn text-secondary text-capitalize category">
+            <button onclick="window.location.href='/kategori-dekorasi'" class="btn text-secondary text-capitalize category">
                 <img src="/img/dekorasi.png" alt="" class='ms-1' />
                 <p class="d-inline-block p-1 mb-0 text-dark">dekorasi</p>
             </button>

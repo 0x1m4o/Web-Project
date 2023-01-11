@@ -110,11 +110,11 @@
         </div>
         <div class="card">
             <a href="/kategori-wedding_planner">
+                <img src="/img/kategori-img/wedding_planner.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h6 class="card-title text-center mt-2" style="font-size: 12px;font-weight: 900; color: black">wedding planner</h6>
+                </div>
             </a>
-            <img src="/img/kategori-img/wedding_planner.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-                <h6 class="card-title text-center mt-2" style="font-size: 12px;font-weight: 900; color: black">wedding planner</h6>
-            </div>
         </div>
         <div class="card">
             <a href="/kategori-honeymoon">

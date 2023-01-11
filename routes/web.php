@@ -403,6 +403,38 @@ Route::get('/following', function () {
     ]);
 });
 
+Route::get('/disekitarsaya', function () {
+    return view('disekitarsaya', [
+        'title' => "disekitarsaya"
+
+    ]);
+});
+
+Route::get('/terbaru', function () {
+    return view('terbaru', [
+        'title' => "terbaru"
+
+    ]);
+});
+
+Route::get('/populer', function () {
+    return view('populer', [
+        'title' => "populer"
+
+    ]);
+});
+
+Route::get('/spesialoffer', function () {
+    return view('specialoffer', [
+        'title' => "specialoffer"
+
+    ]);
+});
+
+
+
+
+
 
 
 Route::get('/notifikasi-transaksi', function () {

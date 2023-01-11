@@ -48,9 +48,11 @@
 
 <body>
     <script src="https://kit.fontawesome.com/457a315592.js" crossorigin="anonymous"></script>
+    <!-- Navbar -->
     @include('partials.navbar')
 
     @yield('content')
+
     {{-- Footer --}}
     @include('partials.footer')
 

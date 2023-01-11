@@ -2,7 +2,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-.dropdown.toggle.show + .dropdown-menu {
+.dropdown.toggle.show+.dropdown-menu {
     display: none;
 }
 
@@ -51,7 +51,7 @@
     background-color: transparent;
 }
 
-.effect-border ~ .focus-border {
+.effect-border~.focus-border {
     position: absolute;
     left: 0;
     width: 0;
@@ -60,7 +60,7 @@
     transition: 0.4s;
 }
 
-.effect-border:focus ~ .focus-border {
+.effect-border:focus~.focus-border {
     width: 100%;
     transition: 0.4s;
 }
@@ -217,7 +217,7 @@ body {
     margin: 5px 0;
 }
 
-.container > * {
+.container>* {
     padding: 10px;
 }
 
@@ -500,7 +500,7 @@ label.form-check-label:focus,
     display: none;
 }
 
-.question:hover + .budget {
+.question:hover+.budget {
     display: block;
 }
 

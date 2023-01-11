@@ -2,7 +2,7 @@
 <a href="/populer" class="text-decoration-none p-0">
     <h2 class="fw-bold text-dark">Populer di Maritory</h2>
 </a>
-<a href="/selengkapnya" class="selengkapnya">
+<a href="/selengkapnya" class="selengkapnya p-0">
     <style>
         .selengkapnya {
             color: #49516F;
@@ -183,10 +183,10 @@
 </div>
 
 <a href="/sekitar" class="text-decoration-none p-0">
-    <h2 class="fw-bold text-dark">Sekitar Saya</h2>
+    <h2 class="fw-bold text-dark mt-4">Sekitar Saya</h2>
 </a>
-<a href="/selengkapnya" class="selengkapnya">
-    <h5 class="text-end text-secondary m-0 py-0">Lihat Selengkapnya</h5>
+<a href="/selengkapnya" class="selengkapnya p-0">
+    <h5 class="text-end text-secondary m-0 p-0">Lihat Selengkapnya</h5>
 </a>
 <div class="responsive slider">
     <div class="card">
@@ -329,7 +329,7 @@
 
 <div class="blog-info">
     <a href="/spesial" class="text-decoration-none">
-        <h2 class="fw-bold text-dark">Spesial Offer</h2>
+        <h2 class="fw-bold text-dark mt-4">Spesial Offer</h2>
     </a>
     <a href="/selengkapnya" class="selengkapnya">
         <h5 class="text-end text-secondary m-0 py-0">Lihat Selengkapnya</h5>
@@ -455,7 +455,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card mb-5">
         <a href="">
             <img src="/img/Nomade.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
