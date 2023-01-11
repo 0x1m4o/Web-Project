@@ -22,8 +22,6 @@
     .simple-calendar-btn {
         margin: 30px !important;
         color: black !important;
-
-
     }
 </style>
 
@@ -60,34 +58,14 @@
                             aria-label="Search" />
                     </form>
 
-                    <div class="dropdown dropdown-hover ">
+                    <div class="dropdown  ">
                         <button class="btn pt-2" href="#" role="button dropdown-toggle" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <i class="bi bi-calendar3 fs-4"></i>
                         </button>
 
                         <div class="dropdown-menu dropdown-menu-center wrapper">
-                            <header>
-                                <p class="current-date"></p>
-                                <div class="icons">
-                                    <span id="prev" class="material-symbols-rounded"><i
-                                            class="bi bi-arrow-left-circle"></i></span>
-                                    <span id="next" class="material-symbols-rounded"><i
-                                            class="bi bi-arrow-right-circle"></i></span>
-                                </div>
-                            </header>
-                            <div class="calendar">
-                                <ul class="weeks">
-                                    <li>Sun</li>
-                                    <li>Mon</li>
-                                    <li>Tue</li>
-                                    <li>Wed</li>
-                                    <li>Thu</li>
-                                    <li>Fri</li>
-                                    <li>Sat</li>
-                                </ul>
-                                <ul class="days"></ul>
-                            </div>
+                            <div id="calendar-js" class="calendar-container" onclick="event.stopPropagation()"></div>
                         </div>
                     </div>
 
@@ -101,8 +79,7 @@
             <!-- Navbar Supported Content -->
             <div id="navbarSupportedContent" class="d-flex justify-content-end navbar-collapse offcanvas-end d-none">
                 <!-- Keranjang -->
-
-                <div class="dropdown dropdown-hover">
+                <div class="dropdown ">
                     <a href="/keranjang" class="me-3 text-white  dropdown-toggle" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 25px">
                         <iconify-icon icon="carbon:shopping-cart"></iconify-icon>
@@ -205,7 +182,7 @@
                 </div>
 
                 <!-- Chat -->
-                <div class="dropdown dropdown-hover">
+                <div class="dropdown ">
                     <a class="me-3 text-white dropdown-toggle" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false" style="font-size: 25px">
                         <iconify-icon icon="material-symbols:mail-rounded"></iconify-icon>
@@ -271,7 +248,7 @@
                 </div>
 
                 {{-- Tabungan --}}
-                <div class="dropdown dropdown-hover ">
+                <div class="dropdown  ">
                     <a class="me-3 text-white dropdown-toggle" role="button" style="font-size: 25px"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <iconify-icon icon="mingcute:wallet-4-fill"></iconify-icon>
