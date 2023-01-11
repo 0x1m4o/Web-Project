@@ -1,6 +1,32 @@
 {{-- Navbar After Login --}}
 <link rel="stylesheet" href="/css/navbar.css">
 
+<style>
+    header {
+        padding: 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .btn-prev,
+    .btn-next {
+        border: 1px solid black !important;
+    }
+
+    .btn-prev::before,
+    .btn-next::before {
+        padding: 2px;
+        margin: 1px !important;
+    }
+
+    .simple-calendar-btn {
+        margin: 30px !important;
+        color: black !important;
+
+
+    }
+</style>
+
 
 <div class="nav-wrapper">
     <nav class="navbar navbar-main navbar-expand-lg d-flex align-items-center">
@@ -34,34 +60,15 @@
                             aria-label="Search" />
                     </form>
 
-                    <div class="dropdown dropdown-hover ">
+                    <div class="dropdown dropdown-hover " id="Dropdown">
                         <button class="btn pt-2" href="#" role="button dropdown-toggle" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <i class="bi bi-calendar3 fs-4"></i>
                         </button>
 
                         <div class="dropdown-menu dropdown-menu-center wrapper">
-                            <header>
-                                <p class="current-date"></p>
-                                <div class="icons">
-                                    <span id="prev" class="material-symbols-rounded"><i
-                                            class="bi bi-arrow-left-circle"></i></span>
-                                    <span id="next" class="material-symbols-rounded"><i
-                                            class="bi bi-arrow-right-circle"></i></span>
-                                </div>
-                            </header>
-                            <div class="calendar">
-                                <ul class="weeks">
-                                    <li>Sun</li>
-                                    <li>Mon</li>
-                                    <li>Tue</li>
-                                    <li>Wed</li>
-                                    <li>Thu</li>
-                                    <li>Fri</li>
-                                    <li>Sat</li>
-                                </ul>
-                                <ul class="days"></ul>
-                            </div>
+                            <div id="calendar-js" class="calendar-container" onclick="event.stopPropagation()"></div>
+
                         </div>
                     </div>
 

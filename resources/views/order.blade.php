@@ -108,7 +108,7 @@
 
             </div>
             <select class="form-select" style="border: none; width: 300px;">
-                <option selected>Ubah metode pembayaran</option>
+                <option selected hidden>Ubah metode pembayaran</option>
                 <option>BCA</option>
                 <option>Mandiri</option>
                 <option>Gopay</option>
