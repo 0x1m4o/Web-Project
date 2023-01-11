@@ -28,7 +28,7 @@ class ProductFactory extends Factory
             'category'=>fake()->randomElement($categoriesNames),
             'price'=>rand(200000, 1000000),
             'theme'=>fake()->randomElement(['Indoor', 'Outdoor']),
-            'rating'=>rand(0, 5),
+            'rating'=>rand(1, 5),
             'review'=>rand(0, 100),
             'created_at'=>fake()->dateTimeBetween('-20 days', now()),
         ];

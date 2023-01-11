@@ -7,20 +7,21 @@ use Livewire\Component;
 use App\Models\Product;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class Categorycontent extends Component
 {
     public $count = 8;
-    public $sort_by = 'rating';
-    public $sort = 'DESC';
+    public $sort_by = 'name';
+    public $sort = 'ASC';
     public $theme = 'Semua';
     public $location = 'Semua';
     public $min = null;
     public $max = null;
     public $category;
 
-    public $pages = 'sekitarsaya';
-    public $search='';
+    public $pages = 'sekitar-saya';
+    public $search;
     protected $queryString = ['search','pages'];
 
     public function mount($category){
@@ -56,7 +57,7 @@ class Categorycontent extends Component
         }
         // Pages
         if ($this->pages==='terbaru'){
-            $query = $query->orderBy('created_at', 'DESC')->orderBy($this->sort_by, $this->sort);
+            $query = $query->orderBy(DB::raw("DATE_FORMAT(created_at,'%d-%m-%Y')"), 'DESC');
         }
 
         // Sort
@@ -102,8 +103,8 @@ class Categorycontent extends Component
     }
 
     public function pages($pages){
-        if ($pages==='sekitarsaya'){
-            $this->pages = 'sekitarsaya';
+        if ($pages==='sekitar-saya'){
+            $this->pages = 'sekitar-saya';
         } elseif ($pages==='terbaru'){
             $this->pages = 'terbaru';
         } elseif ($pages==='populer'){

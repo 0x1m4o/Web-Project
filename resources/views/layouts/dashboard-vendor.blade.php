@@ -35,6 +35,9 @@
     {{-- boxicons --}}
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    {{-- Livewire --}}
+    <livewire:styles />
+
     {{-- Blade CSS --}}
     @yield('styles')
 
@@ -116,6 +119,8 @@
 
     {{-- Iconify JS --}}
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    {{-- Livewire --}}
+    <livewire:scripts />
 </body>
 
 </html>
