@@ -17,6 +17,8 @@ class Categorycontent extends Component
     public $location = 'Semua';
     public $min = null;
     public $max = null;
+    public $pages = 'sekitarsaya';
+    protected $queryString = ['pages'];
 
     public $category;
     public $searched='';
@@ -34,7 +36,7 @@ class Categorycontent extends Component
         // Category
         $query = Product::where('category', $this->category->name)
                         ->where('name', 'LIKE', '%' . $this->searched . '%');
-        // Theme
+         // Theme
         if ($this->theme!='Semua'){
             $query = $query->where('theme', $this->theme);
         }
@@ -91,6 +93,18 @@ class Categorycontent extends Component
         } elseif ($sort_by==='lowest_price'){
             $this->sort_by = 'price';
             $this->sort = 'ASC';
+        }
+    }
+
+    public function pages($pages){
+        if ($pages==='sekitarsaya'){
+            $this->pages = 'sekitarsaya';
+        } elseif ($pages==='terbaru'){
+            $this->pages = 'terbaru';
+        } elseif ($pages==='populer'){
+            $this->pages = 'populer';
+        } elseif ($pages==='specialoffer'){
+            $this->pages = 'specialoffer';
         }
     }
 }
