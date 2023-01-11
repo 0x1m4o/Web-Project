@@ -30,10 +30,10 @@
                 $(".responsive-kategori").slick({
                     dots: false,
                     infinite: false,
-                    speed: 300,
+                    speed: 1700,
                     arrows: true,
                     slidesToShow: 8,
-                    slidesToScroll: 6,
+                    slidesToScroll: 8,
                     arrowsWidth: true,
                     responsive: [{
                             breakpoint: 1024,
@@ -69,7 +69,7 @@
                 $(".responsive").slick({
                     dots: false,
                     infinite: false,
-                    speed: 300,
+                    speed: 1000,
                     arrows: true,
                     slidesToShow: 4,
                     slidesToScroll: 4,
