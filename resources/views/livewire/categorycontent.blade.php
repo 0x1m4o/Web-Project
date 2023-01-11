@@ -257,10 +257,10 @@
     <!-- Filter -->
     <div class="container px-5 nav-filter d-flex justify-content-between" id="filter">
         <div>
-            <a href="/disekitarsaya" class="text-decoration-none aktif p-2 me-2 ">Di sekitar saya</a>
-            <a href="/terbaru" class="text-decoration-none p-2">Terbaru</a>
-            <a href="/populer" class="text-decoration-none p-2">Populer</a>
-            <a href="/spesialoffer" class="text-decoration-none p-2">Spesial Offer!</a>
+            <a wire:click="pages('sekitarsaya')" class="text-decoration-none aktif p-2 me-2" href="#">Di sekitar saya</a>
+            <a href="{{ route('category', ['category'=>$category, 'search'=>request('search'), 'pages'=>'terbaru']) }}" class="text-decoration-none p-2">Terbaru</a>
+            <a href="{{ route('category', ['category'=>$category, 'search'=>request('search'), 'pages'=>'populer']) }}" class="text-decoration-none p-2">Populer</a>
+            <a href="{{ route('category', ['category'=>$category, 'search'=>request('search'), 'pages'=>'specialoffer']) }}" class="text-decoration-none p-2">Spesial Offer!</a>
         </div>
         <div class="d-flex justify-content-start">
             <div class="dropdown dropdown-hover">
