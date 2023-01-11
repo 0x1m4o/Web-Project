@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\auth\LoginController;
 use App\Http\Controllers\auth\SignUpController;
 use App\Http\Controllers\auth\ForgotController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Livewire\Categorycontent;
 
 /*
@@ -52,6 +53,9 @@ Route::middleware(['guest:web'])->group(function () {
 });
 
 Route::get('/category/{category:slug}', Categorycontent::class)->name('category');
+
+Route::get('edit', [ProfileController::class, 'edit'])->name('profile.edit');
+Route::post('update', [ProfileController::class, 'update'])->name('profile.update');
 
 Route::get('/', function () {
     return view('home', [

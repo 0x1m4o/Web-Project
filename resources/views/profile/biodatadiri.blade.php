@@ -20,13 +20,12 @@
                             <div class="card" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
                                 <img src="{{ auth()->user()->avatar }}" class="card-img-top p-3  m-auto" style="width: 250px;">
                                 <div class="card-body text-center mb-3">
-                                   <label class="btn btn-outline-dark" for="upload">Pilih Foto</label> 
-                                   <input type="file" id="upload" hidden accept="image/*">
+                                    <label class="btn btn-outline-dark" for="upload">Pilih Foto</label> 
+                                    <input type="file" id="upload" hidden accept="image/*">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-8">
-                          <form method="post" enctype="multipart/form-data">
+                        <div class="col-8"> 
                           <div class="container-fluid" style="border-bottom: 1px solid grey;">
                             <div class="row align-items-center">
                                 <div class="col-11">
@@ -35,7 +34,53 @@
                                     </span>
                                 </div>
                                 <div class="col-1">
-                                        <i class="bi bi-pencil-fill fs-4"></i>
+                                        <i class="bi bi-pencil-fill fs-4" style="cursor: pointer" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i>
+                                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5 fw-bold" id="staticBackdropLabel">Ubah Biodata Diri</h1>
+                                                    <button type="button" class="btn-close d-block" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form method="post" action="{{ route('profile.update') }}">
+                                                        @csrf
+                                                        <div class="mb-3">
+                                                            <label for="name" class="form-label">Nama</label>
+                                                            <input type="text" class="form-control" id="name" name="name" value="{{ auth()->user()->name }}">
+                                                            @error('name')
+                                                                <div class="invalid-feedback">{{ $message }}</div>
+                                                            @enderror
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="date_of_birth" class="form-label">Tanggal Lahir</label>
+                                                            <input type="date" class="form-control" id="date_of_birth" name="date_of_birth" value="{{ auth()->user()->date_of_birth }}">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <p>Jenis Kelamin</p>
+                                                            <div class="d-flex align-items-center justify-content-around">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="gender" id="Laki-laki">
+                                                                    <label class="form-check-label fs-5" for="Laki-laki">
+                                                                        Laki-laki
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="gender" id="Perempuan">
+                                                                    <label class="form-check-label fs-5" for="Perempuan">
+                                                                        Perempuan
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="submit" class="btn" style="background: linear-gradient(90deg, #093028 0%, #237A57 100%); color: white ">Simpan</button>
+                                                        </div>
+                                                    </form>
+                                                </div>    
+                                            </div>
+                                            </div>
+                                        </div>
                                 </div>
                             </div>
                             <div class="col-sm-2" style="cursor: pointer; color: black;">
@@ -70,7 +115,32 @@
                                     </span>
                                 </div>
                                 <div class="col-1">
-                                        <i class="bi bi-pencil-fill fs-4"></i>
+                                    <i class="bi bi-pencil-fill fs-4" style="cursor: pointer" data-bs-toggle="modal" data-bs-target="#staticBackdropkontak"></i>
+                                    <div class="modal fade" id="staticBackdropkontak" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5 fw-bold" id="staticBackdropLabel">Ubah Kontak</h1>
+                                                <button type="button" class="btn-close d-block" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ auth()->user()->email }}">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputPassword1" class="form-label">Nomor HP</label>
+                                                        <input type="text" class="form-control" id="exampleInputPassword1" value="{{ auth()->user()->phone }}">
+                                                    </div>
+                                                </form>
+                                            </div>    
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn" style="background: linear-gradient(90deg, #093028 0%, #237A57 100%); color: white ">Simpan</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-sm-2" style="cursor: pointer; color: black;">
@@ -99,7 +169,9 @@
                                     </span>
                                 </div>
                                 <div class="col-1">
+                                    <a href="/forgot-password" class="text-decoration-none text-dark">
                                         <i class="bi bi-pencil-fill fs-4"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-sm-2" style="cursor: pointer; color: black;">
@@ -115,8 +187,6 @@
                                 </div>
                             </div>
                           </div>
-                          <button type="submit" class="btn btn-success">Update</button
-                          </form>
                         </div>
                     </div>
                 </div>
