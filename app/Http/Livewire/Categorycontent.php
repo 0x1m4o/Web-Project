@@ -54,6 +54,11 @@ class Categorycontent extends Component
         if ($this->max!=null){
             $query = $query->where('price', '<=', $this->max);
         }
+        // Pages
+        if ($this->pages==='terbaru'){
+            $query = $query->orderBy('created_at', 'DESC')->orderBy($this->sort_by, $this->sort);
+        }
+
         // Sort
         $products = $query->orderBy($this->sort_by, $this->sort)->take($this->count)->get();
         $total_products = $query->count();
@@ -62,7 +67,7 @@ class Categorycontent extends Component
             'total_products'=>$total_products,
             'products'=>$products,
             'categories'=>Category::all(),
-        ])->extends('layouts.main', [
+        ])->extends('layouts.main', [   
             'title'=>$this->category->name,
             'searched'=>$this->searched,
         ])->section('content');
@@ -103,8 +108,8 @@ class Categorycontent extends Component
             $this->pages = 'terbaru';
         } elseif ($pages==='populer'){
             $this->pages = 'populer';
-        } elseif ($pages==='specialoffer'){
-            $this->pages = 'specialoffer';
+        } elseif ($pages==='spesialoffer'){
+            $this->pages = 'spesialoffer';
         }
     }
 }

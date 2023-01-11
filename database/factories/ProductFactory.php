@@ -30,6 +30,7 @@ class ProductFactory extends Factory
             'theme'=>fake()->randomElement(['Indoor', 'Outdoor']),
             'rating'=>rand(0, 5),
             'review'=>rand(0, 100),
+            'created_at'=>fake()->dateTimeBetween('-20 days', now()),
         ];
     }
 }
