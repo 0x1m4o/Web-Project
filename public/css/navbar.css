@@ -8,15 +8,18 @@
     border-radius: 10px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
+
 .wrapper header {
     display: flex;
     align-items: center;
     padding: 25px 30px 10px;
     justify-content: space-between;
 }
+
 header .icons {
     display: flex;
 }
+
 header .icons span {
     height: 38px;
     width: 38px;
@@ -29,49 +32,61 @@ header .icons span {
     user-select: none;
     border-radius: 50%;
 }
+
 .icons span:last-child {
     margin-right: -10px;
 }
+
 header .icons span:hover {
     background: #f2f2f2;
 }
+
 header .current-date {
     font-size: 1.45rem;
     font-weight: 500;
 }
+
 .calendar {
     padding: 20px;
 }
+
 .calendar ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     text-align: center;
 }
+
 .calendar .days {
     margin-bottom: 20px;
 }
+
 .calendar li {
     color: #333;
     width: calc(100% / 7);
     font-size: 1.07rem;
 }
+
 .calendar .weeks li {
     font-weight: 500;
     cursor: default;
 }
+
 .calendar .days li {
     z-index: 1;
     cursor: pointer;
     position: relative;
     margin-top: 30px;
 }
+
 .days li.inactive {
     color: #aaa;
 }
+
 .days li.active {
     color: #fff;
 }
+
 .days li::before {
     position: absolute;
     content: "";
@@ -83,9 +98,11 @@ header .current-date {
     border-radius: 50%;
     transform: translate(-50%, -50%);
 }
+
 .days li.active::before {
     background: #86c8bc;
 }
+
 .days li:not(.active):hover::before {
     background: #f2f2f2;
 }
@@ -93,6 +110,7 @@ header .current-date {
 .search-bar {
     border: none;
 }
+
 .search-form {
     width: 100%;
 }
@@ -104,15 +122,18 @@ header .current-date {
 .dropdown button {
     border: none;
 }
+
 .nav-btn {
     border: none;
     background-color: transparent;
     color: black;
     font-size: 20px;
 }
+
 .navbar {
     z-index: 2;
 }
+
 .close-navbar-toggler {
     position: absolute;
     top: 0;
@@ -122,9 +143,11 @@ header .current-date {
     z-index: 1;
     cursor: pointer;
 }
+
 .close-navbar-toggler.collapsed {
     z-index: -1;
 }
+
 .close-navbar-toggler {
     position: absolute;
     top: 0;
@@ -134,28 +157,34 @@ header .current-date {
     z-index: 1;
     cursor: pointer;
 }
+
 .close-navbar-toggler.collapsed {
     z-index: -1;
 }
+
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
     outline: none;
     box-shadow: none;
 }
+
 .btn-offcanvas {
     transition: 0.5s;
 }
+
 .btn-offcanvas:hover {
     transform: scale(1.05);
     transition: 0.5s;
 }
+
 #navbarSearchContent {
     width: 100%;
 }
 
 /* Responsive Navbar */
 @media (max-width: 991px) {
+
     #navbarSearchContent.collapse,
     #navbarSearchContent {
         position: absolute;
@@ -167,10 +196,12 @@ header .current-date {
         width: 0;
         left: 0;
     }
+
     #navbarSearchContent.collapsing {
         visibility: hidden;
         transition: 100ms;
     }
+
     .navbar-brand,
     .ham-btn,
     .chat-btn,
@@ -179,6 +210,7 @@ header .current-date {
     .tabungan-btn {
         display: none;
     }
+
     .navbar {
         padding: 20px;
     }
@@ -187,6 +219,7 @@ header .current-date {
 .dropstart {
     display: none;
 }
+
 .dropdown-menu-center {
     right: auto !important;
     left: 50% !important;
@@ -195,6 +228,7 @@ header .current-date {
     -o-transform: translate(-50%, 0) !important;
     transform: translate(-50%, 0) !important;
 }
+
 .dropdown-menu-start {
     right: auto;
     left: 50%;
@@ -212,6 +246,7 @@ header .current-date {
     font-family: "Poppins", sans-serif;
     height: 50px;
 }
+
 .card {
     color: #49516f;
 }
@@ -226,6 +261,7 @@ header .current-date {
     width: 300px;
     border-radius: 10px;
 }
+
 .nav-wrapper {
     height: 75px;
     position: relative;

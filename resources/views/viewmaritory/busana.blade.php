@@ -3,6 +3,10 @@
         background-color: #f4f4f4;
     }
 
+    .font-color {
+        color: #49516F;
+    }
+
     .back {
         width: 45px;
         height: 45px;
@@ -105,14 +109,14 @@
         font-size: 12px;
     }
 
-    .button {
+    .button1 {
         width: 400px;
         height: 80px;
         border-radius: 15px;
-        background-color: #237A57;
+        background-color: #1E9264;
     }
 
-    .button:hover {
+    .button1:hover {
         width: 400px;
         height: 80px;
         border-radius: 15px;
@@ -154,6 +158,87 @@
         font-weight: 400;
         color: #49516F;
     }
+
+    .hj-button {
+        width: 400px;
+        height: 60px;
+        border-radius: 15px;
+        background-color: #237A57;
+    }
+
+    .plus-minus-input {
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .plus-minus-input .input-group-field {
+        width: 55px;
+        height: 30px;
+        text-align: center;
+    }
+
+    .plus-minus-input .input-group-field::-webkit-inner-spin-button,
+    .plus-minus-input .input-group-field ::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    .wrap {
+        width: 400px;
+        height: 60px;
+        border-radius: 15px;
+        background-color: #f4f4f4;
+    }
+
+    .jumlah {
+        width: 400px;
+        height: 80px;
+        border-radius: 15px;
+        background-color: #ffffff;
+    }
+
+    .tombol1 {
+        width: 50px;
+        height: 50px;
+        padding-top: 5px;
+        text-decoration: none;
+        background-color: white;
+        color: #49516F;
+    }
+
+    .tombol1:hover {
+        width: 50px;
+        height: 50px;
+        padding-top: 5px;
+        text-decoration: none;
+        color: red;
+        background-color: #e7e7e7;
+        transition: 0.3s ease-in-out;
+    }
+
+    .tombol2 {
+        width: 50px;
+        height: 50px;
+        padding-top: 5px;
+        text-decoration: none;
+        background-color: white;
+        color: #49516F;
+    }
+
+    .tombol2:hover {
+        width: 50px;
+        height: 50px;
+        padding-top: 5px;
+        text-decoration: none;
+        color: #237A57;
+        background-color: #e7e7e7;
+        transition: 0.3s ease-in-out;
+    }
+
+    .etc:hover {
+        box-shadow: 3px #49516F;
+    }
 </style>
 
 
@@ -178,12 +263,12 @@
 
         <div class="row">
             <div class="col-8">
-            <a href="/kategori-busana">
-                <button class="back mt-4 mb-2">
-                    
+                <a href="/kategori-busana">
+                    <button class="back mt-4 mb-2">
+
                         <img src="/img/back.png" alt="">
-                    
-                </button>
+
+                    </button>
                 </a>
                 <!-- Carousel -->
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -447,13 +532,18 @@
 
             <div class="container col-4 mt-5">
 
-                <button class="button2 mt-4 mx-4">
-                    <img class="mx-0 pb-2" src="/img/jadwal.png" alt="" style="width: 30px; height:35px">
-                    <p class="tw-button text-capitalize text-center d-inline-block mt-2 mx-3">availability</p>
-                </button>
+                <div class="dropdown">
+                    <button class="button2 mt-4 mx-4 border-0 shadow" role="button dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="mx-0 pb-2" src="/img/jadwal.png" alt="" style="width: 30px; height:35px">
+                        <p class="tw-button text-capitalize text-center d-inline-block mt-2 mx-3">availability</p>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-center wrapper">
+                        @include('partials.calendar')
+                    </div>
+                </div>
 
-                <button class="button2 mt-4 mx-4">
-                    <div class="container text-capitalize mt-2">
+                <button class="jumlah mt-4 mx-4 border-0 shadow">
+                    <div class="container text-capitalize mt-2 border-0 shadow">
                         <p class="m-0" style="float: left; width: 50%; text-align: left; color:#49516F; font-weight:400">harga </p>
                         <p class="m-0" style="float: left; width: 50%; text-align: right; color:#49516F; font-weight:600">Rp 10.000.000,00</p>
                         <p class="mt-2" style="float: left; width: 50%; text-align: left; color:#49516F; font-weight:400">jumlah </p>
@@ -462,24 +552,24 @@
                     </div>
                 </button>
 
-                <button class="button2 mt-4 mx-4">
+                <button class="button2 mt-4 mx-4 border-0 shadow">
                     <img class="mx-0 pb-2" src="/img/cicilan.png" alt="" style="width: 28px; height:35px">
                     <p class="tw-button2 text-capitalize d-inline-block mt-2 mx-3">cicilan 0% dengan mariPay</p>
                 </button>
 
-                <button class="button2 mt-4 mx-4">
+                <button class="button2 mt-4 mx-4 border-0 shadow">
                     <img class="mx-0 pb-2" src="/img/pesan.png" alt="" style="width: 30px; height:35px">
                     <p class="tw-button2 text-capitalize d-inline-block mt-2 mx-3">chat vendor</p>
                 </button>
 
                 <a href="/keranjang">
-                    <button class="button2 mt-4 mx-4">
+                    <button class="button2 mt-4 mx-4 border-0 shadow">
                         <img class="mx-0 pb-2" src="/img/troli.png" alt="" style="width: 30px; height:35px">
                         <p class="tw-button2 text-capitalize d-inline-block mt-2 mx-3">tambah keranjang</p>
                     </button>
                 </a>
 
-                <button class="button mt-4 mx-4 border-0">
+                <button class="button1 mt-4 mx-4 border-0 shadow">
                     <p class="tg-button text-capitalize text-center d-inline-block mt-2">order</p>
                 </button>
             </div>

@@ -3,7 +3,7 @@
 
 
 <div class="nav-wrapper">
-    <nav class="navbar navbar-main navbar-expand-lg d-flex align-items-center">
+    <nav class="navbar navbar-main navbar-expand-lg d-flex align-items-center p-1">
         <div class="container-fluid">
             <!-- Offcanvas -->
             <div class="d-flex justify-content-start">
@@ -491,12 +491,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/java
   
-  script">
+  <script>
     $(function () {
-      $("body").click(function (e) {
-        if (
-          e.target.getAttribute("class") === "navbar-collapse" ||
-          $(e.target).parents(".navbar-collapse").length > 0
+      $(" body").click(function (e) { if ( e.target.getAttribute("class")==="navbar-collapse" || $(e.target).parents(".navbar-collapse").length> 0
         ) {
         } else {
           if ($(".navbar-collapse").hasClass("show") == true) {
