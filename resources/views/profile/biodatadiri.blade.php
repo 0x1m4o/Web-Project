@@ -82,6 +82,19 @@
                                                                         Perempuan
                                                                     </label>
                                                                 </div>
+                                                                @else
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="gender" value="Laki-laki" id="Laki-laki">
+                                                                    <label class="form-check-label fs-5" for="Laki-laki">
+                                                                        Laki-laki
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="gender" value="Perempuan" id="Perempuan">
+                                                                    <label class="form-check-label fs-5" for="Perempuan">
+                                                                        Perempuan
+                                                                    </label>
+                                                                </div>
                                                                 @endif
                                                             </div>
                                                         </div>
