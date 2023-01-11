@@ -23,6 +23,51 @@ use App\Http\Livewire\Categorycontent;
 Route::middleware(['auth:web'])->group(function () {
     // Logout
     Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+
+    // Profile
+    Route::get('/profile', function () {
+        return view('profile', [
+            'title' => "Profile",
+        ]);
+    });
+    
+    Route::get('/biodatadiri', function () {
+        return view('profile.biodatadiri', [
+            'title' => "Biodata Diri",
+        ]);
+    });
+    
+    Route::get('/maripay', function () {
+        return view('profile.maripay', [
+            'title' => "MariPay",
+        ]);
+    });
+    
+    Route::get('/daftarrekening', function () {
+        return view('profile.daftarrekening', [
+            'title' => "Daftar Rekening",
+        ]);
+    });
+    Route::get('/tambahrekening', function () {
+        return view('profile.tambahrekening', [
+            'title' => "Tambah Rekening",
+        ]);
+    });
+    
+    Route::get('/keamanan-aktifitas', function () {
+        return view('profile.keamanan-aktifitas', [
+            "title" => "Keamanan",
+        ]);
+    });
+    
+    Route::get('/keamanan-ubahsandi', function () {
+        return view('profile.keamanan-ubahsandi', [
+            "title" => "Ubah Sandi",
+        ]);
+    });
+
+    Route::get('edit', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::post('update', [ProfileController::class, 'update'])->name('profile.update');
 });
 
 // Guest User Required
@@ -52,10 +97,79 @@ Route::middleware(['guest:web'])->group(function () {
     Route::post('/reset-password', [ForgotController::class, 'update_password'])->name('password.update');
 });
 
-Route::get('/category/{category:slug}', Categorycontent::class)->name('category');
+// Login User Required
+Route::middleware(['auth:vendor'])->group(function () {
+    Route::get('/profilevendor', function () {
+        return view('profilevendor', [
+            'title' => "Profile Vendor"
+        ]);
+    });
 
-Route::get('edit', [ProfileController::class, 'edit'])->name('profile.edit');
-Route::post('update', [ProfileController::class, 'update'])->name('profile.update');
+    Route::get('/vendor-admin/dashboard-vendor', function () {
+        return view('vendor.dashboard-vendor', [
+            'title' => "Dashboard Vendor"
+        ]);
+    });
+    
+    Route::get('/vendor-admin/produk', function () {
+        return view('vendor.produk', [
+            'title' => "Manajemen Produk"
+        ]);
+    });
+    
+    // contoh produk 
+    Route::get('/vendor-admin/produk/tropical', function () {
+        return view('vendor.show', [
+            'title' => "Tropical"
+        ]);
+    });
+    
+    Route::get('/vendor-admin/produk/create', function () {
+        return view('vendor.create', [
+            'title' => "Buat Produk Saya"
+        ]);
+    });
+    
+    Route::get('/vendor-admin/ulasan', function () {
+        return view('vendor.ulasan', [
+            'title' => "Manajemen Ulasan"
+        ]);
+    });
+    
+    Route::get('/vendor-admin/pesanan', function () {
+        return view('vendor.pesanan', [
+            'title' => "Manajemen Pesanan"
+        ]);
+    });
+    
+    Route::get('/vendor-admin/chat', function () {
+        return view('vendor.chat', [
+            'title' => "Chat"
+        ]);
+    });
+});
+
+Route::middleware(['guest:vendor'])->group(function () {
+    Route::get('/vendor-admin/daftar-vendor/1', function () {
+        return view('vendor.daftar-vendor-1', [
+            'title' => "Daftar Vendor Step 1"
+        ]);
+    });
+    
+    Route::get('/vendor-admin/daftar-vendor/2', function () {
+        return view('vendor.auth.daftar-vendor-2', [
+            'title' => "Daftar Vendor Step 2"
+        ]);
+    });
+
+    Route::get('/loginvendor', function () {
+        return view('vendor.auth.login', [
+            'title' => "Login Vendor"
+        ]);
+    });
+});
+
+Route::get('/category/{category:slug}', Categorycontent::class)->name('category');
 
 Route::get('/', function () {
     return view('home', [
@@ -66,47 +180,6 @@ Route::get('/', function () {
 Route::get('/paket', function () {
     return view('paket', [
         'title' => "Paket"
-    ]);
-});
-
-Route::get('/profile', function () {
-    return view('profile', [
-        'title' => "Profile",
-    ]);
-});
-
-Route::get('/biodatadiri', function () {
-    return view('profile.biodatadiri', [
-        'title' => "Biodata Diri",
-    ]);
-});
-
-Route::get('/maripay', function () {
-    return view('profile.maripay', [
-        'title' => "MariPay",
-    ]);
-});
-
-Route::get('/daftarrekening', function () {
-    return view('profile.daftarrekening', [
-        'title' => "Daftar Rekening",
-    ]);
-});
-Route::get('/tambahrekening', function () {
-    return view('profile.tambahrekening', [
-        'title' => "Tambah Rekening",
-    ]);
-});
-
-Route::get('/keamanan-aktifitas', function () {
-    return view('profile.keamanan-aktifitas', [
-        "title" => "Keamanan",
-    ]);
-});
-
-Route::get('/keamanan-ubahsandi', function () {
-    return view('profile.keamanan-ubahsandi', [
-        "title" => "Ubah Sandi",
     ]);
 });
 
@@ -278,25 +351,6 @@ Route::get('/gagalnabung', function () {
         'title' => "Gagal Nabung"
     ]);
 });
-
-Route::get('/loginvendor', function () {
-    return view('auth.business.login', [
-        'title' => "Login Vendor"
-    ]);
-});
-
-Route::get('/registervendor', function () {
-    return view('auth.business.register', [
-        'title' => "Register Vendor"
-    ]);
-});
-
-Route::get('/profilevendor', function () {
-    return view('profilevendor', [
-        'title' => "Profile Vendor"
-    ]);
-});
-
 
 Route::get('/feed', function () {
     return view('profile.feed', [
@@ -487,67 +541,5 @@ Route::get('/pesan-bantuan', function () {
 Route::get('/rab', function () {
     return view('rab', [
         'title' => "RAB"
-    ]);
-});
-
-Route::get('/vendor-admin/dashboard-vendor', function () {
-    return view('vendor.dashboard-vendor', [
-        'title' => "Dashboard Vendor"
-    ]);
-});
-
-Route::get('/vendor-admin/daftar-vendor/1', function () {
-    return view('vendor.daftar-vendor-1', [
-        'title' => "Daftar Vendor Step 1"
-    ]);
-});
-
-Route::get('/vendor-admin/daftar-vendor/2', function () {
-    return view('vendor.auth.daftar-vendor-2', [
-        'title' => "Daftar Vendor Step 2"
-    ]);
-});
-
-
-Route::get('/vendor-admin/daftar-vendor/2', function () {
-    return view('vendor.auth.daftar-vendor-2', [
-        'title' => "Daftar Vendor Step 2"
-    ]);
-});
-
-Route::get('/vendor-admin/produk', function () {
-    return view('vendor.produk', [
-        'title' => "Manajemen Produk"
-    ]);
-});
-
-// contoh produk 
-Route::get('/vendor-admin/produk/tropical', function () {
-    return view('vendor.show', [
-        'title' => "Tropical"
-    ]);
-});
-
-Route::get('/vendor-admin/produk/create', function () {
-    return view('vendor.create', [
-        'title' => "Buat Produk Saya"
-    ]);
-});
-
-Route::get('/vendor-admin/ulasan', function () {
-    return view('vendor.ulasan', [
-        'title' => "Manajemen Ulasan"
-    ]);
-});
-
-Route::get('/vendor-admin/pesanan', function () {
-    return view('vendor.pesanan', [
-        'title' => "Manajemen Pesanan"
-    ]);
-});
-
-Route::get('/vendor-admin/chat', function () {
-    return view('vendor.chat', [
-        'title' => "Chat"
     ]);
 });
