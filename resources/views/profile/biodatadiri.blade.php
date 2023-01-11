@@ -195,21 +195,21 @@
                                                         <div class="mb-3">
                                                             <label for="current_password" class="form-label">Kata Sandi saat ini</label>
                                                             <span class="d-flex align-items-center justify-content-between form-control">
-                                                                <input id="current_password" type="password" name="current_password" aria-describedby="emailHelp" value="{{ auth()->user()->email }}" style="width: 95%; border: none">
+                                                                <input id="current_password" type="password" name="current_password" aria-describedby="emailHelp" value="" style="width: 95%; border: none">
                                                                 <i class="bi bi-eye-slash" id="togglePasswordcp" style="cursor: pointer"></i>
                                                             </span>
                                                         </div>
                                                         <div class="mb-3">
                                                             <label for="new_password" class="form-label">Kata Sandi Baru</label>
                                                             <span class="d-flex align-items-center justify-content-between form-control">
-                                                                <input id="new_password" type="password" name="new_password" aria-describedby="emailHelp" value="{{ auth()->user()->email }}" style="width: 95%; border: none">
+                                                                <input id="new_password" type="password" name="new_password" aria-describedby="emailHelp" value="" style="width: 95%; border: none">
                                                                 <i class="bi bi-eye-slash" id="togglePasswordnp" style="cursor: pointer"></i>
                                                             </span>
                                                         </div>
                                                         <div class="mb-3">
                                                             <label for="confirm_password" class="form-label">Konfirmasi Kata Sandi Baru</label>
                                                             <span class="d-flex align-items-center justify-content-between form-control">
-                                                                <input id="confirm_password" type="password" name="current_password" aria-describedby="emailHelp" value="{{ auth()->user()->email }}" style="width: 95%; border: none">
+                                                                <input id="confirm_password" type="password" name="current_password" aria-describedby="emailHelp" value="" style="width: 95%; border: none">
                                                                 <i class="bi bi-eye-slash" id="togglePasswordcfm" style="cursor: pointer"></i>
                                                             </span>
                                                         </div>                                                  
