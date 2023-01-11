@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\auth\LoginController;
 use App\Http\Controllers\auth\SignUpController;
 use App\Http\Controllers\auth\ForgotController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Livewire\Categorycontent;
 
 /*
@@ -52,6 +53,9 @@ Route::middleware(['guest:web'])->group(function () {
 });
 
 Route::get('/category/{category:slug}', Categorycontent::class)->name('category');
+
+Route::get('edit', [ProfileController::class, 'edit'])->name('profile.edit');
+Route::post('update', [ProfileController::class, 'update'])->name('profile.update');
 
 Route::get('/', function () {
     return view('home', [
@@ -367,13 +371,6 @@ Route::get('/checkout', function () {
     ]);
 });
 
-Route::get('/chat', function () {
-    return view('chat.chat', [
-        'title' => "Chat"
-
-    ]);
-});
-
 Route::get('/dashboard-admin', function () {
     return view('dashboard_cms.dashboard', [
         'title' => "Dashboard"
@@ -393,6 +390,8 @@ Route::get('/checklist', function () {
 });
 
 Route::get('/chat', function () {
+    MessageCreated::dispatch();
+
     return view('chat', [
         'title' => "Chat"
     ]);
