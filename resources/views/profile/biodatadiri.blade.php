@@ -194,18 +194,24 @@
                                                     <form method="post">
                                                         <div class="mb-3">
                                                             <label for="current_password" class="form-label">Kata Sandi saat ini</label>
-                                                            <input id="current_password" type="password" class="form-control" id="current_password" name="current_password" aria-describedby="emailHelp" value="{{ auth()->user()->email }}">
-                                                            <input type="checkbox" onclick="currentPassword()">Show Password
+                                                            <span class="d-flex align-items-center justify-content-between form-control">
+                                                                <input id="current_password" type="password" name="current_password" aria-describedby="emailHelp" value="{{ auth()->user()->email }}" style="width: 95%; border: none">
+                                                                <i class="bi bi-eye-slash" id="togglePasswordcp" style="cursor: pointer"></i>
+                                                            </span>
                                                         </div>
                                                         <div class="mb-3">
                                                             <label for="new_password" class="form-label">Kata Sandi Baru</label>
-                                                            <input id="new_password" type="password" class="form-control" id="new_password" name="new_password" value="">
-                                                            <input type="checkbox" onclick="newPassword()">Show Password
+                                                            <span class="d-flex align-items-center justify-content-between form-control">
+                                                                <input id="new_password" type="password" name="new_password" aria-describedby="emailHelp" value="{{ auth()->user()->email }}" style="width: 95%; border: none">
+                                                                <i class="bi bi-eye-slash" id="togglePasswordnp" style="cursor: pointer"></i>
+                                                            </span>
                                                         </div>
                                                         <div class="mb-3">
                                                             <label for="confirm_password" class="form-label">Konfirmasi Kata Sandi Baru</label>
-                                                            <input id="confirm_password" type="password" class="form-control" id="confirm_password" name="confirm_password" value="">
-                                                            <input type="checkbox" onclick="confirmPassword()">Show Password
+                                                            <span class="d-flex align-items-center justify-content-between form-control">
+                                                                <input id="confirm_password" type="password" name="current_password" aria-describedby="emailHelp" value="{{ auth()->user()->email }}" style="width: 95%; border: none">
+                                                                <i class="bi bi-eye-slash" id="togglePasswordcfm" style="cursor: pointer"></i>
+                                                            </span>
                                                         </div>                                                  
                                                         <div class="modal-footer d-flex justify-content-between">
                                                             <a href="{{ route('password.request') }}" class="text-start text-decoration-none text-secondary" style="font-size: 14px">
@@ -240,29 +246,49 @@
           </div>
     </div>
     <script>
-        function currentPassword() {
-            var x = document.getElementById("current_password");
-            if (x.type === "password") {
-                x.type = "text";
-            } else {
-                x.type = "password";
-            }
-        }
-        function newPassword() {
-            var x = document.getElementById("new_password");
-            if (x.type === "password") {
-                x.type = "text";
-            } else {
-                x.type = "password";
-            }
-        }
-        function confirmPassword() {
-            var x = document.getElementById("confirm_password");
-            if (x.type === "password") {
-                x.type = "text";
-            } else {
-                x.type = "password";
-            }
-        }
+        // Current Password
+        const togglePassword = document.querySelector("#togglePasswordcp");
+        const password = document.querySelector("#current_password");
+
+        togglePassword.addEventListener("click", function () {
+            // toggle the type attribute
+            const type = password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+            
+            // toggle the icon
+            this.classList.toggle("bi-eye");
+        });
+
+        // New Password
+        const togglePasswordnp = document.querySelector("#togglePasswordnp");
+        const np = document.querySelector("#new_password");
+
+        togglePasswordnp.addEventListener("click", function () {
+            // toggle the type attribute
+            const type = np.getAttribute("type") === "password" ? "text" : "password";
+            np.setAttribute("type", type);
+            
+            // toggle the icon
+            this.classList.toggle("bi-eye");
+        });
+
+        //Confirm New Password
+        const togglePasswordcfm = document.querySelector("#togglePasswordcfm");
+        const cfm = document.querySelector("#confirm_password");
+
+        togglePasswordcfm.addEventListener("click", function () {
+            // toggle the type attribute
+            const type = cfm.getAttribute("type") === "password" ? "text" : "password";
+            cfm.setAttribute("type", type);
+            
+            // toggle the icon
+            this.classList.toggle("bi-eye");
+        });
+
+        // prevent form submit
+        const form = document.querySelector("form");
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+        });
     </script>
 @endsection
