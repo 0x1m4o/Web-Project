@@ -1,11 +1,12 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Events\MessageCreated;
 
-use App\Http\Controllers\auth\LoginController;
-use App\Http\Controllers\auth\SignUpController;
-use App\Http\Controllers\auth\ForgotController;
+use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Categorycontent;
+use App\Http\Controllers\auth\LoginController;
+use App\Http\Controllers\auth\ForgotController;
+use App\Http\Controllers\auth\SignUpController;
 
 /*
 |--------------------------------------------------------------------------
@@ -367,13 +368,6 @@ Route::get('/checkout', function () {
     ]);
 });
 
-Route::get('/chat', function () {
-    return view('chat.chat', [
-        'title' => "Chat"
-
-    ]);
-});
-
 Route::get('/dashboard-admin', function () {
     return view('dashboard_cms.dashboard', [
         'title' => "Dashboard"
@@ -393,6 +387,8 @@ Route::get('/checklist', function () {
 });
 
 Route::get('/chat', function () {
+    MessageCreated::dispatch();
+
     return view('chat', [
         'title' => "Chat"
     ]);
