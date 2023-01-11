@@ -13,7 +13,7 @@
                 </button>
 
                 <!-- Logo -->
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="/vendor-admin/dashboard-vendor">
                     <img src="/img/logo_vendor.png" alt="Logo" width="200" height="75"
                         class="d-flex align-items-center" />
                 </a>
@@ -216,9 +216,9 @@
                 </div>
 
                 <div class="dropdown ">
-                    <a href="/profile" class="rounded-circle p-2 px-3"
-                        style="background-color: #237A57;font-size: 20px">
-                        <img src="/img/avatar.png" style="width: 17px; height: 17px" alt="" />
+                    <a href="/profile" class="p-2 px-3"
+                        style="width: 20px; height: 20px; border-radius: 100%;background-color: #237A57;">
+                        <img src="/img/avatar.png" style="width: 10px; height:10px" alt="" />
                     </a>
                     <div class="dropdown-menu dropdown-menu-start">
                         <div class="container container-profile">
