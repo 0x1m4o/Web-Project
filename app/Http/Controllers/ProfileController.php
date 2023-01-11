@@ -2,17 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ProfileController extends Controller
 {
     public function update(Request $request)
     {
-        $attr = $request->validate([
+        $request->validate([
             'name' => 'required|min:3',
-            'email' => 'required|email:dns|unique:users',
-            'phone' => 'required|numeric|unique:users|min_digits:10|max_digits:13',
-            'password' => 'required|min:8',
+            'date_of_birth' => '',
+            'gender' => '',
         ],[
             'required' => 'Kolom tidak boleh kosong!',
             'email' => 'Kolom harus berisi email yang valid!',
@@ -28,6 +29,15 @@ class ProfileController extends Controller
             'phone.unique' => 'Nomor HP sudah terdaftar!',
         ]);
 
-        auth()->user()->update($attr);
+        // dd('yeaaa');
+
+        DB::table('users')
+        ->where('id', auth()->user()->id)
+        ->update([
+            'name' => $request->name,
+            'date_of_birth' => $request->date_of_birth,
+        ]);
+
+        return back();
     }
 }

@@ -1,5 +1,6 @@
 <?php
 
+use App\Events\MessageCreated;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\auth\LoginController;
