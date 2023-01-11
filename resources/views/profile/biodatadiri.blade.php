@@ -204,7 +204,13 @@
                                                     <button type="button" class="btn-close d-block" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <form method="post">
+                                                    @if (Str::length(auth()->user()->password) == 10)
+                                                    <p>Jika Anda Login menggunakan Google gunakan default password berikut : <strong>{{ auth()->user()->password }}</strong></p>
+                                                    @else
+                                                    <p></p>
+                                                    @endif                                                        
+                                                    <form method="post" action="{{ route('update.password') }}">
+                                                        @csrf
                                                         <div class="mb-3">
                                                             <label for="current_password" class="form-label">Kata Sandi saat ini</label>
                                                             <span class="d-flex align-items-center justify-content-between form-control">
@@ -222,7 +228,7 @@
                                                         <div class="mb-3">
                                                             <label for="confirm_password" class="form-label">Konfirmasi Kata Sandi Baru</label>
                                                             <span class="d-flex align-items-center justify-content-between form-control">
-                                                                <input id="confirm_password" type="password" name="current_password" aria-describedby="emailHelp" value="" style="width: 95%; border: none">
+                                                                <input id="confirm_password" type="password" name="confirm_password" aria-describedby="emailHelp" value="" style="width: 95%; border: none">
                                                                 <i class="bi bi-eye-slash" id="togglePasswordcfm" style="cursor: pointer"></i>
                                                             </span>
                                                         </div>                                                  
@@ -248,7 +254,7 @@
                                 </div>
                                 <div class="col-6">
                                     <p class="mb-4">*************</p>
-                                    <p class="mb-4">18 Januari 2021</p>
+                                    <p class="mb-4">{{ auth()->user()->updated_at }}</p>
                                 </div>
                             </div>
                           </div>

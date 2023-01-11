@@ -71,6 +71,7 @@ Route::middleware(['auth:web'])->group(function () {
 
     Route::post('update/biodata', [ProfileController::class, 'update_biodata'])->name('update.biodata');
     Route::post('update/kontak', [ProfileController::class, 'update_kontak'])->name('update.kontak');
+    Route::post('update/password', [ProfileController::class, 'update_password'])->name('update.password');
 });
 
 // Guest User Required
@@ -170,24 +171,6 @@ Route::middleware(['guest:vendor'])->group(function () {
     Route::get('/vendor/login', [LoginVendorController::class, 'index'])->name('vendor.login');
     Route::post('/vendor/login', [LoginVendorController::class, 'authenticate']);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Route::get('/category/{category:slug}', Categorycontent::class)->name('category');
 
@@ -531,12 +514,6 @@ Route::get('/spesialoffer', function () {
 
     ]);
 });
-
-
-
-
-
-
 
 Route::get('/notifikasi-transaksi', function () {
     return view('profile.notifikasi_tranksaksi', [

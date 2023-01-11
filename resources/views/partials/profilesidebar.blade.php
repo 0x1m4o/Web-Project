@@ -1,7 +1,7 @@
 
 <div class="col-3">
     <div class="container" style="width: 300px; border-radius: 10px; margin-top: 60px;background-color: white;">
-        <section class="profile">
+        <section class="profile d-flex">
             <div class="profile-image">
                 <a href="#">    
                     <img src="{{ auth()->user()->avatar }}" width="47px" height="47px" />
