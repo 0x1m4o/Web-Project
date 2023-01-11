@@ -15,7 +15,7 @@
                           <a class="navbar-brand" href="/keamanan-aktifitas">Keamanan</a>
                         </div>
                     </nav>
-                    <div class="row p-5">
+                    <div class="row p-5">   
                         <div class="col-4">
                             <div class="card" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
                                 <img src="{{ auth()->user()->avatar }}" class="card-img-top p-3  m-auto" style="width: 250px;">
@@ -43,14 +43,11 @@
                                                     <button type="button" class="btn-close d-block" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <form method="post" action="{{ route('profile.update') }}">
+                                                    <form method="post" action="{{ route('update.biodata') }}">
                                                         @csrf
                                                         <div class="mb-3">
                                                             <label for="name" class="form-label">Nama</label>
                                                             <input type="text" class="form-control" id="name" name="name" value="{{ auth()->user()->name }}">
-                                                            @error('name')
-                                                                <div class="invalid-feedback">{{ $message }}</div>
-                                                            @enderror
                                                         </div>
                                                         <div class="mb-3">
                                                             <label for="date_of_birth" class="form-label">Tanggal Lahir</label>
@@ -60,13 +57,13 @@
                                                             <p>Jenis Kelamin</p>
                                                             <div class="d-flex align-items-center justify-content-around">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="gender" id="Laki-laki">
+                                                                    <input class="form-check-input" type="radio" name="gender" id="Laki-laki" {{ 'gender' == 'Laki-laki' ? 'checked' : ''}}>
                                                                     <label class="form-check-label fs-5" for="Laki-laki">
                                                                         Laki-laki
                                                                     </label>
                                                                 </div>
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="gender" id="Perempuan">
+                                                                    <input class="form-check-input" type="radio" name="gender" id="Perempuan" {{ 'gender' == 'Perempuan' ? 'checked' : ''}}>
                                                                     <label class="form-check-label fs-5" for="Perempuan">
                                                                         Perempuan
                                                                     </label>
@@ -124,7 +121,7 @@
                                                 <button type="button" class="btn-close d-block" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
-                                                <form method="post" action="{{ route('profile.update') }}">
+                                                <form method="post" action="{{ route('update.kontak') }}">
                                                     @csrf
                                                     <div class="mb-3">
                                                         <label for="email" class="form-label">Email</label>
