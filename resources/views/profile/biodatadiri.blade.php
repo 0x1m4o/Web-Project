@@ -124,20 +124,21 @@
                                                 <button type="button" class="btn-close d-block" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
-                                                <form>
+                                                <form method="post" action="{{ route('profile.update') }}">
+                                                    @csrf
                                                     <div class="mb-3">
-                                                        <label for="exampleInputEmail1" class="form-label">Email</label>
-                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ auth()->user()->email }}">
+                                                        <label for="email" class="form-label">Email</label>
+                                                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" value="{{ auth()->user()->email }}">
                                                     </div>
                                                     <div class="mb-3">
-                                                        <label for="exampleInputPassword1" class="form-label">Nomor HP</label>
-                                                        <input type="text" class="form-control" id="exampleInputPassword1" value="{{ auth()->user()->phone }}">
+                                                        <label for="phone" class="form-label">Nomor HP</label>
+                                                        <input type="tel" class="form-control" id="phone" name="phone" value="{{ auth()->user()->phone }}">
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="submit" class="btn" style="background: linear-gradient(90deg, #093028 0%, #237A57 100%); color: white ">Simpan</button>
                                                     </div>
                                                 </form>
                                             </div>    
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn" style="background: linear-gradient(90deg, #093028 0%, #237A57 100%); color: white ">Simpan</button>
-                                            </div>
                                         </div>
                                         </div>
                                     </div>

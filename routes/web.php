@@ -69,6 +69,9 @@ Route::middleware(['auth:web'])->group(function () {
             "title" => "Ubah Sandi",
         ]);
     });
+
+    Route::get('edit', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::post('update', [ProfileController::class, 'update'])->name('profile.update');
 });
 
 // Guest User Required
@@ -89,14 +92,15 @@ Route::middleware(['guest:web'])->group(function () {
     Route::get('/login/facebook', [LoginController::class, 'redirectToFacebook'])->name('login.facebook');
     Route::get('/login/facebook/callback', [LoginController::class, 'handleFacebookCallback']);
     
-    // Forgot Password
-    Route::get('/forgot-password', [ForgotController::class, 'index'])->name('password.request');
-    Route::post('/forgot-password', [ForgotController::class, 'authenticate'])->name('password.email');
-    
-    // Reset Password
-    Route::get('/reset-password/{token}', [ForgotController::class, 'reset_password'])->name('password.reset');
-    Route::post('/reset-password', [ForgotController::class, 'update_password'])->name('password.update');
 });
+
+// Forgot Password
+Route::get('/forgot-password', [ForgotController::class, 'index'])->name('password.request');
+Route::post('/forgot-password', [ForgotController::class, 'authenticate'])->name('password.email');
+
+// Reset Password
+Route::get('/reset-password/{token}', [ForgotController::class, 'reset_password'])->name('password.reset');
+Route::post('/reset-password', [ForgotController::class, 'update_password'])->name('password.update');
 
 // Login Vendor Required
 Route::middleware(['auth:vendor'])->group(function () {
