@@ -10,8 +10,8 @@
             </td>
             {{-- center side --}}
             <td>
-                <p data-id="{{ Auth::user()->id }}" data-type="user">Saved Messages <span>You</span></p>
-                <span>Save messages secretly</span>
+                <p data-id="{{ Auth::user()->id }}" data-type="user">Pesan Diarsipkan <span>You</span></p>
+                <span>Simpan Pesan secara Pribadi</span>
             </td>
         </tr>
     </table>
@@ -50,7 +50,7 @@
                 : $lastMessage->body
             !!}
             @else
-            <span class="fas fa-file"></span> Attachment
+            <span class="fas fa-file"></span> Lampiran
             @endif
         </span>
         {{-- New messages counter --}}
