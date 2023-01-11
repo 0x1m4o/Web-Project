@@ -371,13 +371,6 @@ Route::get('/checkout', function () {
     ]);
 });
 
-Route::get('/chat', function () {
-    return view('chat.chat', [
-        'title' => "Chat"
-
-    ]);
-});
-
 Route::get('/dashboard-admin', function () {
     return view('dashboard_cms.dashboard', [
         'title' => "Dashboard"
@@ -397,6 +390,8 @@ Route::get('/checklist', function () {
 });
 
 Route::get('/chat', function () {
+    MessageCreated::dispatch();
+
     return view('chat', [
         'title' => "Chat"
     ]);
