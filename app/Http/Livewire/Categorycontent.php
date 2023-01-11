@@ -103,8 +103,8 @@ class Categorycontent extends Component
             $this->pages = 'terbaru';
         } elseif ($pages==='populer'){
             $this->pages = 'populer';
-        } elseif ($pages==='specialoffer'){
-            $this->pages = 'specialoffer';
+        } elseif ($pages==='spesialoffer'){
+            $this->pages = 'spesialoffer';
         }
     }
 }
