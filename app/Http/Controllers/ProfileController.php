@@ -14,6 +14,8 @@ class ProfileController extends Controller
             'name' => 'required|min:3',
             'date_of_birth' => '',
             'gender' => '',
+            'email' => 'required|email:dns|unique:users',
+            'phone' => 'required|numeric|unique:users|min_digits:10|max_digits:13',
         ],[
             'required' => 'Kolom tidak boleh kosong!',
             'email' => 'Kolom harus berisi email yang valid!',
@@ -34,8 +36,11 @@ class ProfileController extends Controller
         DB::table('users')
         ->where('id', auth()->user()->id)
         ->update([
-            'name' => $request->name,
-            'date_of_birth' => $request->date_of_birth,
+            // 'name' => $request->name,
+            // 'date_of_birth' => $request->date_of_birth,
+            // 'gender' => $request->gender,
+            'email' => $request->email,
+            'phone' => $request->phone,
         ]);
 
         return back();

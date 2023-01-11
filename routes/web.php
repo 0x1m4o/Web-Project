@@ -67,7 +67,6 @@ Route::middleware(['auth:web'])->group(function () {
         ]);
     });
 
-    Route::get('edit', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::post('update', [ProfileController::class, 'update'])->name('profile.update');
 });
 
