@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginVendorController extends Controller
 {
+    protected $redirectTo = '/vendor/dashboard';
+
     public function index(){
         return view('vendor.auth.login', [
             'title' => "Login Vendor"
@@ -40,5 +42,12 @@ class LoginVendorController extends Controller
         }
 
         return back()->with('loginError', 'Login Gagal!');
+    }
+
+    public function logout(Request $request){
+        Auth::guard('vendor')->logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect('/vendor/login');
     }
 }

@@ -20,7 +20,7 @@ class LoginController extends Controller
 
     // Login
     public function authenticate(Request $request){
-        $loginWith = filter_var($request->hpEmail, FILTER_VALIDATE_EMAIL) ? 'email' : 'phone';
+        $loginWith = filter_var($request->hpEmail, FILTER_VALIDATE_EMAIL) ? 'email:dns' : 'phone';
 
         $validated = $request->validate([
             'hpEmail' => 'required|' . ($loginWith == 'email' ? '' : 'numeric'),
@@ -39,7 +39,7 @@ class LoginController extends Controller
 
         $remember = $request->remember;
 
-        if(Auth::attempt($credentials, $remember)) {
+        if(Auth::guard('web')->attempt($credentials, $remember)) {
             $request->session()->regenerate();
             return redirect()->intended('/');
         }
@@ -49,7 +49,8 @@ class LoginController extends Controller
 
     // Logout
     public function logout(Request $request){
-        Auth::logout();
+        dd(Auth::guard('web')->name);
+        Auth::guard('web')->logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
         return redirect('/');

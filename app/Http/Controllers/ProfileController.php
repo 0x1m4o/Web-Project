@@ -32,8 +32,6 @@ class ProfileController extends Controller
             'phone.unique' => 'Nomor HP sudah terdaftar!',
         ]);
 
-        // dd('yeaaa');
-
         DB::table('users')
         ->where('id', auth()->user()->id)
         ->update([
@@ -48,8 +46,8 @@ class ProfileController extends Controller
     public function update_kontak(Request $request)
     {
         $request->validate([
-            'email' => 'required|email:dns',
-            'phone' => 'required|numeric|min_digits:10|max_digits:13',
+            'email' => 'required|unique:users|email:dns',
+            'phone' => 'required|unique:users|numeric|min_digits:10|max_digits:13',
         ],[
             'required' => 'Kolom tidak boleh kosong!',
             'email' => 'Kolom harus berisi email yang valid!',

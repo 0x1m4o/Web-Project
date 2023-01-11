@@ -72,6 +72,12 @@ Route::middleware(['auth:web'])->group(function () {
     Route::post('update/biodata', [ProfileController::class, 'update_biodata'])->name('update.biodata');
     Route::post('update/kontak', [ProfileController::class, 'update_kontak'])->name('update.kontak');
     Route::post('update/password', [ProfileController::class, 'update_password'])->name('update.password');
+    
+    Route::get('/vendor/chat', function () {
+        return view('vendor.chat', [
+            'title' => "Chat"
+        ]);
+    });
 });
 
 // Guest User Required
@@ -104,6 +110,9 @@ Route::post('/reset-password', [ForgotController::class, 'update_password'])->na
 
 // Login Vendor Required
 Route::middleware(['auth:vendor'])->group(function () {
+    // Logout
+    Route::get('/vendor/logout', [LoginVendorController::class, 'logout'])->name('vendor.logout');
+
     Route::get('/vendor/profile', function () {
         return view('profilevendor', [
             'title' => "Profile Vendor"
@@ -144,12 +153,6 @@ Route::middleware(['auth:vendor'])->group(function () {
     Route::get('/vendor/pesanan', function () {
         return view('vendor.pesanan', [
             'title' => "Manajemen Pesanan"
-        ]);
-    });
-
-    Route::get('/vendor/chat', function () {
-        return view('vendor.chat', [
-            'title' => "Chat"
         ]);
     });
 });

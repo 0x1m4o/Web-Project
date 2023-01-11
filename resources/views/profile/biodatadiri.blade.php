@@ -1,5 +1,7 @@
 @extends('layouts.no_footer')
 @section('content')
+@include('partials.messages')
+
 <link rel="stylesheet" href="/css/profile/profile.css">
     <div class="container-fluid">
         <div class="row">
