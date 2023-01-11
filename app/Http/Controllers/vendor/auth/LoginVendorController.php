@@ -1,17 +1,16 @@
 <?php
 
-namespace App\Http\Controllers\auth\business;
+namespace App\Http\Controllers\vendor\auth\vendor;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Models\Vendor;
 
 class LoginVendorController extends Controller
 {
     public function index(){
-        return view('auth.business.login', [
-            'title' => 'Masuk Vendor',
+        return view('vendor.auth.login', [
+            'title' => "Login Vendor"
         ]);
     }
 

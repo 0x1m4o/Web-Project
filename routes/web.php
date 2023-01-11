@@ -3,6 +3,8 @@
 use App\Events\MessageCreated;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\auth\vendor\LoginVendorController;
+
 use App\Http\Controllers\auth\LoginController;
 use App\Http\Controllers\auth\SignUpController;
 use App\Http\Controllers\auth\ForgotController;
@@ -31,6 +33,7 @@ Route::middleware(['auth:web'])->group(function () {
             'title' => "Profile",
         ]);
     });
+    Route::post('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
     
     Route::get('/biodatadiri', function () {
         return view('profile.biodatadiri', [
@@ -66,9 +69,6 @@ Route::middleware(['auth:web'])->group(function () {
             "title" => "Ubah Sandi",
         ]);
     });
-
-    Route::get('edit', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::post('update', [ProfileController::class, 'update'])->name('profile.update');
 });
 
 // Guest User Required
@@ -98,77 +98,93 @@ Route::middleware(['guest:web'])->group(function () {
     Route::post('/reset-password', [ForgotController::class, 'update_password'])->name('password.update');
 });
 
-// Login User Required
+// Login Vendor Required
 Route::middleware(['auth:vendor'])->group(function () {
-    Route::get('/profilevendor', function () {
+    Route::get('/vendor/profile', function () {
         return view('profilevendor', [
             'title' => "Profile Vendor"
         ]);
     });
 
-    Route::get('/vendor-admin/dashboard-vendor', function () {
+    Route::get('/vendor/dashboard-vendor', function () {
         return view('vendor.dashboard-vendor', [
             'title' => "Dashboard Vendor"
         ]);
     });
-    
-    Route::get('/vendor-admin/produk', function () {
+
+    Route::get('/vendor/produk', function () {
         return view('vendor.produk', [
             'title' => "Manajemen Produk"
         ]);
     });
-    
+
     // contoh produk 
-    Route::get('/vendor-admin/produk/tropical', function () {
+    Route::get('/vendor/produk/tropical', function () {
         return view('vendor.show', [
             'title' => "Tropical"
         ]);
     });
-    
-    Route::get('/vendor-admin/produk/create', function () {
+
+    Route::get('/vendor/produk/create', function () {
         return view('vendor.create', [
             'title' => "Buat Produk Saya"
         ]);
     });
-    
-    Route::get('/vendor-admin/ulasan', function () {
+
+    Route::get('/vendor/ulasan', function () {
         return view('vendor.ulasan', [
             'title' => "Manajemen Ulasan"
         ]);
     });
-    
-    Route::get('/vendor-admin/pesanan', function () {
+
+    Route::get('/vendor/pesanan', function () {
         return view('vendor.pesanan', [
             'title' => "Manajemen Pesanan"
         ]);
     });
-    
-    Route::get('/vendor-admin/chat', function () {
+
+    Route::get('/vendor/chat', function () {
         return view('vendor.chat', [
             'title' => "Chat"
         ]);
     });
 });
 
+// Guest Vendor Required
 Route::middleware(['guest:vendor'])->group(function () {
-    Route::get('/vendor-admin/daftar-vendor/1', function () {
+    Route::get('/vendor/signup/1', function () {
         return view('vendor.daftar-vendor-1', [
             'title' => "Daftar Vendor Step 1"
         ]);
     });
-    
-    Route::get('/vendor-admin/daftar-vendor/2', function () {
+
+    Route::get('/vendor/signup/2', function () {
         return view('vendor.auth.daftar-vendor-2', [
             'title' => "Daftar Vendor Step 2"
         ]);
     });
 
-    Route::get('/loginvendor', function () {
-        return view('vendor.auth.login', [
-            'title' => "Login Vendor"
-        ]);
-    });
+    Route::get('/vendor/login', [LoginVendorController::class, 'index'])->name('vendor.login');
+    Route::post('/vendor/login', [LoginVendorController::class, 'authenticate']);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Route::get('/category/{category:slug}', Categorycontent::class)->name('category');
 
