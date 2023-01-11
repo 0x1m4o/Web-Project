@@ -2,7 +2,7 @@
 <a href="/populer" class="text-decoration-none p-0">
     <h2 class="fw-bold text-dark">Populer di Maritory</h2>
 </a>
-<a href="/selengkapnya" class="selengkapnya p-0">
+<a href="{{ route('category', ['category'=>'venue', 'pages'=>'populer']) }}" class="selengkapnya p-0">
     <style>
         .selengkapnya {
             color: #49516F;
@@ -185,7 +185,7 @@
 <a href="/sekitar" class="text-decoration-none p-0">
     <h2 class="fw-bold text-dark mt-4">Sekitar Saya</h2>
 </a>
-<a href="/selengkapnya" class="selengkapnya p-0">
+<a href="{{ route('category', ['category'=>'venue', 'pages'=>'sekitar-saya']) }}" class="selengkapnya p-0">
     <h5 class="text-end text-secondary m-0 p-0">Lihat Selengkapnya</h5>
 </a>
 <div class="responsive slider">
@@ -331,7 +331,7 @@
     <a href="/spesial" class="text-decoration-none">
         <h2 class="fw-bold text-dark mt-4">Spesial Offer</h2>
     </a>
-    <a href="/selengkapnya" class="selengkapnya">
+    <a href="{{ route('category', ['category'=>'venue', 'pages'=>'spesial-offer']) }}" class="selengkapnya">
         <h5 class="text-end text-secondary m-0 py-0">Lihat Selengkapnya</h5>
     </a>
 </div>
