@@ -2,7 +2,7 @@
 @section('content')
     <img style="margin-top: 25px;" src="/img/rab.png" class="w-100" alt="">
     <div class="row">
-        <div class="profile-wrap col-2 m-2 me-0" style="width: fit-content">
+        <div class="profile-wrap col-3">
             <div class="container" style="background-color: white; width: 300px;border-radius: 12px;">
                 <section class="profile">
                     <div class="profile-image">
@@ -74,7 +74,7 @@
                 </section>
             </div>
         </div>
-        <div class="col-9 my-2" style="background-color: white;border-radius: 12px;width: 80%">
+        <div class="col-8 my-2" style="background-color: white;border-radius: 12px;">
             <div class="button jce mt-2">
                 <button class="btn btn-light mx-2 jcs box-shadow p-2 ">
                     <span class="jcc" style="color: #237A57; font-size: 25px;">
