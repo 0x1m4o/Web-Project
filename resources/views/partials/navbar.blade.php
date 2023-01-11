@@ -1,63 +1,76 @@
 {{-- Navbar After Login --}}
 <link rel="stylesheet" href="/css/navbar.css">
 
+<style>
+    header {
+        padding: 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .btn-prev,
+    .btn-next {
+        border: 1px solid black !important;
+    }
+
+    .btn-prev::before,
+    .btn-next::before {
+        padding: 2px;
+        margin: 1px !important;
+    }
+
+    .simple-calendar-btn {
+        margin: 30px !important;
+        color: black !important;
+    }
+</style>
+
 
 <div class="nav-wrapper">
     <nav class="navbar navbar-main navbar-expand-lg d-flex align-items-center p-1">
         <div class="container-fluid">
             <!-- Offcanvas -->
             <div class="d-flex justify-content-start">
-                <button class="nav-btn ham-btn navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                <button class="nav-btn ham-btn navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                     <span class="fas fa-solid fa-bars"></span>
                 </button>
 
                 <!-- Logo -->
                 <a class="navbar-brand" href="/">
-                    <img src="/img/logos.png" alt="Logo" width="200" height="75" class="d-flex align-items-center" />
+                    <img src="/img/logos.png" alt="Logo" width="200" height="75"
+                        class="d-flex align-items-center" />
                 </a>
             </div>
 
             <!-- Navbar Search Content -->
 
             <div id="navbarSearchContent" class="rounded me-4 navbar-collapse collapse container-fluid">
-                <div class="item-content d-flex justify-content-between align-items-center mx-3 bg-white rounded w-100" style="height: 50px">
-                    <button class="navbar-toggler" type="button" data-bs-target="#navbarSearchContent" data-bs-toggle="collapse">
+                <div class="item-content d-flex justify-content-between align-items-center mx-3 bg-white rounded w-100"
+                    style="height: 50px">
+                    <button class="navbar-toggler" type="button" data-bs-target="#navbarSearchContent"
+                        data-bs-toggle="collapse">
                         <span aria-hidden="true">&times;</span>
                         <span class="sr-only">Close</span>
                     </button>
                     <form class="d-flex nav-item search-form" role="search">
-                        <input class="search-bar ms-3 w-100" type="search" placeholder="Cari Vendor atau Lokasi..." aria-label="Search" />
+                        <input class="search-bar ms-3 w-100" type="search" placeholder="Cari Vendor atau Lokasi..."
+                            aria-label="Search" />
                     </form>
 
-                    <div class="dropdown dropdown-hover ">
-                        <button class="btn pt-2" href="#" role="button dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="dropdown  ">
+                        <button class="btn pt-2" href="#" role="button dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             <i class="bi bi-calendar3 fs-4"></i>
                         </button>
 
                         <div class="dropdown-menu dropdown-menu-center wrapper">
-                            <header>
-                                <p class="current-date"></p>
-                                <div class="icons">
-                                    <span id="prev" class="material-symbols-rounded"><i class="bi bi-arrow-left-circle"></i></span>
-                                    <span id="next" class="material-symbols-rounded"><i class="bi bi-arrow-right-circle"></i></span>
-                                </div>
-                            </header>
-                            <div class="calendar">
-                                <ul class="weeks">
-                                    <li>Sun</li>
-                                    <li>Mon</li>
-                                    <li>Tue</li>
-                                    <li>Wed</li>
-                                    <li>Thu</li>
-                                    <li>Fri</li>
-                                    <li>Sat</li>
-                                </ul>
-                                <ul class="days"></ul>
-                            </div>
+                            <div id="calendar-js" class="calendar-container" onclick="event.stopPropagation()"></div>
                         </div>
                     </div>
 
-                    <button class="btn text-light m-2 navbar-collapse d-none" style="background: #fdb662" type="submit">
+                    <button class="btn text-light m-2 navbar-collapse d-none" style="background: #fdb662"
+                        type="submit">
                         <i class="bi bi-search"></i>
                     </button>
                 </div>
@@ -66,9 +79,9 @@
             <!-- Navbar Supported Content -->
             <div id="navbarSupportedContent" class="d-flex justify-content-end navbar-collapse offcanvas-end d-none">
                 <!-- Keranjang -->
-
-                <div class="dropdown dropdown-hover">
-                    <a href="/keranjang" class="me-3 text-white  dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 25px">
+                <div class="dropdown ">
+                    <a href="/keranjang" class="me-3 text-white  dropdown-toggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 25px">
                         <iconify-icon icon="carbon:shopping-cart"></iconify-icon>
                     </a>
                     <div class="dropdown-menu dropdown-menu-center">
@@ -84,7 +97,8 @@
                                 <div class="row w-100">
                                     <div class="col-3 d-flex justify-content-end align-items-center">
                                         <div class="container-img">
-                                            <img class="img-item" src="/img/keranjang-1.png" style="width: 25px; height: 25px" />
+                                            <img class="img-item" src="/img/keranjang-1.png"
+                                                style="width: 25px; height: 25px" />
                                         </div>
                                     </div>
                                     <div class="col-9 p-0">
@@ -97,7 +111,8 @@
                                 <div class="row w-100">
                                     <div class="col-3 d-flex justify-content-end align-items-center">
                                         <div class="container-img">
-                                            <img class="img-item" src="/img/keranjang-2.png" style="width: 25px; height: 25px" />
+                                            <img class="img-item" src="/img/keranjang-2.png"
+                                                style="width: 25px; height: 25px" />
                                         </div>
                                     </div>
                                     <div class="col-9 p-0">
@@ -112,7 +127,8 @@
                                 <div class="row w-100">
                                     <div class="col-3 d-flex justify-content-end align-items-center">
                                         <div class="container-img">
-                                            <img class="img-item" src="/img/keranjang-3.png" style="width: 25px; height: 25px" />
+                                            <img class="img-item" src="/img/keranjang-3.png"
+                                                style="width: 25px; height: 25px" />
                                         </div>
                                     </div>
                                     <div class="col-9 p-0">
@@ -125,7 +141,8 @@
                                 <div class="row w-100">
                                     <div class="col-3 d-flex justify-content-end align-items-center">
                                         <div class="container-img">
-                                            <img class="img-item" src="/img/keranjang-4.png" style="width: 25px; height: 25px" />
+                                            <img class="img-item" src="/img/keranjang-4.png"
+                                                style="width: 25px; height: 25px" />
                                         </div>
                                     </div>
                                     <div class="col-9 p-0">
@@ -135,7 +152,8 @@
                                 </div>
                             </div>
                             <div class="container d-flex justify-content-between align-items-center mb-3">
-                                <button type="button" class="ms-4 col-5 border rounded-4" style="background-color: white">
+                                <button type="button" class="ms-4 col-5 border rounded-4"
+                                    style="background-color: white">
                                     Rp90.000.000
                                 </button>
                                 <style>
@@ -164,8 +182,9 @@
                 </div>
 
                 <!-- Chat -->
-                <div class="dropdown dropdown-hover">
-                    <a class="me-3 text-white dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 25px">
+                <div class="dropdown ">
+                    <a class="me-3 text-white dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" style="font-size: 25px">
                         <iconify-icon icon="material-symbols:mail-rounded"></iconify-icon>
                     </a>
                     <div class="dropdown-menu dropdown-menu-center">
@@ -177,7 +196,8 @@
                             <div class="container d-flex justify-content-start align-items-center">
                                 <div class="row w-100">
                                     <div class="col-3 d-flex justify-content-end align-items-center">
-                                        <img class="rounded-circle" src="/img/The-Aesthetic.png" style="width: 30px; height: 30px" />
+                                        <img class="rounded-circle" src="/img/The-Aesthetic.png"
+                                            style="width: 30px; height: 30px" />
                                     </div>
                                     <div class="col-9 p-0 d-flex justify-content-between align-items-center">
                                         <p class="fs-6 my-0 mb-1">The Aesthetic</p>
@@ -188,7 +208,8 @@
                             <div class="container d-flex justify-content-start align-items-center">
                                 <div class="row w-100">
                                     <div class="col-3 d-flex justify-content-end align-items-center">
-                                        <img class="rounded-circle" src="/img/Gerald.png" style="width: 30px; height: 30px" alt="" />
+                                        <img class="rounded-circle" src="/img/Gerald.png"
+                                            style="width: 30px; height: 30px" alt="" />
                                     </div>
                                     <div class="col-9 p-0 d-flex align-items-center">
                                         <p class="fs-6 my-0 mb-1">Gerald Tan</p>
@@ -198,7 +219,8 @@
                             <div class="container d-flex justify-content-start align-items-center">
                                 <div class="row w-100">
                                     <div class="col-3 d-flex justify-content-end align-items-center">
-                                        <img class="rounded-circle" style="width: 30px; height: 30px" src="/img/Gerald.png" alt="" />
+                                        <img class="rounded-circle" style="width: 30px; height: 30px"
+                                            src="/img/Gerald.png" alt="" />
                                     </div>
                                     <div class="col-9 p-0 d-flex align-items-center">
                                         <p class="fs-6 my-0 mb-1">Iyan Siagian</p>
@@ -208,11 +230,13 @@
                             <div class="container d-flex justify-content-start align-items-center mb-3">
                                 <div class="row w-100">
                                     <div class="col-3 d-flex justify-content-end align-items-center">
-                                        <img class="rounded-circle" src="/img/Gerald.png" style="
+                                        <img class="rounded-circle" src="/img/Gerald.png"
+                                            style="
                         width: 30px;
                         height: 30px;
                         background-size: cover;
-                      " alt="" />
+                      "
+                                            alt="" />
                                     </div>
                                     <div class="col-9 p-0 d-flex justify-content-between align-items-center">
                                         <p class="fs-6 my-0 mb-1">Ridwan</p>
@@ -224,8 +248,9 @@
                 </div>
 
                 {{-- Tabungan --}}
-                <div class="dropdown dropdown-hover ">
-                    <a class="me-3 text-white dropdown-toggle" role="button" style="font-size: 25px" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="dropdown  ">
+                    <a class="me-3 text-white dropdown-toggle" role="button" style="font-size: 25px"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         <iconify-icon icon="mingcute:wallet-4-fill"></iconify-icon>
                     </a>
                     <div class="dropdown-menu dropdown-menu-start">
@@ -297,7 +322,8 @@
 
                 <div class="dropdown dropdown-hover ">
                     <a href="/profile">
-                        <img src="/img/profile.png" style="width: 30px; height: 30px" class="rounded-circle me-3" alt="" />
+                        <img src="/img/profile.png" style="width: 30px; height: 30px" class="rounded-circle me-3"
+                            alt="" />
                     </a>
                     <div class="dropdown-menu dropdown-menu-start">
                         <div class="container container-profile">
@@ -375,7 +401,10 @@
             </div>
             <!-- Navbar Icons -->
             <div class="nav-icons d-flex align-items-center">
-                <button class="nav-btn navbar-toggler navbar-toggler-search text-white" style="width: 30px; height: 30px" id="btn-search" data-bs-toggle="collapse" data-bs-target="#navbarSearchContent" type="button" aria-expanded="false" aria-controls="navbarSearchContent" aria-label="Toggle navigation">
+                <button class="nav-btn navbar-toggler navbar-toggler-search text-white"
+                    style="width: 30px; height: 30px" id="btn-search" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSearchContent" type="button" aria-expanded="false"
+                    aria-controls="navbarSearchContent" aria-label="Toggle navigation">
                     <iconify-icon icon="mingcute:search-3-line"></iconify-icon>
                 </button>
 
@@ -472,7 +501,8 @@
 
 
 <!-- Offcanvas -->
-<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel" style="background-color: rgb(103, 100, 100); width: 70%">
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+    aria-labelledby="offcanvasWithBothOptionsLabel" style="background-color: rgb(103, 100, 100); width: 70%">
     <div class="container d-flex mt-3 align-items-center ms-1">
         <button class="nav-btn navbar-toggler d-inline-block ms-2 mb-1" type="button" data-bs-dismiss="offcanvas">
             <span class="fas fa-solid fa-bars"></span>
@@ -480,15 +510,19 @@
         <img src="./img/logos.png" alt="Logo" width="150" height="55" class="d-inline-block ms-2" />
     </div>
     <div class="offcanvas-body">
-        <a class="btn btn-light btn-offcanvas w-100 mb-2" style="color: #ffffffc2; background: rgb(42, 42, 42)" role="button" href="/login">Masuk</a>
+        <a class="btn btn-light btn-offcanvas w-100 mb-2" style="color: #ffffffc2; background: rgb(42, 42, 42)"
+            role="button" href="/login">Masuk</a>
 
-        <a class="btn btn-light btn-offcanvas w-100 mb-2" style="color: #ffffffb5; background: rgb(42, 42, 42)" role="button" href="/signup">Daftar</a>
+        <a class="btn btn-light btn-offcanvas w-100 mb-2" style="color: #ffffffb5; background: rgb(42, 42, 42)"
+            role="button" href="/signup">Daftar</a>
     </div>
 </div>
 
 <!-- Auto close  -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/java
   
   <script>

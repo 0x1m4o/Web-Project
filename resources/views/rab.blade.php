@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('content')
     <img style="margin-top: 25px;" src="/img/rab.png" class="w-100" alt="">
-    <div class="row">
+    <div class="row my-3">
         <div class="profile-wrap col-3">
             <div class="container" style="background-color: white; width: 300px;border-radius: 12px;">
                 <section class="profile">

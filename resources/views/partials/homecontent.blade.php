@@ -7,14 +7,11 @@
         .selengkapnya {
             color: #49516F;
             text-decoration: none #9FA6B2;
-
-
         }
 
         .selengkapnya:hover {
             text-decoration: underline #9FA6B2;
             transition: 0.4s ease-in-out;
-
         }
     </style>
     <h5 class="text-end text-secondary m-0 py-0 m-0 py-0">Lihat Selengkapnya</h5>
@@ -25,7 +22,8 @@
             <img src="/img/Tropical.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">Tropical</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -41,7 +39,8 @@
             <img src="/img/Tropical.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">Tropical</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -57,7 +56,8 @@
             <img src="/img/Tropical.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">Tropical</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -73,7 +73,8 @@
             <img src="/img/Tropical.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">Tropical</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -89,7 +90,8 @@
             <img src="/img/Tropical.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">Tropical</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -105,7 +107,8 @@
             <img src="/img/Tropical.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">Tropical</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -121,7 +124,8 @@
             <img src="/img/Tropical.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">Tropical</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -137,7 +141,8 @@
             <img src="/img/Tropical.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">Tropical</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -153,7 +158,8 @@
             <img src="/img/Tropical.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">Tropical</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -169,7 +175,8 @@
             <img src="/img/Tropical.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">Tropical</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -194,7 +201,8 @@
             <img src="/img/The-Right-Two.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">The-Right-Two</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -211,7 +219,8 @@
             <img src="/img/The-Right-Two.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">The-Right-Two</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -228,7 +237,8 @@
             <img src="/img/The-Right-Two.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">The-Right-Two</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -245,7 +255,8 @@
             <img src="/img/The-Right-Two.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">The-Right-Two</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -262,7 +273,8 @@
             <img src="/img/The-Right-Two.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">The-Right-Two</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -279,7 +291,8 @@
             <img src="/img/The-Right-Two.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">The-Right-Two</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -296,7 +309,8 @@
             <img src="/img/The-Right-Two.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">The-Right-Two</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -313,7 +327,8 @@
             <img src="/img/The-Right-Two.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">The-Right-Two</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -341,7 +356,8 @@
             <img src="/img/Nomade.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">Nomade</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -358,7 +374,8 @@
             <img src="/img/Nomade.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">Nomade</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -375,7 +392,8 @@
             <img src="/img/Nomade.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">Nomade</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -392,7 +410,8 @@
             <img src="/img/Nomade.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">Nomade</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -409,7 +428,8 @@
             <img src="/img/Nomade.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">Nomade</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -426,7 +446,8 @@
             <img src="/img/Nomade.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">Nomade</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -443,7 +464,8 @@
             <img src="/img/Nomade.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">Nomade</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
@@ -460,7 +482,8 @@
             <img src="/img/Nomade.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
                 <p class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                 </p>
                 <h5 class="card-title fw-bold">Nomade</h5>
                 <p class="card-text mb-1" style="color: #ba9543">Rp 10.000.000</p>
