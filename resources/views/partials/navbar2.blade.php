@@ -68,7 +68,7 @@
             <div id="navbarSupportedContent" class="d-flex justify-content-end navbar-collapse offcanvas-end d-none">
               <a
               class="btn btn-light mx-1"
-              style="color: #fdb662; background: white;"
+              style="color: #fdb662; background: white; border: none;"
               role="button"
               href="/login"
               >Masuk</a
@@ -76,7 +76,7 @@
       
             <a
               class="btn btn-light mx-1"
-              style="background: #fdb662; color: white;"
+              style="background: #fdb662; color: white; border: none;"
               role="button"
               href="/signup"
               >Daftar</a
