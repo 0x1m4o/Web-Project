@@ -170,7 +170,7 @@
                                     </span>
                                 </div>
                                 <div class="col-1">
-                                    <a href="" class="text-decoration-none text-dark">
+                                    <a href="/forgot-password" class="text-decoration-none text-dark">
                                         <i class="bi bi-pencil-fill fs-4"></i>
                                     </a>
                                 </div>
