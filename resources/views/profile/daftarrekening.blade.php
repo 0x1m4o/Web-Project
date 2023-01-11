@@ -89,8 +89,8 @@
                 <div class="row border-bottom">
                     <div class="col-md-10 px-4 py-3">
                         <p class="fw-bold fs-5 mb-0" style="color: #49516F;">PT. BCA (BANK CENTRAL ASIA) TBK</p>
-                        <p class="mb-0">70555334</p>
-                        <p>A.N Vanessa Oey</p>
+                        <p class="mb-0 text-secondary">70555334</p>
+                        <p class="text-secondary">A.N Vanessa Oey</p>
                     </div>
                     <div class="col-md-2 p-3">
                         <img src="/img/logo-bca.png" class="img-fluid">

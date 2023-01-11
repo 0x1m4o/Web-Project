@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.no_footer')
 @section('content')
 <link rel="stylesheet" href="/css/profile/profile.css">
 <div class="container-fluid mb-3">
@@ -88,14 +88,14 @@
                 </nav>
                 <div class="container">
                     <div class="row">
-                        <div class="content col-sm-6">
+                        <div class="content col-sm-6 mx-5">
                             <h3 style="font-weight: 900;color: #49516F;padding-bottom: 20px;">Profile</h3>
                             <img src="/img/Rectangle 35.png" alt="profile" style="border-radius: 50%;width: 70px;float: left;margin-right: 15px;">
                             <h3 style="color: #49516F;font-weight: 600;">Vanessa Oey</h3>
                             <h6 style="color: #49516F;font-weight:600;">087804842080</h6>
                             <h6 style="color: #49516F;font-weight:600;">vanessa.oey@gmail.com</h6>
                         </div>
-                        <div class="col-sm-6" style="position: relative;">
+                        <div class="col-sm-5" style="position: relative;">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <h3 style="font-weight: 900;color: #49516F;padding-bottom: 20px; padding-left: 50px;">Pasangan</h3>

@@ -2,7 +2,7 @@
 @section('content')
     <div class="container-fluid">
         <div class="container">
-            <div class="container" style="margin-top: 60px;border-radius: 10px;background: white; margin-bottom: 30px;">
+            <div class="container" style="margin-top: 60px;border-radius: 10px;background: white; margin-bottom: 50px;">
                 <nav class="navbar navbar-expand-lg navbar-light" id="menu">
                     <div class="container-fluid" style="border-bottom: 1px solid #49516F;">
                         <a class="navbar-brand aktif" href="/dashboard">Dashboard</a>
@@ -21,7 +21,7 @@
                                 <h1 style="font-weight: 900">Rp 60.000.000</h1>
                             </div>
                             <div style="background: #EEEEEE; padding: 20px;border-radius: 20px;border: 4px solid #FFFFFF;">
-                                <h6 style="font-weight: 700;">Goals <i class='bx bx-pencil'></i></h6>
+                                <h6 style="font-weight: 700;">Goals <i class='bx bx-pencil' style="cursor: pointer;"></i></h6>
                                 <h1 style="font-weight: 900">Rp 100.000.000</h1>
                             </div>
                             <div style="background: #EEEEEE; padding: 20px;border-radius: 20px;border: 4px solid #FFFFFF;">
