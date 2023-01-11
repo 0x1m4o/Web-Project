@@ -23,7 +23,7 @@ class LoginController extends Controller
         $loginWith = filter_var($request->hpEmail, FILTER_VALIDATE_EMAIL) ? 'email' : 'phone';
 
         $validated = $request->validate([
-            'hpEmail' => 'required|' . ($loginWith == 'email' ? 'email:dns' : 'numeric'),
+            'hpEmail' => 'required|' . ($loginWith == 'email' ? '' : 'numeric'),
             'password' => 'required',
         ],
         [
