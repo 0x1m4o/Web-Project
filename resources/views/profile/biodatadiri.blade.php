@@ -56,18 +56,33 @@
                                                         <div class="mb-3">
                                                             <p>Jenis Kelamin</p>
                                                             <div class="d-flex align-items-center justify-content-around">
+                                                                @if(auth()->user()->gender == "Laki-laki")
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="gender" id="Laki-laki" {{ 'gender' == 'Laki-laki' ? 'checked' : ''}}>
+                                                                    <input class="form-check-input" type="radio" name="gender" value="Laki-laki" id="Laki-laki" checked>
                                                                     <label class="form-check-label fs-5" for="Laki-laki">
                                                                         Laki-laki
                                                                     </label>
                                                                 </div>
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="gender" id="Perempuan" {{ 'gender' == 'Perempuan' ? 'checked' : ''}}>
+                                                                    <input class="form-check-input" type="radio" name="gender" value="Perempuan" id="Perempuan">
                                                                     <label class="form-check-label fs-5" for="Perempuan">
                                                                         Perempuan
                                                                     </label>
                                                                 </div>
+                                                                @elseif(auth()->user()->gender == "Perempuan")
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="gender" value="Laki-laki" id="Laki-laki">
+                                                                    <label class="form-check-label fs-5" for="Laki-laki">
+                                                                        Laki-laki
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="gender" value="Perempuan" id="Perempuan" checked>
+                                                                    <label class="form-check-label fs-5" for="Perempuan">
+                                                                        Perempuan
+                                                                    </label>
+                                                                </div>
+                                                                @endif
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer">
