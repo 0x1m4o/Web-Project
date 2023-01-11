@@ -1,11 +1,16 @@
 @include('Chatify::layouts.headLinks')
-<div class="messenger">
-    {{-- ----------------------Users/Groups lists side---------------------- --}}
+
+<div class="content">
+    <div class="messenger">
+        {{-- ----------------------Users/Groups lists side---------------------- --}}
     <div class="messenger-listView">
         {{-- Header and search bar --}}
         <div class="m-header">
             <nav>
-                <a href="#"><i class="fas fa-inbox"></i> <span class="messenger-headTitle">MESSAGES</span> </a>
+                <a href="javascript:history.back()">
+                    <i class="bi bi-arrow-left-short" style="color: black;"></i>
+                </a>
+                <a href="#"><i class="fas fa-inbox"></i> <span class="messenger-headTitle">Pesan</span> </a>
                 {{-- header buttons --}}
                 <nav class="m-header-right">
                     <a href="#"><i class="fas fa-cog settings-btn"></i></a>
@@ -13,7 +18,7 @@
                 </nav>
             </nav>
             {{-- Search input --}}
-            <input type="text" class="messenger-search" placeholder="Search" />
+            <input type="text" class="messenger-search" placeholder="Cari Pengguna" />
             {{-- Tabs --}}
             <div class="messenger-listView-tabs">
                 <a href="#" @if($type == 'user') class="active-tab" @endif data-view="users">
@@ -46,16 +51,16 @@
            <div class="@if($type == 'group') show @endif messenger-tab groups-tab app-scroll" data-view="groups">
                 {{-- items --}}
                 <p style="text-align: center;color:grey;margin-top:30px">
-                    <a target="_blank" style="color:{{$messengerColor}};" href="https://chatify.munafio.com/notes#groups-feature">Click here</a> for more info!
+                    <a target="_blank" style="color:{{$messengerColor}};" href="https://chatify.munafio.com/notes#groups-feature">Klik Sini</a> untuk info selengkapnya!
                 </p>
              </div>
 
              {{-- ---------------- [ Search Tab ] ---------------- --}}
            <div class="messenger-tab search-tab app-scroll" data-view="search">
                 {{-- items --}}
-                <p class="messenger-title">Search</p>
+                <p class="messenger-title">Cari Pengguna</p>
                 <div class="search-records">
-                    <p class="message-hint center-el"><span>Type to search..</span></p>
+                    <p class="message-hint center-el"><span>Ketik untuk pencarian..</span></p>
                 </div>
              </div>
         </div>
@@ -83,14 +88,14 @@
         </div>
         {{-- Internet connection --}}
         <div class="internet-connection">
-            <span class="ic-connected">Connected</span>
-            <span class="ic-connecting">Connecting...</span>
-            <span class="ic-noInternet">No internet access</span>
+            <span class="ic-connected">Terhubung</span>
+            <span class="ic-connecting">Menghubungkan...</span>
+            <span class="ic-noInternet">Tidak akses internet</span>
         </div>
         {{-- Messaging area --}}
         <div class="m-body messages-container app-scroll">
             <div class="messages">
-                <p class="message-hint center-el"><span>Please select a chat to start messaging</span></p>
+                <p class="message-hint center-el"><span>Silakan pilih obrolan untuk mulai mengirim pesan</span></p>
             </div>
             {{-- Typing indicator --}}
             <div class="typing-indicator">
@@ -120,3 +125,4 @@
 
 @include('Chatify::layouts.modals')
 @include('Chatify::layouts.footerLinks')
+</div>

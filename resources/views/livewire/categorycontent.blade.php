@@ -260,7 +260,7 @@
             <a wire:click="pages('sekitar-saya')" class="text-decoration-none p-2 me-2 {{ ($pages==='sekitar-saya') ? 'aktif' : '' }}" style="cursor: pointer">Di sekitar saya</a>
             <a wire:click="pages('terbaru')" class="text-decoration-none p-2 {{ ($pages==='terbaru') ? 'aktif' : '' }}" style="cursor: pointer">Terbaru</a>
             <a wire:click="pages('populer')" class="text-decoration-none p-2 {{ ($pages==='populer') ? 'aktif' : '' }}" style="cursor: pointer">Populer</a>
-            <a wire:click="pages('spesialoffer')" class="text-decoration-none p-2 {{ ($pages==='spesialoffer') ? 'aktif' : '' }}" style="cursor: pointer">Spesial Offer!</a>
+            <a wire:click="pages('spesial-offer')" class="text-decoration-none p-2 {{ ($pages==='spesial-offer') ? 'aktif' : '' }}" style="cursor: pointer">Spesial Offer!</a>
         </div>
         <div class="d-flex justify-content-start">
             <div class="dropdown dropdown-hover">

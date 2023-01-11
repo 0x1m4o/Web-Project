@@ -23,7 +23,8 @@ return new class extends Migration
             $table->integer('price');
             $table->string('theme');
             $table->integer('rating');
-            $table->integer('review')->default(0);
+            $table->integer('review')->nullable();
+            $table->integer('sold')->default(0);
             $table->timestamps();
 
             $table->foreign('vendor_id')->references('id')->on('vendors')->onUpdate('cascade')->onDelete('cascade');

@@ -55,9 +55,16 @@ class Categorycontent extends Component
         if ($this->max!=null){
             $query = $query->where('price', '<=', $this->max);
         }
+
         // Pages
-        if ($this->pages==='terbaru'){
+        if ($this->pages==='sekitar-saya'){
+            $query = $query;
+        } elseif($this->pages==='terbaru'){
             $query = $query->orderBy(DB::raw("DATE_FORMAT(created_at,'%d-%m-%Y')"), 'DESC');
+        } elseif($this->pages==='populer'){
+            $query = $query->orderBy('sold', 'DESC');
+        } elseif($this->pages==='spesial-offer'){
+            $query = $query;
         }
 
         // Sort
@@ -109,8 +116,8 @@ class Categorycontent extends Component
             $this->pages = 'terbaru';
         } elseif ($pages==='populer'){
             $this->pages = 'populer';
-        } elseif ($pages==='spesialoffer'){
-            $this->pages = 'spesialoffer';
+        } elseif ($pages==='spesial-offer'){
+            $this->pages = 'spesial-offer';
         }
     }
 }

@@ -446,13 +446,13 @@ Route::get('/checklist', function () {
     ]);
 });
 
-Route::get('/chat', function () {
-    MessageCreated::dispatch('lorem ipsum dolor sit amet');
+// Route::get('/chat', function () {
+//     MessageCreated::dispatch('lorem ipsum dolor sit amet');
 
-    return view('chat', [
-        'title' => "Chat"
-    ]);
-});
+//     return view('chat', [
+//         'title' => "Chat"
+//     ]);
+// });
 
 
 Route::get('/package-emerald', function () {
