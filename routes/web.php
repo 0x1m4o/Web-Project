@@ -33,7 +33,6 @@ Route::middleware(['auth:web'])->group(function () {
             'title' => "Profile",
         ]);
     });
-    Route::post('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
     
     Route::get('/biodatadiri', function () {
         return view('profile.biodatadiri', [

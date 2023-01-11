@@ -56,18 +56,33 @@
                                                         <div class="mb-3">
                                                             <p>Jenis Kelamin</p>
                                                             <div class="d-flex align-items-center justify-content-around">
+                                                                @if(auth()->user()->gender == "Laki-laki")
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="gender" id="Laki-laki" {{ 'gender' == 'Laki-laki' ? 'checked' : ''}}>
+                                                                    <input class="form-check-input" type="radio" name="gender" value="Laki-laki" id="Laki-laki" checked>
                                                                     <label class="form-check-label fs-5" for="Laki-laki">
                                                                         Laki-laki
                                                                     </label>
                                                                 </div>
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="gender" id="Perempuan" {{ 'gender' == 'Perempuan' ? 'checked' : ''}}>
+                                                                    <input class="form-check-input" type="radio" name="gender" value="Perempuan" id="Perempuan">
                                                                     <label class="form-check-label fs-5" for="Perempuan">
                                                                         Perempuan
                                                                     </label>
                                                                 </div>
+                                                                @elseif(auth()->user()->gender == "Perempuan")
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="gender" value="Laki-laki" id="Laki-laki">
+                                                                    <label class="form-check-label fs-5" for="Laki-laki">
+                                                                        Laki-laki
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="gender" value="Perempuan" id="Perempuan" checked>
+                                                                    <label class="form-check-label fs-5" for="Perempuan">
+                                                                        Perempuan
+                                                                    </label>
+                                                                </div>
+                                                                @endif
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer">
@@ -178,16 +193,19 @@
                                                 <div class="modal-body">
                                                     <form method="post">
                                                         <div class="mb-3">
-                                                            <label for="email" class="form-label">Kata Sandi saat ini</label>
-                                                            <input type="password" class="form-control" id="email" name="email" aria-describedby="emailHelp" value="{{ auth()->user()->email }}">
+                                                            <label for="current_password" class="form-label">Kata Sandi saat ini</label>
+                                                            <input id="current_password" type="password" class="form-control" id="current_password" name="current_password" aria-describedby="emailHelp" value="{{ auth()->user()->email }}">
+                                                            <input type="checkbox" onclick="currentPassword()">Show Password
                                                         </div>
                                                         <div class="mb-3">
-                                                            <label for="phone" class="form-label">Kata Sandi Baru</label>
-                                                            <input type="password" class="form-control" id="phone" name="phone" value="">
+                                                            <label for="new_password" class="form-label">Kata Sandi Baru</label>
+                                                            <input id="new_password" type="password" class="form-control" id="new_password" name="new_password" value="">
+                                                            <input type="checkbox" onclick="newPassword()">Show Password
                                                         </div>
                                                         <div class="mb-3">
-                                                            <label for="phone" class="form-label">Konfirmasi Kata Sandi Baru</label>
-                                                            <input type="password" class="form-control" id="phone" name="phone" value="">
+                                                            <label for="confirm_password" class="form-label">Konfirmasi Kata Sandi Baru</label>
+                                                            <input id="confirm_password" type="password" class="form-control" id="confirm_password" name="confirm_password" value="">
+                                                            <input type="checkbox" onclick="confirmPassword()">Show Password
                                                         </div>                                                  
                                                         <div class="modal-footer d-flex justify-content-between">
                                                             <a href="{{ route('password.request') }}" class="text-start text-decoration-none text-secondary" style="font-size: 14px">
@@ -221,4 +239,30 @@
             </div>
           </div>
     </div>
+    <script>
+        function currentPassword() {
+            var x = document.getElementById("current_password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+        function newPassword() {
+            var x = document.getElementById("new_password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+        function confirmPassword() {
+            var x = document.getElementById("confirm_password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
 @endsection
