@@ -396,7 +396,7 @@ function IDinfo(id, type) {
         messageInput.focus();
       },
       error: () => {
-        console.error("Error, check server response!");
+        console.error("Kesalahan, periksa respons server!");
         // remove loading bar
         NProgress.done();
         NProgress.remove();
@@ -485,7 +485,7 @@ function sendMessage() {
         errorMessageCard(tempID);
         // error log
         console.error(
-          "Failed sending the message! Please, check your server response."
+          "Gagal mengirim pesan! Silakan, periksa respons server Anda."
         );
       },
     });
@@ -647,7 +647,7 @@ clientListenChannel.bind("client-contactItem", function (data) {
   if (data.update_for == auth_id) {
     data.updating == true
       ? updateContactItem(data.update_to)
-      : console.error("[Contact Item updates] Updating failed!");
+      : console.error("[Pembaruan Item Kontak] Gagal memperbarui!");
   }
 });
 
@@ -873,7 +873,7 @@ function updateContactItem(user_id) {
         updateSelectedContact(user_id);
       },
       error: () => {
-        console.error("Server error, check your response");
+        console.error("Kesalahan server, periksa respons Anda");
       },
     });
   }
@@ -898,7 +898,7 @@ function star(user_id) {
           : $(".add-to-favorite").removeClass("favorite");
       },
       error: () => {
-        console.error("Server error, check your response");
+        console.error("Kesalahan server, periksa respons Anda");
       },
     });
   }
@@ -927,7 +927,7 @@ function getFavoritesList() {
       cssMediaQueries();
     },
     error: () => {
-      console.error("Server error, check your response");
+      console.error("Kesalahan server, periksa respons Anda");
     },
   });
 }
@@ -947,7 +947,7 @@ function getSharedPhotos(user_id) {
       $(".shared-photos-list").html(data.shared);
     },
     error: () => {
-      console.error("Server error, check your response");
+      console.error("Kesalahan server, periksa respons Anda");
     },
   });
 }
@@ -1043,7 +1043,7 @@ function deleteConversation(id) {
       IDinfo(id, getMessengerType());
 
       if (!data.deleted)
-        console.error("Error occurred, messages can not be deleted!");
+        console.error("Terjadi kesalahan, pesan tidak dapat dihapus!");
 
       // Hide waiting alert modal
       app_modal({
@@ -1054,7 +1054,7 @@ function deleteConversation(id) {
       });
     },
     error: () => {
-      console.error("Server error, check your response");
+      console.error("Kesalahan server, periksa respons Anda");
     },
   });
 }
@@ -1087,7 +1087,7 @@ function deleteMessage(id) {
     success: (data) => {
       $(".messages").find(`.message-card[data-id=${id}]`).remove();
       if (!data.deleted)
-        console.error("Error occurred, message can not be deleted!");
+        console.error("Terjadi kesalahan, pesan tidak dapat dihapus!");
 
       sendMessageDeleteEvent(id);
 
@@ -1100,7 +1100,7 @@ function deleteMessage(id) {
       });
     },
     error: () => {
-      console.error("Server error, check your response");
+      console.error("Kesalahan server, periksa respons Anda");
     },
   });
 }
@@ -1162,7 +1162,7 @@ function updateSettings() {
       }
     },
     error: () => {
-      console.error("Server error, check your response");
+      console.error("Kesalahan server, periksa respons Anda");
     },
   });
 }
@@ -1182,7 +1182,7 @@ function setActiveStatus(status, user_id) {
       // Nothing to do
     },
     error: () => {
-      console.error("Server error, check your response");
+      console.error("Kesalahan server, periksa respons Anda");
     },
   });
 }
@@ -1498,7 +1498,7 @@ $(document).ready(function () {
       $(".upload-avatar-preview").find(".loadingSVG").remove();
       if (!file.type.match("image.*")) {
         // if the file is not an image
-        console.error("File you selected is not an image!");
+        console.error("File yang Anda pilih bukan gambar!");
       } else {
         // if the file is an image
         $(".upload-avatar-preview").css(
