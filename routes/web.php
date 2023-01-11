@@ -387,7 +387,7 @@ Route::get('/checklist', function () {
 });
 
 Route::get('/chat', function () {
-    MessageCreated::dispatch();
+    MessageCreated::dispatch('lorem ipsum dolor sit amet');
 
     return view('chat', [
         'title' => "Chat"
