@@ -170,9 +170,39 @@
                                     </span>
                                 </div>
                                 <div class="col-1">
-                                    <a href="/forgot-password" class="text-decoration-none text-dark">
-                                        <i class="bi bi-pencil-fill fs-4"></i>
-                                    </a>
+                                        <i class="bi bi-pencil-fill fs-4" style="cursor: pointer" data-bs-toggle="modal" data-bs-target="#staticBackdropsandi"></i>
+                                        <div class="modal fade" id="staticBackdropsandi" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5 fw-bold" id="staticBackdropLabel">Ubah Kata Sandi</h1>
+                                                    <button type="button" class="btn-close d-block" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form method="post">
+                                                        <div class="mb-3">
+                                                            <label for="email" class="form-label">Kata Sandi saat ini</label>
+                                                            <input type="password" class="form-control" id="email" name="email" aria-describedby="emailHelp" value="{{ auth()->user()->email }}">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="phone" class="form-label">Kata Sandi Baru</label>
+                                                            <input type="password" class="form-control" id="phone" name="phone" value="">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="phone" class="form-label">Konfirmasi Kata Sandi Baru</label>
+                                                            <input type="password" class="form-control" id="phone" name="phone" value="">
+                                                        </div>                                                  
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="{{ route('password.request') }}" class="text-start text-decoration-none text-secondary" style="font-size: 14px">
+                                                                Lupa Kata Sandi?
+                                                            </a>        
+                                                            <button type="submit" class="btn" style="background: linear-gradient(90deg, #093028 0%, #237A57 100%); color: white ">Simpan</button>
+                                                        </div>
+                                                    </form>
+                                                </div>    
+                                            </div>
+                                            </div>
+                                        </div>                                        
                                 </div>
                             </div>
                             <div class="col-sm-2" style="cursor: pointer; color: black;">
