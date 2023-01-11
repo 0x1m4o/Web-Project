@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\vendor\auth\vendor;
+namespace App\Http\Controllers\vendor\auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;

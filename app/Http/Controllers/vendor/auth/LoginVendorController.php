@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\vendor\auth\vendor;
+namespace App\Http\Controllers\vendor\auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -36,7 +36,7 @@ class LoginVendorController extends Controller
 
         if(Auth::guard('vendor')->attempt($credentials, $remember)) {
             $request->session()->regenerate();
-            return redirect('/business/dashboard');
+            return redirect('/vendor/dashboard');
         }
 
         return back()->with('loginError', 'Login Gagal!');

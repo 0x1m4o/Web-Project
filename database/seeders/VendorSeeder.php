@@ -19,9 +19,9 @@ class VendorSeeder extends Seeder
         Vendor::insert([
             'name'=>'Ahmad Muhajir',
             'business_name'=>'Muhajir Store',
-            'phone'=>'08123456789',
-            'business_phone'=>'093498194',
-            'email'=>Str::random(10) . '@gmail.com',
+            'phone'=>'08829570068',
+            'business_phone'=>'088289570068',
+            'email'=>'jeremyjeferson71@gmail.com',
             'password'=>bcrypt('password'),
             'category'=>'',
             'address'=>fake()->randomElement(['Jakarta', 'Bogor', 'Bekasi']),

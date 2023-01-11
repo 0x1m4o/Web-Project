@@ -3,7 +3,7 @@
 use App\Events\MessageCreated;
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\auth\vendor\LoginVendorController;
+use App\Http\Controllers\vendor\auth\LoginVendorController;
 
 use App\Http\Controllers\auth\LoginController;
 use App\Http\Controllers\auth\SignUpController;
@@ -110,7 +110,7 @@ Route::middleware(['auth:vendor'])->group(function () {
         ]);
     });
 
-    Route::get('/vendor/dashboard-vendor', function () {
+    Route::get('/vendor/dashboard', function () {
         return view('vendor.dashboard-vendor', [
             'title' => "Dashboard Vendor"
         ]);

@@ -97,7 +97,7 @@
                             <div class="col-4">
 
                                 <div class="m-3 all ">
-                                    <a href="{{ route('category', ['category'=>'venue', 'search'=>request('search')]) }}">
+                                    <a href="{{ route('category', ['category'=>'venue']) }}">
                                         <img src="/img/venue.png" alt="" />
                                         <p class="d-inline-block p-1 mb-1 text-dark">venue</p>
                                     </a>

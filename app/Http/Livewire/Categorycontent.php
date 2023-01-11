@@ -17,11 +17,11 @@ class Categorycontent extends Component
     public $location = 'Semua';
     public $min = null;
     public $max = null;
-    public $pages = 'sekitarsaya';
-    protected $queryString = ['pages'];
-
     public $category;
-    public $searched='';
+
+    public $pages = 'sekitarsaya';
+    public $search='';
+    protected $queryString = ['search','pages'];
 
     public function mount($category){
         $this->category=Category::where('slug', $category)->first();
@@ -30,12 +30,12 @@ class Categorycontent extends Component
     public function render(Request $request){
         // Search
         if($request->search){
-            $this->searched = $request->search;
+            $this->search = $request->search;
         }
 
         // Category
         $query = Product::where('category', $this->category->name)
-                        ->where('name', 'LIKE', '%' . $this->searched . '%');
+                        ->where('name', 'LIKE', '%' . $this->search . '%');
          // Theme
         if ($this->theme!='Semua'){
             $query = $query->where('theme', $this->theme);
@@ -69,7 +69,7 @@ class Categorycontent extends Component
             'categories'=>Category::all(),
         ])->extends('layouts.main', [   
             'title'=>$this->category->name,
-            'searched'=>$this->searched,
+            'searched'=>$this->search,
         ])->section('content');
     }
 
