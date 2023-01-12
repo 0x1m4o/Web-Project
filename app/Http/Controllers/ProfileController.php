@@ -126,7 +126,7 @@ class ProfileController extends Controller
 
         if($request->hasFile('avatar')) {
             $filename = $request->avatar->getClientOriginalName();
-            $avatar = $request->avatar->storeAs('avatar', $filename);
+            $avatar = $request->avatar->storeAs('avatar', $filename, 'public');
             DB::table('users')
             ->where('id', auth()->user()->id)
             ->update([
