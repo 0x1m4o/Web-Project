@@ -107,7 +107,7 @@
             </div>
             <div class="col-5">
               <div class="mb-3">
-                <a href="{{ route('password.request') }}" class="text-decoration-none text-secondary" style="font-size: 14px">
+                <a href="" class="text-decoration-none text-secondary" style="font-size: 14px">
                     Lupa Kata Sandi?
                 </a>
               </div>
@@ -119,12 +119,12 @@
 
         <span class="text-center mt-5" style="border-bottom:1px solid grey; font-size: 14px">atau masuk dengan</span>
 
-        <a href="{{ route('login.google') }}" class="btn mt-4 social" style="border: 1px solid black">
+        <a href="" class="btn mt-4 social" style="border: 1px solid black">
           <i class="fab fa-google"></i> 
           <span>Google</span>              
         </a>
 
-        <a href="{{ route('login.facebook') }}" class="btn mt-4 social" style="border: 1px solid black">
+        <a href="" class="btn mt-4 social" style="border: 1px solid black">
           <i class="bi bi-facebook"></i> 
           <span>Facebook</span>
         </a>

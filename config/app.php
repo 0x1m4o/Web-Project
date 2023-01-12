@@ -69,7 +69,7 @@ return [
     |
     */
 
-    'timezone' => 'Asia/Jakarta',
+    'timezone' => 'UTC',
 
     /*
     |--------------------------------------------------------------------------
@@ -186,8 +186,6 @@ return [
          * Package Service Providers...
          */
 
-        \Chatify\ChatifyServiceProvider::class,
-
         /*
          * Application Service Providers...
          */
@@ -212,7 +210,6 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
-        'Chatify' => Chatify\Facades\ChatifyMessenger::class,
     ])->toArray(),
 
 ];

@@ -216,7 +216,7 @@
                 </div>
 
                 <div class="dropdown ">
-                    <a href="/vendor/profile" class="p-2 px-3"
+                    <a href="/profile" class="p-2 px-3"
                         style="width: 20px; height: 20px; border-radius: 100%;background-color: #237A57;">
                         <img src="/img/avatar.png" style="width: 10px; height:10px" alt="" />
                     </a>

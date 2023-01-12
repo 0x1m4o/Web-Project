@@ -60,7 +60,7 @@
                                 <p><i class="bi bi-info-circle"></i> Pesan Bantuan</p>
                             </a>
 
-                            <a href="{{ route('vendor.logout') }}">
+                            <a href="">
                                 <strong><i class="bi bi-box-arrow-left"></i> Log Out</strong>
                             </a>
                         </div>

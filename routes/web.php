@@ -1,15 +1,6 @@
 <?php
 
-use App\Events\MessageCreated;
 use Illuminate\Support\Facades\Route;
-
-use App\Http\Controllers\vendor\auth\LoginVendorController;
-
-use App\Http\Controllers\auth\LoginController;
-use App\Http\Controllers\auth\SignUpController;
-use App\Http\Controllers\auth\ForgotController;
-use App\Http\Controllers\ProfileController;
-use App\Http\Livewire\Categorycontent;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,161 +13,6 @@ use App\Http\Livewire\Categorycontent;
 |
 */
 
-// Login User Required
-Route::middleware(['auth:web'])->group(function () {
-    // Logout
-    Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
-
-    // Profile
-    Route::get('/profile', function () {
-        return view('profile', [
-            'title' => "Profile",
-        ]);
-    });
-    
-    Route::get('/biodatadiri', function () {
-        return view('profile.biodatadiri', [
-            'title' => "Biodata Diri",
-        ]);
-    });
-    
-    Route::get('/maripay', function () {
-        return view('profile.maripay', [
-            'title' => "MariPay",
-        ]);
-    });
-    
-    Route::get('/daftarrekening', function () {
-        return view('profile.daftarrekening', [
-            'title' => "Daftar Rekening",
-        ]);
-    });
-    Route::get('/tambahrekening', function () {
-        return view('profile.tambahrekening', [
-            'title' => "Tambah Rekening",
-        ]);
-    });
-    
-    Route::get('/keamanan-aktifitas', function () {
-        return view('profile.keamanan-aktifitas', [
-            "title" => "Keamanan",
-        ]);
-    });
-    
-    Route::get('/keamanan-ubahsandi', function () {
-        return view('profile.keamanan-ubahsandi', [
-            "title" => "Ubah Sandi",
-        ]);
-    });
-
-    Route::post('update/biodata', [ProfileController::class, 'update_biodata'])->name('update.biodata');
-    Route::post('update/kontak', [ProfileController::class, 'update_kontak'])->name('update.kontak');
-    Route::post('update/password', [ProfileController::class, 'update_password'])->name('update.password');
-    
-    Route::get('/vendor/chat', function () {
-        return view('vendor.chat', [
-            'title' => "Chat"
-        ]);
-    });
-});
-
-// Guest User Required
-Route::middleware(['guest:web'])->group(function () {
-    // Sign Up
-    Route::get('/signup', [SignUpController::class, 'index'])->name('signup');
-    Route::post('/signup', [SignUpController::class, 'store']);
-    
-    // Login
-    Route::get('/login', [LoginController::class, 'index'])->name('login');
-    Route::post('/login', [LoginController::class, 'authenticate']);
-    
-    // Google Login
-    Route::get('/login/google', [LoginController::class, 'redirectToGoogle'])->name('login.google');
-    Route::get('/login/google/callback', [LoginController::class, 'handleGoogleCallback']);
-    
-    // Facebook Login
-    Route::get('/login/facebook', [LoginController::class, 'redirectToFacebook'])->name('login.facebook');
-    Route::get('/login/facebook/callback', [LoginController::class, 'handleFacebookCallback']);
-    
-});
-
-// Forgot Password
-Route::get('/forgot-password', [ForgotController::class, 'index'])->name('password.request');
-Route::post('/forgot-password', [ForgotController::class, 'authenticate'])->name('password.email');
-
-// Reset Password
-Route::get('/reset-password/{token}', [ForgotController::class, 'reset_password'])->name('password.reset');
-Route::post('/reset-password', [ForgotController::class, 'update_password'])->name('password.update');
-
-// Login Vendor Required
-Route::middleware(['auth:vendor'])->group(function () {
-    // Logout
-    Route::get('/vendor/logout', [LoginVendorController::class, 'logout'])->name('vendor.logout');
-
-    Route::get('/vendor/profile', function () {
-        return view('profilevendor', [
-            'title' => "Profile Vendor"
-        ]);
-    });
-
-    Route::get('/vendor/dashboard', function () {
-        return view('vendor.dashboard-vendor', [
-            'title' => "Dashboard Vendor"
-        ]);
-    });
-
-    Route::get('/vendor/produk', function () {
-        return view('vendor.produk', [
-            'title' => "Manajemen Produk"
-        ]);
-    });
-
-    // contoh produk 
-    Route::get('/vendor/produk/tropical', function () {
-        return view('vendor.show', [
-            'title' => "Tropical"
-        ]);
-    });
-
-    Route::get('/vendor/produk/create', function () {
-        return view('vendor.create', [
-            'title' => "Buat Produk Saya"
-        ]);
-    });
-
-    Route::get('/vendor/ulasan', function () {
-        return view('vendor.ulasan', [
-            'title' => "Manajemen Ulasan"
-        ]);
-    });
-
-    Route::get('/vendor/pesanan', function () {
-        return view('vendor.pesanan', [
-            'title' => "Manajemen Pesanan"
-        ]);
-    });
-});
-
-// Guest Vendor Required
-Route::middleware(['guest:vendor'])->group(function () {
-    Route::get('/vendor/signup/1', function () {
-        return view('vendor.auth.daftar-vendor-1', [
-            'title' => "Daftar Vendor Step 1"
-        ]);
-    });
-
-    Route::get('/vendor/signup/2', function () {
-        return view('vendor.auth.daftar-vendor-2', [
-            'title' => "Daftar Vendor Step 2"
-        ]);
-    });
-
-    Route::get('/vendor/login', [LoginVendorController::class, 'index'])->name('vendor.login');
-    Route::post('/vendor/login', [LoginVendorController::class, 'authenticate']);
-});
-
-Route::get('/category/{category:slug}', Categorycontent::class)->name('category');
-
 Route::get('/', function () {
     return view('home', [
         'title' => "Homepage",
@@ -186,6 +22,59 @@ Route::get('/', function () {
 Route::get('/paket', function () {
     return view('paket', [
         'title' => "Paket"
+    ]);
+});
+
+Route::get('/login', function () {
+    return view('auth.login', [
+        'title' => "Login"
+    ]);
+})->name('login');
+
+Route::get('/signup', function () {
+    return view('auth.signup', [
+        'title' => "Daftar"
+    ]);
+})->name('signup');
+
+Route::get('/profile', function () {
+    return view('profile', [
+        'title' => "Profile",
+    ]);
+});
+
+Route::get('/biodatadiri', function () {
+    return view('profile.biodatadiri', [
+        'title' => "Biodata Diri",
+    ]);
+});
+
+Route::get('/maripay', function () {
+    return view('profile.maripay', [
+        'title' => "MariPay",
+    ]);
+});
+
+Route::get('/daftarrekening', function () {
+    return view('profile.daftarrekening', [
+        'title' => "Daftar Rekening",
+    ]);
+});
+Route::get('/tambahrekening', function () {
+    return view('profile.tambahrekening', [
+        'title' => "Tambah Rekening",
+    ]);
+});
+
+Route::get('/keamanan-aktifitas', function () {
+    return view('profile.keamanan-aktifitas', [
+        "title" => "Keamanan",
+    ]);
+});
+
+Route::get('/keamanan-ubahsandi', function () {
+    return view('profile.keamanan-ubahsandi', [
+        "title" => "Ubah Sandi",
     ]);
 });
 
@@ -358,6 +247,25 @@ Route::get('/gagalnabung', function () {
     ]);
 });
 
+Route::get('/loginvendor', function () {
+    return view('auth.business.login', [
+        'title' => "Login Vendor"
+    ]);
+});
+
+Route::get('/registervendor', function () {
+    return view('auth.business.register', [
+        'title' => "Register Vendor"
+    ]);
+});
+
+Route::get('/profilevendor', function () {
+    return view('profilevendor', [
+        'title' => "Profile Vendor"
+    ]);
+});
+
+
 Route::get('/feed', function () {
     return view('profile.feed', [
         'title' => "Feed"
@@ -431,6 +339,13 @@ Route::get('/checkout', function () {
     ]);
 });
 
+Route::get('/chat', function () {
+    return view('chat.chat', [
+        'title' => "Chat"
+
+    ]);
+});
+
 Route::get('/dashboard-admin', function () {
     return view('dashboard_cms.dashboard', [
         'title' => "Dashboard"
@@ -449,13 +364,11 @@ Route::get('/checklist', function () {
     ]);
 });
 
-// Route::get('/chat', function () {
-//     MessageCreated::dispatch('lorem ipsum dolor sit amet');
-
-//     return view('chat', [
-//         'title' => "Chat"
-//     ]);
-// });
+Route::get('/chat', function () {
+    return view('chat', [
+        'title' => "Chat"
+    ]);
+});
 
 
 Route::get('/package-emerald', function () {
@@ -518,6 +431,12 @@ Route::get('/spesialoffer', function () {
     ]);
 });
 
+
+
+
+
+
+
 Route::get('/notifikasi-transaksi', function () {
     return view('profile.notifikasi_tranksaksi', [
         'title' => "Notifikasi Transaksi"
@@ -543,3 +462,66 @@ Route::get('/rab', function () {
         'title' => "RAB"
     ]);
 });
+
+Route::get('/vendor-admin/dashboard-vendor', function () {
+    return view('vendor.dashboard-vendor', [
+        'title' => "Dashboard Vendor"
+    ]);
+});
+
+Route::get('/vendor-admin/daftar-vendor/1', function () {
+    return view('vendor.daftar-vendor-1', [
+        'title' => "Daftar Vendor Step 1"
+    ]);
+});
+
+Route::get('/vendor-admin/daftar-vendor/2', function () {
+    return view('vendor.daftar-vendor-2', [
+        'title' => "Daftar Vendor Step 2"
+    ]);
+});
+
+
+Route::get('/vendor-admin/daftar-vendor/2', function () {
+    return view('vendor.daftar-vendor-2', [
+        'title' => "Daftar Vendor Step 2"
+    ]);
+});
+
+Route::get('/vendor-admin/produk', function () {
+    return view('vendor.produk', [
+        'title' => "Manajemen Produk"
+    ]);
+});
+
+// contoh produk 
+Route::get('/vendor-admin/produk/tropical', function () {
+    return view('vendor.show', [
+        'title' => "Tropical"
+    ]);
+});
+
+Route::get('/vendor-admin/produk/create', function () {
+    return view('vendor.create', [
+        'title' => "Buat Produk Saya"
+    ]);
+});
+
+Route::get('/vendor-admin/ulasan', function () {
+    return view('vendor.ulasan', [
+        'title' => "Manajemen Ulasan"
+    ]);
+});
+
+Route::get('/vendor-admin/pesanan', function () {
+    return view('vendor.pesanan', [
+        'title' => "Manajemen Pesanan"
+    ]);
+});
+
+Route::get('/vendor-admin/chat', function () {
+    return view('vendor.chat', [
+        'title' => "Chat"
+    ]);
+});
+
