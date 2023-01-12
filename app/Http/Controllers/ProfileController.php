@@ -46,8 +46,8 @@ class ProfileController extends Controller
     public function update_kontak(Request $request)
     {
         $request->validate([
-            'email' => 'required|unique:users|email:dns',
-            'phone' => 'required|unique:users|numeric|min_digits:10|max_digits:13',
+            'email' => 'required|email:dns' . ($request->email == auth()->user()->email ? '' : '|unique:users'),
+            'phone' => 'required|numeric|min_digits:10|max_digits:13' . ($request->phone == auth()->user()->phone ? '' : '|unique:users')
         ],[
             'required' => 'Kolom tidak boleh kosong!',
             'email' => 'Kolom harus berisi email yang valid!',
@@ -114,5 +114,25 @@ class ProfileController extends Controller
         throw ValidationException::withMessages([
             'current_password' => 'Kata Sandi Anda saat ini tidak cocok dengan data kami'
         ]);
+    }
+
+    public function update_avatar(Request $request)
+    {
+        $request->validate([
+            'avatar' => 'image|mimes:jpeg,png,jpg,gif,svg,jfif',
+        ],[
+            'mimes' => 'Avatar harus merupakan sebuah gambar!',
+        ]);
+
+        if($request->hasFile('avatar')) {
+            $filename = $request->avatar->getClientOriginalName();
+            $avatar = $request->avatar->storeAs('avatar', $filename);
+            DB::table('users')
+            ->where('id', auth()->user()->id)
+            ->update([
+                'avatar' => 'storage/' . $avatar
+            ]);     
+        }
+        return back();
     }
 }

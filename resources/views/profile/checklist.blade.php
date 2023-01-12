@@ -102,7 +102,7 @@
                 <h5 style="font-weight: bold; color: #49516F;">Agustus 2023</h5>
                 <div class="checklist-custom-wedding d-flex justify-content-between mt-3" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 10px; border: 1px solid #FFFFFF; padding: 5px 10px;">
                     <label class="custom-radio-btn" style="float: left; margin-right: 10px;">
-                        <input type="radio" name="radio" />     
+                        <input type="checkbox" name="checkbox" />     
                         <span class="checkmark"></span>
                     </label>
                     <div class="container-fluid">
@@ -112,7 +112,7 @@
                 </div>
                 <div class="checklist-custom-wedding d-flex justify-content-between mt-4" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 10px; border: 1px solid #FFFFFF; padding: 5px 10px;">
                     <label class="custom-radio-btn" style="float: left; margin-right: 10px;">
-                        <input type="radio" name="radio" />     
+                        <input type="checkbox" name="checkbox" />     
                         <span class="checkmark"></span>
                     </label>
                     <div class="container-fluid">
@@ -125,7 +125,7 @@
                 <h5 style="font-weight: bold; color: #49516F;">September 2023</h5>
                 <div class="checklist-custom-wedding d-flex justify-content-between mt-3" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 10px; border: 1px solid #FFFFFF; padding: 5px 10px;">
                     <label class="custom-radio-btn" style="float: left; margin-right: 10px;">
-                        <input type="radio" name="radio" />     
+                        <input type="checkbox" name="checkbox" />     
                         <span class="checkmark"></span>
                     </label>
                     <div class="container-fluid">
@@ -135,7 +135,7 @@
                 </div>
                 <div class="checklist-custom-wedding d-flex justify-content-between mt-4" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 10px; border: 1px solid #FFFFFF; padding: 5px 10px;">
                     <label class="custom-radio-btn" style="float: left; margin-right: 10px;">
-                        <input type="radio" name="radio" />     
+                        <input type="checkbox" name="checkbox" />     
                         <span class="checkmark"></span>
                     </label>
                     <div class="container-fluid">
@@ -155,7 +155,7 @@
                 <h5 style="font-weight: bold; color: #49516F;">September 2023</h5>
                 <div class="checklist-custom-wedding d-flex justify-content-between mt-3" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 10px; border: 1px solid #FFFFFF; padding: 5px 10px;">
                     <label class="custom-radio-btn" style="float: left; margin-right: 10px;">
-                        <input type="radio" name="radio" />     
+                        <input type="checkbox" name="checkbox" />     
                         <span class="checkmark"></span>
                     </label>
                     <div class="container-fluid">
@@ -165,7 +165,7 @@
                 </div>
                 <div class="checklist-custom-wedding d-flex justify-content-between mt-4" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 10px; border: 1px solid #FFFFFF; padding: 5px 10px;">
                     <label class="custom-radio-btn" style="float: left; margin-right: 10px;">
-                        <input type="radio" name="radio" />     
+                        <input type="checkbox" name="checkbox" />     
                         <span class="checkmark"></span>
                     </label>
                     <div class="container-fluid">
@@ -177,7 +177,7 @@
             <div class="waktu-wedding mt-4">
                 <div class="checklist-custom-wedding d-flex justify-content-between mt-3" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 10px; border: 1px solid #FFFFFF; padding: 5px 10px;">
                     <label class="custom-radio-btn" style="float: left; margin-right: 10px;">
-                        <input type="radio" name="radio" />     
+                        <input type="checkbox" name="checkbox" />     
                         <span class="checkmark"></span>
                     </label>
                     <div class="container-fluid">
@@ -187,7 +187,7 @@
                 </div>
                 <div class="checklist-custom-wedding d-flex justify-content-between mt-4" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 10px; border: 1px solid #FFFFFF; padding: 5px 10px;">
                     <label class="custom-radio-btn" style="float: left; margin-right: 10px;">
-                        <input type="radio" name="radio" />     
+                        <input type="checkbox" name="checkbox" />     
                         <span class="checkmark"></span>
                     </label>
                     <div class="container-fluid">
@@ -207,7 +207,7 @@
                 <h5 style="font-weight: bold; color: #49516F;">November 2023</h5>
                 <div class="checklist-custom-wedding d-flex justify-content-between mt-3" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 10px; border: 1px solid #FFFFFF; padding: 5px 10px;">
                     <label class="custom-radio-btn" style="float: left; margin-right: 10px;">
-                        <input type="radio" name="radio" />     
+                        <input type="checkbox" name="checkbox" />     
                         <span class="checkmark"></span>
                     </label>
                     <div class="container-fluid">
@@ -217,7 +217,7 @@
                 </div>
                 <div class="checklist-custom-wedding d-flex justify-content-between mt-3" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 10px; border: 1px solid #FFFFFF; padding: 5px 10px;">
                     <label class="custom-radio-btn" style="float: left; margin-right: 10px;">
-                        <input type="radio" name="radio" />     
+                        <input type="checkbox" name="checkbox" />     
                         <span class="checkmark"></span>
                     </label>
                     <div class="container-fluid">
@@ -229,7 +229,7 @@
             <div class="waktu-wedding mt-4">
                 <div class="checklist-custom-wedding d-flex justify-content-between mt-3" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 10px; border: 1px solid #FFFFFF; padding: 5px 10px;">
                     <label class="custom-radio-btn" style="float: left; margin-right: 10px;">
-                        <input type="radio" name="radio" />     
+                        <input type="checkbox" name="checkbox" />     
                         <span class="checkmark"></span>
                     </label>
                     <div class="container-fluid">
@@ -243,7 +243,7 @@
                 <h5 style="font-weight: bold; color: #49516F;">Desember 2023</h5>
                 <div class="checklist-custom-wedding d-flex justify-content-between mt-4" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 10px; border: 1px solid #FFFFFF; padding: 5px 10px;">
                     <label class="custom-radio-btn" style="float: left; margin-right: 10px;">
-                        <input type="radio" name="radio" />     
+                        <input type="checkbox" name="checkbox" />     
                         <span class="checkmark"></span>
                     </label>
                     <div class="container-fluid">

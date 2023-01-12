@@ -72,6 +72,7 @@ Route::middleware(['auth:web'])->group(function () {
     Route::post('update/biodata', [ProfileController::class, 'update_biodata'])->name('update.biodata');
     Route::post('update/kontak', [ProfileController::class, 'update_kontak'])->name('update.kontak');
     Route::post('update/password', [ProfileController::class, 'update_password'])->name('update.password');
+    Route::post('update/avatar', [ProfileController::class, 'update_avatar'])->name('update.avatar');
     
     Route::get('/vendor/chat', function () {
         return view('vendor.chat', [
