@@ -92,6 +92,7 @@
                     </div>
                 </div>
                 <a href="#" role="button" class="btn selengkapnya" style="color: #237A57; display: flex;justify-content: center;margin-top:50px; ">Muat Lebih Banyak
+
                     <style>
                         .selengkapnya {
                             color: #237A57;

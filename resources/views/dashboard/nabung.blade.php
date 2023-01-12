@@ -20,7 +20,7 @@
 
     }
 
-    .uang:hover{
+    .uang:hover {
         background: linear-gradient(90deg, #093028 0%, #237A57 100%);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         color: white;
@@ -101,6 +101,11 @@
     .pembayaran-nabung-debit .custom-radio-btn input:checked+.checkmark {
         opacity: 1;
     }
+
+    .rp {
+        background-color: transparent;
+        outline: none !important;
+    }
 </style>
 @endsection
 @section('content')
@@ -119,8 +124,9 @@
             </nav>
             <div class="container mt-3" style="color: #49516F;width: 932px;">
                 <h3 style="font-weight: 900">Mau nabung berapa?</h3>
-                <div class="input-nabung">
-                    <input type="text" placeholder="Rp" class="nabung container-fluid">
+                <div class="input-group mb-3 ">
+                    <span class="input-group-text rp py-2" id="basic-addon3">Rp</span>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                 </div>
                 <div class="row d-flex justify-content-between mt-4">
                     <button class="btn uang col-sm-3 nabung">Rp. 10.000</button>
@@ -160,8 +166,8 @@
                         <h5 style="font-size: 20px;font-weight: bold; color: #49516F;">Metode Pembayaran Lain</h5>
                         <h6 style="font-size: 13px; width: 685px; color: #49516F; font-weight: bold;opacity: 0.5;">Internet banking, transfer, e-wallet</h6>
                     </div>
-                    <div class="direct-debit-mandiri">
-                        <select id="debit" style="width: 217px; height: 43px;border-radius: 12px; border: none;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); padding: 5px;">
+                    <div class="direct-debit-mandiri ">
+                        <select class="nabung-aktif" id="debit" style="width: 217px; height: 43px;border-radius: 12px; border: none;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
                             <option value="direct" style="text-align: center;">BCA Virtual Account </option>
                         </select>
                         <div class="button d-flex justify-content-center mt-4">
