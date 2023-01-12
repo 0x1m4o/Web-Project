@@ -46,8 +46,8 @@ class ProfileController extends Controller
     public function update_kontak(Request $request)
     {
         $request->validate([
-            'email' => 'required|unique:users|email:dns',
-            'phone' => 'required|unique:users|numeric|min_digits:10|max_digits:13',
+            'email' => 'required|email:dns' . ($request->email == auth()->user()->email ? '' : '|unique:users'),
+            'phone' => 'required|numeric|min_digits:10|max_digits:13' . ($request->phone == auth()->user()->phone ? '' : '|unique:users')
         ],[
             'required' => 'Kolom tidak boleh kosong!',
             'email' => 'Kolom harus berisi email yang valid!',
