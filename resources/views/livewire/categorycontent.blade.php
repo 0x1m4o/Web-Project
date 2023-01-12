@@ -77,6 +77,7 @@
 <div class="content" style="background-color:#E5E5E5;">
     <div class="container navbar navbar-expand-lg text-capitalizes category-section mt-4" id="kategori">
         
+        @if ($category->id < 10)
         @foreach ($categories as $c)
         @if ($c->id < 10)
         <button onclick="window.location.href='{{ route('category', ['category'=> $c->slug, 'search'=>request('search'), 'pages'=>$pages]) }}'" class="btn text-secondary text-capitalize category {{ ($category->name == $c->name) ? 'aktif' : '' }}">
@@ -85,6 +86,16 @@
         </button>
         @endif
         @endforeach
+        @else
+        @foreach ($categories as $c)
+        @if ($c->id > 9)
+        <button onclick="window.location.href='{{ route('category', ['category'=> $c->slug, 'search'=>request('search'), 'pages'=>$pages]) }}'" class="btn text-secondary text-capitalize category {{ ($category->name == $c->name) ? 'aktif' : '' }}">
+            <img src="/img/{{ $c->slug }}.png" alt="" class='ms-1' />
+            <p class="d-inline-block p-1 mb-0 text-dark">{{ $c->name }}</p>
+        </button>
+        @endif
+        @endforeach
+        @endif
 
         <div class="dropdown dropdown-hover">
             <button type="button" class="dropdown-toggle text-capitalize view" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: white">

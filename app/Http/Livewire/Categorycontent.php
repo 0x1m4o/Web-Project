@@ -11,9 +11,9 @@ use Illuminate\Support\Facades\DB;
 
 class Categorycontent extends Component
 {
-    public $count = 8;
-    public $sort_by = 'name';
-    public $sort = 'ASC';
+    public $count = 16;
+    public $sort_by = 'rating';
+    public $sort = 'DESC';
     public $theme = 'Semua';
     public $location = 'Semua';
     public $min = null;
@@ -82,7 +82,7 @@ class Categorycontent extends Component
     }
 
     public function load(){
-        $this->count += 8;
+        $this->count += 16;
     }
 
     public function sort(){

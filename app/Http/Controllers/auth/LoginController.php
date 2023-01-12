@@ -50,8 +50,10 @@ class LoginController extends Controller
     // Logout
     public function logout(Request $request){
         Auth::guard('web')->logout();
-        $request->session()->invalidate();
-        $request->session()->regenerateToken();
+        if(!Auth::guard('vendor')->check()){
+            $request->session()->invalidate();
+            $request->session()->regenerateToken();
+        } 
         return redirect('/');
     }
 
