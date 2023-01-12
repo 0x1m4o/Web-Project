@@ -4,7 +4,7 @@
         <section class="profile d-flex">
             <div class="profile-image">
                 <a href="#">    
-                    <img src="{{ auth()->user()->avatar }}" width="47px" height="47px" />
+                    <img src="{{ auth()->user()->avatar }}" width="47px" height="47px" style="object-fit: cover;" />
                 </a>
             </div>
             <div class="profile-name">

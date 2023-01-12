@@ -19,7 +19,7 @@
                     <div class="row">
                         <div class="content col-sm-6">
                             <h3 style="font-weight: 900;color: #49516F;padding-bottom: 20px;">Profile</h3>
-                            <img src="{{ auth()->user()->avatar }}" alt="profile" style="border-radius: 50%;width: 70px;float: left;margin-right: 15px;">
+                            <img src="{{ auth()->user()->avatar }}" alt="profile" width="70px" height="70px" style="border-radius: 50%;float: left;margin-right: 15px; object-fit: cover;">
                             <h3 style="color: #49516F;font-weight: 600;">{{ auth()->user()->name }}</h3>
                             <h6 style="color: #49516F;font-weight:600;">@if (auth()->user()->phone)
                                 {{ auth()->user()->phone }}

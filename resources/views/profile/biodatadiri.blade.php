@@ -229,8 +229,6 @@
                                                 <div class="modal-body">
                                                     @if (Str::length(auth()->user()->password) == 10)
                                                     <p>Jika Anda Login menggunakan Google gunakan default password berikut : <strong>{{ auth()->user()->password }}</strong></p>
-                                                    @else
-                                                    <p></p>
                                                     @endif                                                        
                                                     <form method="post" action="{{ route('update.password') }}">
                                                         @csrf
@@ -254,7 +252,7 @@
                                                                 <input id="confirm_password" type="password" name="confirm_password" aria-describedby="emailHelp" value="" style="width: 95%; border: none">
                                                                 <i class="bi bi-eye-slash" id="togglePasswordcfm" style="cursor: pointer"></i>
                                                             </span>
-                                                        </div>                                                  
+                                                        </div>
                                                         <div class="modal-footer d-flex justify-content-between">
                                                             <a href="{{ route('password.request') }}" class="text-start text-decoration-none text-secondary" style="font-size: 14px">
                                                                 Lupa Kata Sandi?

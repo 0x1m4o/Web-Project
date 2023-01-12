@@ -98,7 +98,7 @@ class ProfileController extends Controller
             DB::table('users')
             ->where('id', auth()->user()->id)
             ->update([
-                'password' => Hash::make($request->new_password)
+                'password' => bcrypt($request->new_password)
             ]);
             return back();
         }
@@ -106,7 +106,7 @@ class ProfileController extends Controller
             DB::table('users')
             ->where('id', auth()->user()->id)
             ->update([
-                'password' => Hash::make($request->new_password)
+                'password' => bcrypt($request->new_password)
             ]);
             return back();
         }
@@ -130,7 +130,7 @@ class ProfileController extends Controller
             DB::table('users')
             ->where('id', auth()->user()->id)
             ->update([
-                'avatar' => 'storage/' . $avatar
+                'avatar' => "/storage/" . $avatar
             ]);     
         }
         return back();

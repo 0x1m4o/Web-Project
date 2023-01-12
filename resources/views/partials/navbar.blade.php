@@ -298,14 +298,14 @@
 
                 <div class="dropdown dropdown-hover ">
                     <a href="/profile">
-                        <img src="{{ auth()->user()->avatar }}" style="width: 30px; height: 30px" class="rounded-circle me-3" alt="" />
+                        <img src="{{ auth()->user()->avatar }}" style="width: 30px; height: 30px; object-fit: cover;" class="rounded-circle me-3" alt="" />
                     </a>
                     <div class="dropdown-menu dropdown-menu-start">
                         <div class="container container-profile">
                             <section class="profile">
                                 <div class="profile-image">
                                     <a href="/profile">
-                                        <img src="{{ auth()->user()->avatar }}" />
+                                        <img src="{{ auth()->user()->avatar }}" style="width: 30px; height: 30px; object-fit: cover;" />
                                     </a>
                                 </div>
                                 <div class="profile-name">
@@ -391,14 +391,14 @@
                 </button>
                 <div class="dropdown dropdown-hover ">
                     <button class="nav-btn navbar-toggler">
-                        <img src="{{ auth()->user()->avatar }}" class="rounded-circle" style="width: 30px; height: 30px" />
+                        <img src="{{ auth()->user()->avatar }}" class="rounded-circle" style="width: 30px; height: 30px; object-fit: cover;" />
                     </button>
                     <div class="dropdown-menu dropdown-menu-start">
                         <div class="container container-profile">
                             <section class="profile">
                                 <div class="profile-image">
                                     <a href="/profile">
-                                        <img src="{{ auth()->user()->avatar }}" />
+                                        <img src="{{ auth()->user()->avatar }}" style="width: 30px; height: 30px; object-fit: cover;" />
                                     </a>
                                 </div>
                                 <div class="profile-name">

@@ -19,7 +19,7 @@
                     <div class="row mx-3 my-5">
                         <div class="col-6" style="color: #49516F;">
                             <div style="width: 400px; margin-bottom: 5em;">
-                                <p class="fs-5 fw-bold">Hai Vanessa, tinjau aktivitasmu disini</p>
+                                <p class="fs-5 fw-bold">Hai {{ auth()->user()->name }}, tinjau aktivitasmu disini</p>
                             </div>
                             <a href="/keamanan-aktifitas" class="text-decoration-none text-decoration-none text-secondary" >     
                                 <div class="d-flex justify-content-between align-items-center mt-5">
