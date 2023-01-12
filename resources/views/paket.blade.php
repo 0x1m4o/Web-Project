@@ -1,4 +1,5 @@
 @extends('layouts.no_footer')
+@extends('layouts.no_footer')
 @section('content')
     <style>
         body {

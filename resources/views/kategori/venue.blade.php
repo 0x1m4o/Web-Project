@@ -478,7 +478,7 @@
         </div>
         <div class="text-center my-3">
             <button class="btn btn-light rounded  border border-1">
-                <p class="text-success m-0 fw-bold">Muat Lebih Banyak</p>
+                <p class="text-success m-0 p-2 px-5 fw-bold">Muat Lebih Banyak</p>
             </button>
         </div>
     </div>

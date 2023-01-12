@@ -387,6 +387,6 @@
             
         </div>
 
-        <h5 style="color: #237A57; text-align: center;font-size: 18px; padding: 38px 0px 40px 0px;">Lihat Berikutnya</h5>
+        <a href="" class="text-decoration-none d-block mx-auto" style="color: #237A57; text-align: center;font-size: 18px; padding: 38px 0px 40px 0px;">Lihat Berikutnya</a>
     </div>
 @endsection
