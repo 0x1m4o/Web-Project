@@ -91,7 +91,7 @@
         @if ($c->id > 9)
         <button onclick="window.location.href='{{ route('category', ['category'=> $c->slug, 'search'=>request('search'), 'pages'=>$pages]) }}'" class="btn text-secondary text-capitalize category {{ ($category->name == $c->name) ? 'aktif' : '' }}">
             <img src="/img/{{ $c->slug }}.png" alt="" class='ms-1' />
-            <p class="d-inline-block p-1 mb-0 text-dark">{{ $c->name }}</p>
+            <p class="d-inline-block p-1 mb-0 text-dark" style="font-size: 14px;">{{ $c->name }}</p>
         </button>
         @endif
         @endforeach

@@ -262,8 +262,8 @@
                                                     </form>
                                                 </div>    
                                             </div>
-                                            </div>
-                                        </div>                                        
+                                        </div>
+                                    </div>                                        
                                 </div>
                             </div>
                             <div class="col-sm-2" style="cursor: pointer; color: black;">

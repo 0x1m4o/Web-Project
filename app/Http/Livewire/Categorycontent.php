@@ -75,7 +75,7 @@ class Categorycontent extends Component
             'total_products'=>$total_products,
             'products'=>$products,
             'categories'=>Category::all(),
-        ])->extends('layouts.main', [   
+        ])->extends('layouts.main', [
             'title'=>$this->category->name,
             'searched'=>$this->search,
         ])->section('content');

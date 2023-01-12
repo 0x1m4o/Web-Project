@@ -177,6 +177,7 @@ Route::middleware(['guest:vendor'])->group(function () {
 });
 
 Route::get('/category/{category:slug}', Categorycontent::class)->name('category');
+Route::get('/view/{product}');
 
 Route::get('/', function () {
     return view('home', [
