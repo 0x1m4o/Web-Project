@@ -29,8 +29,8 @@
 
     .input-nabung input[type=text] {
         width: 100%;
-        padding: 30px 20px;
-        margin: 8px 0;
+        /* padding: 30px 20px; */
+        /* margin: 8px 0; */
         box-sizing: border-box;
         border: 1px solid #49516F;
         border-radius: 12px;
@@ -118,8 +118,9 @@
             </nav>
             <div class="container mt-3" style="color: #49516F;width: 932px;">
                 <h3 style="font-weight: 900">Mau tarik saldo berapa?</h3>
-                <div class="input-nabung">
-                    <input type="text" placeholder="Rp" class="nabung container-fluid">
+                <div class="input-nabung d-flex align-items-center container-fluid rounded-3 px-3" style="border: 1px solid black;">
+                    <span class="me-2 fw-bold">Rp</span>
+                    <input type="text" style="border: none;">
                 </div>
                 <div class="row d-flex justify-content-between mt-4">
                     <button class="btn uang col-sm-3 nabung">Rp. 10.000</button>
@@ -145,7 +146,7 @@
                         <h6 style="font-size: 13px; width: 685px; color: #49516F; font-weight: bold;opacity: 0.5;">Internet banking, transfer, e-wallet</h6>
                     </div>
                     <div class="direct-debit-mandiri" style="margin-top: 40px;text-align: end;">
-                        <select id="debit" style="width: 217px; height: 43px;border-radius: 12px; border: none;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); padding: 5px;">
+                        <select id="debit" style="background: linear-gradient(90deg, #093028 0%, #237A57 100%);width: 217px; height: 43px;border-radius: 12px; border: none;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); padding: 5px;" class="text-white">
                             <option value="direct" style="text-align: center;">BCA 70555334</option>
                         </select>
                         <div class="d-flex justify-content-center">

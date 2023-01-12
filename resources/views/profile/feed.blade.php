@@ -116,5 +116,6 @@
         <div class="input-comment">
             <input type="text" placeholder="Add Comment">
         </div>
+        <a href="" class="text-decoration-none d-block my-5 mx-auto" style="color: #237A57;text-align: center">Lihat berikutnya</a>
     </div>
 @endsection

@@ -1,6 +1,13 @@
 @extends('layouts.main')
 
 @section('content')
+
+    <style>
+        .button:hover {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+
     <div class="container keranjang-container p-3 mt-5 bg-white mb-5"
         style="width: 100%;border-radius: 20px;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); overflow: hidden;">
         <div class="keranjang-title jcs">
@@ -24,7 +31,7 @@
             <div class="d-flex">
                 <label class="form-check-label title-label fw-semibold d-flex align-items-end mt-2"
                     for="check-TheAesthetic">The Aesthetic</label>
-                <p class="text-center keranjang-kategori p-1 px-2 mb-2 d-flex align-items-center mb-3">Venue</p>
+                <p class="text-center p-1 px-2 mb-2 d-flex align-items-center mb-3 rounded-pill" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">Venue</p>
             </div>
             <h6 class="title-label fw-semibold d-inline-block mb-5">Kota Jakarta</h6>
         </div>
@@ -130,7 +137,7 @@
             <h6 class="fw-semibold" style="color: #237A57;font-size: 20px;">100.000.000</h6>
         </div>
         <div class="btn-konfirmasi mt-4 jcc">
-            <a class="btn btn-md text-white" href="/checkout" role="button"
+            <a class="btn btn-md text-white button" href="/checkout" role="button"
                 style="background: linear-gradient(to right,rgba(9, 48, 40, 1),rgba(35, 122, 87, 1)); border: none; font-weight: bold;">Bayar
                 Sekarang</a>
         </div>

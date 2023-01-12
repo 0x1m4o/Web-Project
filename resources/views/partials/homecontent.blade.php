@@ -17,7 +17,7 @@
     <h5 class="text-end text-secondary m-0 py-0 m-0 py-0">Lihat Selengkapnya</h5>
 </a>
 <div class="responsive slider">
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/Tropical.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -34,7 +34,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/Tropical.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -51,7 +51,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/Tropical.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -68,7 +68,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/Tropical.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -85,7 +85,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/Tropical.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -102,7 +102,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/Tropical.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -119,7 +119,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/Tropical.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -136,7 +136,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/Tropical.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -153,7 +153,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/Tropical.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -170,7 +170,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/Tropical.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -196,7 +196,7 @@
     <h5 class="text-end text-secondary m-0 p-0">Lihat Selengkapnya</h5>
 </a>
 <div class="responsive slider">
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/The-Right-Two.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -214,7 +214,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/The-Right-Two.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -232,7 +232,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/The-Right-Two.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -250,7 +250,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/The-Right-Two.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -268,7 +268,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/The-Right-Two.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -286,7 +286,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/The-Right-Two.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -304,7 +304,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/The-Right-Two.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -322,7 +322,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/The-Right-Two.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -351,7 +351,7 @@
     </a>
 </div>
 <div class="responsive slider">
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/Nomade.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -369,7 +369,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/Nomade.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -387,7 +387,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/Nomade.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -405,7 +405,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/Nomade.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -423,7 +423,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/Nomade.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -441,7 +441,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/Nomade.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
@@ -459,7 +459,7 @@
             </div>
         </a>
     </div>
-    <div class="card">
+    <div class="card card-hover">
         <a href="">
             <img src="/img/Nomade.png" class="card-img-top m-0" alt="..." />
             <div class="card-body mt-2 ms-3">
