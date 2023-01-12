@@ -20,10 +20,10 @@ class LoginController extends Controller
 
     // Login
     public function authenticate(Request $request){
-        $loginWith = filter_var($request->hpEmail, FILTER_VALIDATE_EMAIL) ? 'email:dns' : 'phone';
+        $loginWith = filter_var($request->hpEmail, FILTER_VALIDATE_EMAIL) ? 'email' : 'phone';
 
         $validated = $request->validate([
-            'hpEmail' => 'required|' . ($loginWith == 'email' ? '' : 'numeric'),
+            'hpEmail' => 'required|' . ($loginWith == 'email' ? 'email:dns' : 'numeric'),
             'password' => 'required',
         ],
         [
@@ -49,7 +49,6 @@ class LoginController extends Controller
 
     // Logout
     public function logout(Request $request){
-        dd(Auth::guard('web')->name);
         Auth::guard('web')->logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();

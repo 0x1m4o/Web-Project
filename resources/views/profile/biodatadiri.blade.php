@@ -16,7 +16,7 @@
                           <a class="navbar-brand" href="/daftarrekening">Daftar Rekening</a>
                           <a class="navbar-brand" href="/keamanan-aktifitas">Keamanan</a>
                         </div>
-                    </nav>
+                    </nav>Ag1K4N9Aio
                     <div class="row p-5">   
                         <div class="col-4">
                             <div class="card" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
