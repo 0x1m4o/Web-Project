@@ -22,9 +22,28 @@
                             <div class="card" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
                                 <img src="{{ auth()->user()->avatar }}" class="card-img-top p-3  m-auto" style="width: 250px;">
                                 <div class="card-body text-center mb-3">
-                                    <label class="btn btn-outline-dark" for="upload">Pilih Foto</label> 
-                                    <input type="file" id="upload" hidden accept="image/*">
+                                    <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#uploadimage">Pilih Foto</button> 
                                 </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="uploadimage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 fw-bold" id="staticBackdropLabel">Unggah Gambar</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div>
+                                        <label for="formFile" class="form-label">Masukkan Foto Anda</label>
+                                        <input class="form-control form-control-" id="formFile" type="file">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn d-block mx-auto my-3" style="background: linear-gradient(90deg, #093028 0%, #237A57 100%); color: white; border: none;">Unggah</button>
+                                </div>
+                              </div>
                             </div>
                         </div>
                         <div class="col-8"> 
