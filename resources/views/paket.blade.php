@@ -5,10 +5,10 @@
             background-color: #F4F4F4;
         }
     </style>
-    <div class="container my-4" style="background: white;padding: 20px 0 10px 20px;border-radius: 20px;">
+    <div class="container mt-5 mb-5" style="background: white;padding: 20px 0 10px 20px;border-radius: 20px;">
         <span
             style="width: 40px; height: 40px; background: white;display: inline-flex;align-items: center; justify-content: center; cursor: pointer;border-radius: 50%;box-shadow: -1px 2px 12px 4px rgba(17, 17, 26, 0.18);">
-            <a href="/" class="text-dark">
+            <a href="javascript:history.back()" class="text-dark">
                 <i class="bi bi-arrow-left-short" style="font-size: 40px;"></i>
             </a>
         </span>

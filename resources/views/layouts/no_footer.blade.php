@@ -35,6 +35,9 @@
     {{-- boxicons --}}
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    {{-- Livewire --}}
+    <livewire:styles />
+
     {{-- Blade CSS --}}
     @yield('styles')
 
@@ -50,10 +53,16 @@
 
 <body>
     <script src="https://kit.fontawesome.com/457a315592.js" crossorigin="anonymous"></script>
-    @include('partials.navbar')
+    {{-- Navbar --}}
+    @auth('web')
+        @include('partials.navbar')
+    @else
+        @include('partials.navbar2')
+    @endauth
 
+    {{-- Content --}}
     @yield('content')
-    {{-- Footer --}}
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
@@ -103,6 +112,9 @@
 
     {{-- Iconify JS --}}
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+    {{-- Livewire --}}
+    <livewire:scripts />
 </body>
 
 </html>
