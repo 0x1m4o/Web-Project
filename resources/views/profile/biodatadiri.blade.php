@@ -26,9 +26,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Modal -->
                         <div class="modal fade" id="uploadimage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
+                            <form method="post" action="{{ route('update.avatar') }}" enctype="multipart/form-data">
+                              @csrf
                               <div class="modal-content">
                                 <div class="modal-header">
                                     <h1 class="modal-title fs-5 fw-bold" id="staticBackdropLabel">Unggah Gambar</h1>
@@ -36,14 +37,15 @@
                                 </div>
                                 <div class="modal-body">
                                     <div>
-                                        <label for="formFile" class="form-label">Masukkan Foto Anda</label>
-                                        <input class="form-control form-control-" id="formFile" type="file">
+                                        <label for="avatar" class="form-label">Masukkan Foto Anda</label>
+                                        <input class="form-control form-control-" id="avatar" name="avatar" type="file" accept="image/*">
                                     </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="submit" class="btn d-block mx-auto my-3" style="background: linear-gradient(90deg, #093028 0%, #237A57 100%); color: white; border: none;">Unggah</button>
                                 </div>
                               </div>
+                            </form>
                             </div>
                         </div>
                         <div class="col-8"> 

@@ -115,4 +115,24 @@ class ProfileController extends Controller
             'current_password' => 'Kata Sandi Anda saat ini tidak cocok dengan data kami'
         ]);
     }
+
+    public function update_avatar(Request $request)
+    {
+        $request->validate([
+            'avatar' => 'image|mimes:jpeg,png,jpg,gif,svg,jfif',
+        ],[
+            'mimes' => 'Avatar harus merupakan sebuah gambar!',
+        ]);
+
+        if($request->hasFile('avatar')) {
+            $filename = $request->avatar->getClientOriginalName();
+            $avatar = $request->avatar->storeAs('avatar', $filename);
+            DB::table('users')
+            ->where('id', auth()->user()->id)
+            ->update([
+                'avatar' => 'storage/' . $avatar
+            ]);     
+        }
+        return back();
+    }
 }
