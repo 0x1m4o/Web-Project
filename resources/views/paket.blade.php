@@ -4,6 +4,10 @@
         body {
             background-color: #F4F4F4;
         }
+
+        button:hover {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
     </style>
     <div class="m-5 d-flex justify-content-center">
         <div class="container" style="background: white;padding: 20px 0 10px 20px;border-radius: 20px;height: 600px">
